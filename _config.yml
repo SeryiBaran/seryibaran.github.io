@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-baseurl: '/jek'
+baseurl: ''
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -23,10 +23,10 @@ timezone:
 
 title: Сайт Иванчая                    # the main title
 
-tagline: Статьи от Иванчая             # it will display as the sub-title
+tagline: Личный сайт Иванчая             # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Здесь ты найдешь статьи Иванчая, контакты и ещё много интересного!
+  Здесь ты найдешь мои статьи, контакты и ещё много интересного!
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://seryibaran.github.io'
@@ -71,7 +71,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "./favicon.ico"
+avatar: "avatar.png"
 
 # boolean type, the global switch for ToC in posts.
 toc: true

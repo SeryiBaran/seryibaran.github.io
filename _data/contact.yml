@@ -11,10 +11,6 @@
   type: rss
   icon: 'fas fa-rss'
   noblank: true
--
-  type: stack-overflow
-  icon: 'fab fa-stack-overflow'
-  url:  'https://ru.stackoverflow.com/users/418945/seryibananan'
 
 # Uncomment and complete the url below to enable more contact options
 # -
