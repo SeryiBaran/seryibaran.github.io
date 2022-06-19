@@ -20,7 +20,7 @@ tabs:
 search:
   hint: поиск
   cancel: Отменить
-  no_results: Ох! Ничего не найдено.
+  no_results: Ой! Ничего не найдено.
 
 panel:
   lastmod: Недавно обновлено
@@ -47,7 +47,7 @@ not_found:
 
 notification:
   update_found: Доступна новая версия контента.
-  update: Обновлять
+  update: Обновить
 
 # ----- Posts related labels -----
 
