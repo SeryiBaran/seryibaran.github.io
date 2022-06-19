@@ -91,7 +91,7 @@ comments:
     repo_id: R_kgDOHhoqtA
     category: General
     category_id: DIC_kwDOHhoqtM4CPwYn
-    mapping:          # optional, default to 'pathname'
+    mapping: url          # optional, default to 'pathname'
     input_position: top   # optional, default to 'bottom'
     lang: ru             # optional, default to the value of `site.lang`
 
