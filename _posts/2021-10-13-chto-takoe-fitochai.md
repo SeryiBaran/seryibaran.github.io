@@ -2,7 +2,7 @@
 title: Что такое фиточай, или как я восстановил огород после града
 author: Иванчай
 date: 2021-10-13 20:55:00 +0300
-categories: [домоводство]
+categories: [дом, огород]
 tags: [огород, фиточай, град, лето, домоводство]
 image:
   path: /uploads/2021-10-13-chto-takoe-fitochai/kabachok.png
