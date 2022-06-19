@@ -63,8 +63,8 @@ post:
   relate_posts: Вам также может быть интересно
   share: Поделиться
   button:
-    next: Предыдущая публикация
-    previous: Следующая публикация
+    next: Следующая публикация
+    previous: Предыдущая публикация
     copy_code:
       succeed: Скопировано успешно!
     share_link:
