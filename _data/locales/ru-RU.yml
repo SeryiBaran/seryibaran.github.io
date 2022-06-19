@@ -53,7 +53,7 @@ notification:
 
 post:
   written_by: Автор
-  posted: Время публикации
+  posted: Дата публикации
   updated: Обновлено
   words: слов
   pageview_measure: просмотров
