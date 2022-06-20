@@ -24,19 +24,19 @@ Express - фреймворк для разработки серверов на N
 
 Создадим директорию проекта:
 
-```bash
+```console
 mkdir express-server
 ```
 
 Перейдём в директорию проекта:
 
-```bash
+```console
 cd express-server
 ```
 
 Затем нужно инициализировать проект. Для этого выполняем команду:
 
-```bash
+```console
 npm init -y
 ```
 
@@ -63,7 +63,7 @@ npm init -y
 
 Далее нужно установить Express:
 
-```bash
+```console
 npm install express
 ```
 
@@ -96,7 +96,7 @@ npm install express
 
 Выполните в терминале следующую команду:
 
-```bash
+```console
 touch index.js
 ```
 
@@ -163,7 +163,7 @@ app.listen(3000, () => {
 
 Теперь запустим сервер:
 
-```bash
+```console
 node index.js
 ```
 
@@ -183,13 +183,13 @@ _Все работает!_
 
 Для начала создадим папку с сайтом:
 
-```bash
+```console
 mkdir public
 ```
 
 Далее нужно создать файл index.html, и файл css/index.css:
 
-```bash
+```console
 touch public/index.html
 mkdir public/css
 touch public/css/index.css
@@ -294,7 +294,7 @@ app.listen(3000, () => {
 
 Теперь запустим сервер:
 
-```bash
+```console
 node index.js
 ```
 
