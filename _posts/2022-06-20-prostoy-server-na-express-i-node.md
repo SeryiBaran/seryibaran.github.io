@@ -182,16 +182,22 @@ _Все работает!_
 ### Подготовка сайта
 
 Для начала создадим папку с сайтом:
-
 ```console
 mkdir public
 ```
 
-Далее нужно создать файл index.html, и файл css/index.css:
-
+Создаём файл `index.html`:
 ```console
 touch public/index.html
+```
+
+Создаём папку `css`:
+```console
 mkdir public/css
+```
+
+Создаём файл `index.css`:
+```console
 touch public/css/index.css
 ```
 
@@ -204,7 +210,7 @@ public
 └── index.html
 ```
 
-Теперь добавьте в файл index.html такой код:
+Теперь добавьте в файл `index.html` такой код:
 
 ```html
 <!DOCTYPE html>
@@ -258,7 +264,8 @@ app.use(express.static(path.join(__dirname, "public")));
 -   Текущую рабочую директорию (cwd).
 -   Вторую директорию, которую нужно объединить с cwd.
 
-Попробуйте вывести в консоль `path.join(__dirname, 'public')` и посмотрите, что получится.
+> Попробуйте выполнить код `console.log(path.join(__dirname, 'public'))` и посмотрите, что получится.
+{: .prompt-tip }
 
 ### Отправка html файла
 
