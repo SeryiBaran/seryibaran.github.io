@@ -168,11 +168,11 @@ node index.js
 ```
 
 В консоли появится сообщение об успешном запуске сервера:
-![Сервер запущен](/uploads/2022-06-20-prostoy-server-na-express-i-node/zapushen.png)
+![Сервер запущен](/uploads/2022-06-20-prostoy-server-na-express-i-node/zapushen.png){: .shadow }
 _Сервер запущен_
 
 Далее, нужно перейти по адресу [http://localhost:3000/](http://localhost:3000/), и проверить сервер:
-![Все работает!](/uploads/2022-06-20-prostoy-server-na-express-i-node/vse-rabotaet.png)
+![Все работает!](/uploads/2022-06-20-prostoy-server-na-express-i-node/vse-rabotaet.png){: .shadow }
 _Все работает!_
 
 ## Раздача сайта с файлами
@@ -299,7 +299,7 @@ node index.js
 ```
 
 При переходе по адресу [http://localhost:3000/](http://localhost:3000/) отобразится наш сайт:
-![Все готово!](/uploads/2022-06-20-prostoy-server-na-express-i-node/vse-gotovo.png)
+![Все готово!](/uploads/2022-06-20-prostoy-server-na-express-i-node/vse-gotovo.png){: .shadow }
 _Все готово!_
 
 ## Итог

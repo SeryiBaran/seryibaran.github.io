@@ -77,20 +77,20 @@ image:
 
 Вместо знакомой зелени, красивых цветов, везде лежал град.
 
-![](/uploads/2021-10-13-chto-takoe-fitochai/grad-i-chelovek.jpg)
+![](/uploads/2021-10-13-chto-takoe-fitochai/grad-i-chelovek.jpg){: .shadow }
 _Что осталось после града_
-![](/uploads/2021-10-13-chto-takoe-fitochai/kalosha-i-grad.jpg)
+![](/uploads/2021-10-13-chto-takoe-fitochai/kalosha-i-grad.jpg){: .shadow }
 _Града выпало очень много_
 
 Каждая градина была диаметром от 1 до 3 сантиметров, и слой
 града на земле достигал 10 сантиметров.
 Мы чуть-ли не плакали от огорчения.
 
-![](/uploads/2021-10-13-chto-takoe-fitochai/grad-i-ruki.jpg)
+![](/uploads/2021-10-13-chto-takoe-fitochai/grad-i-ruki.jpg){: .shadow }
 _Градины в руках_
-![](/uploads/2021-10-13-chto-takoe-fitochai/grad-i-zhiga.jpg)
+![](/uploads/2021-10-13-chto-takoe-fitochai/grad-i-zhiga.jpg){: .shadow }
 _Градины (с зажигалкой для масштаба)_
-![](/uploads/2021-10-13-chto-takoe-fitochai/gradiny-v-tarelke.jpg)
+![](/uploads/2021-10-13-chto-takoe-fitochai/gradiny-v-tarelke.jpg){: .shadow }
 _Градины (в тарелке)_
 
 ## Мы не ожидали
@@ -119,7 +119,7 @@ _Градины (в тарелке)_
 Земляника дала ягоды;  
 Арбузы и дыни выросли и тоже дали свои большие и сладкие плоды.
 
-![](/uploads/2021-10-13-chto-takoe-fitochai/kabachok.png)
+![](/uploads/2021-10-13-chto-takoe-fitochai/kabachok.png){: .shadow }
 _Кабачок после града и удобрения фиточаем_
 
 ## Вывод
