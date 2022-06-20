@@ -4,6 +4,9 @@ icon: fas fa-info-circle
 order: 3
 ---
 
+![](/uploads/images/pole-ivanchaya.webp)
+_Поле Иванчая_
+
 # Привет дорогой друг!
 
 Я Иван Музыка, мне 13 лет.
