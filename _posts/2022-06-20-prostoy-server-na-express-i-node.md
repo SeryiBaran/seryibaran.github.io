@@ -67,7 +67,7 @@ npm init -y
 npm install express
 ```
 
-После установки Express содержимое файла `package.json` будет выглядеть так:
+После установки Express содержимое файла `package.json` будет выглядеть так:
 
 ```json
 {
@@ -88,7 +88,7 @@ npm install express
 ```
 
 > В блок `dependencies` добавляются все зависимости проекта, за исключением тех, что нужны при разработке. Они устанавливаются командой `npm install --save-dev <название-пакета>`. Подробно об этом можно почитать [здесь](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file).
-{: .prompt-info }
+{: .prompt-tip }
 
 ## Написание сервера
 
@@ -251,7 +251,7 @@ app.use(express.static(path.join(__dirname, "public")));
 ```
 
 > `__dirname` - директория, в которой работает скрипт
-{: .prompt-info }
+{: .prompt-tip }
 
 `path.join` объединяет 2 пути. Он получает два аргумента:
 
