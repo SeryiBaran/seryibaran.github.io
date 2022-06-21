@@ -176,11 +176,9 @@ _Сервер запущен_
 _Все работает!_
 
 ## Раздача сайта с файлами
-
 С помощью Express все делается очень просто. Несколькими строчками кода. Буквально.
 
 ### Подготовка сайта
-
 Для начала создадим папку с сайтом:
 ```console
 mkdir public
@@ -202,7 +200,6 @@ touch public/css/index.css
 ```
 
 Должна получиться такая структура:
-
 ```
 public
 ├── css
@@ -211,7 +208,6 @@ public
 ```
 
 Теперь добавьте в файл `index.html` такой код:
-
 ```html
 <!DOCTYPE html>
 <html lang="ru">
@@ -227,7 +223,6 @@ public
 ```
 
 А в файл css/index.css такой:
-
 ```css
 body {
     background-color: #cacaca;
@@ -242,8 +237,7 @@ p {
 }
 ```
 
-### Импорт модуля `path`
-
+### Написание кода
 После импорта Express нужно добавить импорт модуля `path`, который позволит работать с путями файлов:
 ```js
 const path = require("path");
@@ -267,10 +261,7 @@ app.use(express.static(path.join(__dirname, "public")));
 > Попробуйте выполнить код `console.log(path.join(__dirname, 'public'))` и посмотрите, что получится.
 {: .prompt-tip }
 
-### Отправка html файла
-
 Все почти готово. Осталось заменить слушатель запросов этим кодом:
-
 ```js
 app.get("/", (req, res) => {
     res.sendFile(`${__dirname}/public/index.html`);
@@ -282,7 +273,6 @@ app.get("/", (req, res) => {
 ### Итоговый код
 
 Так должен выглядеть итоговый код:
-
 ```js
 const path = require("path");
 const express = require("express");
@@ -302,7 +292,6 @@ app.listen(3000, () => {
 ### Тест сервера
 
 Теперь запустим сервер:
-
 ```console
 node index.js
 ```
