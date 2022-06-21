@@ -398,7 +398,7 @@ node index.js
 ```
 
 Отправим POST запрос с телом в виде JSON (Для этих целей я использую [Hoppscotch](https://hoppscotch.io/ru/) вместе с установленным расширением, чтобы он мог работать с localhost):
-![](/uploads/2022-06-20-prostoy-server-na-express-i-node/test-post-zaprosa.png)
+![](/uploads/2022-06-20-prostoy-server-na-express-i-node/test-post-zaprosa.png){: .shadow }
 _POST запрос успешно отправился и обработался!_
 
 
