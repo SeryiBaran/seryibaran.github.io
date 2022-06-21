@@ -311,10 +311,99 @@ node index.js
 ![Все готово!](/uploads/2022-06-20-prostoy-server-na-express-i-node/vse-gotovo.png){: .shadow }
 _Все готово!_
 
-## Итог
+## Обработка POST Запросов
+Помимо GET запросов, существуют POST запросы. Их Express тоже может обрабатывать.
 
-Вот и все, наш простенький сервер на Express и Node.js готов.  
-Всего лишь 10 строк кода. Неплохо, правда?
+### Установка зависимостей
+Чтобы работать с телом POST запроса, нам нужно установить специальный NPM пакет.
+
+Делается это командой:
+```console
+npm install body-parser
+```
+
+После выполнения данной команды, файл `package.json` будет иметь следующее содержание:
+```json
+{
+    "name": "express-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "express": "^4.18.1"
+    }
+}
+```
+
+### Написание кода
+Для начала импортируем `body-parser`:
+```js
+const bodyParser = require("body-parser");
+```
+
+Затем добавим эти настройки после `app.use(...)`:
+```js
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+```
+
+Осталось только написать обработчик POST запроса:
+```js
+app.post("/post", (req, res) => {
+    console.log(req.body);
+    res.status(200);
+});
+```
+
+Данный код слушает POST запросы на `/post`. При поступлении запроса, код выводит его тело, затем отправляет код 200 и завершает соединение.
+
+### Итоговый код
+Должен получиться следующий код:
+```js
+const path = require("path");
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
+
+app.use(express.static(path.join(__dirname, "public")));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.get("/", (req, res) => {
+    res.sendFile(`${__dirname}/public/index.html`);
+});
+
+app.post("/post", (req, res) => {
+    console.log(req.body);
+    res.status(200);
+    res.end();
+});
+
+app.listen(3000, () => {
+    console.log("Сервер запущен на порту 3000!");
+});
+```
+
+### Тест сервера
+Запустим сервер:
+```console
+node index.js
+```
+
+Отправим POST запрос с телом в виде JSON (Для этих целей я использую [Hoppscotch](https://hoppscotch.io/ru/) вместе с установленным расширением, чтобы он мог работать с localhost):
+![](/uploads/2022-06-20-prostoy-server-na-express-i-node/test-post-zaprosa.png)
+_POST запрос успешно отправился и обработался!_
+
+
+## Итог
+Вот и все, наш простенький сервер на Express и Node.js готов.
 
 Подробнее об Express можно почитать [в официальной документации](http://expressjs.com/en/starter/installing.html).
 
