@@ -348,6 +348,7 @@ app.use(bodyParser.json());
 app.post("/post", (req, res) => {
     console.log(req.body);
     res.status(200);
+    res.end();
 });
 ```
 
