@@ -10,6 +10,25 @@ tags: [javascript, python, код, программирование]
 
 ---
 
+Разные способы Fetch
+
+```js
+// Промисы
+fetch("https://disease.sh/v3/covid-19/all")
+    .then(res => res.json())
+    .then(data => console.log(data));
+
+// ИЛИ
+
+// Асинхронность
+console.log(await (async function() {
+    const res = await fetch("https://disease.sh/v3/covid-19/all");
+    return await res.json();
+})());
+```
+
+---
+
 ```js
 const listOf16x9Height = [1080, 720, 360];
 
