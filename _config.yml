@@ -21,9 +21,9 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Иван Музыка # the main title
+title: Иван М. (@SeryiBaran) # the main title
 
-tagline: Личный сайт Иванчая (@SeryiBaran) # it will display as the sub-title
+tagline: Личный сайт Иванчая # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Это сайт SeryiBaran. Здесь ты найдешь мои статьи, контакты и ещё много интересного!
