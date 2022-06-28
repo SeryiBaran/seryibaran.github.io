@@ -17,6 +17,7 @@ tags: [it, общение]
 - Пишите все в одном сообщении;
 - Никогда не присылайте фото экрана. Сделайте скриншот. Для этих целей можно использовать [FlameShot](https://flameshot.org/) или встроенную в систему программу;
 - Делайте любой код/логи моноширинным шрифтом (в Telegram);
+- В случае с HTML/CSS/JS/TS - загружайте код в песочницы. ([Codepen](https://codepen.io/), [официальная песочница TypeScript](https://www.typescriptlang.org/play/), [CodeSandBox](https://codesandbox.io/));
 - Присылайте большой текст/код/логи через [Pastebin](https://pastebin.com/)/[Termbin](https://termbin.com/);
 - Пишите, что нужно сделать;
 - Пишите, что получилось;
