@@ -89,9 +89,9 @@ _Града выпало очень много_
 ![](/uploads/2021-10-13-chto-takoe-fitochai/grad-i-ruki.jpg){: .shadow }
 _Градины в руках_
 ![](/uploads/2021-10-13-chto-takoe-fitochai/grad-i-zhiga.jpg){: .shadow }
-_Градины (с зажигалкой для масштаба)_
+_Градины с зажигалкой (для масштаба)_
 ![](/uploads/2021-10-13-chto-takoe-fitochai/gradiny-v-tarelke.jpg){: .shadow }
-_Градины (в тарелке)_
+_Градины в тарелке_
 
 ## Мы не ожидали
 
