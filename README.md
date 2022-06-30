@@ -1,5 +1,12 @@
 # seryibaran.github.io
 
-Привет!
+[![pages-build-deployment](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment)
 
-Это сайт Ивана Музыка.
+Это личный сайт Ивана Музыка.
+
+## Запуск локально
+Требуется Ruby.
+
+```console
+sudo bundle && bundle exec jekyll s
+```
