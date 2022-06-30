@@ -122,6 +122,11 @@ _Градины в тарелке_
 ![](/uploads/2021-10-13-chto-takoe-fitochai/kabachok.png){: .shadow }
 _Кабачок после града и удобрения фиточаем_
 
+## Видео-версия
+
+<iframe style="max-width: 100%; width: 100vw; height: 100vh; max-height: 500px;" class="shadow" src="https://www.youtube.com/embed/_U72oLedLyg" title="Как я восстановил огород после града, или что такое Фито-чай" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+_Видео-версия на Youtube_
+
 ## Вывод
 
 Фито-чай незаменим для растений. Никакая химия из магазинов, на
