@@ -26,7 +26,7 @@ tags: [it, общение]
 - Присылайте большой текст/код/логи через [Pastebin](https://pastebin.com/)/[Termbin](https://termbin.com/);
 - Сокращайте ссылки при помощи встроенных в мессенджер функций. Иллюстрация:
 
-![](/uploads/2022-06-28-kak-pravilno-zadat-vopros-v-it-chate/good-links.png){: .shadow }
+![](/uploads/2022-06-28-kak-pravilno-zadat-vopros/good-links.png){: .shadow }
 _Как не надо/как надо_
 
 - Подробно опишите, что нужно сделать;
