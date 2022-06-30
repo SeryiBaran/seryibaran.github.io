@@ -12,9 +12,8 @@ tags: [it, общение]
 2. Если решение не было найдено:
    1. Найдите нужный чат. [Каталог IT чатов в Telegram](https://t.me/it_chats/);
    2. Воспользуйтесь поиском по чату. Может быть, кто-то уже задавал такой вопрос и нашел решение;
-   3. Если поиск ничего не дал, задайте вопрос.
-3. Если в чате никто не помог, можно задать вопрос на [StackOverflow](https://stackoverflow.com/) (или [StackOverflow на русском](https://ru.stackoverflow.com/)), [Хабр Q&A](https://qna.habr.com/), [CyberForum](https://www.cyberforum.ru/) и т.д.  
-   Рекомендации все те же, думаю, разберетесь.
+   3. Если поиск ничего не дал, задайте вопрос (прочитав рекомендации ниже).
+3. Если в чате никто не помог, можно задать вопрос (прочитав рекомендации ниже) на [StackOverflow](https://stackoverflow.com/) (или [StackOverflow на русском](https://ru.stackoverflow.com/)), [Хабр Q&A](https://qna.habr.com/), [CyberForum](https://www.cyberforum.ru/) и т.д.
 
 ## Основные рекомендации
 
