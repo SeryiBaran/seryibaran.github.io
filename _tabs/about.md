@@ -7,7 +7,7 @@ order: 3
 ![](/uploads/images/pole-ivanchaya.webp)
 _Поле Иванчая_
 
-# Привет дорогой друг!
+## Привет дорогой друг!
 
 Я Иван Музыка (ударение на `ы`), мне 13 лет.
 
@@ -26,3 +26,7 @@ _Поле Иванчая_
 Если ты программист, можешь зайти на мой GitHub - у меня там есть проекты на Python, различные утилиты, самописные сайты и прочее, среди которых утилита для генерации надежных паролей с выбором из 6 типов, скрипт который открывает скриншоты других людей с LightShot, сайты по макетам и прочее.
 
 Можешь заглянуть на StackOverFlow, вдруг у меня там не решенные вопросы.
+
+## Состояние сайта:
+[![Автоматическая сборка проекта](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml)
+[![Автоматический хостинг](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment)
