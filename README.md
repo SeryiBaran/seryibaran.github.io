@@ -5,7 +5,7 @@
 Это личный сайт Ивана Музыка.
 
 ## Запуск локально
-Требуется Ruby.
+Требуются установленные Ruby и Jekyll.
 
 ```console
 sudo bundle && bundle exec jekyll s
