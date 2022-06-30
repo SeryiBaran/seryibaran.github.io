@@ -26,7 +26,7 @@ image:
 -  Пишите все в одном сообщении;
 -  Никогда не присылайте фото экрана. Сделайте скриншот. Для этих целей можно использовать [FlameShot](https://flameshot.org/) или встроенную в систему программу;
 -  Делайте любой код/логи моноширинным шрифтом;
--  В случае с языками(например HTML/CSS/JS/TS) - загружайте код в песочницы. ([Codepen](https://codepen.io/), [официальная песочница TypeScript](https://www.typescriptlang.org/play/), [CodeSandBox](https://codesandbox.io/));
+-  В случае с языками, для которых есть песочницы (например HTML/CSS/JS/TS) - загружайте код в них. ([Codepen](https://codepen.io/), [официальная песочница TypeScript](https://www.typescriptlang.org/play/), [CodeSandBox](https://codesandbox.io/) и т.д.);
 -  Присылайте большой текст/код/логи через [Pastebin](https://pastebin.com/)/[Termbin](https://termbin.com/);
 -  Сокращайте ссылки при помощи встроенных в мессенджер функций. Иллюстрация:
 
