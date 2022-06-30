@@ -28,5 +28,5 @@ _Поле Иванчая_
 Можешь заглянуть на StackOverFlow, вдруг у меня там не решенные вопросы.
 
 ## Состояние сайта:
-[![Автоматическая сборка проекта](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml)
-[![Автоматический хостинг](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment)
+-  Автоматическая сборка проекта: [![Состояние](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml)
+-  Автоматический хостинг: [![Состояние](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment)
