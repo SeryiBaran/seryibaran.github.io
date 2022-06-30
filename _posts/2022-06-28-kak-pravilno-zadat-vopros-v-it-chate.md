@@ -10,10 +10,10 @@ tags: [it, общение]
 
 1. Поищите решение проблемы в интернете. Может быть, проблему уже кто-то решил.
 2. Если решение не было найдено:
-3. Найдите нужный чат. [Каталог IT чатов в Telegram](https://t.me/it_chats/);
-4. Воспользуйтесь поиском по чату. Может быть, кто-то уже задавал такой вопрос и нашел решение;
-5. Если поиск ничего не дал, задайте вопрос.
-6. Если в чате никто не помог, можно задать вопрос на [StackOverflow](https://stackoverflow.com/) (или [StackOverflow на русском](https://ru.stackoverflow.com/)), [Хабр Q&A](https://qna.habr.com/), [CyberForum](https://www.cyberforum.ru/) и т.д.  
+   1. Найдите нужный чат. [Каталог IT чатов в Telegram](https://t.me/it_chats/);
+   2. Воспользуйтесь поиском по чату. Может быть, кто-то уже задавал такой вопрос и нашел решение;
+   3. Если поиск ничего не дал, задайте вопрос.
+3. Если в чате никто не помог, можно задать вопрос на [StackOverflow](https://stackoverflow.com/) (или [StackOverflow на русском](https://ru.stackoverflow.com/)), [Хабр Q&A](https://qna.habr.com/), [CyberForum](https://www.cyberforum.ru/) и т.д.  
    Рекомендации все те же, думаю, разберетесь.
 
 ## Основные рекомендации
@@ -22,7 +22,7 @@ tags: [it, общение]
 - Пишите все в одном сообщении;
 - Никогда не присылайте фото экрана. Сделайте скриншот. Для этих целей можно использовать [FlameShot](https://flameshot.org/) или встроенную в систему программу;
 - Делайте любой код/логи моноширинным шрифтом;
-- В случае с HTML/CSS/JS/TS - загружайте код в песочницы. ([Codepen](https://codepen.io/), [официальная песочница TypeScript](https://www.typescriptlang.org/play/), [CodeSandBox](https://codesandbox.io/));
+- В случае с языками(например HTML/CSS/JS/TS) - загружайте код в песочницы. ([Codepen](https://codepen.io/), [официальная песочница TypeScript](https://www.typescriptlang.org/play/), [CodeSandBox](https://codesandbox.io/));
 - Присылайте большой текст/код/логи через [Pastebin](https://pastebin.com/)/[Termbin](https://termbin.com/);
 - Сокращайте ссылки при помощи встроенных в мессенджер функций. Иллюстрация:
 
