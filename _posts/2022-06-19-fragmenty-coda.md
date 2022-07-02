@@ -10,6 +10,14 @@ tags: [javascript, python, код, программирование]
 
 ---
 
+Валидация PIN
+
+```js
+const validatePIN = pin => /^(\d{4}|\d{6})$/.test(pin);
+```
+
+---
+
 Разные способы Fetch
 
 ```js
