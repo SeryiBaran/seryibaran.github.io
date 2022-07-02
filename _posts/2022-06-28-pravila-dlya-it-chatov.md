@@ -54,6 +54,3 @@ _Как не надо/как надо_
 
 -  [nometa.xyz](https://nometa.xyz/);
 -  [neprivet.com](https://neprivet.com/).
-
-## Канал в Telegram посвященный этому посту
-[Находится тут](https://t.me/voprosit_ru).
