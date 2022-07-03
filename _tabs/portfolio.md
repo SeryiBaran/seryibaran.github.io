@@ -6,4 +6,4 @@ order: 4
 ---
 
 ## Prechu
-[![Preview](/uploads/portfolio/prechu.jpeg)](https://seryibaran.github.io/maket--prechu/)
+[![Preview](/uploads/portfolio/prechu.png)](https://seryibaran.github.io/maket--prechu/)
