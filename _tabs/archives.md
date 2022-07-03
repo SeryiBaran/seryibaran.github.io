@@ -2,5 +2,5 @@
 layout: archives
 title: Хронология
 icon: fas fa-archive
-order: 6
+order: 7
 ---

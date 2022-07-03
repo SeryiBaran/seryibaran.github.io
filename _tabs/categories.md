@@ -2,5 +2,5 @@
 layout: categories
 title: Категории
 icon: fas fa-stream
-order: 3
+order: 5
 ---
