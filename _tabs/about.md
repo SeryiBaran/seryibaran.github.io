@@ -9,10 +9,10 @@ order: 3
 _Поле Иванчая_
 
 ## Привет дорогой друг!
-
 Я Иван Музыка (ударение на **ы**), мне 13 лет.
 
-Я создал этот сайт чтобы ты мог познакомиться со мной поближе и почитать мои статьи.
+На этом сайте я публикую свои новости, статьи, памятки, ссылки на видео с YouTube и прочее.  
+Этот сайт создан при помощи [Jekyll](https://jekyllrb.com/) и темы [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/).
 
 Все ссылки ты найдешь на странице [Контакты](/contacts).
 
@@ -23,11 +23,10 @@ _Поле Иванчая_
 Сейчас я учусь веб-программированию, и нахожусь на уровне знания JavaScript.
 
 ## Раздел для гиков
-Если ты гик, можешь зайти на мой GitHub - у меня там есть проекты на Python. Утилита для генерации надежных паролей с выбором из 6 типов, скрипт который открывает скриншоты других людей с LightShot, сайты по макетам и многое другое.
+Если ты гик, можешь зайти на мой GitHub - там есть мои различные проекты. Утилита для генерации надежных паролей с выбором из 6 типов, скрипт который открывает скриншоты других людей с LightShot, сайты по макетам и многое другое.
 
-### Состояние сайта:
--  Автоматическая сборка проекта: [![Состояние](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml)
--  Автоматический хостинг: [![Состояние](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment)
+### Служебная информация
+Инструкция по запуску, состояние сайта и прочее [находится в репозитории сайта](https://github.com/SeryiBaran/seryibaran.github.io/).
 
 ### Обновить страницу без кэширования
 Для того чтобы увидеть наиболее свежую версию страницы, необходимо нажать сочетание клавиш <kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>.  
