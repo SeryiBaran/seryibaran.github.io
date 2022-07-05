@@ -10,6 +10,14 @@ tags: [javascript, python, код, программирование]
 
 ---
 
+Счетчик положительных чисел в массиве
+
+```js
+const countOfPositive = arr => arr.reduce((p, c) => c > 0 ? p + 1 : p, 0);
+```
+
+---
+
 Валидация PIN
 
 ```js
@@ -28,7 +36,7 @@ fetch("https://disease.sh/v3/covid-19/all")
 
 // ИЛИ
 
-// Асинхронность
+// Async/await
 console.log(await (async function() {
     const res = await fetch("https://disease.sh/v3/covid-19/all");
     return await res.json();
