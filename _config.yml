@@ -190,3 +190,4 @@ jekyll-archives:
 
 plugins:
   - jekyll-gist
+  - jemoji

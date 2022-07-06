@@ -6,11 +6,11 @@ The entire description of the site is not here, but on the corresponding page of
 
 ## 🚀 How to run
 
-ℹ️ Required installed Ruby and Jekyll.
+ℹ️ Required installed Ruby, Bundle and Jekyll.
 
 ### 📦 Install dependencies:
 ```console
-sudo bundle
+sudo bundle install
 ```
 
 ### 🛠 Run dev server:
