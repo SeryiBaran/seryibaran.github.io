@@ -13,7 +13,9 @@ tags: [javascript, python, код, программирование]
 Код мистера обфускатора
 
 ```js
-(() => (() => (() => (() => (() => (() => (() => (function() {return (() => {let i=Number(!!!!!!!!!!false),a=Math.random(),Fjoi=window;Fjoi[a]=[];do{Fjoi[a].push(i);i++;} while (i < 1000);return Fjoi[a];})()})())())())())())())())()
+eval(
+  "eval(eval(eval(`eval(eval(eval(eval(eval(eval('eval(eval(eval(eval(eval(eval(eval(\"eval(eval((()=>(()=>(()=>(()=>(()=>(()=>(()=>(function(){return (()=>{let i=Number(!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Number(!!!!!!!!!!!!!!!!!!!!false)),a=Math.random(),Fjoi=window;Fjoi[a]=[];do{Fjoi[a].push(i);i++;} while (i < 1000);return Fjoi[a];})()})())())())())())())())()))\")))))))'))))))`)))"
+);
 ```
 
 ---
@@ -21,7 +23,7 @@ tags: [javascript, python, код, программирование]
 Счетчик положительных чисел в массиве
 
 ```js
-const countOfPositive = arr => arr.reduce((p, c) => c > 0 ? p + 1 : p, 0);
+const countOfPositive = (arr) => arr.reduce((p, c) => (c > 0 ? p + 1 : p), 0);
 ```
 
 ---
@@ -29,7 +31,7 @@ const countOfPositive = arr => arr.reduce((p, c) => c > 0 ? p + 1 : p, 0);
 Валидация PIN
 
 ```js
-const validatePIN = pin => /^(\d{4}|\d{6})$/.test(pin);
+const validatePIN = (pin) => /^(\d{4}|\d{6})$/.test(pin);
 ```
 
 ---
@@ -39,16 +41,18 @@ const validatePIN = pin => /^(\d{4}|\d{6})$/.test(pin);
 ```js
 // Промисы
 fetch("https://disease.sh/v3/covid-19/all")
-    .then(res => res.json())
-    .then(data => console.log(data));
+  .then((res) => res.json())
+  .then((data) => console.log(data));
 
 // ИЛИ
 
 // Async/await
-console.log(await (async function() {
+console.log(
+  await (async function () {
     const res = await fetch("https://disease.sh/v3/covid-19/all");
     return await res.json();
-})());
+  })()
+);
 ```
 
 ---
