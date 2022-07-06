@@ -40,7 +40,7 @@ copyright:
     Публикации на сайте защищены лицензией Creative Commons Attribution 4.0 International (CC BY 4.0),
     если в тексте публикации не указано иное.
 
-meta: Сделано с помощью :PLATFORM и темы :THEME.
+meta: Сделано с помощью :PLATFORM и темы :THEME. Для комментариев использована система <a href="https://giscus.app/ru">Giscus</a>
 
 not_found:
   statment: Извините, эта ссылка указывает на ресурс которого не существует.
