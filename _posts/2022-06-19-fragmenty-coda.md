@@ -10,6 +10,14 @@ tags: [javascript, python, код, программирование]
 
 ---
 
+Код мистера обфускатора
+
+```js
+(() => (() => (() => (() => (() => (() => (() => (function() {return (() => {let i=Number(!!!!!!!!!!false),a=Math.random(),Fjoi=window;Fjoi[a]=[];do{Fjoi[a].push(i);i++;} while (i < 1000);return Fjoi[a];})()})())())())())())())())()
+```
+
+---
+
 Счетчик положительных чисел в массиве
 
 ```js
