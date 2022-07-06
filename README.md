@@ -1,4 +1,4 @@
-# 📝 Ivan Muzyka's site
+# 📝 Ivan Muzyka's site (RUS)
 [![Auto build](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml)
 [![Auto deploy](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment)
 
