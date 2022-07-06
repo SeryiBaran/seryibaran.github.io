@@ -1,19 +1,19 @@
-# 📝 Сайт Ивана Музыка
-[![Состояние автоматической сборки](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml)
-[![Состояние GitHub Pages](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment)
+# 📝 Ivan Muzyka's site
+[![Auto build](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml)
+[![Auto deploy](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment)
 
-Всё описание сайта находится не тут, а на соответствующей странице сайта. Почитайте лучше там :)
+The entire description of the site is not here, but on the corresponding page of the site. Read it better there :)
 
-## 🚀 Запуск для разработки
+## 🚀 How to run
 
-ℹ️ Требуются глобально установленные Ruby и Jekyll.
+ℹ️ Required installed Ruby and Jekyll.
 
-### 📦 Установите зависимости:
+### 📦 Install dependencies:
 ```console
 sudo bundle
 ```
 
-### 🛠 Запустите сервер для разработки:
+### 🛠 Run dev server:
 ```console
 bundle exec jekyll s
 ```
