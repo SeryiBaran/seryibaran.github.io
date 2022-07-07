@@ -309,7 +309,7 @@ if (!isNaN(num)) {
 ---
 
 [Песочница](https://jsbin.com/muyazupuko/edit?html,css,output)
-![Скриншот](/uploads/2022-06-19-fragmenty-coda/shadows-without-bugs.png){: .shadow }
+![Скриншот](/uploads/2022-06-19-fragmenty-coda/shadows-without-bugs.webp){: .shadow }
 
 ```html
 <div class="wrap">

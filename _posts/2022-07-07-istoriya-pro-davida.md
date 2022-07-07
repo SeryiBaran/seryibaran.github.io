@@ -5,7 +5,7 @@ date: 2022-07-07 11:48:00 +0300
 categories: [история]
 tags: [it, общение]
 image:
-  path: /uploads/2022-07-07-istoriya-pro-davida/preview.jpg
+  path: /uploads/2022-07-07-istoriya-pro-davida/preview.webp
   width: 800
   height: 500
   alt: Фото кабачка. Ой, т.е. Превью
