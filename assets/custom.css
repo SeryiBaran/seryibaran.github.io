@@ -1,3 +1,7 @@
 .code-wrap * {
   white-space: pre-wrap;
 }
+
+.external-resourse {
+  max-width: 100%; width: 100vw; height: 100vh; max-height: 500px;
+}
