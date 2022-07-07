@@ -20,7 +20,7 @@ Express - фреймворк для разработки серверов на N
 ## Создание проекта
 
 Первым делом нужно создать директорию для проекта.  
-Это можно сделать как в файловом менеджере, так и в терминале.  
+Это можно сделать как в файловом менеджере, так и в терминале.
 
 Создадим директорию проекта:
 
@@ -176,30 +176,37 @@ _Сервер запущен_
 _Все работает!_
 
 ## Раздача сайта с файлами
+
 С помощью Express все делается очень просто. Несколькими строчками кода. Буквально.
 
 ### Подготовка сайта
+
 Для начала создадим папку с сайтом:
+
 ```console
 mkdir public
 ```
 
 Создаём файл `index.html`:
+
 ```console
 touch public/index.html
 ```
 
 Создаём папку `css`:
+
 ```console
 mkdir public/css
 ```
 
 Создаём файл `index.css`:
+
 ```console
 touch public/css/index.css
 ```
 
 Должна получиться такая структура:
+
 ```
 public
 ├── css
@@ -208,6 +215,7 @@ public
 ```
 
 Теперь добавьте в файл `index.html` такой код:
+
 ```html
 <!DOCTYPE html>
 <html lang="ru">
@@ -223,6 +231,7 @@ public
 ```
 
 А в файл css/index.css такой:
+
 ```css
 body {
     background-color: #cacaca;
@@ -238,12 +247,15 @@ p {
 ```
 
 ### Написание кода
+
 После импорта Express нужно добавить импорт модуля `path`, который позволит работать с путями файлов:
+
 ```js
 const path = require("path");
 ```
 
 Затем добавим следующую строку перед слушателем запросов:
+
 ```js
 app.use(express.static(path.join(__dirname, "public")));
 ```
@@ -262,6 +274,7 @@ app.use(express.static(path.join(__dirname, "public")));
 {: .prompt-tip }
 
 Все почти готово. Осталось заменить слушатель запросов этим кодом:
+
 ```js
 app.get("/", (req, res) => {
     res.sendFile(`${__dirname}/public/index.html`);
@@ -273,6 +286,7 @@ app.get("/", (req, res) => {
 ### Итоговый код
 
 Так должен выглядеть итоговый код:
+
 ```js
 const path = require("path");
 const express = require("express");
@@ -292,6 +306,7 @@ app.listen(3000, () => {
 ### Тест сервера
 
 Теперь запустим сервер:
+
 ```console
 node index.js
 ```
@@ -301,17 +316,21 @@ node index.js
 _Все готово!_
 
 ## Обработка POST Запросов
+
 Помимо GET запросов, существуют POST запросы. Их Express тоже может обрабатывать.
 
 ### Установка зависимостей
+
 Чтобы работать с телом POST запроса, нам нужно установить специальный NPM пакет.
 
 Делается это командой:
+
 ```console
 npm install body-parser
 ```
 
 После выполнения данной команды, файл `package.json` будет иметь следующее содержание:
+
 ```json
 {
     "name": "express-server",
@@ -332,18 +351,22 @@ npm install body-parser
 ```
 
 ### Написание кода
+
 Для начала импортируем `body-parser`:
+
 ```js
 const bodyParser = require("body-parser");
 ```
 
 Затем добавим эти настройки после `app.use(...)`:
+
 ```js
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 ```
 
 Осталось только написать обработчик POST запроса:
+
 ```js
 app.post("/post", (req, res) => {
     console.log(req.body);
@@ -355,7 +378,9 @@ app.post("/post", (req, res) => {
 Данный код слушает POST запросы на `/post`. При поступлении запроса, код выводит его тело, затем отправляет код 200 и завершает соединение.
 
 ### Итоговый код
+
 Должен получиться следующий код:
+
 ```js
 const path = require("path");
 const express = require("express");
@@ -382,7 +407,9 @@ app.listen(3000, () => {
 ```
 
 ### Тест сервера
+
 Запустим сервер:
+
 ```console
 node index.js
 ```
@@ -391,8 +418,8 @@ node index.js
 ![](/uploads/2022-06-20-prostoy-server-na-express-i-node/test-post-zaprosa.png){: .shadow }
 _POST запрос успешно отправился и обработался!_
 
-
 ## Итог
+
 Вот и все, наш простенький сервер на Express и Node.js готов.
 
 Подробнее об Express можно почитать [в официальной документации](http://expressjs.com/en/starter/installing.html).
