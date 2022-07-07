@@ -2,7 +2,7 @@
 title: Как сделать простой сервер на Node.js и Express
 author: Иванчай
 date: 2022-06-20 15:26:00 +0300
-categories: [программирование]
+categories: [гайды]
 tags: [javascript, программирование, сервер, backend]
 image:
     path: /uploads/2022-06-20-prostoy-server-na-express-i-node/preview.webp
@@ -88,7 +88,7 @@ npm install express
 ```
 
 > В блок `dependencies` добавляются все зависимости проекта, за исключением тех, что нужны при разработке. Они устанавливаются командой `npm install --save-dev <название-пакета>`. Подробно об этом можно почитать [здесь](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file).
-> {: .prompt-tip }
+{: .prompt-tip }
 
 ## Написание сервера
 
@@ -263,7 +263,7 @@ app.use(express.static(path.join(__dirname, "public")));
 Этот код говорит Express использовать статичные файлы из папки `public`
 
 > `__dirname` - директория, в которой работает скрипт
-> {: .prompt-tip }
+{: .prompt-tip }
 
 `path.join` объединяет 2 пути. Он получает два аргумента:
 
@@ -271,7 +271,7 @@ app.use(express.static(path.join(__dirname, "public")));
 -   Вторую директорию, которую нужно объединить с cwd.
 
 > Попробуйте выполнить код `console.log(path.join(__dirname, 'public'))` и посмотрите, что получится.
-> {: .prompt-tip }
+{: .prompt-tip }
 
 Все почти готово. Осталось заменить слушатель запросов этим кодом:
 

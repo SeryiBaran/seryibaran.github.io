@@ -2,7 +2,7 @@
 title: История про Давида
 author: Иванчай
 date: 2022-07-07 11:48:00 +0300
-categories: [история]
+categories: [истории]
 tags: [it, общение]
 image:
   path: /uploads/2022-07-07-istoriya-pro-davida/preview.webp
