@@ -60,3 +60,4 @@ _Как не надо/как надо_
 
 -  [nometa.xyz](https://nometa.xyz/);
 -  [neprivet.com](https://neprivet.com/).
+-  [Статья с сайта citforum.ru](http://citforum.ru/howto/smart-questions-ru.shtml).
