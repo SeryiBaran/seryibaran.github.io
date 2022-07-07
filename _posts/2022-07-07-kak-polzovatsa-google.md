@@ -24,7 +24,7 @@ image:
 ![](/uploads/2022-07-07-kak-polzovatsa-google/index.webp){: .shadow }☹️😴😭😙😶🤭😎😒🙄😛🤪😚😮🤭
 
 > Ы
-> {: .prompt-tip }
+{: .prompt-tip }
 
 ☹️😴😭😙😶🤭😎😒🙄😛🤪😚😮🤭
 Надо вести в нее текст, ы потом нажать ентэр!!!
