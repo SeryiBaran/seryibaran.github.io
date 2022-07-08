@@ -90,5 +90,6 @@ _Как не надо/как надо_
 ## Дополнительные источники
 
 -  [nometa.xyz](https://nometa.xyz/);
--  [neprivet.com](https://neprivet.com/).
--  [Статья с сайта citforum.ru](http://citforum.ru/howto/smart-questions-ru.shtml).
+-  [neprivet.com](https://neprivet.com/);
+-  [Статья с сайта citforum.ru](http://citforum.ru/howto/smart-questions-ru.shtml);
+-  [Список чатов, каналов и ботов в Telegram](https://neprivet.com/).
