@@ -4,6 +4,7 @@ author: Иванчай
 date: 2022-06-20 15:26:00 +0300
 categories: [гайды]
 tags: [javascript, программирование, сервер, backend]
+uploads: "/uploads/2022-06-20-prostoy-server-na-express-i-node"
 image:
     path: /uploads/2022-06-20-prostoy-server-na-express-i-node/preview.webp
     width: 800
@@ -168,11 +169,11 @@ node index.js
 ```
 
 В консоли появится сообщение об успешном запуске сервера:
-![Сервер запущен](/uploads/2022-06-20-prostoy-server-na-express-i-node/zapushen.webp){: .shadow }
+![Сервер запущен]({{ page.uploads }}/zapushen.webp){: .shadow }
 _Сервер запущен_
 
 Далее, нужно перейти по адресу [http://localhost:3000/](http://localhost:3000/), и проверить сервер:
-![Все работает!](/uploads/2022-06-20-prostoy-server-na-express-i-node/vse-rabotaet.webp){: .shadow }
+![Все работает!]({{ page.uploads }}/vse-rabotaet.webp){: .shadow }
 _Все работает!_
 
 ## Раздача сайта с файлами
@@ -312,7 +313,7 @@ node index.js
 ```
 
 При переходе по адресу [http://localhost:3000/](http://localhost:3000/) отобразится наш сайт:
-![Все готово!](/uploads/2022-06-20-prostoy-server-na-express-i-node/vse-gotovo.webp){: .shadow }
+![Все готово!]({{ page.uploads }}/vse-gotovo.webp){: .shadow }
 _Все готово!_
 
 ## Обработка POST Запросов
@@ -415,7 +416,7 @@ node index.js
 ```
 
 Отправим POST запрос с телом в виде JSON (Для этих целей я использую [Hoppscotch](https://hoppscotch.io/ru/) вместе с установленным расширением, чтобы он мог работать с localhost):
-![](/uploads/2022-06-20-prostoy-server-na-express-i-node/test-post-zaprosa.webp){: .shadow }
+![]({{ page.uploads }}/test-post-zaprosa.webp){: .shadow }
 _POST запрос успешно отправился и обработался!_
 
 ## Итог

@@ -4,6 +4,7 @@ author: Иванчай
 date: 2022-06-19 11:57:00 +0300
 categories: [всякое]
 tags: [javascript, python, код, программирование]
+uploads: "/uploads/2022-06-19-fragmenty-coda"
 ---
 
 Здесь я собрал полезные куски кода и небольшие программы.
@@ -309,7 +310,7 @@ if (!isNaN(num)) {
 ---
 
 [Песочница](https://jsbin.com/muyazupuko/edit?html,css,output)
-![Скриншот](/uploads/2022-06-19-fragmenty-coda/shadows-without-bugs.webp){: .shadow }
+![Скриншот]({{ page.uploads }}/shadows-without-bugs.webp){: .shadow }
 
 ```html
 <div class="wrap">

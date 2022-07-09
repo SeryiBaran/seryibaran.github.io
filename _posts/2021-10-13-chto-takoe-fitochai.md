@@ -4,6 +4,7 @@ author: Иванчай
 date: 2021-10-13 20:55:00 +0300
 categories: [дом]
 tags: [огород, фиточай, град, лето, домоводство]
+uploads: "/uploads/2021-10-13-chto-takoe-fitochai"
 image:
   path: /uploads/2021-10-13-chto-takoe-fitochai/kabachok.webp
   width: 800
@@ -77,20 +78,20 @@ image:
 
 Вместо знакомой зелени, красивых цветов, везде лежал град.
 
-![](/uploads/2021-10-13-chto-takoe-fitochai/grad-i-chelovek.webp){: .shadow }
+![]({{ page.uploads }}/grad-i-chelovek.webp){: .shadow }
 _Что осталось после града_
-![](/uploads/2021-10-13-chto-takoe-fitochai/kalosha-i-grad.webp){: .shadow }
+![]({{ page.uploads }}/kalosha-i-grad.webp){: .shadow }
 _Града выпало очень много_
 
 Каждая градина была диаметром от 1 до 3 сантиметров, и слой
 града на земле достигал 10 сантиметров.
 Мы чуть-ли не плакали от огорчения.
 
-![](/uploads/2021-10-13-chto-takoe-fitochai/grad-i-ruki.webp){: .shadow }
+![]({{ page.uploads }}/grad-i-ruki.webp){: .shadow }
 _Градины в руках_
-![](/uploads/2021-10-13-chto-takoe-fitochai/grad-i-zhiga.webp){: .shadow }
+![]({{ page.uploads }}/grad-i-zhiga.webp){: .shadow }
 _Градины с зажигалкой (для масштаба)_
-![](/uploads/2021-10-13-chto-takoe-fitochai/gradiny-v-tarelke.webp){: .shadow }
+![]({{ page.uploads }}/gradiny-v-tarelke.webp){: .shadow }
 _Градины в тарелке_
 
 ## Мы не ожидали
@@ -119,7 +120,7 @@ _Градины в тарелке_
 Земляника дала ягоды;  
 Арбузы и дыни выросли и тоже дали свои большие и сладкие плоды.
 
-![](/uploads/2021-10-13-chto-takoe-fitochai/kabachok.webp){: .shadow }
+![]({{ page.uploads }}/kabachok.webp){: .shadow }
 _Кабачок после града и удобрения фиточаем_
 
 ## Видео-версия

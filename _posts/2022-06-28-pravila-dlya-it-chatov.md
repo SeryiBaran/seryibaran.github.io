@@ -43,7 +43,7 @@ pin: true
 -  В случае с языками, для которых есть песочницы (например HTML/CSS/JS/TS) - **загружайте код в них**. ([Codepen](https://codepen.io/), [официальная песочница TypeScript](https://www.typescriptlang.org/play/), [CodeSandBox](https://codesandbox.io/) и т.д.);
 -  Присылайте большой текст/код/логи **через [Pastebin](https://pastebin.com/)/[Termbin](https://termbin.com/)**;
 -  **Никогда не используйте** сервисы по типу bit.ly.
--  Вместо длинной ссылки [сделайте текст-описание ссылкой](<https://yandex.ru/search/?text=telegram+как+сделать+текст+ссылку+(гиперссылку)>) при помощи **встроенных в мессенджер функций**. Иллюстрация:
+-  Вместо длинной ссылки [сделайте текст-описание ссылкой](https://yandex.ru/search/?text=telegram+как+сделать+текст+ссылку+(гиперссылку)) при помощи **встроенных в мессенджер функций**. Иллюстрация:
 
 ![](/uploads/2022-06-28-pravila-dlya-it-chatov/good-links.webp){: .shadow }
 _Как не надо/как надо_

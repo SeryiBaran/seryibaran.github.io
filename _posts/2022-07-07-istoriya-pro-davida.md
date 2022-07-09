@@ -4,8 +4,9 @@ author: Иванчай
 date: 2022-07-07 11:48:00 +0300
 categories: [истории]
 tags: [it, общение]
+uploads: "/uploads/2022-07-07-istoriya-pro-davida"
 image:
-  path: /uploads/2022-07-07-istoriya-pro-davida/preview.webp
+  path: "/uploads/2022-07-07-istoriya-pro-davida/preview.webp"
   width: 800
   height: 500
   alt: Фото кабачка. Ой, т.е. Превью
@@ -28,7 +29,7 @@ image:
 
 Я перестал его замечать, и подумал, что он обиделся на то что ему говорили про АРК. Как оказалось, его аккаунт удален.
 
-<video src="/uploads/2022-07-07-istoriya-pro-davida/deleted-account.webm" controls></video>
+<video src="{{ page.uploads }}/deleted-account.webm" controls></video>
 {:.shadow.external-resourse}
 
 И я до сих пор думаю. Станет ли Давид - Давидом, который смог...
