@@ -16,5 +16,5 @@ bundle install
 
 ### 🛠 Run dev server:
 ```console
-bundle exec jekyll s
+bundle exec jekyll s --livereload
 ```
