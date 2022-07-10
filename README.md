@@ -11,7 +11,7 @@ The entire description of the site is not here, but on the corresponding page of
 sudo gem install bundler
 ```
 ```console
-sudo bundle install
+bundle install
 ```
 
 ### 🛠 Run dev server:
