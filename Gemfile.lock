@@ -132,6 +132,7 @@ PLATFORMS
 
 DEPENDENCIES
   html-proofer (~> 3.18)
+  jekyll
   jekyll-gist
   jekyll-theme-chirpy (~> 5.2, >= 5.2.1)
   jemoji
