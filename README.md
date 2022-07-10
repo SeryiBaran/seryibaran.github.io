@@ -8,7 +8,7 @@ The entire description of the site is not here, but on the corresponding page of
 
 ### 📦 Install dependencies:
 ```console
-sudo gem install bundler
+gem install bundler jekyll
 ```
 ```console
 bundle install
