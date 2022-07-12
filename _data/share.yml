@@ -13,7 +13,7 @@ platforms:
     link: "https://t.me/share/url?url=URL&text=TITLE"
   - type: ВКонтакте
     icon: "fab fa-vk"
-    link: "https://vk.com/share.php?url=URL&title=TITLE"
+    link: "https://vk.com/share.php?url=URL&title=TITLE&image=IMAGE"
   - type: Одноклассники
     icon: "fab fa-odnoklassniki"
     link: "https://connect.ok.ru/offer?url=URL&title=TITLE"
