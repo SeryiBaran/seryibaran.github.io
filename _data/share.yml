@@ -16,10 +16,10 @@ platforms:
     link: "https://vk.com/share.php?url=URL&title=TITLE&image=IMAGE"
   - type: Одноклассники
     icon: "fab fa-odnoklassniki"
-    link: "https://connect.ok.ru/offer?url=URL&title=TITLE"
+    link: "https://connect.ok.ru/offer?url=URL&title=TITLE&imageUrl=IMAGE"
   - type: WhatsApp
     icon: "fab fa-whatsapp"
-    link: "https://api.whatsapp.com/send?text=TITLE (URL)"
+    link: "whatsapp://send?url=URL&text=TITLE%0A%0AURL"
   - type: Reddit
     icon: "fab fa-reddit"
     link: "https://www.reddit.com/submit?url=URL&title=TITLE"
