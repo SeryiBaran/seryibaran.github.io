@@ -9,4 +9,4 @@ order: 4
 
 ## Prechu
 
-[![Preview](/uploads/portfolio/prechu.webp){:.shadow}](https://seryibaran.github.io/maket--prechu/)
+[![Preview](/uploads/portfolio/prechu.webp){:.shadow}](https://seryibaran.github.io/maket-prechu/)
