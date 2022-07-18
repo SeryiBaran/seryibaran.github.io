@@ -5,7 +5,7 @@ date: 2022-06-26 12:35:00 +0300
 categories: [гайды]
 tags: [it, общение]
 image:
-   path: /uploads/2022-06-28-pravila-dlya-it-chatov/preview.webp
+   path: /uploads/2022-06-28-pravila-dlya-it-chatov/preview.jpg
    width: 800
    height: 500
    alt: Превью

@@ -6,7 +6,7 @@ categories: [юмор]
 tags: [юмор]
 uploads: "/uploads/2022-07-07-kak-polzovatsa-google"
 image:
-  path: /uploads/2022-07-07-kak-polzovatsa-google/preview.webp
+  path: /uploads/2022-07-07-kak-polzovatsa-google/preview.jpg
   width: 800
   height: 500
   alt: Превью

@@ -6,7 +6,7 @@ categories: [гайды]
 tags: [javascript, программирование, сервер, backend]
 uploads: "/uploads/2022-06-20-prostoy-server-na-express-i-node"
 image:
-    path: /uploads/2022-06-20-prostoy-server-na-express-i-node/preview.webp
+    path: /uploads/2022-06-20-prostoy-server-na-express-i-node/preview.jpg
     width: 800
     height: 500
     alt: Превью

@@ -6,7 +6,7 @@ categories: [дом]
 tags: [огород, фиточай, град, лето, домоводство]
 uploads: "/uploads/2021-10-13-chto-takoe-fitochai"
 image:
-  path: /uploads/2021-10-13-chto-takoe-fitochai/kabachok.webp
+  path: /uploads/2021-10-13-chto-takoe-fitochai/kabachok.jpg
   width: 800
   height: 500
   alt: Фото кабачка, который был удобрен фиточаем после града
@@ -120,7 +120,7 @@ _Градины в тарелке_
 Земляника дала ягоды;  
 Арбузы и дыни выросли и тоже дали свои большие и сладкие плоды.
 
-![]({{ page.uploads }}/kabachok.webp){: .shadow }
+![]({{ page.uploads }}/kabachok.jpg){: .shadow }
 _Кабачок после града и удобрения фиточаем_
 
 ## Видео-версия
