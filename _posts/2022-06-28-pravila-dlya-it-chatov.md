@@ -12,6 +12,9 @@ image:
 pin: true
 ---
 
+> Если вам надоело прыгать из чата в чат или вас бесят плохие администраторы - можете зайти в [этот чат](https://t.me/it_fuck_you).
+{: .prompt-tip }
+
 ## Что делать если у меня проблема/вопрос?
 
 -  **Прочитайте** эти правила;
@@ -98,4 +101,4 @@ _Как не надо/как надо_
 -  [nometa.xyz](https://nometa.xyz/);
 -  [neprivet.com](https://neprivet.com/);
 -  [Статья с сайта citforum.ru](http://citforum.ru/howto/smart-questions-ru.shtml);
--  [Список чатов, каналов и ботов в Telegram](https://neprivet.com/).
+-  [Список чатов, каналов и ботов в Telegram](https://t.me/it_chats).
