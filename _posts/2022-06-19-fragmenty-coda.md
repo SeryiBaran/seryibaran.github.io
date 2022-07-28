@@ -11,6 +11,16 @@ uploads: "/uploads/2022-06-19-fragmenty-coda"
 
 ---
 
+Получение данных с API и их отображение
+
+```js
+fetch("https://jsonplaceholder.typicode.com/todos").then(r => r.json()).then(data => {
+    document.querySelector("body").innerHTML = data.map(e => `<p ${e.completed ? "style=\"color: green;\"" : ""}>${e.title}</p>`).join("")
+})
+```
+
+---
+
 Код мистера обфускатора
 
 ```js
