@@ -114,4 +114,9 @@
     {% include mode-toggle.html %}
   {% endunless %}
   <link rel="stylesheet" href="{{- 'assets/custom.css' | relative_url -}}">
+  <script>
+    const giscusFrame = document.querySelector(".giscus-frame");
+    const giscusFrameContent = giscusFrame.contentDocument;
+    giscusFrameContent.body.innerHTML += "<style>.gsc-upvote-button {display: none;}</style>";
+  </script>
 </head>
