@@ -9,7 +9,7 @@ image:
   path: /uploads/2022-07-29-analog-openserver-dlya-linux-devilbox/preview.jpg
   width: 800
   height: 500
-  alt: Превью
+  alt: Скриншот админ-панели (старый, 2017 г.)
 ---
 
 > В этой публикации нет инструкций. Я просто поделился находкой.
