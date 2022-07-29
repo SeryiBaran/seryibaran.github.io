@@ -11,6 +11,14 @@ uploads: "/uploads/2022-06-19-fragmenty-coda"
 
 ---
 
+Запуск PHP в Docker
+
+```console
+docker run -it --rm -p "3000:80" -v "$PWD/app":/usr/src/myapp -w /usr/src/myapp php:8-cli-alpine php -S 0.0.0.0:80 index.php
+```
+
+---
+
 Получение данных с API и их отображение
 
 ```js
