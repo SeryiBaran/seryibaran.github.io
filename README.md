@@ -18,3 +18,8 @@ bundle install
 ```console
 bundle exec jekyll s --livereload
 ```
+
+## 📝 Create new post (ONLY FROM THE ROOT DIR)
+```console
+./tools/new.sh
+```
