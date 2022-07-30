@@ -47,7 +47,7 @@ image:
 
 ## Приложение
 
-Список основных сборок (не стеков):
+### 1. Список основных сборок (не стеков):
 
 | Название                                  | Платформы                     | Компоненты [^1]                                                                                                                                                                                                                                                  |
 | ----------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,6 +57,14 @@ image:
 | [WampServer](https://www.wampserver.com/) | Windows                       | Apache, MySQL, MariaDB, PHP, phpMyAdmin                                                                                                                                                                                                                          |
 | [AMPPS](https://www.ampps.com/)           | Windows, MacOS                | Apache, MySQL, PHP, Python, MongoDB, Sendmail                                                                                                                                                                                                                    |
 | [Bitnami](https://bitnami.com/)           | Windows, Linux, MacOS         | [Каталог (Docker)](https://bitnami.com/stacks/containers), [Каталог (Windows, Linux, MacOS)](https://bitnami.com/stacks/installer)                                                                                                                               |
+
+### 1. Заметка про XAMPP
+
+XAMPP требует root права, но при запуске его с root невозможно перейти по ссылкам и открыть папки:
+
+```
+Executing Dolphin with sudo is not possible due to unfixable security vulnerabilities.
+```
 
 ## Сноски
 
