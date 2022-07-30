@@ -58,7 +58,7 @@ image:
 | [AMPPS](https://www.ampps.com/)           | Windows, MacOS                | Apache, MySQL, PHP, Python, MongoDB, Sendmail                                                                                                                                                                                                                    |
 | [Bitnami](https://bitnami.com/)           | Windows, Linux, MacOS         | [Каталог (Docker)](https://bitnami.com/stacks/containers), [Каталог (Windows, Linux, MacOS)](https://bitnami.com/stacks/installer)                                                                                                                               |
 
-### 1. Заметка про XAMPP
+### 2. Заметка про XAMPP
 
 XAMPP требует root права, но при запуске его с root невозможно перейти по ссылкам и открыть папки:
 
