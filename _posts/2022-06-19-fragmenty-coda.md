@@ -328,7 +328,7 @@ if (!isNaN(num)) {
 ---
 
 [Песочница](https://jsbin.com/muyazupuko/edit?html,css,output)
-![Скриншот]({{ page.uploads }}/shadows-without-bugs.webp){: .shadow }
+![Скриншот]({{ page.uploads }}/shadows-without-bugs.webp){: .shadow :}
 
 ```html
 <div class="wrap">

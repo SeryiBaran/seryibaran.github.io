@@ -35,7 +35,6 @@ image:
 
 Я перестал его замечать, и подумал, что он обиделся на упрёки. Как оказалось, его аккаунт удален.
 
-<video src="{{ page.uploads }}/deleted-account.webm" controls></video>
-{:.shadow.external-resourse}
+{% include video/local.html path="deleted-account.webm" %}{: .shadow :}
 
 И я до сих пор думаю. Станут ли давиды - Давидами, которые смогли...

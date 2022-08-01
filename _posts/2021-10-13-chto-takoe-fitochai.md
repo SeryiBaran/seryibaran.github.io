@@ -78,20 +78,20 @@ image:
 
 Вместо знакомой зелени, красивых цветов, везде лежал град.
 
-![]({{ page.uploads }}/grad-i-chelovek.webp){: .shadow }
+![]({{ page.uploads }}/grad-i-chelovek.webp){: .shadow :}
 _Что осталось после града_
-![]({{ page.uploads }}/kalosha-i-grad.webp){: .shadow }
+![]({{ page.uploads }}/kalosha-i-grad.webp){: .shadow :}
 _Града выпало очень много_
 
 Каждая градина была диаметром от 1 до 3 сантиметров, и слой
 града на земле достигал 10 сантиметров.
 Мы чуть-ли не плакали от огорчения.
 
-![]({{ page.uploads }}/grad-i-ruki.webp){: .shadow }
+![]({{ page.uploads }}/grad-i-ruki.webp){: .shadow :}
 _Градины в руках_
-![]({{ page.uploads }}/grad-i-zhiga.webp){: .shadow }
+![]({{ page.uploads }}/grad-i-zhiga.webp){: .shadow :}
 _Градины с зажигалкой (для масштаба)_
-![]({{ page.uploads }}/gradiny-v-tarelke.webp){: .shadow }
+![]({{ page.uploads }}/gradiny-v-tarelke.webp){: .shadow :}
 _Градины в тарелке_
 
 ## Мы не ожидали
@@ -120,13 +120,11 @@ _Градины в тарелке_
 Земляника дала ягоды;  
 Арбузы и дыни выросли и тоже дали свои большие и сладкие плоды.
 
-![]({{ page.uploads }}/kabachok.jpg){: .shadow }
+![]({{ page.uploads }}/kabachok.jpg){: .shadow :}
 _Кабачок после града и удобрения фиточаем_
 
 ## Видео-версия
-
-<iframe src="https://www.youtube.com/embed/_U72oLedLyg" title="Как я восстановил огород после града, или что такое Фито-чай" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{:.shadow.external-resourse}
+{% include video/youtubePlayer.html id="_U72oLedLyg" %}{: .shadow :}
 
 ## Вывод
 
