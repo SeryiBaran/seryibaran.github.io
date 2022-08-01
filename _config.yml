@@ -161,6 +161,11 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+      image:
+        path: /uploads/images/main.png
+        width: 800
+        height: 500
+        alt: Основное изображение сайта
   - scope:
       path: assets/img/favicons
     values:
