@@ -38,7 +38,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Иван Музыка
-  email: seryibaranminepy@gmail.com # change to your email address
+  email: "%73%65%72%79%69%62%61%72%61%6e%6d%69%6e%65%70%79@%67%6d%61%69%6c.%63%6f%6d" # change to your email address
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username      # change to your twitter homepage
