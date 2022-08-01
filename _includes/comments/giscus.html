@@ -3,8 +3,8 @@
   $(function () {
     const origin = "https://giscus.app";
     const iframe = "iframe.giscus-frame";
-    const lightTheme = "{{ site.url + site.baseurl }}/assets/GSThemes/light.css";
-    const darkTheme = "{{ site.url + site.baseurl }}/assets/GSThemes/dark_dimmed.css";
+    const lightTheme = "{{ site.giscus_themes_path }}/light.css";
+    const darkTheme = "{{ site.giscus_themes_path }}/dark_dimmed.css";
     let initTheme = lightTheme;
 
     if ($("html[data-mode=dark]").length > 0
