@@ -39,7 +39,7 @@ code.highlighter-rouge:not(.spoiler) {
   line-height: 1;
 }
 
-html body #main .post-preview-with-image {
+.post-preview-with-image {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -47,18 +47,22 @@ html body #main .post-preview-with-image {
   justify-content: center;
 }
 
-html body #main .post-preview-image {
-  max-height: auto;
+.post-preview-image {
   max-width: 200px;
   object-fit: contain;
   border-radius: 0.5rem;
 }
 
-html body #main .post-preview-image-link:hover {
+body #main .post-preview-image-link:hover {
   border: none;
 }
 
-html body #main .post-preview-with-image-content {
+.post-preview-with-image-content {
   flex: 1;
-  min-width: 200px;
+}
+
+@media (max-width: 767.98px) {
+  .post-preview-image {
+    max-width: 100%;
+  }
 }
