@@ -38,3 +38,27 @@ code.highlighter-rouge:not(.spoiler) {
 .lh-1 * {
   line-height: 1;
 }
+
+html body #main .post-preview-with-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+html body #main .post-preview-image {
+  max-height: auto;
+  max-width: 200px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+html body #main .post-preview-image-link:hover {
+  border: none;
+}
+
+html body #main .post-preview-with-image-content {
+  flex: 1;
+  min-width: 200px;
+}
