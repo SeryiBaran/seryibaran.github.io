@@ -4,6 +4,7 @@ author: Иванчай
 date: 2022-06-26 12:35:00 +0300
 categories: [гайды]
 tags: [it, общение]
+uploads: "/uploads/2022-06-28-pravila-dlya-it-chatov"
 image:
    path: /uploads/2022-06-28-pravila-dlya-it-chatov/preview.jpg
    width: 800
@@ -53,7 +54,7 @@ pin: true
 -  **Никогда не используйте** сервисы по типу bit.ly.
 -  Вместо длинной ссылки [сделайте текст-описание ссылкой](https://yandex.ru/search/?text=telegram+как+сделать+текст+ссылку+(гиперссылку)) при помощи **встроенных в мессенджер функций**. Иллюстрация:
 
-![](/uploads/2022-06-28-pravila-dlya-it-chatov/good-links.webp){: .shadow }
+![]({{ page.uploads }}/good-links.webp){: .shadow }
 _Как не надо/как надо_
 
 -  **Подробно** опишите, что нужно сделать;
