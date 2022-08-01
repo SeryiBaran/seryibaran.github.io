@@ -68,3 +68,7 @@ body #main .post-preview-image-link:hover {
     max-width: 100%;
   }
 }
+
+#notification .toast-body {
+	font-family: inherit;
+}
