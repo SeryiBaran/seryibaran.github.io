@@ -1,11 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
 .code-wrap * {
   white-space: pre-wrap;
 }
 
-.external-resourse-container > *, .embed-container > * {
+.external-resourse-container > *,
+.embed-container > * {
   display: block;
   max-width: 100%;
   width: 100vw;
   height: 100vh;
   max-height: 500px;
+}
+
+.highlighter-rouge pre,
+code.highlighter-rouge:not(.spoiler) {
+  font-size: 1rem;
+  font-family: "Fira Code", monospace;
+}
+
+.spoiler {
+  position: relative;
+  cursor: pointer;
+  color: var(--text-color);
+}
+.spoiler-content {
+  transition: opacity, 0.25s;
+  user-select: none;
+  opacity: 0;
+}
+.spoiler-active .spoiler-content {
+  user-select: auto;
+  opacity: 1;
+}
+
+.lh-1,
+.lh-1 * {
+  line-height: 1;
 }
