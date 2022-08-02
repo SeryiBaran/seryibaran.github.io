@@ -54,12 +54,12 @@ body #main #post-list .post-preview-image {
   background: var(--preview-img-bg);
 }
 
-body #main #post-list .img-link:hover {
-  border: none;
-}
-
 .post-preview-with-image-content {
   flex: 1;
+}
+
+body #main #post-list .img-link:hover {
+  border: none;
 }
 
 @media (max-width: 767.98px) {
@@ -68,6 +68,15 @@ body #main #post-list .img-link:hover {
   }
   body #main #post-list .post-preview-image {
     max-width: 100%;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .post-preview-with-image .img-link {
+    transition: all 0.1s ease-out;
+  }
+  .post-preview-with-image .img-link:hover {
+    transform: scale(1.1);
   }
 }
 
