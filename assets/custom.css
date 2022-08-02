@@ -106,3 +106,14 @@ img.mfp-img {
   padding: 0;
   margin: 40px 0;
 }
+
+html:not([data-mode="light"]) blockquote {
+  background-color: #2a2a2a;
+  color: var(--text-color);
+}
+
+html[data-mode="light"] blockquote {
+  background-color: #cfcfcf;
+  border-left: 5px solid #959595;
+  color: var(--text-color);
+}
