@@ -107,13 +107,23 @@ img.mfp-img {
   margin: 40px 0;
 }
 
-html:not([data-mode="light"]) blockquote {
+blockquote:not([class*="prompt"]) {
+  font-style: italic;
+}
+
+html:not([data-mode="light"]) blockquote:not([class*="prompt"]) {
   background-color: #2a2a2a;
   color: var(--text-color);
 }
 
-html[data-mode="light"] blockquote {
-  background-color: #cfcfcf;
-  border-left: 5px solid #959595;
+html[data-mode="light"] blockquote:not([class*="prompt"]) {
+  background-color: #ebebeb;
+  border-left: 5px solid #afafaf;
   color: var(--text-color);
+}
+
+.giphy-embed {
+  max-height: 300px;
+  margin: 0 auto;
+  display: block;
 }
