@@ -113,5 +113,60 @@
   {% unless site.theme_mode %}
     {% include mode-toggle.html %}
   {% endunless %}
+
+  {% if page.layout == 'home' %}
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/lozad@1.16.0/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <link rel="stylesheet" href="{{ site.data.assets[origin].magnific-popup.css | relative_url }}">
+
+    <script>
+    /**
+      Lazy load images (https://github.com/ApoorvSaxena/lozad.js)
+      and popup when clicked (https://github.com/dimsemenov/Magnific-Popup)
+    */
+
+    $(function() {
+
+      const IMG_SCOPE = '#main div.post-preview.post-preview-with-image';
+
+      if ($(`${IMG_SCOPE} img`).length <= 0 ) {
+        return;
+      }
+
+      /* lazy loading */
+
+      const imgList = document.querySelectorAll(`${IMG_SCOPE} img[data-src]`);
+      const observer = lozad(imgList);
+      observer.observe();
+
+      /* popup */
+
+      $(`${IMG_SCOPE} p > img[data-src],${IMG_SCOPE} img[data-src].preview-img`).each(
+        function() {
+          let nextTag = $(this).next();
+          const title = nextTag.prop('tagName') === 'EM' ? nextTag.text() : '';
+          const src = $(this).attr('data-src'); // created by lozad.js
+
+          $(this).wrap(`<a href="${src}" title="${title}" class="popup"></a>`);
+        }
+      );
+
+      $('.popup').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        showCloseBtn: false,
+        zoom: {
+          enabled: true,
+          duration: 300,
+          easing: 'ease-in-out'
+        }
+      });
+
+      /* markup the image links */
+
+      $(`${IMG_SCOPE} a`).has('img').addClass('img-link');
+
+    });
+    </script>
+  {% endif %}
   <link rel="stylesheet" href="{{- 'assets/custom.css' | relative_url -}}">
 </head>

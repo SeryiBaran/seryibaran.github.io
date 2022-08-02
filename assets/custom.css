@@ -46,13 +46,15 @@ code.highlighter-rouge:not(.spoiler) {
   gap: 1rem;
 }
 
-.post-preview-image {
+body #main #post-list .post-preview-image {
+  min-width: 200px;
   max-width: 200px;
   object-fit: contain;
   border-radius: 0.5rem;
+  background: var(--preview-img-bg);
 }
 
-body #main .post-preview-image-link:hover {
+body #main #post-list .img-link:hover {
   border: none;
 }
 
@@ -64,11 +66,29 @@ body #main .post-preview-image-link:hover {
   .post-preview-with-image {
     flex-direction: column;
   }
-  .post-preview-image {
+  body #main #post-list .post-preview-image {
     max-width: 100%;
   }
 }
 
 #notification .toast-body {
-	font-family: inherit;
+  font-family: inherit;
+}
+
+.mfp-container,
+.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out !important;
+}
+
+.mfp-ready .mfp-container {
+  opacity: 1;
+}
+.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-removing .mfp-container,
+.mfp-removing.mfp-bg {
+  opacity: 0;
 }

@@ -49,7 +49,7 @@ layout: page
 
   <div class="post-preview{% if post.image %} post-preview-with-image{% endif %}">
     {% if post.image %}
-      <a class="post-preview-image-link" href="{{ post.url | relative_url }}"><img class="post-preview-image shadow" src="{{ post.image.path }}" alt="{{ post.image.alt }}"></a>
+      <img data-src="{{ post.image.path }}" class="post-preview-image shadow preview-img bg" alt="{{ post.image.alt }}" data-proofer-ignore>
       <div class="post-preview-with-image-content">
     {% endif %}
     <h1>
