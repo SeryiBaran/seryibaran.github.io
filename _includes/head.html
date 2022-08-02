@@ -114,6 +114,8 @@
     {% include mode-toggle.html %}
   {% endunless %}
 
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
   {% if page.layout == 'home' %}
     <script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/lozad@1.16.0/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
     <link rel="stylesheet" href="{{ site.data.assets[origin].magnific-popup.css | relative_url }}">
