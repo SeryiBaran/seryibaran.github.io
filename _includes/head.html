@@ -123,49 +123,56 @@
     rel="stylesheet"
   />
   <script src="https://vjs.zencdn.net/7.20.1/video.min.js"></script>
+  <script src="https://unpkg.com/swipe-event-listener@1.2.1/dist/swipe-event-listener.js"></script>
   <link rel="stylesheet" href="{{- 'assets/custom.css' | relative_url -}}">
+  <script src="{{- 'assets/custom.js' | relative_url -}}"></script>
 
   {% if page.layout == 'home' %}
     <script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/lozad@1.16.0/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
     <link rel="stylesheet" href="{{ site.data.assets[origin].magnific-popup.css | relative_url }}">
 
     <script>
-    $(function() {
+    // $(function() {
 
-      const IMG_SCOPE = '#main div.post-preview.post-preview-with-image';
+      // const IMG_SCOPE = '#main div.post-preview.post-preview-with-image';
 
-      if ($(`${IMG_SCOPE} img`).length <= 0 ) {
-        return;
-      }
+      // if ($(`${IMG_SCOPE} img`).length <= 0 ) {
+      //   return;
+      // }
 
-      const imgList = document.querySelectorAll(`${IMG_SCOPE} img[data-src]`);
-      const observer = lozad(imgList);
-      observer.observe();
+      // const imgList = document.querySelectorAll(`${IMG_SCOPE} img[data-src]`);
+      // const observer = lozad(imgList);
+      // observer.observe();
 
-      $(`${IMG_SCOPE} p > img[data-src],${IMG_SCOPE} img[data-src].preview-img`).each(
-        function() {
-          let nextTag = $(this).next();
-          const title = nextTag.prop('tagName') === 'EM' ? nextTag.text() : '';
-          const src = $(this).attr('data-src');
+      // const imgList = document.querySelectorAll(`${IMG_SCOPE} img[data-src]`);
+      // imgList.forEach((e) => {
+      //   e.src = e.dataset["src"];
+      // })
 
-          $(this).wrap(`<a href="${src}" title="${title}" class="popup"></a>`);
-        }
-      );
+      // $(`${IMG_SCOPE} p > img[data-src],${IMG_SCOPE} img[data-src].preview-img`).each(
+      //   function() {
+      //     let nextTag = $(this).next();
+      //     const title = nextTag.prop('tagName') === 'EM' ? nextTag.text() : '';
+      //     const src = $(this).attr('data-src');
 
-      $('.popup').magnificPopup({
-        type: 'image',
-        closeOnContentClick: true,
-        showCloseBtn: false,
-        zoom: {
-          enabled: true,
-          duration: 300,
-          easing: 'ease-in-out'
-        }
-      });
+      //     $(this).wrap(`<a href="${src}" title="${title}" class="popup"></a>`);
+      //   }
+      // );
 
-      $(`${IMG_SCOPE} a`).has('img').addClass('img-link');
+      // $('.popup').magnificPopup({
+      //   type: 'image',
+      //   closeOnContentClick: true,
+      //   showCloseBtn: false,
+      //   zoom: {
+      //     enabled: true,
+      //     duration: 300,
+      //     easing: 'ease-in-out'
+      //   }
+      // });
 
-    });
+      // $(`${IMG_SCOPE} a`).has('img').addClass('img-link');
+
+    // });
     </script>
     <link rel="stylesheet" href="{{- 'assets/custom-home.css' | relative_url -}}">
   {% endif %}

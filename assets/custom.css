@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 .code-wrap * {
   white-space: pre-wrap;
@@ -45,14 +45,14 @@ code.highlighter-rouge:not(.spoiler) {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  /*gap: 1rem;*/
 }
 
 body #main #post-list .post-preview-image {
   min-width: 200px;
   max-width: 200px;
   object-fit: contain;
-  border-radius: 0.5rem;
+  border-radius: 0;
   background: var(--preview-img-bg);
 }
 
@@ -64,23 +64,23 @@ body #main #post-list .img-link:hover {
   border: none;
 }
 
-@media (max-width: 767.98px) {
-  .post-preview-with-image {
-    flex-direction: column;
-  }
-  body #main #post-list .post-preview-image {
-    max-width: 100%;
-  }
+/*@media (max-width: 767.98px) {*/
+.post-preview-with-image {
+  flex-direction: column;
 }
+body #main #post-list .post-preview-image {
+  max-width: 100%;
+}
+/*}*/
 
-@media (min-width: 767.98px) {
+/*@media (min-width: 767.98px) {
   .post-preview-with-image .img-link {
     transition: all 0.1s ease-out;
   }
   .post-preview-with-image .img-link:hover {
     transform: scale(1.1);
   }
-}
+}*/
 
 #notification .toast-body {
   font-family: inherit;
@@ -128,4 +128,35 @@ html[data-mode="light"] blockquote:not([class*="prompt"]) {
   max-height: 300px;
   margin: 0 auto;
   display: block;
+}
+
+#post-list .post-preview {
+  padding: 0;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  overflow: hidden;
+}
+
+@media (min-width: 767.98px) {
+  #post-list .post-preview {
+    transition: all 0.3s ease-in-out;
+  }
+  #post-list .post-preview:hover {
+    transform: translate3d(0, -3px, 0);
+    box-shadow: 0 10px 15px -4px rgb(0 0 0 / 15%);
+  }
+}
+
+.post-preview-content {
+  padding: 1rem;
+}
+
+html[data-mode="light"] #post-list .post-preview {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+html[sidebar-display] {
+  overflow: hidden;
 }
