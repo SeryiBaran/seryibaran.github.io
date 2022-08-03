@@ -51,12 +51,13 @@ $(function () {
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
     console.log(xDiff)
+    console.log(Math.abs(xDiff))
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       /*most significant*/
-      if (xDiff > 10) {
+      if (xDiff > 14) {
         remAttr(html);
         remAttr(body);
-      } else if (xDiff < -10) {
+      } else if (xDiff < -14) {
         setAttr(html);
         setAttr(body);
       }
