@@ -50,8 +50,6 @@ $(function () {
     let yUp = evt.touches[0].clientY;
     let xDiff = xDown - xUp;
     let yDiff = yDown - yUp;
-    console.log(xDiff)
-    console.log(Math.abs(xDiff))
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       /*most significant*/
       if (xDiff > 14) {
