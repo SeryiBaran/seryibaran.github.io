@@ -50,12 +50,13 @@ $(function () {
     var yUp = evt.touches[0].clientY;
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
+    console.log(xDiff)
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       /*most significant*/
-      if (xDiff > 0) {
+      if (xDiff > 10) {
         remAttr(html);
         remAttr(body);
-      } else {
+      } else if (xDiff < -10) {
         setAttr(html);
         setAttr(body);
       }
