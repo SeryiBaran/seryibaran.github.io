@@ -29,8 +29,8 @@ $(function () {
   ];
   document.addEventListener("touchstart", handleTouchStart, false);
   document.addEventListener("touchmove", handleTouchMove, false);
-  let; xDown = null;
-  let; yDown = null;
+  let xDown = null;
+  let yDown = null;
   function getTouches(evt) {
     return (
       evt.touches || // browser API
