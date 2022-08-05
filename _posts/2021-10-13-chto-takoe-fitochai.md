@@ -124,7 +124,7 @@ _Градины в тарелке_
 _Кабачок после града и удобрения фиточаем_
 
 ## Видео-версия
-{% include video/youtubePlayer.html id="_U72oLedLyg" %}{: .shadow :}
+{% include video/youtube.html id="_U72oLedLyg" %}{: .shadow :}
 
 ## Вывод
 
