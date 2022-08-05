@@ -11,6 +11,16 @@ uploads: "/uploads/2022-06-19-fragmenty-coda"
 
 ---
 
+Запуск функций в массиве
+
+```js
+const RUN = ([...fns]) => fns.forEach(fn => fn());
+
+RUN([() => console.log(123), () => console.log(333)]) // Выполнятся функции в массиве
+```
+
+---
+
 Запуск PHP в Docker
 
 ```bash
