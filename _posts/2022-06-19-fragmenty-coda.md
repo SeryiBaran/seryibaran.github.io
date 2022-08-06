@@ -11,6 +11,14 @@ uploads: "/uploads/2022-06-19-fragmenty-coda"
 
 ---
 
+Запуск PHP в Docker (Улучшенный вариант) (ТОЛЬКО ДЛЯ DEV)
+
+```bash
+docker run --rm -p 3000:8080 -v "$PWD/app":/var/www/html trafex/php-nginx
+```
+
+---
+
 Запуск функций в массиве
 
 ```js
@@ -21,7 +29,7 @@ RUN([() => console.log(123), () => console.log(333)]) // Выполнятся ф
 
 ---
 
-Запуск PHP в Docker
+Запуск PHP в Docker (ТОЛЬКО ДЛЯ DEV)
 
 ```bash
 docker run -it --rm -p "3000:80" -v "$PWD/app":/usr/src/myapp -w /usr/src/myapp php:8-cli-alpine php -S 0.0.0.0:80 index.php
