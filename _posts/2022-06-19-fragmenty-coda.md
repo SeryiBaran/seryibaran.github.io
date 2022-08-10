@@ -16,7 +16,7 @@ uploads: "/uploads/2022-06-19-fragmenty-coda"
 ```js
 Array.prototype.likeFilter = function (f) {
   let re = [];
-  this.forEach((e, i) => {
+  this.forEach((e) => {
     if (f(e)) {
       re.push(e);
     }
@@ -129,7 +129,7 @@ console.log(listOf16x9Width);
 ```js
 function filter(arr, f) {
   let re = [];
-  arr.forEach((e, i) => {
+  arr.forEach((e) => {
     if (f(e)) {
       re.push(e);
     }
