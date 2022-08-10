@@ -11,6 +11,18 @@ uploads: "/uploads/2022-06-19-fragmenty-coda"
 
 ---
 
+Заполнение массива числами (магия)
+
+```js
+Number.prototype[Symbol.iterator] = function* (){
+    for (let i = 0; i < this; i++) yield i + 1;
+}
+
+console.log([...5]) // [1, 2, 3, 4, 5]
+```
+
+---
+
 [Сайт обфускатор](http://www.jsfuck.com/)
 
 ```
