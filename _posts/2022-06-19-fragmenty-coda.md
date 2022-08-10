@@ -11,6 +11,26 @@ uploads: "/uploads/2022-06-19-fragmenty-coda"
 
 ---
 
+Реализация фильтра в JS
+
+```js
+Array.prototype.likeFilter = function (f) {
+  let re = [];
+  this.forEach((e, i) => {
+    if (f(e)) {
+      re.push(e);
+    }
+  });
+  return re;
+}
+
+const arr = [1, 2, 3, 4, 5, 6];
+
+arr.filter((value) => value % 2 == 0);
+```
+
+---
+
 Запуск PHP в Docker (Улучшенный вариант) (ТОЛЬКО ДЛЯ DEV)
 
 ```bash
