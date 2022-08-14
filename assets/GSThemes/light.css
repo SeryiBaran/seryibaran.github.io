@@ -94,3 +94,7 @@ main .gsc-loading-image {
 }
 
 .gsc-upvote-button {display: none;}
+
+html, body {
+	background-color: transparent;
+}
