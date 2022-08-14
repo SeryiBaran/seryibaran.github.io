@@ -1,4 +1,5 @@
 /*! MIT License
+/*! MIT License
  * Copyright (c) 2018 GitHub Inc.
  * https://github.com/primer/primitives/blob/main/LICENSE
  */
@@ -73,6 +74,8 @@ main {
   --color-success-fg: #1a7f37;
   --color-attention-fg: #9a6700;
   --color-danger-fg: #cf222e;
+  --color-danger-muted: rgb(255 129 130 / 40%);
+  --color-danger-subtle: #ffebe9;
   --color-primer-shadow-inset: inset 0 1px 0 rgb(208 215 222 / 20%);
   --color-primer-shadow-focus: 0 0 0 3px rgb(9 105 218 / 30%);
   --color-scale-gray-1: #eaeef2;
@@ -94,7 +97,3 @@ main .gsc-loading-image {
 }
 
 .gsc-upvote-button {display: none;}
-
-html, body {
-	background-color: transparent;
-}
