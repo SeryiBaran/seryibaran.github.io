@@ -161,3 +161,7 @@ html[data-mode="light"] #post-list .post-preview {
 html[sidebar-display] {
   overflow: hidden;
 }
+
+html body iframe, html body .giscus-frame {
+	color-scheme: auto;
+}
