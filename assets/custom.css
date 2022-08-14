@@ -165,3 +165,7 @@ html[sidebar-display] {
 html body iframe, html body .giscus-frame {
 	color-scheme: auto;
 }
+
+.asciicast {
+	margin: 0 !important;
+}
