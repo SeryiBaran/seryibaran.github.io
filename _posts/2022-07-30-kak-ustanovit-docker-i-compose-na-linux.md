@@ -47,7 +47,7 @@ sudo docker --version
 
 Результат должен быть примерно таким (у вас может отличаться):
 
-```
+```text
 Docker version 20.10.17, build 100c701
 ```
 
@@ -75,7 +75,7 @@ sudo docker-compose --version
 
 Результат должен быть примерно таким (у вас может отличаться):
 
-```
+```text
 Docker Compose version v2.5.1
 ```
 
@@ -98,12 +98,15 @@ sudo usermod -aG docker $USER
 Теперь нужно перезагрузить компьютер.
 
 > Если вы ранее выполняли какие-либо команды Docker кроме `sudo docker --version` , то выполните эти команды:
+
 ```bash
 sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
 ```
+
 ```bash
 sudo chmod g+rwx "$HOME/.docker" -R
 ```
+
 {: .prompt-danger }
 
 Попробуем запустить тестовый контейнер:
@@ -114,7 +117,7 @@ docker run --rm hello-world
 
 Результат должен быть примерно таким (у вас может отличаться):
 
-```
+```text
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 2db29710123e: Pull complete
@@ -146,6 +149,7 @@ For more examples and ideas, visit:
 Если все работает, значит Docker успешно установился!
 
 ## Дополнительные источники
+
 - [Официальная документация Docker](https://docs.docker.com/)
 - [Как и для чего использовать Docker - Hexlet](https://guides.hexlet.io/ru/docker/)
 - [Использование Docker для чайников - Losst](https://losst.ru/ispolzovanie-docker-dlya-chajnikov)
