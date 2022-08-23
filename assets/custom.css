@@ -162,10 +162,11 @@ html[sidebar-display] {
   overflow: hidden;
 }
 
-html body iframe, html body .giscus-frame {
-	color-scheme: auto;
+html body iframe,
+html body .giscus-frame {
+  color-scheme: auto;
 }
 
 .asciicast {
-	margin: 0 !important;
+  margin: 0 !important;
 }

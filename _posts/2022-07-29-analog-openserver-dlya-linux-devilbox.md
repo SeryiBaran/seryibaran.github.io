@@ -62,7 +62,7 @@ image:
 
 XAMPP требует root права, но при запуске панели с root невозможно перейти по ссылкам и открыть папки:
 
-```
+```text
 Executing Dolphin with sudo is not possible due to unfixable security vulnerabilities.
 ```
 

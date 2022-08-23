@@ -96,4 +96,6 @@ main .gsc-loading-image {
   background-image: url("https://github.githubassets.com/images/mona-loading-default.gif");
 }
 
-.gsc-upvote-button {display: none;}
+.gsc-upvote-button {
+  display: none;
+}

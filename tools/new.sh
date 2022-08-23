@@ -4,18 +4,16 @@
 
 echo -n "Введите название поста и нажмите [ENTER]: "
 read INPUT
-if [ -z "$INPUT" ]
-   then
-   echo "Название поста обязательно"
-   exit 1
+if [ -z "$INPUT" ]; then
+  echo "Название поста обязательно"
+  exit 1
 fi
 
 echo -n "Введите транслит название (для url) поста и нажмите [ENTER] (только англ. буквы, цифры и тире): "
 read TRANSLIT
-if [ -z "$TRANSLIT" ]
-   then
-   echo "Транслит название (для url) поста обязательно"
-   exit 1
+if [ -z "$TRANSLIT" ]; then
+  echo "Транслит название (для url) поста обязательно"
+  exit 1
 fi
 
 echo -n "Введите категории поста и нажмите [ENTER] (пример - category, category2, category3): "
@@ -36,7 +34,7 @@ UPLOADS=${FILENAME::-3}
 mkdir uploads/$UPLOADS
 
 touch "_posts/$FILENAME"
-cat > "_posts/$FILENAME" << EOL
+cat >"_posts/$FILENAME" <<EOL
 ---
 title: "$INPUT"
 author: Иванчай
