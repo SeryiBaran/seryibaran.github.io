@@ -11,6 +11,21 @@ uploads: "/uploads/2022-06-19-fragmenty-coda"
 
 ---
 
+Запуск Browser Sync в текущей директории в Docker
+
+`entrypoint.sh`:
+```bash
+npm i -g browser-sync
+browser-sync start --server --files "**/*" --no-open
+```
+
+Команда для запуска:
+```bash
+docker run -it --rm -v ${PWD}/:/app/ -w /app -p 3000:3000 node:alpine /bin/sh entrypoint.sh
+```
+
+---
+
 Заполнение массива числами (магия)
 
 ```js
