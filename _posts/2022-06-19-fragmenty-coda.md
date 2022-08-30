@@ -11,6 +11,30 @@ uploads: "/uploads/2022-06-19-fragmenty-coda"
 
 ---
 
+Вставка HTML файлов в HTML файлы при помощи JavaScript (на клиенте).
+
+JS:
+```js
+class SbInclude extends HTMLElement {
+  connectedCallback() {
+    fetch(this.dataset.src)
+      .then((res) => res.text())
+      .then((data) => {
+        this.outerHTML = data;
+      });
+  }
+}
+
+customElements.define("sb-include", SbInclude);
+```
+
+HTML:
+```html
+<sb-include data-src="/path/to/file.html" />
+```
+
+---
+
 Запуск Browser Sync в текущей директории в Docker
 
 `entrypoint.sh`:
