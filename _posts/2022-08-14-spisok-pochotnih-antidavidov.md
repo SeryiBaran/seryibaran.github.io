@@ -15,5 +15,4 @@ image:
 Список Почётных Антидавидов (могу добавить вас, пишите в Telegram):
 
 - [Shveps](https://t.me/VovaKababik)
-- [Liubomyr](https://t.me/keljnn)
 - [<></>](https://t.me/Orbulon)
