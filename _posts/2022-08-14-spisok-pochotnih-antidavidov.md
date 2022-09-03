@@ -16,3 +16,4 @@ image:
 
 - [Shveps](https://t.me/VovaKababik)
 - [<></>](https://t.me/Orbulon)
+- [Svyatoslav](https://t.me/svyat1912)
