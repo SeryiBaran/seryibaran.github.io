@@ -7,7 +7,8 @@ tags: [it, linux]
 uploads: "/uploads/2022-09-05-arch-install"
 ---
 
-> Установка GUI **не была протестирована**. Можете добавить подробные инструкции по установке и настройке GUI через [GitHub этого сайта](https://github.com/SeryiBaran/seryibaran.github.io) сами.
+> Установка GUI **не была протестирована**. Можете добавить подробные инструкции по установке и настройке GUI через [GitHub этого сайта](https://github.com/SeryiBaran/seryibaran.github.io) сами.  
+  А пока лучше [почитайте официальный гайд](https://wiki.archlinux.org/title/Installation_guide).
 {: .prompt-danger }
 
 ```
