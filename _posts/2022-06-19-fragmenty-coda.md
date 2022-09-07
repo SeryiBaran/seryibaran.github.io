@@ -11,6 +11,14 @@ uploads: "/uploads/2022-06-19-fragmenty-coda"
 
 ---
 
+Notify Send (linux)
+
+```bash
+notify-send -a "Уведомление от иванчая" -i "geany" "Тест" "Какое-то тестовое уведомление"
+```
+
+---
+
 Вставка HTML файлов в HTML файлы при помощи JavaScript (на клиенте).
 
 JS:
