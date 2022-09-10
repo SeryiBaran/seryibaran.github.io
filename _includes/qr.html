@@ -1,3 +1,4 @@
 {% capture url %}https://api.qrserver.com/v1/create-qr-code/?size={% if include.qsize %}{{ include.qsize | url_encode }}x{{ include.qsize | url_encode }}{% else %}256x256{% endif %}&bgcolor={% if include.qbg %}{{ include.qbg | url_encode }}{% else %}ffffff{% endif %}&color={% if include.qfg %}{{ include.qfg | url_encode }}{% else %}5868bf{% endif %}&data={{ include.content | url_encode }}{% endcapture %}
 
 ![QR код]({{ url }}){: .shadow width="256" height="256" :}
+_ВКЛЮЧИТЕ СВЕТЛУЮ ТЕМУ ДЛЯ СКАНИРОВАНИЯ!_
