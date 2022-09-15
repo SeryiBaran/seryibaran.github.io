@@ -9,4 +9,8 @@ order: 4
 
 ## Prechu
 
-[![Preview](/uploads/portfolio/prechu.webp){:.shadow}](https://seryibaran.github.io/maket-prechu/)
+[![Preview](/uploads/portfolio/maket-prechu.webp){:.shadow}](https://seryibaran.github.io/maket-prechu/)
+
+## ToDo на ваниле
+
+[![Preview](/uploads/portfolio/todo-vanilla.webp){:.shadow}](https://seryibaran.github.io/todo-vanilla/)
