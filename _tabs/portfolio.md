@@ -13,4 +13,4 @@ order: 4
 
 ## ToDo на ваниле
 
-[![Preview](/uploads/portfolio/todo-vanilla.webp){:.shadow}](https://seryibaran.github.io/todo-vanilla/)
+[![Preview](/uploads/portfolio/todo-vanilla.jpg){:.shadow}](https://seryibaran.github.io/todo-vanilla/)
