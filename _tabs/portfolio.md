@@ -14,14 +14,27 @@ uploads: "/uploads/portfolio"
 
 [GitHub](https://github.com/SeryiBaran/maket-prechu/)
 
-## ToDo на ваниле (SCSS) (разработка прекращена)
+## ToDo на ваниле
+
+### Разработка прекращена!
+
+### Технологии:
+
+- SCSS
 
 [![Preview]({{ page.uploads }}/todo-vanilla.jpg){:.shadow}](https://seryibaran.github.io/todo-vanilla/)
 
 [GitHub](https://github.com/SeryiBaran/todo-vanilla/)
 
-## ToDo на React (React.js, Effector, Styled Components)
+## ToDo на React
 
-[![Preview]({{ page.uploads }}/todo-react.jpg){:.shadow}](https://seryibaran.github.io/todo-react/)
+### Технологии:
+
+- Bootstrap
+- React.js
+- Effector
+- Styled Components
+
+[![Preview]({{ page.uploads }}/todo-react.webp){:.shadow}](https://seryibaran.github.io/todo-react/)
 
 [GitHub](https://github.com/SeryiBaran/todo-react/)
