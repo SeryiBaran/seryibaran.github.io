@@ -20,7 +20,7 @@ uploads: "/uploads/portfolio"
 
 ### Технологии:
 
-- SCSS
+- [SCSS](https://sass-lang.com)
 
 [![Preview]({{ page.uploads }}/todo-vanilla.jpg){:.shadow}](https://seryibaran.github.io/todo-vanilla/)
 
@@ -30,10 +30,11 @@ uploads: "/uploads/portfolio"
 
 ### Технологии:
 
-- Bootstrap
-- React.js
-- Effector
-- Styled Components
+- [TypeScript](https://www.typescriptlang.org/)
+- [Bootstrap](http://getbootstrap.com/)
+- [React.js](https://reactjs.org/)
+- [Effector](https://effector.dev/)
+- [Styled Components](https://styled-components.com/)
 
 [![Preview]({{ page.uploads }}/todo-react.webp){:.shadow}](https://seryibaran.github.io/todo-react/)
 
