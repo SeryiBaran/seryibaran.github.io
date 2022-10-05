@@ -6,6 +6,9 @@ order: 2
 image_placeholder: "data:image/svg+xml,%3Csvg width='256' height='256' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Layer_1'%3E%3Ctitle%3ELayer 1%3C/title%3E%3Crect stroke-width='0' id='svg_2' height='256' width='256' y='0' x='0' stroke='%23000' fill='%23919191'/%3E%3C/g%3E%3C/svg%3E"
 ---
 
+> Все **IT-чаты** находятся [тут](https://github.com/SeryiBaran/tg-it-chats).
+{: .prompt-info }
+
 | Картинка                                                                                                               | Описание и ссылка                                                                                    |
 | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | ![Youtube](/uploads/icons/youtube.webp){: width="60" height="60" style="border-radius: 100%;"}                         | [Мой YouTube](https://www.youtube.com/channel/UC7hhejQ7G0X9ZqskzwV7sNA)                              |
