@@ -3,7 +3,7 @@ layout: page
 title: Портфолио
 icon: fas fa-briefcase
 order: 4
-uploads: "{{ site.uploads }}/portfolio"
+uploads: "/uploads/portfolio"
 ---
 
 Чтобы перейти на сайт - кликни на скриншот.
