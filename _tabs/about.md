@@ -5,7 +5,7 @@ icon: fas fa-info-circle
 order: 3
 ---
 
-![](/uploads/images/pole-ivanchaya.jpg)
+![]({{ site.uploads }}/images/pole-ivanchaya.jpg)
 _Поле Иванчая_
 
 ## Привет дорогой друг!
