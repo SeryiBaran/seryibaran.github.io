@@ -3,7 +3,6 @@ layout: page
 title: Контакты
 icon: fas fa-address-book
 order: 2
-uploads: "{{ site.uploads }}/icons"
 image_placeholder: "data:image/svg+xml,%3Csvg width='256' height='256' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Layer_1'%3E%3Ctitle%3ELayer 1%3C/title%3E%3Crect stroke-width='0' id='svg_2' height='256' width='256' y='0' x='0' stroke='%23000' fill='%23919191'/%3E%3C/g%3E%3C/svg%3E"
 ---
 
@@ -24,7 +23,8 @@ image_placeholder: "data:image/svg+xml,%3Csvg width='256' height='256' xmlns='ht
 | ![ВК]({{ site.uploads }}/icons/vk.webp){: width="60" height="60" style="border-radius: 100%;"}                        | [Мой ВК](https://vk.com/ivanchai6)                                                                                              |
 | ![Сообщество ВК]({{ site.uploads }}/icons/vk.webp){: width="60" height="60" style="border-radius: 100%;"}             | [ВК Сообщество](https://vk.com/ivanchaismeh)                                                                                    |
 | ![Дискорд]({{ site.uploads }}/icons/discord.webp){: width="60" height="60" style="border-radius: 100%;"}              | [Мой Discord](https://discord.gg/3zvBzgaw2P)                                                                                    |
-| ![Донат]({{ site.uploads }}/icons/donationalerts.webp){: width="60" height="60"}                                      | [Дать рублик (**Временно не работает**)](https://www.donationalerts.com/r/seryibaran) <!-- Без style="border-radius: 100%;" --> |
+| ![Донат]({{ site.uploads }}/icons/donationalerts.webp){: width="60" height="60"}                                      | [~~Дать рублик~~ (**Не работает в России!!!**)](https://www.donationalerts.com/r/seryibaran) <!-- Без style="border-radius: 100%;" --> |
 | ![Яндекс Кью]({{ site.uploads }}/icons/yandexq.webp){: width="60" height="60" style="border-radius: 100%;"}           | [Мой Yandex Q](https://yandex.ru/q/profile/y6dm92f22mkqh04h3v4b1rv6er/)                                                         |
+| ![Яндекс Дзен]({{ site.uploads }}/icons/dzen.webp){: width="60" height="60" style="border-radius: 100%;"}             | [Мой Дзен](https://dzen.ru/seryibaran)                                                                                          |
 | ![Стак Овер Флов]({{ site.uploads }}/icons/stackoverflow.webp){: width="60" height="60" style="border-radius: 100%;"} | [Мой S.O.F.](https://ru.stackoverflow.com/users/418945/seryibananan)                                                            |
 | ![undefined]({{ page.image_placeholder }}){: width="60" height="60" style="border-radius: 100%;"}                     | [`undefined`](https://t.me/+XpDWVl2pW8xhZDAy/)                                                                                  |
