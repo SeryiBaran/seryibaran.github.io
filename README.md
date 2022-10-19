@@ -1,13 +1,11 @@
-# 📝 Ivan Muzyka's site (RUS)
+# 📝 Сайт Ивана Музыка
 
 [![Auto build](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages-deploy.yml)
 [![Auto deploy](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/pages/pages-build-deployment)
 
-The entire description of the site is not here, but on the corresponding page of the site. Read it better there :)
+## 🚀 Как запустить
 
-## 🚀 How to run
-
-### 📦 Install dependencies
+### 📦 Установите зависимости
 
 ```console
 gem install bundler jekyll
@@ -17,13 +15,15 @@ gem install bundler jekyll
 bundle install
 ```
 
-### 🛠 Run dev server
+### 🛠 Запустите сервер
 
 ```console
 bundle exec jekyll s --livereload
 ```
 
-## 📝 Create new post (ONLY FROM THE ROOT DIR)
+### 🎉 Готово!
+
+## 📝 Создание нового поста (**только из корня проекта!**)
 
 ```console
 ./tools/new.sh
