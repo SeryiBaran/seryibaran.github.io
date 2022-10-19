@@ -16,8 +16,6 @@ uploads: "/uploads/portfolio"
 
 ## ToDo на ваниле
 
-### Разработка прекращена!
-
 [![Preview]({{ page.uploads }}/todo-vanilla.jpg){:.shadow}](https://seryibaran.github.io/todo-vanilla/)
 
 [GitHub](https://github.com/SeryiBaran/todo-vanilla/)
