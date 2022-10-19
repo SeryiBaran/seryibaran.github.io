@@ -16,8 +16,6 @@ _Поле Иванчая_
 
 Все контакты ты найдешь на странице [Контакты](/contacts).
 
-Советую заглянуть на мой GitHub. Там есть список моих навыков в программировании.
-
 ## По работе
 
 Готов принимать легкие заказы (что-то доделать, поправить). Цена - **сколько хотите**.
@@ -25,6 +23,19 @@ _Поле Иванчая_
 Моё портфолио находится на странице [Портфолио](/portfolio).
 
 Для связи пишите в личные сообщения в Telegram.
+
+## Технологии, языки и инструменты
+
+- [HTML](https://wikipedia.org/wiki/HTML)
+- [CSS](https://wikipedia.org/wiki/CSS)
+- [Sass/SCSS](https://sass-lang.com)
+- [JavaScript](https://wikipedia.org/wiki/JavaScript)
+- [TypeScript](https://www.typescriptlang.org)
+- [React.js](https://reactjs.org)
+- [Effector](https://effector.dev)
+- [Git](https://git-scm.com)
+
+Также планирую изучить Redux.js.
 
 ## Мои юзернеймы
 
