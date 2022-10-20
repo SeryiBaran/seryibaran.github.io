@@ -53,31 +53,7 @@ Docker version 20.10.17, build 100c701
 
 ## Установка Docker Compose
 
-Для того чтобы установить Docker Compose нужно ввести эту команду:
-
-```bash
-curl -fsSL "https://github.com/docker/compose/releases/download/latest/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-```
-
-Далее нужно дать Docker Compose права на выполнение:
-
-```bash
-sudo chmod +x /usr/local/bin/docker-compose
-```
-
-Готово!
-
-Теперь удостоверимся, что Docker Compose установился, выведя его версию:
-
-```bash
-sudo docker-compose --version
-```
-
-Результат должен быть примерно таким (у вас может отличаться):
-
-```text
-Docker Compose version v2.5.1
-```
+В новых версиях Docker Compose **уже внедрен в Docker**. Только команда другая - вместо `docker-compose` теперь нужно писать `docker compose`.
 
 ## Настройка запуска Docker без sudo
 
