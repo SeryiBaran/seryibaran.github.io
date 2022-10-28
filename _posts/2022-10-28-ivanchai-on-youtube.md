@@ -8,4 +8,4 @@ tags: [брэнд]
 
 В YouTube появились юзернэймы.
 
-Имя SeryiBaran было недоступно, зато мне удалось урвать псевдоним @ivanchai =))
+Имя SeryiBaran было недоступно, зато мне удалось урвать псевдоним [@ivanchai](https://youtube.com/@ivanchai) =))
