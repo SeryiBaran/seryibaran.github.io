@@ -11,7 +11,7 @@ image_placeholder: "data:image/svg+xml,%3Csvg width='256' height='256' xmlns='ht
 
 |                                                                                                         |                                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| ![]({{ site.uploads }}/icons/youtube.webp){: width="60" height="60" style="border-radius: 100%;"}       | [YouTube](https://www.youtube.com/channel/UC7hhejQ7G0X9ZqskzwV7sNA)                                                                    |
+| ![]({{ site.uploads }}/icons/youtube.webp){: width="60" height="60" style="border-radius: 100%;"}       | [YouTube](https://youtube.com/@ivanchai)                                                                    |
 | ![]({{ site.uploads }}/icons/github.webp){: width="60" height="60" style="border-radius: 100%;"}        | [GitHub](https://github.com/SeryiBaran)                                                                                                |
 | ![]({{ site.uploads }}/icons/gitlab.webp){: width="60" height="60"}                                     | [GitLab](https://gitlab.com/SeryiBaran) <!-- Без style="border-radius: 100%;" -->                                                      |
 | ![]({{ site.uploads }}/icons/habr.webp){: width="60" height="60" style="border-radius: 100%;"}          | [Habr](https://habr.com/ru/users/SeryiBaran6)                                                                                          |
