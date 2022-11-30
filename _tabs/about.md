@@ -8,34 +8,11 @@ order: 3
 ![]({{ site.uploads }}/images/pole-ivanchaya.jpg)
 _Поле Иванчая_
 
-Я Иван Музыка (ударение на **ы**), мне **14** лет, и я **Frontend разработчик**.
-
-Как по мне, возраст - **не главное**. Главное - **хорошо делать своё дело**.
+Я Иван Музыка (ударение на **ы**), мне **14** лет.
 
 На этом сайте я публикую свои новости, статьи, памятки, ссылки на видео с YouTube канала и прочее.
 
 Все контакты ты найдешь на странице [Контакты](/contacts).
-
-## По работе
-
-Готов принимать легкие заказы (что-то доделать, поправить). Цена - **сколько хотите**.
-
-Моё портфолио находится на странице [Портфолио](/portfolio).
-
-Для связи пишите в личные сообщения в Telegram.
-
-## Технологии, языки и инструменты
-
-- [HTML](https://wikipedia.org/wiki/HTML)
-- [CSS](https://wikipedia.org/wiki/CSS)
-- [Sass/SCSS](https://sass-lang.com)
-- [JavaScript](https://wikipedia.org/wiki/JavaScript)
-- [TypeScript](https://www.typescriptlang.org)
-- [React.js](https://reactjs.org)
-- [Effector](https://effector.dev)
-- [Git](https://git-scm.com)
-
-Также планирую изучить Redux.js.
 
 ## Мои юзернеймы
 
