@@ -11,6 +11,13 @@ uploads: "/uploads/2022-06-19-fragmenty-coda"
 
 ---
 
+Разрешение доступа к 80 порту программе (в данном случае Node.js)
+```bash
+sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\``
+```
+
+---
+
 Переключение языка в консоли (tty) в Linux:
 ```bash
 sudo dpkg-reconfigure keyboard-configuration
