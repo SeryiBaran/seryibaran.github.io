@@ -12,6 +12,9 @@ image:
    alt: Превью
 ---
 
+# Deprecated
+Прочитайте лучше [это](https://habr.com/ru/post/460221).
+
 ## Что делать если у меня проблема/вопрос?
 
 - **Прочитайте** эти правила;
@@ -21,7 +24,7 @@ image:
 - **Поизучайте** информацию на тематических сайтах (Например [MDN Docs](https://developer.mozilla.org/ru/), [Дока](https://doka.guide/), [learn.javascript.ru](https://learn.javascript.ru/) и т.д.);
 - **Поищите** решение в интернете. Может быть, проблему уже кто-то решил до вас;
 - Если решение не было найдено:
-   1. Найдите **нужный чат**. [Каталог IT чатов в Telegram](https://github.com/SeryiBaran/tg-it-chats);
+   1. Найдите **нужный чат**;
    2. Воспользуйтесь **поиском** по чату. Может быть, кто-то уже задавал такой вопрос и нашел решение;
    3. Если поиск ничего не дал, задайте вопрос (**прочитав правила ниже**).
 - Если и в чате решение не было найдено, можно задать вопрос (**прочитав правила ниже**) на [StackOverflow](https://stackoverflow.com/) (или [StackOverflow на русском](https://ru.stackoverflow.com/)), [Хабр Q&A](https://qna.habr.com/), [CyberForum](https://www.cyberforum.ru/) и т.д.
@@ -78,6 +81,11 @@ _Как не надо/как надо_
 ```
 {: .code-wrap }
 
+```text
+привет у меня проблема помогите
+```
+{: .code-wrap }
+
 **Как надо**:
 
 ```text
@@ -105,4 +113,5 @@ _Как не надо/как надо_
 - [nometa.xyz](https://nometa.xyz/);
 - [neprivet.com](https://neprivet.com/);
 - [Статья с сайта citforum.ru](http://citforum.ru/howto/smart-questions-ru.shtml);
-- [Список чатов, каналов и ботов в Telegram](https://github.com/SeryiBaran/tg-it-chats).
+- [Копия it_chats из Telegram](https://github.com/SeryiBaran/tg-it-chats).
+- [Список чатов, каналов и ботов в Telegram](https://github.com/goq/telegram-list).

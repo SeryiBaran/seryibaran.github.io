@@ -11,6 +11,20 @@ uploads: "/uploads/2022-06-19-fragmenty-coda"
 
 ---
 
+dialog (linux)
+```bash
+dialog --title " Справка " --msgbox "$(cat ~/help/terminator.txt)" 20 60
+```
+
+---
+
+Whiptail (linux)
+```bash
+whiptail --title " Справка " --msgbox "$(cat ~/help/terminator.txt)" 20 60 --clear
+```
+
+---
+
 Разрешение доступа к 80 порту программе (в данном случае Node.js)
 ```bash
 sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\``
@@ -127,7 +141,7 @@ Array.prototype.likeFilter = function (f) {
 
 const arr = [1, 2, 3, 4, 5, 6];
 
-arr.filter((value) => value % 2 == 0);
+arr.likeFilter((value) => value % 2 == 0);
 ```
 
 ---
@@ -143,7 +157,7 @@ docker run --rm -p 3000:8080 -v "$PWD/app":/var/www/html trafex/php-nginx
 Запуск функций в массиве
 
 ```js
-const RUN = ([...fns]) => fns.forEach(fn => fn());
+const RUN = (fns) => fns.forEach(fn => fn());
 
 RUN([() => console.log(123), () => console.log(333)]) // Выполнятся функции в массиве
 ```
