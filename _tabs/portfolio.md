@@ -20,8 +20,8 @@ uploads: "/uploads/portfolio"
 
 [GitHub](https://github.com/SeryiBaran/todo-vanilla/)
 
-## ToDo на React
+## ToDo на Vue
 
-[![Preview]({{ page.uploads }}/todo-react.webp){:.shadow}](https://seryibaran.github.io/todo-react/)
+[![Preview]({{ page.uploads }}/todo-vue.webp){:.shadow}](https://seryibaran.github.io/todo-vue/)
 
-[GitHub](https://github.com/SeryiBaran/todo-react/)
+[GitHub](https://github.com/SeryiBaran/todo-vue/)
