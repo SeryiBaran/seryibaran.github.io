@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.code-wrap * {
+  white-space: pre-wrap;
+}
+
+.external-resourse-container > *,
+.embed-container > * {
+  display: block;
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  max-height: 500px;
+}
+
+.highlighter-rouge pre,
+code.highlighter-rouge:not(.spoiler) {
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.spoiler {
+  position: relative;
+  cursor: pointer;
+  color: var(--text-color);
+  font-family: inherit;
+}
+.spoiler-content {
+  transition: opacity, 0.25s;
+  user-select: none;
+  opacity: 0;
+  font-size: 1rem;
+}
+.spoiler-active .spoiler-content {
+  user-select: auto;
+  opacity: 1;
+}
+
+.lh-1,
+.lh-1 * {
+  line-height: 1;
+}
+
+#notification .toast-body {
+  font-family: inherit;
+}
+
+.mfp-container,
+.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out !important;
+}
+
+.mfp-ready .mfp-container {
+  opacity: 1;
+}
+.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-removing .mfp-container,
+.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+img.mfp-img {
+  padding: 0;
+  margin: 40px 0;
+}
+
+blockquote:not([class*="prompt"]) {
+  font-style: italic;
+}
+
+/* html:not([data-mode="light"]) blockquote:not([class*="prompt"]) { */
+  /* background-color: #2a2a2a; */
+  /* color: var(--text-color); */
+/* } */
+/*  */
+/* html[data-mode="light"] blockquote:not([class*="prompt"]) { */
+  /* background-color: #ebebeb; */
+  /* border-left: 5px solid #afafaf; */
+  /* color: var(--text-color); */
+/* } */
+
+.giphy-embed {
+  max-height: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+#post-list .post-preview {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  overflow: hidden;
+}
+
+@media (min-width: 767.98px) {
+  #post-list .post-preview {
+    transition: all 0.3s ease-in-out;
+  }
+  #post-list .post-preview:hover {
+    transform: translate3d(0, -3px, 0);
+    box-shadow: 0 10px 15px -4px rgb(0 0 0 / 15%);
+  }
+}
+
+html[data-mode="light"] #post-list .post-preview {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+html[sidebar-display] {
+  overflow: hidden;
+}
+
+html body iframe,
+html body .giscus-frame {
+  color-scheme: auto;
+}
+
+.asciicast {
+  margin: 0 !important;
+}
