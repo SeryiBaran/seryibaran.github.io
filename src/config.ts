@@ -4,6 +4,7 @@
 export const SITE_TITLE = "Сайт SeryiBaran";
 export const SITE_DESCRIPTION =
   "Сайт Иванчая. Блог и портфолио";
+export const TWITTER_HANDLE = "";
 export const MY_NAME = "SeryiBaran";
 
 // setup in astro.config.mjs
