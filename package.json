@@ -26,6 +26,7 @@
     "zod": "^3.20.2"
   },
   "devDependencies": {
+    "@vite-pwa/astro": "^0.0.3",
     "prettier-plugin-astro": "^0.7.2",
     "typescript": "^4.9.4"
   }
