@@ -7,8 +7,6 @@
 // Import the global.css file here so that it is included on
 import "../styles/global.css";
 
-import { pwaInfo } from 'virtual:pwa-info';
-import ReloadPrompt from '../components/ReloadPrompt.astro';
 import GoogleFont from "./GoogleFont.astro";
 import FontAwesome from "./FontAwesome.astro";
 import ThemeScript from "./ThemeScript.astro";
@@ -42,7 +40,6 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
     <GoogleFont />
     <ThemeScript />
     <FontAwesome />
-    { pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }
   </head>
 
   <body
@@ -72,6 +69,5 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
         grid-area: main;
       }
     </style>
-    <ReloadPrompt />
   </body>
 </html>
