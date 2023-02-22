@@ -32,10 +32,10 @@ import Footer from "../components/Footer.astro";
   </head>
 
   <body
-    class="min-h-screen max-w-3xl mx-auto px-6 sm:px-8"
+    class="min-h-screen max-w-3xl mx-auto p-6 sm:px-8 flex flex-col gap-8"
   >
     <Header />
-    <main id="main">
+    <main class="flex-grow" id="main">
       <slot name="main" />
     </main>
     <Footer />

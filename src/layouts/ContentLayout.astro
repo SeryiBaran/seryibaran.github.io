@@ -43,10 +43,10 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
   </head>
 
   <body
-    class="min-h-screen max-w-3xl mx-auto px-6 sm:px-8"
+    class="min-h-screen max-w-3xl mx-auto p-6 sm:px-8 flex flex-col gap-8"
   >
     <Header />
-    <main id="main">
+    <main class="flex-grow" id="main">
       <section class="blog-post prose max-w-none prose-sleek">
         <h1 class="m-0 mb-[0.25em]">{title}</h1>
         <time class="block mb-[2em] text-text-muted">{formattedDate}</time>
