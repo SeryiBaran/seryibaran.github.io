@@ -1,0 +1,39 @@
+---
+external: false
+title: "Как сделать обводку текста/выделения в GIMP"
+date: 2022-08-01
+ogImagePath: "/uploads/kak-sdelat-obvodku-teksta-videleniya-v-gimp/preview.jpg"
+---
+
+В этой статье я покажу, как сделать обводку текста/выделения в GIMP. Без лишних слов, погнали!
+
+Для начала нужно сохранить написанный текст/выделение в контур.
+
+В случае с текстом:
+
+![Сохранение текста в контур](/uploads/kak-sdelat-obvodku-teksta-videleniya-v-gimp/text-to-contour.jpg)
+
+В случае с выделением:
+
+![Сохранение текста в контур](/uploads/kak-sdelat-obvodku-teksta-videleniya-v-gimp/selection-to-contour.jpg)
+
+Затем выбираем инструмент и настраиваем цвет, толщину и т.д.
+
+> Обратите внимание. Центр линии обводки будет на краю выделения/контура. Расчитывайте толщину инструмента учитывая это. Например сли вы хотите обводку 5px, то толщина инструмента должна быть 10px (в 2 раза больше).
+{: .prompt-warning }
+
+Создаем новый слой (под текстом/выделением), на котором будет обводиться контур, и выбираем его. В списке слоев должно получиться похожее на это:
+
+![Новый слой](/uploads/kak-sdelat-obvodku-teksta-videleniya-v-gimp/new-layer.jpg)
+
+Затем переходим на вкладку **Контуры**, щелкаем <kbd>ПКМ</kbd> по контуру и нажимаем **Обвести контур**:
+
+![Скриншот контекстного меню](/uploads/kak-sdelat-obvodku-teksta-videleniya-v-gimp/contour-ctx-menu.jpg)
+
+Теперь выбираем тут **Обвести рисующим инструментом** и нажимаем **Обвести**:
+
+![Скриншот окна настроек обводки](/uploads/kak-sdelat-obvodku-teksta-videleniya-v-gimp/settings-window.jpg)
+
+Готово!
+
+![Готово](/uploads/kak-sdelat-obvodku-teksta-videleniya-v-gimp/done.jpg)
