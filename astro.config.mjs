@@ -37,57 +37,64 @@ export default defineConfig({
       config: { applyBaseStyles: false },
     }),
     AstroPWA({
-      injectRegister: "script",
-      // registerType: "autoUpdate",
+      registerType: "autoUpdate",
+      devOptions: {
+        enabled: true,
+      },
+      workbox: {
+        globPatterns: [
+          "**/*.{html,css,js,jpg,webp,png,woff2,woff,ttf,otf,gif}",
+        ],
+      },
       manifest: {
         name: "Сайт SeryiBaran",
         icons: [
           // From https://realfavicongenerator.net/
-          {
-            src: "/favicons/android-chrome-192x192.png",
-            sizes: "192x192",
-            type: "image/png",
-          },
-          {
-            src: "/favicons/android-chrome-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
-          },
+          // {
+          //   src: "/favicons/android-chrome-192x192.png",
+          //   sizes: "192x192",
+          //   type: "image/png",
+          // },
+          // {
+          //   src: "/favicons/android-chrome-512x512.png",
+          //   sizes: "512x512",
+          //   type: "image/png",
+          // },
 
           // From https://maskable.app/editor
           {
             src: "/favicons/maskable/maskable_icon_x48.png",
-            sizes: "512x512",
+            sizes: "48x48",
             type: "image/png",
             purpose: "any maskable",
           },
           {
             src: "/favicons/maskable/maskable_icon_x72.png",
-            sizes: "512x512",
+            sizes: "72x72",
             type: "image/png",
             purpose: "any maskable",
           },
           {
             src: "/favicons/maskable/maskable_icon_x96.png",
-            sizes: "512x512",
+            sizes: "96x96",
             type: "image/png",
             purpose: "any maskable",
           },
           {
             src: "/favicons/maskable/maskable_icon_x128.png",
-            sizes: "512x512",
+            sizes: "128x128",
             type: "image/png",
             purpose: "any maskable",
           },
           {
             src: "/favicons/maskable/maskable_icon_x192.png",
-            sizes: "512x512",
+            sizes: "192x192",
             type: "image/png",
             purpose: "any maskable",
           },
           {
             src: "/favicons/maskable/maskable_icon_x384.png",
-            sizes: "512x512",
+            sizes: "384x384",
             type: "image/png",
             purpose: "any maskable",
           },
