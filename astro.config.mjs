@@ -2,7 +2,6 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
-import AstroPWA from "@vite-pwa/astro";
 
 /* 
   We are doing some URL mumbo jumbo here to tell Astro what the URL of your website will be.
@@ -35,81 +34,6 @@ export default defineConfig({
     sitemap(),
     tailwind({
       config: { applyBaseStyles: false },
-    }),
-    AstroPWA({
-      mode: "development",
-      base: "/",
-      scope: "/",
-      registerType: "autoUpdate",
-      workbox: {
-        globPatterns: ["**/*.{css,js,html,svg,png,jpg,webp,ico,txt}"],
-      },
-      devOptions: {
-        enabled: true,
-      },
-      manifest: {
-        name: "Сайт SeryiBaran",
-        icons: [
-          // From https://realfavicongenerator.net/
-          // {
-          //   src: "/favicons/android-chrome-192x192.png",
-          //   sizes: "192x192",
-          //   type: "image/png",
-          // },
-          // {
-          //   src: "/favicons/android-chrome-512x512.png",
-          //   sizes: "512x512",
-          //   type: "image/png",
-          // },
-
-          // From https://maskable.app/editor
-          {
-            src: "/favicons/maskable/maskable_icon_x48.png",
-            sizes: "48x48",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-          {
-            src: "/favicons/maskable/maskable_icon_x72.png",
-            sizes: "72x72",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-          {
-            src: "/favicons/maskable/maskable_icon_x96.png",
-            sizes: "96x96",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-          {
-            src: "/favicons/maskable/maskable_icon_x128.png",
-            sizes: "128x128",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-          {
-            src: "/favicons/maskable/maskable_icon_x192.png",
-            sizes: "192x192",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-          {
-            src: "/favicons/maskable/maskable_icon_x384.png",
-            sizes: "384x384",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-          {
-            src: "/favicons/maskable/maskable_icon_x512.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-        ],
-        theme_color: "#ffffff",
-        background_color: "#ffffff",
-        display: "standalone",
-      },
     }),
   ],
 });
