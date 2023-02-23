@@ -1,10 +1,13 @@
 ---
 import { Prism } from "@astrojs/prism";
 
-const { language, content } = Astro.props;
+const { language: languageProp, content } = Astro.props;
+
+let languageWithoutWrap = languageProp.replace(/-wrap$/g, "");
+let isWrap = languageProp !== languageWithoutWrap;
 ---
 
-<Prism lang={language} code={content} />
+<Prism lang={languageWithoutWrap} code={content} class={isWrap ? "wrap" : ""} />
 
 <style is:global>
   /**
@@ -326,5 +329,9 @@ const { language, content } = Astro.props;
 
   .command-line .command-line-prompt > span:before {
     color: #8da1b9da;
+  }
+
+  pre.wrap > code {
+    white-space: normal;
   }
 </style>
