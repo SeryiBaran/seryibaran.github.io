@@ -49,7 +49,7 @@ ogImagePath: "/uploads/pravila-dlya-it-chatov/preview.jpg"
 - **Никогда не используйте** сервисы по типу bit.ly.
 - Вместо длинной ссылки [сделайте текст-описание ссылкой](https://yandex.ru/search/?text=telegram+как+сделать+текст+ссылку+(гиперссылку)) при помощи **встроенных в мессенджер функций**. Иллюстрация:
 
-![](/uploads/pravila-dlya-it-chatov/good-links.webp){: .shadow :}
+![](/uploads/pravila-dlya-it-chatov/good-links.webp)
 _Как не надо/как надо_
 
 - **Подробно** опишите, что нужно сделать;
