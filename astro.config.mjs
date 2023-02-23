@@ -106,7 +106,7 @@ export default defineConfig({
         ],
         theme_color: "#ffffff",
         background_color: "#ffffff",
-        start_url: "/index.html".
+        start_url: "/index.html",
         display: "standalone",
       },
     }),
