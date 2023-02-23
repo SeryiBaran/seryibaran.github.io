@@ -13,6 +13,7 @@ import GoogleFont from "./GoogleFont.astro";
 import FontAwesome from "./FontAwesome.astro";
 import ThemeScript from "./ThemeScript.astro";
 import Favicon from "./Favicon.astro";
+import PageLayout from "./PageLayout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
@@ -30,46 +31,11 @@ const formattedDate = new Date(date).toLocaleDateString("ru-ru", {
 });
 ---
 
-<!DOCTYPE html>
-<html class="theme-sleek" lang="en">
-  <head>
-    <!-- Global Metadata -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="generator" content="Blogster" />
-    <Favicon />
-    <slot name="meta" />
-    <GoogleFont />
-    <ThemeScript />
-    <FontAwesome />
-  </head>
-
-  <body
-    class="min-h-screen max-w-3xl mx-auto p-6 sm:px-8 flex flex-col gap-8"
-  >
-    <Header />
-    <main class="flex-grow" id="main">
-      <section class="blog-post prose max-w-none prose-sleek">
-        <h1 class="m-0 mb-[0.25em]">{title}</h1>
-        <time class="block mb-[2em] text-text-muted">{formattedDate}</time>
-        {!!image && <img src={image} alt="Превью">}
-        <slot name="content" />
-      </section>
-    </main>
-    <Footer />
-    <style>
-      body {
-        display: grid;
-        grid-template-areas:
-          "header"
-          "main"
-          "footer";
-        grid-template-rows: 5rem minmax(0, 1fr) 5rem;
-        grid-template-columns: minmax(0, 1fr);
-      }
-      main {
-        grid-area: main;
-      }
-    </style>
-  </body>
-</html>
+<PageLayout>
+  <section slot="main" class="blog-post prose max-w-none prose-sleek">
+    <h1 class="m-0 mb-[0.25em]">{title}</h1>
+    <time class="block mb-[2em] text-text-muted">{formattedDate}</time>
+    {!!image && <img src={image} alt="Превью">}
+    <slot name="content" />
+  </section>
+</PageLayout>
