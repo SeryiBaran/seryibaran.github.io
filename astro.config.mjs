@@ -48,6 +48,7 @@ export default defineConfig({
       },
       manifest: {
         name: "Сайт SeryiBaran",
+        start_url: "",
         icons: [
           // From https://realfavicongenerator.net/
           // {
