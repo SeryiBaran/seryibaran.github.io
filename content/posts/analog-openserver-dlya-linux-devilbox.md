@@ -41,7 +41,9 @@ ogImagePath: "/uploads/analog-openserver-dlya-linux-devilbox/preview.jpg"
 
 ### 1. Список основных сборок (не стеков)
 
-| Название                                  | Платформы                     | Компоненты [^1]                                                                                                                                                                                                                                                  |
+> Перечислены только основные компоненты.
+
+| Название                                  | Платформы                     | Компоненты                                                                                                                                                                                                                                                       |
 | ----------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Devilbox](http://devilbox.org/)          | Windows, Linux, MacOS, Docker | Apache, Nginx, MySQL, PerconaDB, MariaDB, Memcached, MongoDB, MySQL, PostgreSQL, Redis, PHP, phpMyAdmin, Python Flask, ELK: Kibana, ELK: Logstash, ELK: Elastic Search, HAProxy (SSL разгрузчик для Varnish), Varnish, Solr, RabbitMQ, Ngrok, MailHog, Blackfire |
 | [OpenServer](https://ospanel.io/)         | Windows                       | Apache, Nginx, MySQL, MariaDB, Memcached, MongoDB, MySQL, PostgreSQL, Redis, PHP, phpMyAdmin, PHPMemcachedAdmin, PHPPgAdmin, PHPRedisAdmin                                                                                                                       |
@@ -57,7 +59,3 @@ XAMPP требует root права, но при запуске панели с
 ```text
 Executing Dolphin with sudo is not possible due to unfixable security vulnerabilities.
 ```
-
-## Сноски
-
-[^1]: Перечислены только основные компоненты.
