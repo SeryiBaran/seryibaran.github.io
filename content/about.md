@@ -11,6 +11,4 @@ ogImagePath: "/images/pole-ivanchaya.jpg"
 
 Все контакты ты найдешь на странице [Контакты](/contacts).
 
-## Служебная информация
-
 Инструкция по запуску, состояние сайта и прочее [находится в репозитории сайта](https://github.com/SeryiBaran/seryibaran.github.io/).
