@@ -2,7 +2,7 @@
 import PageMeta from "../components/PageMeta.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Intro from "../components/Intro.astro";
-import AboutTheTheme from "../components/AboutTheTheme.astro";
+import PostsList from "../components/PostsList.astro";
 import { SITE_TITLE } from "../config";
 ---
 
@@ -10,5 +10,7 @@ import { SITE_TITLE } from "../config";
   <PageMeta title={`${SITE_TITLE}`} slot="meta" />
   <Fragment slot="main">
     <Intro />
+    <h2 class="text-4xl">Посты</h2>
+    <PostsList />
   </Fragment>
 </BaseLayout>

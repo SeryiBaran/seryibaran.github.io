@@ -3,7 +3,6 @@ import { readAll } from "../lib/markdoc/read";
 import { project } from "../lib/markdoc/frontmatter.schema";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageMeta from "../components/PageMeta.astro";
-import { SITE_TITLE } from "../config";
 
 const projects = await readAll({
   directory: "portfolio",
@@ -20,7 +19,7 @@ const sortedProjects = projects
 ---
 
 <BaseLayout>
-  <PageMeta title={`Проекты | ${SITE_TITLE}`} slot="meta" />
+  <PageMeta title="Проекты" slot="meta" />
   <section slot="main">
     <ul>
       {

@@ -2,8 +2,9 @@
 external: false
 title: "О сайте"
 date: 2021-10-13
-ogImagePath: "/images/pole-ivanchaya.jpg"
 ---
+
+![Поле Иван-Чая](/images/pole-ivanchaya.jpg)
 
 Я Иван Музы́ка.
 
