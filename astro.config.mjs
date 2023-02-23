@@ -37,6 +37,7 @@ export default defineConfig({
       config: { applyBaseStyles: false },
     }),
     AstroPWA({
+      registerType: 'autoUpdate',
       devOptions: {
         enabled: !isBuild,
       },
