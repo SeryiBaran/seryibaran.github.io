@@ -217,3 +217,7 @@ table {
   display: block;
   white-space: nowrap;
 }
+
+.prose strong a {
+  font-weight: inherit;
+}

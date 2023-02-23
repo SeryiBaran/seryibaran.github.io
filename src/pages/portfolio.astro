@@ -27,9 +27,9 @@ const sortedProjects = projects
         sortedProjects.map((project) => {
           const formattedDate = new Date(
             project.frontmatter.date
-          ).toLocaleDateString("en-us", {
+          ).toLocaleDateString("ru-ru", {
             year: "numeric",
-            month: "short",
+            month: "long",
             day: "numeric",
           });
           return (

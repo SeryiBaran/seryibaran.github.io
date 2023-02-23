@@ -23,9 +23,9 @@ export interface Props {
 }
 
 const { title, date, image } = Astro.props;
-const formattedDate = new Date(date).toLocaleDateString("en-us", {
+const formattedDate = new Date(date).toLocaleDateString("ru-ru", {
   year: "numeric",
-  month: "short",
+  month: "long",
   day: "numeric",
 });
 ---
