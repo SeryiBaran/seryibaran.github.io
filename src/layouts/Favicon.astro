@@ -1,6 +1,4 @@
 ---
-import { pwaInfo } from 'virtual:pwa-info';
-console.log(pwaInfo)
 /* 
   Not a layout. Just a component used in layouts.
 */
@@ -22,6 +20,3 @@ console.log(pwaInfo)
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-
-<script src="../lib/pwa.ts"></script>
-{ pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }

@@ -1,4 +1,5 @@
 ---
+import { pwaInfo } from 'virtual:pwa-info';
 import PageMeta from "../components/PageMeta.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 import Intro from "../components/Intro.astro";
@@ -7,6 +8,8 @@ import { SITE_TITLE } from "../config";
 ---
 
 <PageLayout>
+  <script src="../lib/pwa.ts"></script>
+  { pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }
   <PageMeta title={`${SITE_TITLE}`} slot="meta" />
   <Fragment slot="main">
     <Intro />
