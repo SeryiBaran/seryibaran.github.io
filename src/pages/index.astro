@@ -1,14 +1,14 @@
 ---
 import PageMeta from "../components/PageMeta.astro";
-import PageLayout from "../layouts/PageLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import Intro from "../components/Intro.astro";
 import AboutTheTheme from "../components/AboutTheTheme.astro";
 import { SITE_TITLE } from "../config";
 ---
 
-<PageLayout>
+<BaseLayout>
   <PageMeta title={`${SITE_TITLE}`} slot="meta" />
   <Fragment slot="main">
     <Intro />
   </Fragment>
-</PageLayout>
+</BaseLayout>

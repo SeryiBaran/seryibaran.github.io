@@ -1,13 +1,13 @@
 ---
-import PageLayout from "../layouts/PageLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import PageMeta from "../components/PageMeta.astro";
 import Posts from "../components/Posts.astro";
 import { SITE_TITLE } from "../config";
 ---
 
-<PageLayout>
+<BaseLayout>
   <PageMeta title={`Посты | ${SITE_TITLE}`} slot="meta" />
   <section slot="main">
     <Posts />
   </section>
-</PageLayout>
+</BaseLayout>
