@@ -40,6 +40,9 @@ export default defineConfig({
       devOptions: {
         enabled: !isBuild,
       },
+      workbox: {
+        navigationFallback: undefined,
+      },
       manifest: {
         name: "Сайт SeryiBaran",
         icons: [
@@ -107,7 +110,7 @@ export default defineConfig({
         theme_color: "#ffffff",
         background_color: "#ffffff",
         start_url: "/index.html",
-        display: "standalone",
+        display: "fullscreen",
       },
     }),
   ],
