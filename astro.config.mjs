@@ -37,14 +37,8 @@ export default defineConfig({
       config: { applyBaseStyles: false },
     }),
     AstroPWA({
-      registerType: "autoUpdate",
       devOptions: {
         enabled: true,
-      },
-      workbox: {
-        globPatterns: [
-          "**/*.{html,css,js,jpg,webp,png,woff2,woff,ttf,otf,gif}",
-        ],
       },
       manifest: {
         name: "Сайт SeryiBaran",
