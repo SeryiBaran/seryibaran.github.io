@@ -37,6 +37,13 @@ export default defineConfig({
       config: { applyBaseStyles: false },
     }),
     AstroPWA({
+      mode: "development",
+      base: "/",
+      scope: "/",
+      registerType: "autoUpdate",
+      workbox: {
+        globPatterns: ["**/*.{css,js,html,svg,png,jpg,webp,ico,txt}"],
+      },
       devOptions: {
         enabled: true,
       },
