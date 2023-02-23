@@ -52,7 +52,7 @@ ogImagePath: "/uploads/analog-openserver-dlya-linux-devilbox/preview.jpg"
 | [AMPPS](https://www.ampps.com/)           | Windows, MacOS                | Apache, MySQL, PHP, Python, MongoDB, Sendmail                                                                                                                                                                                                                    |
 | [Bitnami](https://bitnami.com/)           | Windows, Linux, MacOS         | [Каталог (Docker)](https://bitnami.com/stacks/containers), [Каталог (Windows, Linux, MacOS)](https://bitnami.com/stacks/installer)                                                                                                                               |
 
-### 2. Заметка про XAMPP
+### 2. Заметка про XAMPP (на Linux)
 
 XAMPP требует root права, но при запуске панели с root невозможно перейти по ссылкам и открыть папки:
 
