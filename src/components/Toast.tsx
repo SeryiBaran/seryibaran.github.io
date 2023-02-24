@@ -40,7 +40,7 @@ const SvgPath = ({ type }: Props) => {
 
 export default function Toast({ children, type = "info" }: Props) {
   return (
-    <div className={clsx("my-2 rounded-md", bgColors[type])}>
+    <div className={clsx("my-2 rounded-md text-sm", bgColors[type])}>
       <div className="flex items-center p-4">
         <div>
           <svg
