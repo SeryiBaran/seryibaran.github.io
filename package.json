@@ -10,7 +10,6 @@
 		"astro": "astro",
 		"format:check": "prettier --plugin-search-dir=. --check .",
 		"format": "prettier --plugin-search-dir=. --write .",
-		"cz": "cz",
 		"lint": "eslint ."
 	},
 	"dependencies": {
