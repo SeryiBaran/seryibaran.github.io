@@ -1,6 +1,6 @@
 # 📝 Сайт Ивана Музыка
 
-На основе [Blogster](https://github.com/flexdinesh/blogster)
+На основе [AstroPaper](https://github.com/satnaing/astro-paper)
 
 ## 🚀 Как запустить
 
