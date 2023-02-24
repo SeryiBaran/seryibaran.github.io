@@ -7,7 +7,7 @@ import Datetime from "@components/Datetime";
 import type { CollectionEntry } from "astro:content";
 
 export interface Props {
-  post: CollectionEntry<"blog">;
+  post: CollectionEntry<"posts">;
 }
 
 const { post } = Astro.props;
@@ -16,8 +16,7 @@ const { title, author, description, ogImage, pubDatetime, tags } = post.data;
 
 const { Content } = await post.render();
 
-const ogUrl = new URL(ogImage ? ogImage : "og.png", Astro.url.origin)
-  .href;
+const ogUrl = new URL(ogImage ? ogImage : "og.png", Astro.url.origin).href;
 ---
 
 <Layout title={title} author={author} description={description} ogImage={ogUrl}>
@@ -35,7 +34,7 @@ const ogUrl = new URL(ogImage ? ogImage : "og.png", Astro.url.origin)
     </button>
   </div>
   <main id="main-content">
-    { ogImage && <img src={ogUrl} alt="Превью" class="my-4"> }
+    {ogImage && <img src={ogUrl} alt="Превью" class="my-4" />}
     <h1 class="post-title">{title}</h1>
     <Datetime datetime={pubDatetime} size="lg" className="my-2" />
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">

@@ -12,6 +12,7 @@ tags: ["программирование"]
 ---
 
 dialog (linux)
+
 ```bash
 dialog --title " Справка " --msgbox "$(cat ~/help/terminator.txt)" 20 60
 ```
@@ -19,6 +20,7 @@ dialog --title " Справка " --msgbox "$(cat ~/help/terminator.txt)" 20 60
 ---
 
 Whiptail (linux)
+
 ```bash
 whiptail --title " Справка " --msgbox "$(cat ~/help/terminator.txt)" 20 60 --clear
 ```
@@ -26,6 +28,7 @@ whiptail --title " Справка " --msgbox "$(cat ~/help/terminator.txt)" 20 6
 ---
 
 Разрешение доступа к 80 порту программе (в данном случае Node.js)
+
 ```bash
 sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\``
 ```
@@ -33,6 +36,7 @@ sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\``
 ---
 
 Переключение языка в консоли (tty) в Linux:
+
 ```bash
 sudo dpkg-reconfigure keyboard-configuration
 ```
@@ -50,12 +54,13 @@ notify-send -a "Уведомление от иванчая" -i "geany" "Тест
 Вставка HTML файлов в HTML файлы при помощи JavaScript (на клиенте).
 
 JS:
+
 ```js
 class SbInclude extends HTMLElement {
   connectedCallback() {
     fetch(this.dataset.src)
-      .then((res) => res.text())
-      .then((data) => {
+      .then(res => res.text())
+      .then(data => {
         this.outerHTML = data;
       });
   }
@@ -65,6 +70,7 @@ customElements.define("sb-include", SbInclude);
 ```
 
 HTML:
+
 ```html
 <sb-include data-src="/path/to/file.html" />
 ```
@@ -74,12 +80,14 @@ HTML:
 Запуск Browser Sync в текущей директории в Docker
 
 `entrypoint.sh`:
+
 ```bash
 npm i -g browser-sync
 browser-sync start --server --files "**/*" --no-open
 ```
 
 Команда для запуска:
+
 ```bash
 docker run -it --rm -v ${PWD}/:/app/ -w /app -p 3000:3000 node:alpine /bin/sh entrypoint.sh
 ```
@@ -89,11 +97,11 @@ docker run -it --rm -v ${PWD}/:/app/ -w /app -p 3000:3000 node:alpine /bin/sh en
 Заполнение массива числами (магия)
 
 ```js
-Number.prototype[Symbol.iterator] = function* (){
-    for (let i = 0; i < this; i++) yield i + 1;
-}
+Number.prototype[Symbol.iterator] = function* () {
+  for (let i = 0; i < this; i++) yield i + 1;
+};
 
-console.log([...5]) // [1, 2, 3, 4, 5]
+console.log([...5]); // [1, 2, 3, 4, 5]
 ```
 
 ---
@@ -131,17 +139,17 @@ console.log(
 ```js
 Array.prototype.likeFilter = function (f) {
   let re = [];
-  this.forEach((e) => {
+  this.forEach(e => {
     if (f(e)) {
       re.push(e);
     }
   });
   return re;
-}
+};
 
 const arr = [1, 2, 3, 4, 5, 6];
 
-arr.likeFilter((value) => value % 2 == 0);
+arr.likeFilter(value => value % 2 == 0);
 ```
 
 ---
@@ -157,9 +165,9 @@ docker run --rm -p 3000:8080 -v "$PWD/app":/var/www/html trafex/php-nginx
 Запуск функций в массиве
 
 ```js
-const RUN = (fns) => fns.forEach(fn => fn());
+const RUN = fns => fns.forEach(fn => fn());
 
-RUN([() => console.log(123), () => console.log(333)]) // Выполнятся функции в массиве
+RUN([() => console.log(123), () => console.log(333)]); // Выполнятся функции в массиве
 ```
 
 ---
@@ -175,9 +183,15 @@ docker run -it --rm -p "3000:80" -v "$PWD/app":/usr/src/myapp -w /usr/src/myapp 
 Получение данных с API и их отображение
 
 ```js
-fetch("https://jsonplaceholder.typicode.com/todos").then(r => r.json()).then(data => {
-    document.querySelector("body").innerHTML = data.map(e => `<p ${e.completed ? "style=\"color: green;\"" : ""}>${e.title}</p>`).join("")
-})
+fetch("https://jsonplaceholder.typicode.com/todos")
+  .then(r => r.json())
+  .then(data => {
+    document.querySelector("body").innerHTML = data
+      .map(
+        e => `<p ${e.completed ? 'style="color: green;"' : ""}>${e.title}</p>`
+      )
+      .join("");
+  });
 ```
 
 ---
@@ -185,7 +199,7 @@ fetch("https://jsonplaceholder.typicode.com/todos").then(r => r.json()).then(dat
 Счетчик положительных чисел в массиве
 
 ```js
-const countOfPositive = (arr) => arr.reduce((p, c) => (c > 0 ? p + 1 : p), 0);
+const countOfPositive = arr => arr.reduce((p, c) => (c > 0 ? p + 1 : p), 0);
 ```
 
 ---
@@ -193,7 +207,7 @@ const countOfPositive = (arr) => arr.reduce((p, c) => (c > 0 ? p + 1 : p), 0);
 Валидация PIN
 
 ```js
-const validatePIN = (pin) => /^(\d{4}|\d{6})$/.test(pin);
+const validatePIN = pin => /^(\d{4}|\d{6})$/.test(pin);
 ```
 
 ---
@@ -203,8 +217,8 @@ const validatePIN = (pin) => /^(\d{4}|\d{6})$/.test(pin);
 ```js
 // Промисы
 fetch("https://disease.sh/v3/covid-19/all")
-  .then((res) => res.json())
-  .then((data) => console.log(data));
+  .then(res => res.json())
+  .then(data => console.log(data));
 
 // ИЛИ
 
@@ -222,7 +236,7 @@ console.log(
 ```js
 const listOf16x9Height = [1080, 720, 360];
 
-const listOf16x9Width = listOf16x9Height.map((height) => (height / 9) * 16);
+const listOf16x9Width = listOf16x9Height.map(height => (height / 9) * 16);
 
 console.log(listOf16x9Width);
 ```
@@ -234,7 +248,7 @@ console.log(listOf16x9Width);
 ```js
 const arr = [1, 2, 3, 4, 5, 6];
 
-const rodd = (array) => array.filter((value) => value % 2 == 0);
+const rodd = array => array.filter(value => value % 2 == 0);
 
 rodd(arr);
 ```
@@ -272,7 +286,7 @@ let a = {
   1: "test",
 };
 
-a.forEach((e) => console.log(e));
+a.forEach(e => console.log(e));
 
 console.log(a.forEach);
 ```
@@ -296,7 +310,7 @@ sudo apt install gnome-keyring
 <https://tproger.ru/articles/html5-notifications-is-easy/>
 
 ```js
-Notification.requestPermission((permission) => {
+Notification.requestPermission(permission => {
   if (permission === "granted") {
     let notification = new Notification("Уведомление с сайта", {
       body: "Описание",
@@ -340,11 +354,9 @@ const mainLoop = createLoop(() => {
 VKontakte удаление уведомлений (не всех, а только тех, что показаны в меню уведомлений)
 
 ```js
-document
-  .querySelectorAll(".top_notify_cont .ui_actions_menu")
-  .forEach((elem) => {
-    elem.childNodes[0].click();
-  });
+document.querySelectorAll(".top_notify_cont .ui_actions_menu").forEach(elem => {
+  elem.childNodes[0].click();
+});
 ```
 
 ---
@@ -423,7 +435,7 @@ for (let i = 0; i < col; i++) {
 }
 
 if (!error) {
-  nums.forEach((elem) => {
+  nums.forEach(elem => {
     result.push(`${elem}`);
   });
   alert(result.join(" "));
@@ -527,10 +539,10 @@ import { useState } from "react";
 export const useCounter = (initialValue = 0, step = 1) => {
   const [counter, setCounter] = useState(initialValue);
   const increment = () => {
-    setCounter((counter) => counter + step);
+    setCounter(counter => counter + step);
   };
   const decrement = () => {
-    setCounter((counter) => counter - step);
+    setCounter(counter => counter - step);
   };
   return { counter, increment, decrement };
 };
@@ -565,7 +577,7 @@ export const useCounter = (
 ---
 
 ```js
-document.querySelectorAll("*").forEach((e) => (e.style.display = "inline"));
+document.querySelectorAll("*").forEach(e => (e.style.display = "inline"));
 ```
 
 ---
@@ -573,7 +585,7 @@ document.querySelectorAll("*").forEach((e) => (e.style.display = "inline"));
 ```js
 try {
   let ___laga;
-  document.querySelectorAll("body *:not(script):not(style)").forEach((elem) => {
+  document.querySelectorAll("body *:not(script):not(style)").forEach(elem => {
     ___laga = document.createElement("img");
     ___laga.src =
       "https://yt3.ggpht.com/ytc/AKedOLR7CLQ4RqzhFA74xKCdpzDmemcsZSrKvDsq9Mt_=s88-c-k-c0x00ffffff-no-rj";
@@ -661,9 +673,9 @@ let data = [
   ["a", "b", "c", "d", "i"],
 ];
 console.log(
-  data.map((row) => {
+  data.map(row => {
     return `<tr>${row
-      .map((col) => {
+      .map(col => {
         return `<td>${col}</td>`;
       })
       .join("")}</tr>`;
@@ -787,7 +799,7 @@ let ipAndPort = `${proxyIp}:${proxyPort}`; // Получится 111.111.151.111
 ---
 
 ```js
-document.querySelectorAll("*").forEach((e) => (e.style.display = "inline"));
+document.querySelectorAll("*").forEach(e => (e.style.display = "inline"));
 ```
 
 ---
@@ -797,7 +809,7 @@ document
   .querySelectorAll(
     "span, p, h1, h2, h3, h4, h5, h6, i, b, yt-formatted-string, a"
   )
-  .forEach((element) => {
+  .forEach(element => {
     element.innerText = element.innerText.toUpperCase();
     element.setAttribute("style", "color: white;");
   });
@@ -837,7 +849,7 @@ rewiewsBorderBox.forEach(function callback(currentValue) {
 ```js
 let numDone = 0;
 let num = prompt("ДАЙ ЧИСЛО ЖМОТ! Я сложу!");
-num.split("").forEach((elem) => {
+num.split("").forEach(elem => {
   numDone += parseInt(elem, 10);
 });
 console.log(numDone);
@@ -865,7 +877,7 @@ prompt(
     console.log("Введено:", a);
     let b = 0;
 
-    a.forEach((num) => {
+    a.forEach(num => {
       b += parseFloat(num);
     });
     console.log("Среднее арифметическое данных чисел:", b / a.length);

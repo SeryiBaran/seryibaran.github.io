@@ -37,10 +37,7 @@ const tagPosts = getPostsByTag(posts, tag);
 
 <Layout title={`Тег: ${tag} | ${SITE.title}`}>
   <Header activeNav="tags" />
-  <Main
-    pageTitle={`Тег: ${tag}`}
-    pageDesc={`Все посты с тегом "${tag}".`}
-  >
+  <Main pageTitle={`Тег: ${tag}`} pageDesc={`Все посты с тегом "${tag}".`}>
     <ul>
       {
         tagPosts.map(({ slug, data }) => (

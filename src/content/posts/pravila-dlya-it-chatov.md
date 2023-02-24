@@ -3,9 +3,11 @@ title: "Правила для IT чатов"
 description: "Что делать если у меня проблема/вопрос?"
 pubDatetime: 2022-06-26T12:00:00
 ogImage: "/uploads/pravila-dlya-it-chatov/preview.jpg"
+tags: ["общение"]
 ---
 
 # Deprecated
+
 Прочитайте лучше [это](https://habr.com/ru/post/460221).
 
 ## Что делать если у меня проблема/вопрос?
@@ -16,9 +18,9 @@ ogImage: "/uploads/pravila-dlya-it-chatov/preview.jpg"
 - **Поизучайте** информацию на тематических сайтах (Например [MDN Docs](https://developer.mozilla.org/ru/), [Дока](https://doka.guide/), [learn.javascript.ru](https://learn.javascript.ru/) и т.д.);
 - **Поищите** решение в интернете. Может быть, проблему уже кто-то решил до вас;
 - Если решение не было найдено:
-   1. Найдите **нужный чат**;
-   2. Воспользуйтесь **поиском** по чату. Может быть, кто-то уже задавал такой вопрос и нашел решение;
-   3. Если поиск ничего не дал, задайте вопрос (**прочитав правила ниже**).
+  1.  Найдите **нужный чат**;
+  2.  Воспользуйтесь **поиском** по чату. Может быть, кто-то уже задавал такой вопрос и нашел решение;
+  3.  Если поиск ничего не дал, задайте вопрос (**прочитав правила ниже**).
 - Если и в чате решение не было найдено, можно задать вопрос (**прочитав правила ниже**) на [StackOverflow](https://stackoverflow.com/) (или [StackOverflow на русском](https://ru.stackoverflow.com/)), [Хабр Q&A](https://qna.habr.com/), [CyberForum](https://www.cyberforum.ru/) и т.д.
 
 ## Правила
@@ -47,7 +49,7 @@ ogImage: "/uploads/pravila-dlya-it-chatov/preview.jpg"
 - В случае с языками, для которых есть песочницы (например HTML/CSS/JS/TS) - **загружайте код в них**. ([Codepen](https://codepen.io/), [официальная песочница TypeScript](https://www.typescriptlang.org/play/), [CodeSandBox](https://codesandbox.io/) и т.д.);
 - Присылайте большой текст/код/логи **через [Pastebin](https://pastebin.com/)/[Termbin](https://termbin.com/)**;
 - **Никогда не используйте** сервисы по типу bit.ly.
-- Вместо длинной ссылки [сделайте текст-описание ссылкой](https://yandex.ru/search/?text=telegram+как+сделать+текст+ссылку+(гиперссылку)) при помощи **встроенных в мессенджер функций**. Иллюстрация:
+- Вместо длинной ссылки [сделайте текст-описание ссылкой](<https://yandex.ru/search/?text=telegram+как+сделать+текст+ссылку+(гиперссылку)>) при помощи **встроенных в мессенджер функций**. Иллюстрация:
 
 ![](/uploads/pravila-dlya-it-chatov/good-links.webp)
 _Как не надо/как надо_
