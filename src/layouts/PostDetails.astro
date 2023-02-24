@@ -3,6 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Tag from "@components/Tag.astro";
+import Comments from "@components/Comments.astro";
 import Datetime from "@components/Datetime";
 import type { CollectionEntry } from "astro:content";
 
@@ -45,6 +46,8 @@ const ogUrl = new URL(ogImage ? ogImage : `satoriFallbackImages/${post.slug}.png
     <ul class="tags-container">
       {tags.map(tag => <Tag name={tag} />)}
     </ul>
+
+    <Comments />
   </main>
   <Footer />
 </Layout>
