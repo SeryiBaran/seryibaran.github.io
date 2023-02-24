@@ -1,4 +1,5 @@
 import satori, { SatoriOptions } from "satori";
+import { Resvg } from "@resvg/resvg-js";
 import { SITE } from "@config";
 
 const fetchFonts = async () => {
@@ -133,7 +134,17 @@ const options: SatoriOptions = {
   ],
 };
 
-const generateOgImage = async (mytext = SITE.title) =>
-  await satori(ogImage(mytext), options);
+async function generateOgImage(mytext = SITE.title) {
+  const svg = await satori(ogImage(mytext), options);
+
+  const resvg = new Resvg(svg, {
+    background: "#fff",
+  });
+  const pngData = resvg.render();
+
+  const pngBuffer = pngData.asPng();
+
+  return pngBuffer;
+}
 
 export default generateOgImage;
