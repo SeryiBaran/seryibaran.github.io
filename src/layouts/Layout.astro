@@ -116,22 +116,5 @@ const fallbackImageURL = new URL(SITE.ogImage, Astro.url.origin).href;
   <body>
     <slot />
     <script is:inline src="/code-copy-button.js"></script>
-    <style is:global>
-      #menu-items:not(.display-none) {
-        display: flex;
-        flex-direction: column;
-      }
-      .astro-code {
-        @apply relative;
-      }
-      .astro-code button {
-        background: rgba(0, 0, 0, 0.15);
-        color: var(--tw-prose-invert-body);
-        @apply select-none cursor-pointer disabled:cursor-not-allowed top-0 right-0 absolute py-2 px-4 rounded-bl;
-      }
-      .astro-code button[disabled] {
-        color: rgb(22 163 74);
-      }
-    </style>
   </body>
 </html>
