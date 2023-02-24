@@ -4,6 +4,20 @@ interface Props {
   type: "info" | "success" | "error" | "warning";
 }
 
+const bgColors = {
+  info: "bg-blue-500/20",
+  success: "bg-green-500/20",
+  error: "bg-red-500/20",
+  warning: "bg-orange-500/20",
+};
+
+const textColors = {
+  info: "text-blue-500",
+  success: "text-green-500",
+  error: "text-red-500",
+  warning: "text-orange-500",
+};
+
 const SvgPath = ({ type }: Props) => {
   if (type === "info") {
     return (
@@ -26,26 +40,11 @@ const SvgPath = ({ type }: Props) => {
 
 export default function Toast({ children, type = "info" }: Props) {
   return (
-    <div
-      className={clsx(
-        "my-2 rounded-md",
-        type === "info" && "bg-blue-500/20",
-        type === "success" && "bg-green-500/20",
-        type === "error" && "bg-red-500/20",
-        type === "warning" && "bg-orange-500/20"
-      )}
-      role="alert"
-    >
+    <div className={clsx("my-2 rounded-md", bgColors[type])}>
       <div className="flex items-center p-4">
-        <div className="leading-4">
+        <div>
           <svg
-            className={clsx(
-              "fill-current",
-              type === "info" && "text-blue-500",
-              type === "success" && "text-green-500",
-              type === "error" && "text-red-500",
-              type === "warning" && "text-orange-500"
-            )}
+            className={clsx("fill-current", textColors[type])}
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -56,9 +55,7 @@ export default function Toast({ children, type = "info" }: Props) {
           </svg>
         </div>
         <div className="ml-3">
-          <p className="m-0 text-sm text-gray-700 dark:text-gray-400">
-            {children}
-          </p>
+          <p className="m-0 text-sm">{children}</p>
         </div>
       </div>
     </div>
