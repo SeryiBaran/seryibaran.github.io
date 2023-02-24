@@ -461,7 +461,7 @@ if (!isNaN(num)) {
 ---
 
 [Песочница](https://jsbin.com/muyazupuko/edit?html,css,output)
-![Скриншот]({{ page.uploads }}/shadows-without-bugs.webp){: .shadow :}
+![Скриншот](/uploads/fragmenty-coda/shadows-without-bugs.webp)
 
 ```html
 <div class="wrap">
