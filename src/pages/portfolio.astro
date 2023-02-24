@@ -3,6 +3,7 @@ import { readAll } from "../lib/markdoc/read";
 import { project } from "../lib/markdoc/frontmatter.schema";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageMeta from "../components/PageMeta.astro";
+import { Icon } from 'astro-icon';
 
 const projects = await readAll({
   directory: "portfolio",
@@ -41,7 +42,7 @@ const sortedProjects = projects
                 >
                   <span>{project.frontmatter.title}</span>
                   <span class="ml-1 mr-1 text-[16px] pb-2">
-                    <span class="iconify inline" data-icon="mdi:external-link"></span>
+                    <Icon pack="mdi" name="external-link" class="w-4 inline" />
                   </span>
                 </a>
               </div>

@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@vite-pwa/astro": "^0.0.3",
+    "astro-icon": "^0.8.0",
     "prettier-plugin-astro": "^0.7.2",
     "typescript": "^4.9.4"
   }
