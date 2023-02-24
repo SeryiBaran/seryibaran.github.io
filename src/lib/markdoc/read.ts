@@ -15,7 +15,9 @@ async function parseAndTransform({ content }: { content: string }) {
   const errors = Markdoc.validate(ast, config);
   if (errors.length) {
     console.error(errors);
-    throw new Error("Markdoc validation error");
+    errors.forEach((error) => {
+      throw new Error("Markdoc validation error: " + error.error.message);
+    });
   }
   const transformedContent = Markdoc.transform(ast, config);
 
