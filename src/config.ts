@@ -4,7 +4,7 @@ export const SITE = {
   website: "https://seryibaran.github.io/",
   author: "SeryiBaran",
   desc: "Сайт SeryiBaran. Блог и контакты.",
-  title: "SeryiBaran",
+  title: "Сайт SeryiBaran",
   ogImage: "og.png",
   lightAndDarkMode: true,
   postPerPage: 10,

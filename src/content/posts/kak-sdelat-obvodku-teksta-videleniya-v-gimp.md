@@ -2,7 +2,7 @@
 title: "Как сделать обводку текста/выделения в GIMP"
 description: "В этой статье я покажу, как сделать обводку текста/выделения в GIMP."
 pubDatetime: 2022-08-01T12:00:00
-ogImage: "/uploads/kak-sdelat-obvodku-teksta-videleniya-v-gimp/preview.jpg"
+# ogImage: "/uploads/kak-sdelat-obvodku-teksta-videleniya-v-gimp/preview.jpg"
 tags: ["gimp"]
 ---
 
