@@ -1,0 +1,96 @@
+/* ibm-plex-mono-regular - cyrillic_cyrillic-ext_latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff")
+      format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-mono-italic - cyrillic_cyrillic-ext_latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-italic.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-italic.woff")
+      format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-mono-500 - cyrillic_cyrillic-ext_latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-500.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-500.woff")
+      format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-mono-500italic - cyrillic_cyrillic-ext_latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 500;
+  src: url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-500italic.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-500italic.woff")
+      format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-mono-600 - cyrillic_cyrillic-ext_latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-600.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-600.woff")
+      format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-mono-600italic - cyrillic_cyrillic-ext_latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 600;
+  src: url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-600italic.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-600italic.woff")
+      format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-mono-700 - cyrillic_cyrillic-ext_latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-700.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-700.woff")
+      format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-mono-700italic - cyrillic_cyrillic-ext_latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 700;
+  src: url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-700italic.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./ibm-plex-mono-v15-cyrillic_cyrillic-ext_latin_latin-ext-700italic.woff")
+      format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
