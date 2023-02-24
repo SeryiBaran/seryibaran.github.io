@@ -117,6 +117,10 @@ const fallbackImageURL = new URL(SITE.ogImage, Astro.url.origin).href;
     <slot />
     <script is:inline src="/code-copy-button.js"></script>
     <style is:global>
+      #menu-items:not(.display-none) {
+        display: flex;
+        flex-direction: column;
+      }
       .astro-code {
         @apply relative;
       }
