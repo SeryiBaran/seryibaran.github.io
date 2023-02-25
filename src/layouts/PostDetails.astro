@@ -13,7 +13,7 @@ export interface Props {
 
 const { post } = Astro.props;
 
-const { title, author, description, ogImage, pubDatetime, tags } = post.data;
+const { title, author, description, ogImage, pubDatetime, tags, comments } = post.data;
 
 const { Content } = await post.render();
 
@@ -47,7 +47,7 @@ const ogUrl = new URL(ogImage ? ogImage : `satoriFallbackImages/${post.slug}.png
       {tags.map(tag => <Tag name={tag} />)}
     </ul>
 
-    <Comments />
+    {comments && <Comments />}
   </main>
   <Footer />
 </Layout>
