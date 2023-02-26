@@ -148,3 +148,10 @@ table {
   display: block !important; /* https://github.com/RafidMuhymin/astro-imagetools/issues/49 */
   box-sizing: content-box;
 }
+
+.emoji {
+  display: inline-block;
+  height: 1em;
+  border: none;
+  margin: 0 0.2em !important;
+}

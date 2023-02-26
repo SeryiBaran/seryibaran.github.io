@@ -111,10 +111,12 @@ const fallbackImageURL = new URL(SITE.ogImage, Astro.url.origin).href;
       )
     }
 
+    <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
     <script is:inline src="/toggle-theme.js"></script>
   </head>
   <body>
     <slot />
     <script is:inline src="/code-copy-button.js"></script>
+    <script is:inline src="/twemoji.js"></script>
   </body>
 </html>
