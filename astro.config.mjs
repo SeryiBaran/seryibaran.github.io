@@ -4,6 +4,8 @@ import react from "@astrojs/react";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import remarkTextr from "remark-textr";
+import remarkEmoji from "remark-emoji";
+import remarkFootnotes from 'remark-footnotes'
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import { astroImageTools } from "astro-imagetools";
@@ -53,6 +55,13 @@ export default defineConfig({
         },
       ],
       [remarkTextr, { plugins: [typo] }],
+      [
+        remarkEmoji,
+        {
+          emoticon: true,
+        },
+      ],
+      remarkFootnotes,
     ],
     shikiConfig: {
       theme: "one-dark-pro",
