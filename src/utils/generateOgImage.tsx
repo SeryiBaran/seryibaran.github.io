@@ -5,13 +5,13 @@ import { SITE } from "@config";
 const fetchFonts = async () => {
   // Regular Font
   const fontFileRegular = await fetch(
-    "https://www.1001fonts.com/download/font/ibm-plex-mono.regular.ttf"
+    "https://www.1001fonts.com/download/font/roboto.regular.ttf"
   );
   const fontRegular: ArrayBuffer = await fontFileRegular.arrayBuffer();
 
   // Bold Font
   const fontFileBold = await fetch(
-    "https://www.1001fonts.com/download/font/ibm-plex-mono.bold.ttf"
+    "https://www.1001fonts.com/download/font/roboto.bold.ttf"
   );
   const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
 
@@ -91,7 +91,7 @@ const ogImage = (text: string) => {
             }}
           >
             <span>
-              by{" "}
+              Автор - {" "}
               <span
                 style={{
                   color: "transparent",
@@ -120,15 +120,15 @@ const options: SatoriOptions = {
   embedFont: true,
   fonts: [
     {
-      name: "IBM Plex Mono",
+      name: "Roboto",
       data: fontRegular,
       weight: 400,
       style: "normal",
     },
     {
-      name: "IBM Plex Mono",
+      name: "Roboto",
       data: fontBold,
-      weight: 600,
+      weight: 700,
       style: "normal",
     },
   ],
