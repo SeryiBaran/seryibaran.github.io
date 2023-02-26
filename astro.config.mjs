@@ -9,6 +9,7 @@ import remarkFootnotes from 'remark-footnotes'
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import { astroImageTools } from "astro-imagetools";
+import critters from "astro-critters";
 
 function typo(input) {
   return input
@@ -44,6 +45,7 @@ export default defineConfig({
     sitemap(),
     mdx(),
     astroImageTools,
+    critters(),
   ],
   markdown: {
     remarkPlugins: [
