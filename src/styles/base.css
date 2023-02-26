@@ -143,3 +143,8 @@ table {
 .astro-code button[disabled] {
   color: rgb(22 163 74);
 }
+
+.astro-imagetools-picture, .astro-imagetools-img {
+  display: block !important; /* https://github.com/RafidMuhymin/astro-imagetools/issues/49 */
+  box-sizing: content-box;
+}

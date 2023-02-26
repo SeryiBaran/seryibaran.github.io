@@ -5,6 +5,7 @@ import Footer from "@components/Footer.astro";
 import Tag from "@components/Tag.astro";
 import Comments from "@components/Comments.astro";
 import Datetime from "@components/Datetime";
+import Img from "@components/Img.astro";
 import type { CollectionEntry } from "astro:content";
 
 export interface Props {
@@ -40,7 +41,7 @@ const ogUrl = new URL(ogImage ? ogImage : `satoriFallbackImages/${post.slug}.png
     <h1 class="post-title">{title}</h1>
     <Datetime datetime={pubDatetime} size="lg" className="my-2" />
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
-      <Content />
+      <Content components={{ img: Img }} />
     </article>
 
     <ul class="tags-container">
