@@ -3,7 +3,7 @@ import type { SocialObjects } from "./types";
 export const SITE = {
   website: "https://seryibaran.github.io/",
   author: "SeryiBaran",
-  desc: "Сайт SeryiBaran. Блог и контакты.",
+  desc: "Сайт SeryiBaran. Я Иван Музы́ка. На этом сайте я публикую свои новости, статьи, памятки и прочее.",
   title: "Сайт SeryiBaran",
   ogImage: "og.png",
   lightAndDarkMode: true,
