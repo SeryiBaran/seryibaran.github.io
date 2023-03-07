@@ -21,3 +21,4 @@ pnpm-debug.log*
 
 # ignore .astro directory
 .astro
+.obsidian
