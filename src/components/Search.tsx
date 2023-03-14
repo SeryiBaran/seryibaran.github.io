@@ -8,6 +8,7 @@ export type SearchItem = {
   title: string;
   description: string;
   data: BlogFrontmatter;
+  slug: string;
 };
 
 interface Props {
