@@ -19,12 +19,52 @@ import Alert from "@components/Alert";
 
 ## Если вам нужно ESM
 
-- напишите `"type": "module"` в `package.json`
-- напишите `"module": "ES2020"` в `tsconfig.json`
-- используйте `ts-node-esm` вместо `ts-node`
+Отредактируйте `package.json`:
+
+```diff
+{
+  // ...
++  "type": "module",
+  // ...
+}
+```
+
+Отредактируйте `tsconfig.json`:
+
+```diff
+{
+  // ...
+-  "module": "commonjs",
++  "module": "ES2020",
++  "ts-node": {
++    "esm": true
++  }
+  // ...
+}
+```
 
 ## Если вам нужно CommonJS
 
-- удалите `"type": "module"` из `package.json`
-- напишите `"module": "commonjs"` в `tsconfig.json` (в `compilerOptions`)
-- используйте `ts-node` вместо `ts-node-esm`
+Отредактируйте `package.json`:
+
+```diff
+{
+  // ...
+-  "type": "module",
+  // ...
+}
+```
+
+Отредактируйте `tsconfig.json`:
+
+```diff
+{
+  // ...
+-  "module": "ES2020",
++  "module": "commonjs",
+-  "ts-node": {
+-    "esm": true
+-  }
+  // ...
+}
+```
