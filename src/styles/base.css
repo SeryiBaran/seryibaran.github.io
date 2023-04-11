@@ -10,15 +10,15 @@
     --color-accent: 0, 108, 172;
     --color-card: 230, 230, 230;
     --color-card-muted: 205, 205, 205;
-    --color-border: 236, 233, 233;
+    --color-border: 0, 108, 172;
   }
   html[data-theme="dark"] {
     --color-fill: 33, 39, 55;
     --color-text-base: 234, 237, 243;
-    --color-accent: 255, 107, 1;
+    --color-accent: 26, 170, 255;
     --color-card: 52, 63, 96;
     --color-card-muted: 138, 51, 2;
-    --color-border: 171, 75, 8;
+    --color-border: 26, 170, 255;
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
@@ -31,7 +31,10 @@
   body {
     @apply flex min-h-screen flex-col bg-skin-fill text-skin-base 
     selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
   }
   section,
   footer {
@@ -127,7 +130,7 @@
 }
 
 table {
-  @apply max-sm:whitespace-nowrap max-sm:block max-sm:overflow-x-auto;
+  @apply max-sm:block max-sm:overflow-x-auto max-sm:whitespace-nowrap;
 }
 #menu-items:not(.display-none) {
   display: flex;
@@ -139,13 +142,14 @@ table {
 .astro-code button {
   background: rgba(0, 0, 0, 0.15);
   color: var(--tw-prose-invert-body);
-  @apply select-none cursor-pointer disabled:cursor-not-allowed top-0 right-0 absolute py-2 px-4 rounded-bl;
+  @apply absolute top-0 right-0 cursor-pointer select-none rounded-bl py-2 px-4 disabled:cursor-not-allowed;
 }
 .astro-code button[disabled] {
   color: rgb(22 163 74);
 }
 
-.astro-imagetools-picture, .astro-imagetools-img {
+.astro-imagetools-picture,
+.astro-imagetools-img {
   display: block !important; /* https://github.com/RafidMuhymin/astro-imagetools/issues/49 */
   box-sizing: content-box;
 }
