@@ -11,6 +11,23 @@ tags: ["программирование"]
 
 ---
 
+[Песочница](https://codepen.io/SeryiBaran/pen/ZEqbqQR)
+
+```html
+<button id="rdm">Random pastel color!</button>
+```
+
+```js
+function randomHSL() {
+  return `hsl(${Math.round(360 * Math.random())}, 70%,  80%)`;
+}
+
+rdm.onclick = () => (document.body.style.background = randomHSL());
+rdm.click();
+```
+
+---
+
 ```cpp
 /*
 * Фикс юникода в CMD
