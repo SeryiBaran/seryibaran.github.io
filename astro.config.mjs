@@ -5,7 +5,7 @@ import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import remarkTextr from "remark-textr";
 import remarkEmoji from "remark-emoji";
-import remarkFootnotes from 'remark-footnotes'
+import remarkFootnotes from "remark-footnotes";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import { astroImageTools } from "astro-imagetools";
@@ -15,15 +15,15 @@ function typo(input) {
   return input
     .replace(/\.{3,}/gim, "…")
     .replace(/\?\.{2,}/gim, "?..")
-    .replace(/\!\.{2,}/gim, "!..")
+    .replace(/!\.{2,}/gim, "!..")
     .replace(/\(c\)/gim, "©")
     .replace(/\(r\)/gim, "®")
     .replace(/\(tm\)/gim, "™")
     .replace(/\+-/gim, "±")
     .replace(/\(tm\)/gim, "™")
-    .replace(/\!{3,}/gim, "!!!")
+    .replace(/!{3,}/gim, "!!!")
     .replace(/\?{3,}/gim, "???")
-    .replace(/\,+/gim, ",")
+    .replace(/,+/gim, ",")
     .replace(/---/gim, "—");
 }
 
