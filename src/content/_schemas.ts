@@ -11,7 +11,6 @@ export const blogSchema = z
     tags: z.array(z.string()).default(["без-тега"]),
     ogImage: z.string().optional(),
     description: z.string().optional(),
-    comments: z.boolean().default(true),
   })
   .strict();
 
