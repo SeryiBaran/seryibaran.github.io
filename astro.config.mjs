@@ -49,7 +49,7 @@ export default defineConfig({
   ],
   markdown: {
     remarkPlugins: [
-      remarkToc,
+      [remarkToc, { heading: "Содержание" }],
       [
         remarkCollapse,
         {

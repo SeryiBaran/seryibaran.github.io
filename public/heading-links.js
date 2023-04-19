@@ -3,6 +3,9 @@ const headings = document.querySelectorAll(
 );
 
 headings.forEach(heading => {
+  const space = document.createElement("span");
+  space.innerHTML = "&nbsp;";
+
   const link = document.createElement("a");
   link.innerHTML = "#";
   link.href =
@@ -10,5 +13,6 @@ headings.forEach(heading => {
   link.title =
     "Перейти к этому заголовку\n\nМожно будет скопировать ссылку в браузере и\nкому-то отправить";
 
+  heading.prepend(space);
   heading.prepend(link);
 });
