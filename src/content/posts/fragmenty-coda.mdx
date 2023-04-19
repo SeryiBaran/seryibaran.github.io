@@ -11,6 +11,55 @@ tags: ["программирование"]
 
 ---
 
+TypeScript "недо-реактивность" на Proxy с createEffect
+
+```ts
+export interface State {
+  counter: number
+}
+
+export const state = {
+  counter: 0,
+}
+
+export type EffectHandler = (state: State) => void
+
+export interface Effect {
+  watchedKey: keyof State
+  handler: EffectHandler
+}
+
+export const stateEffects: Effect[] = []
+
+export const store = new Proxy(state, {
+  set(target, path: keyof State, newValue) {
+    target[path] = newValue
+    stateEffects.forEach((effect) => {
+      if (path === effect.watchedKey)
+        effect.handler(state)
+    })
+
+    return true
+  },
+})
+
+export function createEffect(effect: Effect) {
+  stateEffects.push(effect)
+}
+
+createEffect({
+  watchedKey: 'counter',
+  handler: (state) => {
+    console.log(`count is ${state.counter}`)
+  },
+})
+
+store.counter++ // count is 1
+store.counter++ // count is 2
+```
+
+---
+
 Простая TypeScript "недо-реактивность" на Proxy
 
 ```html
