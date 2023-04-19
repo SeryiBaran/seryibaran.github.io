@@ -43,17 +43,17 @@ increment(); // count is 2
 <Alert>6 килобайт это **в ~11 раз меньше** Jquery</Alert>
 
 ```ts
-import { createCtx, action, atom } from '@reatom/framework';
+import { createCtx, action, atom } from '@reatom/core';
 
 const ctx = createCtx();
 
-const counterAtom = atom(0);
+const countAtom = atom(0);
 
 const increment = action((ctx) => {
-  counterAtom(ctx, ctx.get(counterAtom) + 1);
+  countAtom(ctx, (count) => count + 1);
 }, 'increment');
 
-ctx.subscribe(counterAtom, (count) => {
+ctx.subscribe(countAtom, (count) => {
   console.log(`count is ${count}`);
 }); // count is 0 (полезно для первичного рендера)
 
