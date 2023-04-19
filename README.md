@@ -21,7 +21,7 @@ npm run dev
 ## P.S.
 
 Чтобы юзать оптимизированные картинки в .MDX страницах юзайте этот код в начале файла (после Frontmatter)
-```
+```ts
 import Img from "@components/Img.astro";
 export const components = { img: Img };`
 ```
