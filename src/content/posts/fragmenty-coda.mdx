@@ -11,6 +11,38 @@ tags: ["программирование"]
 
 ---
 
+Простая TypeScript "недо-реактивность" на Proxy
+
+```html
+<button id="counter" type="button"></button>
+```
+
+```ts
+const incrementButton = document.querySelector<HTMLButtonElement>("#counter")!;
+
+const state = {
+  counter: 0,
+};
+
+const reactiveState = new Proxy(state, {
+  set(target, path: keyof typeof state, newValue) {
+    target[path] = newValue;
+    if (path === "counter") {
+      incrementButton.innerHTML = `count is ${target.counter}`;
+    }
+    return true;
+  },
+});
+
+incrementButton.addEventListener("click", () => {
+  reactiveState.counter++;
+});
+
+reactiveState.counter = 0;
+```
+
+---
+
 [Песочница](https://codepen.io/SeryiBaran/pen/ZEqbqQR)
 
 ```html
