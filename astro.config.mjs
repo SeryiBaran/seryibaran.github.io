@@ -1,7 +1,6 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
-import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import remarkTextr from "remark-textr";
 import remarkFootnotes from "remark-footnotes";
@@ -12,6 +11,7 @@ import critters from "astro-critters";
 
 import remarkEmoji from "./remarkPlugins/remark-emoji.patched.mjs";
 import remarkTextrCustom from "./remarkPlugins/remark-textr-custom.mjs";
+import remarkToc from "./remarkPlugins/remark-toc.patched.mjs";
 
 // https://astro.build/config
 export default defineConfig({
