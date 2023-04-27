@@ -76,10 +76,15 @@
   .prose a {
     @apply hover:!text-skin-accent;
   }
-  .prose thead th:first-child,
-  tbody td:first-child,
-  tfoot td:first-child {
-    padding-left: 0.5714286em;
+  .prose thead th,
+  .prose :where(tbody, tfoot) td {
+    @apply p-2;
+  }
+  .prose thead th {
+    @apply bg-skin-accent/30;
+  }
+  .prose :where(tbody, tfoot) {
+    @apply [&>*:nth-child(even)]:bg-skin-accent/20 [&>*:nth-child(odd)]:bg-skin-accent/10;
   }
   .prose h2#table-of-contents {
     @apply mb-2;
@@ -89,9 +94,6 @@
   }
   .prose summary {
     @apply focus-outline;
-  }
-  .prose h2#table-of-contents + p {
-    @apply hidden;
   }
 
   /* ===== scrollbar ===== */
@@ -130,7 +132,7 @@
 }
 
 table {
-  @apply max-sm:block max-sm:overflow-x-auto max-sm:whitespace-nowrap;
+  @apply block overflow-x-auto whitespace-nowrap;
 }
 #menu-items:not(.display-none) {
   display: flex;
