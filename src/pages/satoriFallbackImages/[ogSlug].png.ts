@@ -1,5 +1,6 @@
 import { getCollection } from "astro:content";
 import generateOgImage from "@utils/generateOgImage";
+import { SITE } from "@config";
 import type { APIRoute } from "astro";
 
 const postImportResult = await getCollection(
@@ -16,12 +17,18 @@ export function getStaticPaths() {
     }));
 }
 
-async function generate(slug) {
+async function generate(slug: string | undefined) {
   const post = posts.find(post => post.slug === slug);
 
-  return await generateOgImage(post.data.title);
+  return await generateOgImage(!!post ? post.data.title : SITE.title);
 }
 
-export const get: APIRoute = async ({ params }) => ({
-  body: await generate(params.ogSlug),
-});
+// TODO: пофиксить ошибку TS в VSCode
+// @ts-ignore
+export const get: APIRoute = async ({ params }) => {
+  const generatedImage = await generate(params.ogSlug);
+  return {
+    body: generatedImage,
+    encoding: "binary",
+  };
+};

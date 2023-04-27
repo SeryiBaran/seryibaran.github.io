@@ -35,7 +35,6 @@ const fallbackImageURL = new URL(SITE.ogImage, Astro.url.origin).href;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
 
@@ -67,6 +66,8 @@ const fallbackImageURL = new URL(SITE.ogImage, Astro.url.origin).href;
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.ico" />
 
     <!-- General Meta Tags -->
     <title>{title}</title>
