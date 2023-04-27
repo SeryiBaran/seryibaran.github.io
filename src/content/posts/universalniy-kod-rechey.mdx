@@ -122,21 +122,10 @@ const fs = require("fs");
 
 const kodRechey = JSON.parse(fs.readFileSync("./kodRechey.json")); // Или fetch/import
 
-function randomChoose(arr) {
-  const length = arr.length;
+const randomChoose = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-  return arr[Math.floor(Math.random() * length)];
-}
-
-function generateText(length) {
-  let sentences = [];
-
-  for (let _ = 0; _ < length; _++) {
-    sentences.push(kodRechey.map(randomChoose).join(" ") + ".");
-  }
-
-  return sentences;
-}
+const generateText = (length) =>
+  [...Array(length)].map((_) => kodRechey.map(randomChoose).join(" ") + ".");
 
 console.log(generateText(3));
 /*
