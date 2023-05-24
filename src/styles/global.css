@@ -1,0 +1,113 @@
+/*
+  The CSS in this style tag is based off of Bear Blog's default CSS.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
+body {
+  margin: auto;
+  padding: 20px;
+  max-width: 65ch;
+  text-align: left;
+  background-color: #ebebeb;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: #444;
+}
+
+.dark body {
+  background: #1f1f1f;
+  color: #ebebeb;
+}
+
+a {
+  color: #4d91ff;
+}
+
+a:hover {
+  color: #629eff;
+}
+
+a:active {
+  color: #3c87ff;
+}
+
+a:focus {
+  outline: #c2c2c2 1px dashed;
+}
+
+nav a {
+  margin-right: 10px;
+}
+textarea {
+  width: 100%;
+  font-size: 16px;
+}
+input {
+  font-size: 16px;
+}
+content {
+  line-height: 1.6;
+}
+table {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+code {
+  padding: 2px 5px;
+  background-color: #8a8a8a3b;
+}
+pre {
+  padding: 1rem;
+}
+pre > code {
+  all: unset;
+}
+blockquote {
+  padding: 1rem;
+  border: 1px solid #999;
+  font-style: italic;
+}
+
+table {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+table :where(td, th) {
+  padding: 0.4rem;
+  margin: 0;
+}
+
+table tbody tr:nth-child(odd) {
+  background: rgba(74, 103, 165, 0.3);
+}
+
+table tbody tr:nth-child(even) {
+  background: rgba(127, 168, 255, 0.3);
+}
+
+table thead tr {
+  background: rgba(106, 153, 255, 0.5);
+}
+
+article > * {
+  margin: 1rem 0px;
+}
+
+.astro-code {
+  font-size: 0.9rem;
+}
+
+ol,
+ul {
+  margin-left: 1.4rem;
+}
+
+img {
+  border: 1px solid #4d91ff;
+}

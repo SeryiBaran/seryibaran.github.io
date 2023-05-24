@@ -1,8 +1,8 @@
 const headings = document.querySelectorAll(
-  ":where(h1, h2, h3, h4, h5, h6):not(.post-title)"
+  "main :where(h1, h2, h3, h4, h5, h6):not(.post-title)"
 );
 
-headings.forEach(heading => {
+headings.forEach((heading) => {
   const space = document.createElement("span");
   space.innerHTML = "&nbsp;";
 
