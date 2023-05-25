@@ -9,7 +9,18 @@ import remarkToc from "./remarkPlugins/remark-toc.patched";
 // https://astro.build/config
 export default defineConfig({
   site: "https://seryibaran.github.io",
-  integrations: [mdx(), sitemap(), astroImageTools, critters(), compress()],
+  integrations: [
+    mdx(),
+    sitemap(),
+    astroImageTools,
+    critters(),
+    compress({
+      html: true,
+      css: true,
+      js: true,
+      img: false,
+    }),
+  ],
   markdown: {
     remarkPlugins: [
       [

@@ -6,89 +6,82 @@ const links = [
   {
     href: "https://youtube.com/@ivanchai",
     title: "YouTube",
-    isInactive: true,
   },
   {
     href: "https://github.com/SeryiBaran",
     title: "Github",
-    isInactive: false,
   },
   {
     href: "https://gitlab.com/SeryiBaran",
     title: "GitLab",
-    isInactive: true,
   },
   {
     href: "https://habr.com/ru/users/SeryiBaran6",
     title: "Habr",
-    isInactive: false,
   },
   {
     href: "https://qna.habr.com/user/SeryiBaran6",
     title: "Habr Q&A",
-    isInactive: false,
   },
   {
     href: "https://career.habr.com/seryibaran6",
     title: "Habr Карьера",
-    isInactive: false,
   },
   {
     href: "https://t.me/ABKTPM",
     title: "Telegram",
-    isInactive: false,
   },
   {
     href: "https://t.me/ivanchaigroop",
     title: "Telegram канал",
-    isInactive: false,
   },
   {
     href: "https://vk.com/ivanchai6",
     title: "ВКонтакте",
-    isInactive: true,
   },
   {
     href: "https://vk.com/ivanchaismeh",
     title: "ВК Сообщество",
-    isInactive: true,
   },
   {
     href: "https://discord.gg/3zvBzgaw2P",
     title: "Discord",
-    isInactive: false,
   },
   {
     href: "https://yandex.ru/q/profile/y6dm92f22mkqh04h3v4b1rv6er/",
     title: "Yandex Q",
-    isInactive: true,
   },
   {
     href: "https://dzen.ru/seryibaran",
     title: "Дзен",
-    isInactive: true,
   },
   {
     href: "https://ru.stackoverflow.com/users/418945/seryibanana",
     title: "Stack Overflow",
-    isInactive: false,
   },
 ];
+
+// prettier-ignore (___astro_return какое-то вставляет)
+// console.log(
+//   links.slice().sort((a, b) => {
+//     if (!b.isInactive) return 1; // отправить b в начало
+//     if (a.isInactive == b.isInactive) return 0; // оставить как есть
+//     if (b.isInactive) return -1; // отправить b в конец
+//     return 0
+//   })
+// );
 ---
 
 <Layout
   title={getPageTitle("Контакты")}
   description="Мои контакты"
-  pubDate={new Date("May 24 2023")}
+  pubDate={new Date("2023-05-24")}
 >
   <ul>
     {
       links.map((link) => (
         <li>
-          <a href={link.href}>
-            {link.title}
-            {link.isInactive ? " (не активен)" : ""}
-          </a>
+          <a href={link.href}>{link.title}</a>
         </li>
       ))
     }

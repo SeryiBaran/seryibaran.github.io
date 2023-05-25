@@ -6,9 +6,9 @@
 body {
   margin: auto;
   padding: 20px;
-  max-width: 65ch;
+  max-width: 42rem;
   text-align: left;
-  background-color: #ebebeb;
+  background-color: #f7f7f7;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
@@ -33,7 +33,11 @@ a:active {
 }
 
 a:focus {
-  outline: #c2c2c2 1px dashed;
+  outline: #444444 1px dashed;
+}
+
+.dark a:focus {
+  outline-color: #c0c0c0;
 }
 
 nav a {
@@ -76,11 +80,14 @@ table {
   display: block;
   overflow-x: scroll;
   white-space: nowrap;
+  border-spacing: 0; /* Removes the cell spacing via CSS */
+  border-collapse: collapse;
 }
 
 table :where(td, th) {
   padding: 0.4rem;
   margin: 0;
+  border: rgba(134, 134, 134, 0.5) solid 1px;
 }
 
 table tbody tr:nth-child(odd) {
@@ -113,6 +120,7 @@ article > * {
 
 .astro-code {
   font-size: 0.9rem;
+  font-family: "Cascadia Code", "Jetbrains Mono", "Source Code Pro", monospace;
 }
 
 ol,
@@ -120,6 +128,12 @@ ul {
   margin-left: 1.4rem;
 }
 
-img {
+picture {
+  /* TODO: постараться убрать important */
+  /* astro-imagetools пишет стиль inline-block в атрибут :( */
+  display: block !important;
+}
+
+picture img {
   border: 1px solid #4d91ff;
 }
