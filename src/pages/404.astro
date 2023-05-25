@@ -1,0 +1,31 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      main {
+        text-align: center;
+      }
+      h1 {
+        font-size: 5rem;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>404</h1>
+      <p>Страница не найдена =(</p>
+      <p><a href="/">На главную</a></p>
+    </main>
+    <Footer />
+  </body>
+</html>

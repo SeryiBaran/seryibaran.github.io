@@ -140,3 +140,7 @@ picture img {
   /* astro-imagetools пишет width в атрибут и картинка становится размытой :( */
   width: auto !important;
 }
+
+:where(ol, ul) li {
+  margin: 0.6rem 0;
+}

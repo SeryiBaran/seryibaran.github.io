@@ -84,7 +84,7 @@ const { title, description, image = "/og.png" } = Astro.props;
        * Ссылки у заголовков
        */
       const headings = document.querySelectorAll(
-        "main :where(h1, h2, h3, h4, h5, h6):not(.post-title)"
+        "main article :where(h1, h2, h3, h4, h5, h6):not(.post-title)"
       );
 
       headings.forEach((heading) => {
