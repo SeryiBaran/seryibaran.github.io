@@ -1,7 +1,7 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
@@ -17,10 +17,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       <p>Frontend разработчик.</p>
       <p>
         Вся информация
-        <a
-          class="hover:text-skin-accent underline underline-offset-4"
-          href="/about">здесь</a
-        > (обязательно почитайте).
+        <a href="/about">здесь</a> (обязательно почитайте).
       </p>
     </main>
     <Footer />

@@ -5,8 +5,9 @@
     "strictNullChecks": true,
     "jsx": "react-jsx",
     "strict": true,
+    "skipLibCheck": false,
     "paths": {
-      "@components/*": ["./src/components/*"]
+      "@/*": ["./src/*"]
     }
   }
 }

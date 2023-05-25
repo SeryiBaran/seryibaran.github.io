@@ -1,32 +1,96 @@
 ---
-import Layout from "../layouts/BlogPost.astro";
+import Layout from "@/layouts/BlogPost.astro";
+import { getPageTitle } from "@/utils";
+
+const links = [
+  {
+    href: "https://youtube.com/@ivanchai",
+    title: "YouTube",
+    isInactive: true,
+  },
+  {
+    href: "https://github.com/SeryiBaran",
+    title: "Github",
+    isInactive: false,
+  },
+  {
+    href: "https://gitlab.com/SeryiBaran",
+    title: "GitLab",
+    isInactive: true,
+  },
+  {
+    href: "https://habr.com/ru/users/SeryiBaran6",
+    title: "Habr",
+    isInactive: false,
+  },
+  {
+    href: "https://qna.habr.com/user/SeryiBaran6",
+    title: "Habr Q&A",
+    isInactive: false,
+  },
+  {
+    href: "https://career.habr.com/seryibaran6",
+    title: "Habr Карьера",
+    isInactive: false,
+  },
+  {
+    href: "https://t.me/ABKTPM",
+    title: "Telegram",
+    isInactive: false,
+  },
+  {
+    href: "https://t.me/ivanchaigroop",
+    title: "Telegram канал",
+    isInactive: false,
+  },
+  {
+    href: "https://vk.com/ivanchai6",
+    title: "ВКонтакте",
+    isInactive: true,
+  },
+  {
+    href: "https://vk.com/ivanchaismeh",
+    title: "ВК Сообщество",
+    isInactive: true,
+  },
+  {
+    href: "https://discord.gg/3zvBzgaw2P",
+    title: "Discord",
+    isInactive: false,
+  },
+  {
+    href: "https://yandex.ru/q/profile/y6dm92f22mkqh04h3v4b1rv6er/",
+    title: "Yandex Q",
+    isInactive: true,
+  },
+  {
+    href: "https://dzen.ru/seryibaran",
+    title: "Дзен",
+    isInactive: true,
+  },
+  {
+    href: "https://ru.stackoverflow.com/users/418945/seryibanana",
+    title: "Stack Overflow",
+    isInactive: false,
+  },
+];
 ---
 
 <Layout
-  title="Контакты"
+  title={getPageTitle("Контакты")}
   description="Мои контакты"
   pubDate={new Date("May 24 2023")}
 >
   <ul>
-    <li><a href="https://youtube.com/@ivanchai">YouTube</a></li>
-    <li><a href="https://github.com/SeryiBaran">GitHub</a></li>
-    <li><a href="https://gitlab.com/SeryiBaran">GitLab</a></li>
-    <li><a href="https://habr.com/ru/users/SeryiBaran6">Habr</a></li>
-    <li><a href="https://qna.habr.com/user/SeryiBaran6">Habr Q&A</a></li>
-    <li><a href="https://career.habr.com/seryibaran6">Habr Карьера</a></li>
-    <li><a href="https://t.me/ABKTPM">Telegram</a></li>
-    <li><a href="https://t.me/ivanchaigroop">Telegram канал</a></li>
-    <li><a href="https://vk.com/ivanchai6">ВКонтакте</a></li>
-    <li><a href="https://vk.com/ivanchaismeh">ВК Сообщество</a></li>
-    <li><a href="https://discord.gg/3zvBzgaw2P">Discord</a></li>
-    <li>
-      <a href="https://yandex.ru/q/profile/y6dm92f22mkqh04h3v4b1rv6er/"
-        >Yandex Q</a>
-    </li>
-    <li><a href="https://dzen.ru/seryibaran">Дзен</a></li>
-    <li>
-      <a href="https://ru.stackoverflow.com/users/418945/seryibanana"
-        >Stack Overflow</a>
-    </li>
+    {
+      links.map((link) => (
+        <li>
+          <a href={link.href}>
+            {link.title}
+            {link.isInactive ? " (не активен)" : ""}
+          </a>
+        </li>
+      ))
+    }
   </ul>
 </Layout>

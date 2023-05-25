@@ -1,7 +1,7 @@
 ---
 import { CollectionEntry, getCollection } from "astro:content";
 import BlogPost from "../../layouts/BlogPost.astro";
-import Img from "@components/Img.astro";
+import Img from "@/components/Img.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");

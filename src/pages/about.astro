@@ -1,9 +1,10 @@
 ---
-import Layout from "../layouts/BlogPost.astro";
+import Layout from "@/layouts/BlogPost.astro";
+import { getPageTitle } from "@/utils";
 ---
 
 <Layout
-  title="О сайте"
+  title={getPageTitle("О сайте")}
   description="О сайте и обо мне"
   pubDate={new Date("May 24 2023")}
 >

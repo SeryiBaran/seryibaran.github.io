@@ -84,15 +84,27 @@ table :where(td, th) {
 }
 
 table tbody tr:nth-child(odd) {
-  background: rgba(74, 103, 165, 0.3);
+  background: rgba(194, 194, 194, 0.5);
 }
 
 table tbody tr:nth-child(even) {
-  background: rgba(127, 168, 255, 0.3);
+  background: rgba(167, 167, 167, 0.5);
 }
 
 table thead tr {
-  background: rgba(106, 153, 255, 0.5);
+  background: rgba(128, 128, 128, 0.5);
+}
+
+.dark table tbody tr:nth-child(odd) {
+  background: rgba(88, 88, 88, 0.5);
+}
+
+.dark table tbody tr:nth-child(even) {
+  background: rgba(122, 122, 122, 0.5);
+}
+
+.dark table thead tr {
+  background: rgba(128, 128, 128, 0.5);
 }
 
 article > * {
