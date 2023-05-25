@@ -6,7 +6,7 @@
 body {
   margin: auto;
   padding: 20px;
-  max-width: 42rem;
+  max-width: 44rem;
   text-align: left;
   background-color: #f7f7f7;
   word-wrap: break-word;
@@ -136,4 +136,7 @@ picture {
 
 picture img {
   border: 1px solid #4d91ff;
+  /* TODO: постараться убрать important */
+  /* astro-imagetools пишет width в атрибут и картинка становится размытой :( */
+  width: auto !important;
 }
