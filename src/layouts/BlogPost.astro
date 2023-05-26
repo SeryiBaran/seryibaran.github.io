@@ -9,7 +9,7 @@ import { getPageTitle } from "@/utils";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, date, updatedDate, heroImage } = Astro.props;
 ---
 
 <html lang="en">
@@ -40,7 +40,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       <article>
         {heroImage && <Img src={heroImage} alt="" />}
         <h1 class="title post-title">{title}</h1>
-        <FormattedDate date={pubDate} />
+        <FormattedDate date={date} />
         {
           updatedDate && (
             <div class="last-updated-on">

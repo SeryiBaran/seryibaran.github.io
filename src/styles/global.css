@@ -34,12 +34,14 @@ a:active {
   color: #3c87ff;
 }
 
-a:focus {
+*:focus {
   outline: #444444 1px dashed;
 }
 
-.dark a:focus {
-  outline-color: #c0c0c0;
+@media (prefers-color-scheme: dark) {
+  *:focus {
+    outline-color: #c0c0c0;
+  }
 }
 
 nav a {
@@ -157,4 +159,12 @@ picture + em {
   text-align: center;
   margin-bottom: 1rem;
   margin-top: 0.2rem;
+}
+
+.headingLink {
+  margin-right: 0.2em;
+}
+
+summary {
+  cursor: pointer;
 }

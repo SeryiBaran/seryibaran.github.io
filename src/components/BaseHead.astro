@@ -69,31 +69,3 @@ const { title, description, image = "/og.png" } = Astro.props;
 <meta name="theme-color" content="#ffffff" />
 
 <link rel="icon" type="image/svg+xml" href="/favicons/favicon.ico" />
-
-<script is:inline>
-  // TODO: как-то убрать этот скрипт
-  (() => {
-    window.addEventListener("DOMContentLoaded", () => {
-      /**
-       * Ссылки у заголовков
-       */
-      const headings = document.querySelectorAll(
-        "main article :where(h1, h2, h3, h4, h5, h6):not(.post-title)"
-      );
-
-      headings.forEach((heading) => {
-        const space = document.createElement("span");
-        space.innerHTML = "&nbsp;";
-
-        const link = document.createElement("a");
-        link.innerHTML = "#";
-        link.href = `#${heading.id}`;
-        link.title =
-          "Перейти к этому заголовку\n\nМожно будет скопировать ссылку в браузере и\nкому-то отправить";
-
-        heading.prepend(space);
-        heading.prepend(link);
-      });
-    });
-  })();
-</script>
