@@ -17,9 +17,12 @@
 
 ## P.S
 
-Чтобы юзать оптимизированные картинки в .MDX страницах (не постах) юзайте этот код в начале файла (после Frontmatter)
+- С Astro не работает конфиг ESLint от antfu. Если вы знаете что делать - откройте issue в этом репозитории.
 
-```ts
-import Img from "@/components/Img.astro";
-export const components = { img: Img };`
-```
+- Чтобы юзать оптимизированные картинки в .MDX страницах (не постах) юзайте этот код в начале файла (после Frontmatter)
+
+  ```ts
+  import Img from "@/components/Img.astro"
+
+  export const components = { img: Img }
+  ```

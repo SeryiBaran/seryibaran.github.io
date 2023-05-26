@@ -1,22 +1,22 @@
-import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
-import sitemap from "@astrojs/sitemap";
-import critters from "astro-critters";
-import { astroImageTools } from "astro-imagetools";
-import compress from "astro-compress";
+import { defineConfig } from 'astro/config'
+import mdx from '@astrojs/mdx'
+import sitemap from '@astrojs/sitemap'
+import critters from 'astro-critters'
+import { astroImageTools } from 'astro-imagetools'
+import compress from 'astro-compress'
 
-import rehypeSlug from "rehype-slug";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
-import remarkTextr from "remark-textr";
-import remarkEmoji from "remark-emoji";
-import remarkTextrCustom from "./remarkPlugins/remark-textr-custom.js";
-import remarkToc from "./remarkPlugins/remark-toc.patched";
-import { h } from "hastscript";
+import remarkTextr from 'remark-textr'
+import remarkEmoji from 'remark-emoji'
+import { h } from 'hastscript'
+import remarkTextrCustom from './remarkPlugins/remark-textr-custom.js'
+import remarkToc from './remarkPlugins/remark-toc.patched'
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://seryibaran.github.io",
+  site: 'https://seryibaran.github.io',
   integrations: [
     mdx(),
     sitemap(),
@@ -34,34 +34,34 @@ export default defineConfig({
       [
         remarkToc,
         {
-          heading: "Содержание",
+          heading: 'Содержание',
         },
       ],
       [remarkTextr, { plugins: [remarkTextrCustom] }],
       [remarkEmoji, { emoticon: true }],
     ],
     remarkRehype: {
-      footnoteLabel: "Сноски",
+      footnoteLabel: 'Сноски',
     },
     rehypePlugins: [
       rehypeSlug,
       [
         rehypeAutolinkHeadings,
         {
-          behavior: "prepend",
-          properties: { class: "headingLink" },
+          behavior: 'prepend',
+          properties: { class: 'headingLink' },
           content() {
             return h(
-              "span",
+              'span',
               {
                 title:
-                  "Перейти к этому заголовку\n\nМожно будет скопировать ссылку в браузере и\nкому-то отправить",
+                  'Перейти к этому заголовку\n\nМожно будет скопировать ссылку в браузере и\nкому-то отправить',
               },
-              "#"
-            );
+              '#'
+            )
           },
         },
       ],
     ],
   },
-});
+})

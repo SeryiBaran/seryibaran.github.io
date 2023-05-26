@@ -1,5 +1,5 @@
-import { SITE_TITLE } from "src/consts";
+import { SITE_TITLE } from '@/consts'
 
 export function getPageTitle(title: string) {
-  return `${title} - ${SITE_TITLE}`;
+  return `${title} - ${SITE_TITLE}`
 }

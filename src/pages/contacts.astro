@@ -1,81 +1,70 @@
 ---
-import Layout from "@/layouts/BlogPost.astro";
-import { getPageTitle } from "@/utils";
+import BlogPost from '@/layouts/BlogPost.astro'
 
 const links = [
   {
-    href: "https://youtube.com/@ivanchai",
-    title: "YouTube",
+    href: 'https://youtube.com/@ivanchai',
+    title: 'YouTube',
   },
   {
-    href: "https://github.com/SeryiBaran",
-    title: "Github",
+    href: 'https://github.com/SeryiBaran',
+    title: 'Github',
   },
   {
-    href: "https://gitlab.com/SeryiBaran",
-    title: "GitLab",
+    href: 'https://gitlab.com/SeryiBaran',
+    title: 'GitLab',
   },
   {
-    href: "https://habr.com/ru/users/SeryiBaran6",
-    title: "Habr",
+    href: 'https://habr.com/ru/users/SeryiBaran6',
+    title: 'Habr',
   },
   {
-    href: "https://qna.habr.com/user/SeryiBaran6",
-    title: "Habr Q&A",
+    href: 'https://qna.habr.com/user/SeryiBaran6',
+    title: 'Habr Q&A',
   },
   {
-    href: "https://career.habr.com/seryibaran6",
-    title: "Habr Карьера",
+    href: 'https://career.habr.com/seryibaran6',
+    title: 'Habr Карьера',
   },
   {
-    href: "https://t.me/ABKTPM",
-    title: "Telegram",
+    href: 'https://t.me/ABKTPM',
+    title: 'Telegram',
   },
   {
-    href: "https://t.me/ivanchaigroop",
-    title: "Telegram канал",
+    href: 'https://t.me/ivanchaigroop',
+    title: 'Telegram канал',
   },
   {
-    href: "https://vk.com/ivanchai6",
-    title: "ВКонтакте",
+    href: 'https://vk.com/ivanchai6',
+    title: 'ВКонтакте',
   },
   {
-    href: "https://vk.com/ivanchaismeh",
-    title: "ВК Сообщество",
+    href: 'https://vk.com/ivanchaismeh',
+    title: 'ВК Сообщество',
   },
   {
-    href: "https://discord.gg/3zvBzgaw2P",
-    title: "Discord",
+    href: 'https://discord.gg/3zvBzgaw2P',
+    title: 'Discord',
   },
   {
-    href: "https://yandex.ru/q/profile/y6dm92f22mkqh04h3v4b1rv6er/",
-    title: "Yandex Q",
+    href: 'https://yandex.ru/q/profile/y6dm92f22mkqh04h3v4b1rv6er/',
+    title: 'Yandex Q',
   },
   {
-    href: "https://dzen.ru/seryibaran",
-    title: "Дзен",
+    href: 'https://dzen.ru/seryibaran',
+    title: 'Дзен',
   },
   {
-    href: "https://ru.stackoverflow.com/users/418945/seryibanana",
-    title: "Stack Overflow",
+    href: 'https://ru.stackoverflow.com/users/418945/seryibanana',
+    title: 'Stack Overflow',
   },
-];
-
-// prettier-ignore (___astro_return какое-то вставляет)
-// console.log(
-//   links.slice().sort((a, b) => {
-//     if (!b.isInactive) return 1; // отправить b в начало
-//     if (a.isInactive == b.isInactive) return 0; // оставить как есть
-//     if (b.isInactive) return -1; // отправить b в конец
-//     return 0
-//   })
-// );
+]
 ---
 
-<Layout
+<BlogPost
   title="Контакты"
   description="Мои контакты"
-  pubDate={new Date("2023-05-24")}
+  date={new Date('2023-05-24')}
 >
   <ul>
     {
@@ -86,4 +75,4 @@ const links = [
       ))
     }
   </ul>
-</Layout>
+</BlogPost>

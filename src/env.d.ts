@@ -3,18 +3,18 @@
 
 // TODO: пофиксить (или заменить на astro image)
 // https://github.com/RafidMuhymin/astro-imagetools/issues/131
-declare module "astro-imagetools/components";
-declare module "astro-imagetools";
+declare module 'astro-imagetools/components'
+declare module 'astro-imagetools'
 
 // TODO: постараться пофиксить
 // Плохие тайпинги плагина.
 // Type 'Plugin<[(RemarkEmojiOptions | undefined)?]>' is not assignable to type 'string'. ts(2322)
 // Решение - заменить Plugin из пакета 'unified' на RemarkPlugin из пакета '@astrojs/markdown-remark'
 
-declare module "remark-emoji" {
+declare module 'remark-emoji' {
   // TypeScript Version: 4.8
 
-  import { RemarkPlugin } from "@astrojs/markdown-remark";
+  import { RemarkPlugin } from '@astrojs/markdown-remark'
 
   export interface RemarkEmojiOptions {
     /**
@@ -23,7 +23,7 @@ declare module "remark-emoji" {
      *
      * @defaultValue false
      */
-    accessible?: boolean;
+    accessible?: boolean
     /**
      * Adds an extra whitespace after emoji.
      * Useful when browser handle emojis with half character length and
@@ -31,15 +31,15 @@ declare module "remark-emoji" {
      *
      * @defaultValue false
      */
-    padSpaceAfter?: boolean;
+    padSpaceAfter?: boolean
     /**
      * Whether to support emoticon shortcodes (e.g. :-) will be replaced by 😃)
      *
      * @defaultValue false
      */
-    emoticon?: boolean;
+    emoticon?: boolean
   }
 
-  const plugin: RemarkPlugin<[RemarkEmojiOptions?]>;
-  export default plugin;
+  const plugin: RemarkPlugin<[RemarkEmojiOptions?]>
+  export default plugin
 }

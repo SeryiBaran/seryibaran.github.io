@@ -1,12 +1,12 @@
 ---
-import Layout from "@/layouts/BlogPost.astro";
-import { getPageTitle } from "@/utils";
+import BlogPost from '@/layouts/BlogPost.astro'
+import { getPageTitle } from '@/utils'
 ---
 
-<Layout
+<BlogPost
   title="О сайте"
   description="О сайте и обо мне"
-  pubDate={new Date("2023-05-24")}
+  date={new Date('2023-05-24')}
 >
   <p>Я Иван Музы́ка.</p>
 
@@ -24,4 +24,4 @@ import { getPageTitle } from "@/utils";
       href="https://github.com/SeryiBaran">Github</a
     >.
   </p>
-</Layout>
+</BlogPost>
