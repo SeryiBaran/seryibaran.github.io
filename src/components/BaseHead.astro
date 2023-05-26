@@ -71,15 +71,9 @@ const { title, description, image = "/og.png" } = Astro.props;
 <link rel="icon" type="image/svg+xml" href="/favicons/favicon.ico" />
 
 <script is:inline>
+  // TODO: как-то убрать этот скрипт
   (() => {
     window.addEventListener("DOMContentLoaded", () => {
-      /**
-       * Установка класса "dark" для html при темной теме
-       */
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        document.querySelector("html").classList.add("dark");
-      }
-
       /**
        * Ссылки у заголовков
        */
@@ -93,9 +87,7 @@ const { title, description, image = "/og.png" } = Astro.props;
 
         const link = document.createElement("a");
         link.innerHTML = "#";
-        link.href =
-          window.location.href.replace(window.location.hash, "") +
-          `#${heading.id}`;
+        link.href = `#${heading.id}`;
         link.title =
           "Перейти к этому заголовку\n\nМожно будет скопировать ссылку в браузере и\nкому-то отправить";
 

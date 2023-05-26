@@ -15,9 +15,11 @@ body {
   color: #444;
 }
 
-.dark body {
-  background: #1f1f1f;
-  color: #ebebeb;
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1f1f1f;
+    color: #ebebeb;
+  }
 }
 
 a {
@@ -102,16 +104,18 @@ table thead tr {
   background: rgba(128, 128, 128, 0.5);
 }
 
-.dark table tbody tr:nth-child(odd) {
-  background: rgba(88, 88, 88, 0.5);
-}
+@media (prefers-color-scheme: dark) {
+  table tbody tr:nth-child(odd) {
+    background: rgba(88, 88, 88, 0.5);
+  }
 
-.dark table tbody tr:nth-child(even) {
-  background: rgba(122, 122, 122, 0.5);
-}
+  table tbody tr:nth-child(even) {
+    background: rgba(122, 122, 122, 0.5);
+  }
 
-.dark table thead tr {
-  background: rgba(128, 128, 128, 0.5);
+  table thead tr {
+    background: rgba(128, 128, 128, 0.5);
+  }
 }
 
 article > * {

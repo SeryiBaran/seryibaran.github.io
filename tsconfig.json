@@ -6,6 +6,7 @@
     "jsx": "react-jsx",
     "strict": true,
     "skipLibCheck": false,
+    "allowJs": true,
     "paths": {
       "@/*": ["./src/*"]
     }
