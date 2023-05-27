@@ -126,7 +126,7 @@ article > * {
 
 .astro-code {
   font-size: 0.9rem;
-  font-family: 'Cascadia Code', 'Jetbrains Mono', 'Source Code Pro', monospace;
+  /* font-family: 'Cascadia Code', 'Jetbrains Mono', 'Source Code Pro', monospace; */
 }
 
 ol,
