@@ -18,34 +18,51 @@ import Alert from "@/components/Alert.astro";
 /**
  *
  * @param linesNumber number of lines
- * @param step step of adding asterisks on each line. Result of generation with odd `step` will be shit
- * @returns star triangle
+ * @param symbol symbol to create pyramid
+ * @returns symbols pyramid
  *
  * @example
  * ```ts
- * console.log(generateStarTriangle(10))
- * //          *
- * //         ***
- * //        *****
- * //       *******
- * //      *********
- * //     ***********
- * //    *************
- * //   ***************
- * //  *****************
- * // *******************
+ * console.log(generatePyramid(10))
+ * //           *
+ * //          ***
+ * //         *****
+ * //        *******
+ * //       *********
+ * //      ***********
+ * //     *************
+ * //    ***************
+ * //   *****************
+ * //  *******************
  * ```
  */
-function generateStarTriangle(linesNumber: number, step = 2) {
-  let lines = [];
-  for (let i = 1; i < linesNumber * step; i += step) {
-    const line = '*'.repeat(i);
+function generatePyramid(linesNumber, symbol = '*') {
+  let lines = []
 
-    const leftPadWithStars = Math.floor((line.length + linesNumber * step) / 2);
-    lines.push(line.padStart(leftPadWithStars).padEnd(linesNumber));
+  for (let i = 1; i <= linesNumber; i++) {
+    let line = ''
+
+    line += ' '.repeat(linesNumber - i)
+
+    line += symbol.repeat(i * 2 - 1)
+
+    lines.push(line)
   }
-  return lines.join('\n');
+  return lines.join('\n')
 }
+
+console.log(generatePyramid(10))
+
+//           *
+//          ***
+//         *****
+//        *******
+//       *********
+//      ***********
+//     *************
+//    ***************
+//   *****************
+//  *******************
 ```
 
 ## `launch.json` VSCode для дебага Vite+Vue в Яндекс Браузере
