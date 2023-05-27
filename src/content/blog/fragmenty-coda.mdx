@@ -12,6 +12,42 @@ import Alert from "@/components/Alert.astro";
 
 Эта статья будет обновляться!
 
+## Генерация "ёлочки" из звездочек на TypeScript
+
+```ts
+/**
+ *
+ * @param linesNumber number of lines
+ * @param step step of adding asterisks on each line. Result of generation with odd `step` will be shit
+ * @returns star triangle
+ *
+ * @example
+ * ```ts
+ * console.log(generateStarTriangle(10))
+ * //          *
+ * //         ***
+ * //        *****
+ * //       *******
+ * //      *********
+ * //     ***********
+ * //    *************
+ * //   ***************
+ * //  *****************
+ * // *******************
+ * ```
+ */
+function generateStarTriangle(linesNumber: number, step = 2) {
+  let lines = [];
+  for (let i = 1; i < linesNumber * step; i += step) {
+    const line = '*'.repeat(i);
+
+    const leftPadWithStars = Math.floor((line.length + linesNumber * step) / 2);
+    lines.push(line.padStart(leftPadWithStars).padEnd(linesNumber));
+  }
+  return lines.join('\n');
+}
+```
+
 ## `launch.json` VSCode для дебага Vite+Vue в Яндекс Браузере
 
 <Alert>Перед отладкой нужно запустить `npm run dev`</Alert>
