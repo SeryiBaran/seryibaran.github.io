@@ -36,8 +36,8 @@ import Alert from "@/components/Alert.astro";
  * //  *******************
  * ```
  */
-function generatePyramid(linesNumber, symbol = '*') {
-  let lines = []
+function generatePyramid(linesNumber: number, symbol = '*') {
+  let lines: string[] = []
 
   for (let i = 1; i <= linesNumber; i++) {
     let line = ''
