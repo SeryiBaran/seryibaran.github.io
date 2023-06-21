@@ -1,4 +1,16 @@
 ---
 ---
 
-<blockquote><slot /></blockquote>
+<div class="alert error"><slot /></div>
+
+<style>
+  .alert {
+    border: 2px #999 solid;
+    padding: 1rem;
+    border-color: rgb(14, 106, 255);
+  }
+
+  .alert.error {
+    /* border-color: rgb(255, 100, 100); */
+  }
+</style>

@@ -3,45 +3,58 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+
+:root {
+  --c-primary: rgb(39, 121, 255);
+  --c-primary-light: rgb(101, 160, 255);
+  --c-primary-dark: rgb(0, 85, 221);
+
+  --c-fg: rgb(31, 31, 31);
+  --c-bg: rgb(250, 250, 250);
+
+  --table-head-row-bg: rgba(214, 214, 214, 0.5);
+  --table-body-row-odd-bg: rgba(236, 236, 236, 0.5);
+  --table-body-row-even-bg: rgba(214, 214, 214, 0.5);
+  --table-cell-border-color: rgba(134, 134, 134, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-fg: rgb(192, 192, 192);
+    --c-bg: rgb(31, 31, 31);
+
+    --table-head-row-bg: rgba(85, 85, 85, 0.5);
+    --table-body-row-odd-bg: rgba(124, 124, 124, 0.5);
+    --table-body-row-even-bg: rgba(85, 85, 85, 0.5);
+  }
+}
+
 body {
   margin: auto;
   padding: 20px;
   max-width: 44rem;
   text-align: left;
-  background-color: #f7f7f7;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  color: #444;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #1f1f1f;
-    color: #ebebeb;
-  }
+  background: var(--c-bg);
+  color: var(--c-fg);
 }
 
 a {
-  color: #4d91ff;
+  color: var(--c-primary);
 }
 
 a:hover {
-  color: #629eff;
+  color: var(--c-primary-light);
 }
 
 a:active {
-  color: #3c87ff;
+  color: var(--c-primary-dark);
 }
 
 *:focus {
-  outline: #444444 1px dashed;
-}
-
-@media (prefers-color-scheme: dark) {
-  *:focus {
-    outline-color: #c0c0c0;
-  }
+  outline: var(--c-fg) 1px dashed;
 }
 
 nav a {
@@ -66,7 +79,7 @@ img {
 }
 code {
   padding: 2px 5px;
-  background-color: #8a8a8a3b;
+  background-color: rgba(138, 138, 138, 0.231);
 }
 pre {
   padding: 1rem;
@@ -76,7 +89,7 @@ pre > code {
 }
 blockquote {
   padding: 1rem;
-  border: 1px solid #999;
+  border: 1px solid rgb(153, 153, 153);
   font-style: italic;
 }
 
@@ -84,40 +97,25 @@ table {
   display: block;
   overflow-x: scroll;
   white-space: nowrap;
-  border-spacing: 0; /* Removes the cell spacing via CSS */
   border-collapse: collapse;
+}
+
+table thead tr {
+  background: var(--table-head-row-bg);
+}
+
+table tbody tr:nth-child(odd) {
+  background: var(--table-body-row-odd-bg);
+}
+
+table tbody tr:nth-child(even) {
+  background: var(--table-body-row-even-bg);
 }
 
 table :where(td, th) {
   padding: 0.4rem;
   margin: 0;
-  border: rgba(134, 134, 134, 0.5) solid 1px;
-}
-
-table tbody tr:nth-child(odd) {
-  background: rgba(194, 194, 194, 0.5);
-}
-
-table tbody tr:nth-child(even) {
-  background: rgba(167, 167, 167, 0.5);
-}
-
-table thead tr {
-  background: rgba(128, 128, 128, 0.5);
-}
-
-@media (prefers-color-scheme: dark) {
-  table tbody tr:nth-child(odd) {
-    background: rgba(88, 88, 88, 0.5);
-  }
-
-  table tbody tr:nth-child(even) {
-    background: rgba(122, 122, 122, 0.5);
-  }
-
-  table thead tr {
-    background: rgba(128, 128, 128, 0.5);
-  }
+  border: var(--table-cell-border-color) solid 1px;
 }
 
 article > * {
@@ -167,4 +165,8 @@ picture + em {
 
 summary {
   cursor: pointer;
+}
+
+.astro-code {
+  background-color: #202020 !important;
 }
