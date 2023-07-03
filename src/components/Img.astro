@@ -1,10 +1,14 @@
 ---
 // import { Picture as ImageToolsImg } from 'astro-imagetools/components'
 
+interface Props {
+  src: string
+}
+
 const props = Astro.props
 
-console.log(`/${props.src}`)
+const url = props.src.startsWith('/') ? props.src : `/${props.src}`
 ---
 
 <!-- <ImageToolsImg {...props} format={['webp', 'jpg']} placeholder="none" /> -->
-<img {...props} src={`/${props.src}`} />
+<img {...props} src={url} />
