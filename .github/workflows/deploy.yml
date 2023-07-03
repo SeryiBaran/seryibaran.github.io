@@ -65,6 +65,9 @@ jobs:
     name: 'Send changed/created post to Telegram Channel'
     runs-on: ubuntu-latest
     environment: telegram-send-post
+    env:
+      TG_BOT_APIKEY: ${{ secrets.TG_BOT_APIKEY }}
+      TG_CHANNEL_ID: ${{ secrets.TG_CHANNEL_ID }}
     needs: deploy
     steps:
       - uses: actions/checkout@v3
