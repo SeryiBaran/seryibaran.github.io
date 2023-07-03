@@ -8,6 +8,8 @@ interface Props {
 const props = Astro.props
 
 const url = props.src.startsWith('/') ? props.src : `/${props.src}`
+
+console.log(url)
 ---
 
 <!-- <ImageToolsImg {...props} format={['webp', 'jpg']} placeholder="none" /> -->
