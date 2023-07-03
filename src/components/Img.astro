@@ -5,4 +5,4 @@ const props = Astro.props
 ---
 
 <!-- <ImageToolsImg {...props} format={['webp', 'jpg']} placeholder="none" /> -->
-<img {...props} />
+<img {...props} src={'/' + props.src} />
