@@ -26,7 +26,7 @@ export default defineConfig({
       html: true,
       css: true,
       js: true,
-      img: false,
+      // img: false,
     }),
   ],
   markdown: {
