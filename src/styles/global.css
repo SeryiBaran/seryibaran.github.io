@@ -132,24 +132,17 @@ ul {
   margin-left: 1.4rem;
 }
 
-picture {
-  /* TODO: постараться убрать important */
-  /* astro-imagetools пишет стиль inline-block в атрибут :( */
-  display: block !important;
-}
-
-picture img {
+article img {
+  display: block;
   border: 1px solid #4d91ff;
-  /* TODO: постараться убрать important */
-  /* astro-imagetools пишет width в атрибут и картинка становится размытой :( */
-  width: auto !important;
+  width: auto;
 }
 
 :where(ol, ul) li {
   margin: 0.6rem 0;
 }
 
-picture + em {
+article img + em {
   font-style: normal;
   opacity: 0.7;
   font-size: 0.9em;
