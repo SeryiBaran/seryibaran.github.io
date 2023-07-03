@@ -1,0 +1,26 @@
+name: Send changed/created post to Telegram Channel
+
+on:
+  push:
+    paths:
+      - src/content/blog/**
+
+jobs:
+  telegram-send-post:
+    name: 'Send post'
+    runs-on: ubuntu-latest
+    environment: telegram-send-post
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - uses: jitterbit/get-changed-files@v1
+        id: changedFiles
+        with:
+          format: space-delimited
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: 'Run bot'
+        run: |
+          npm ci
+          CREATED_FILE="${{steps.changedFiles.outputs.added}}" node telegram-sender-bot/index.js
