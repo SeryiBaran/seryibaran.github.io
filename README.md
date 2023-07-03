@@ -14,17 +14,3 @@
 
 - [Astro](https://astro.build/)
 - [Typescript](https://www.typescriptlang.org/)
-
-## P.S
-
-1. Astro imagetools почему-то обрезает url. Я отключил этот плагин.
-
-2. С Astro не работает конфиг ESLint от antfu. Если вы знаете что делать - откройте issue в этом репозитории.
-
-3. ~~Чтобы юзать оптимизированные картинки в .MDX страницах (не постах) юзайте этот код в начале файла (после Frontmatter)~~ см пункт 1
-
-```ts
-import Img from '@/components/Img.astro'
-
-export const components = { img: Img }
-```
