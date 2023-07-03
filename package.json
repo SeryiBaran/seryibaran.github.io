@@ -20,7 +20,6 @@
     "astro": "^2.7.3",
     "astro-compress": "^1.1.48",
     "astro-critters": "^1.1.38",
-    "astro-imagetools": "^0.8.1",
     "dayjs": "^1.11.9",
     "emoticon": "^4.0.1",
     "hastscript": "^7.2.0",
