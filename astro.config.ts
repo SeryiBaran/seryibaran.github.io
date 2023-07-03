@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import critters from 'astro-critters'
-import { astroImageTools } from 'astro-imagetools'
+// import { astroImageTools } from 'astro-imagetools'
 import compress from 'astro-compress'
 
 import rehypeSlug from 'rehype-slug'
@@ -20,7 +20,7 @@ export default defineConfig({
   integrations: [
     mdx(),
     sitemap(),
-    astroImageTools,
+    // astroImageTools,
     critters(),
     compress({
       html: true,
