@@ -14,3 +14,11 @@
 
 - [Astro](https://astro.build/)
 - [Typescript](https://www.typescriptlang.org/)
+
+## Github секреты для телеграм бота
+
+| Секрет          | Содержание                |
+| --------------- | ------------------------- |
+| `TG_BOT_APIKEY` | API ключ от Telegram бота |
+| `TG_CHANNEL_ID` | ID Telegram канала        |
+| ``              |                           |
