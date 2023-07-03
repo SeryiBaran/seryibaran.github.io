@@ -1,10 +1,10 @@
 ---
-title: "Фрагменты кода"
-description: "Разные куски кода, команды и программы."
+title: 'Фрагменты кода'
+description: 'Разные куски кода, команды и программы.'
 date: 2023-04-19
 ---
 
-import Alert from "@/components/Alert.astro";
+import Alert from '@/components/Alert.astro'
 
 ## Содержание
 
@@ -14,7 +14,7 @@ import Alert from "@/components/Alert.astro";
 
 ## Генерация "ёлочки" из звездочек на TypeScript
 
-```ts
+````ts
 /**
  *
  * @param linesNumber number of lines
@@ -63,7 +63,7 @@ console.log(generatePyramid(10))
 //    ***************
 //   *****************
 //  *******************
-```
+````
 
 ## `launch.json` VSCode для дебага Vite+Vue в Яндекс Браузере
 
@@ -99,20 +99,20 @@ console.log(generatePyramid(10))
 <Alert>1 килобайт это **в ~70 раз меньше** Jquery</Alert>
 
 ```ts
-import { atom } from "nanostores";
+import { atom } from 'nanostores'
 
-const count = atom(0);
+const count = atom(0)
 
 function increment() {
-  count.set(count.get() + 1);
+  count.set(count.get() + 1)
 }
 
 count.subscribe(() => {
-  console.log(`count is ${count.get()}`);
-}); // count is 0 (полезно для первичного рендера)
+  console.log(`count is ${count.get()}`)
+}) // count is 0 (полезно для первичного рендера)
 
-increment(); // count is 1
-increment(); // count is 2
+increment() // count is 1
+increment() // count is 2
 ```
 
 ### Reatom - стейт менеджер здорового человека ценою в ~6 килобайт
@@ -121,22 +121,22 @@ increment(); // count is 2
 <Alert>6 килобайт это **в ~11 раз меньше** Jquery</Alert>
 
 ```ts
-import { createCtx, action, atom } from "@reatom/core";
+import { createCtx, action, atom } from '@reatom/core'
 
-const ctx = createCtx();
+const ctx = createCtx()
 
-const countAtom = atom(0);
+const countAtom = atom(0)
 
 const increment = action((ctx) => {
-  countAtom(ctx, (count) => count + 1);
-}, "increment");
+  countAtom(ctx, (count) => count + 1)
+}, 'increment')
 
 ctx.subscribe(countAtom, (count) => {
-  console.log(`count is ${count}`);
-}); // count is 0 (полезно для первичного рендера)
+  console.log(`count is ${count}`)
+}) // count is 0 (полезно для первичного рендера)
 
-increment(ctx); // count is 1
-increment(ctx); // count is 2
+increment(ctx) // count is 1
+increment(ctx) // count is 2
 ```
 
 ### Effector - звезда Telegram чатов по React.js
@@ -144,20 +144,20 @@ increment(ctx); // count is 2
 <Alert>[Оффициальный сайт Effector](https://effector.dev/)</Alert>
 
 ```ts
-import { createEvent, createStore } from "effector";
+import { createEvent, createStore } from 'effector'
 
-const $count = createStore(0);
+const $count = createStore(0)
 
-const increment = createEvent("increment");
+const increment = createEvent('increment')
 
-$count.on(increment, (count) => count + 1);
+$count.on(increment, (count) => count + 1)
 
 $count.watch((count) => {
-  console.log(`count is ${count}`);
-}); // count is 0 (полезно для первичного рендера)
+  console.log(`count is ${count}`)
+}) // count is 0 (полезно для первичного рендера)
 
-increment(); // count is 1
-increment(); // count is 2
+increment() // count is 1
+increment() // count is 2
 ```
 
 ## Генерация случаяного около-пастельного цвета
@@ -170,11 +170,11 @@ increment(); // count is 2
 
 ```js
 function randomHSLPastelColor() {
-  return `hsl(${Math.round(360 * Math.random())}, 70%,  80%)`;
+  return `hsl(${Math.round(360 * Math.random())}, 70%,  80%)`
 }
 
-rdm.onclick = () => (document.body.style.background = randomHSLPastelColor());
-rdm.click();
+rdm.onclick = () => (document.body.style.background = randomHSLPastelColor())
+rdm.click()
 ```
 
 ## Фикс юникода в CMD в Windows
@@ -220,82 +220,82 @@ class SbInclude extends HTMLElement {
     fetch(this.dataset.src)
       .then((res) => res.text())
       .then((data) => {
-        this.outerHTML = data;
-      });
+        this.outerHTML = data
+      })
   }
 }
 
-customElements.define("sb-include", SbInclude);
+customElements.define('sb-include', SbInclude)
 ```
 
 ## Генерация массива чисел при помощи магии
 
 ```js
 Number.prototype[Symbol.iterator] = function* () {
-  for (let i = 0; i < this; i++) yield i + 1;
-};
+  for (let i = 0; i < this; i++) yield i + 1
+}
 
-console.log([...5]); // [1, 2, 3, 4, 5]
+console.log([...5]) // [1, 2, 3, 4, 5]
 ```
 
 ## Генерация массива `[1, 2, 3, ..., 999, 1000]`
 
 ```js
-console.log(Array.from(Array(1000)).map((_, index) => index + 1)); // [1, 2, 3, ..., 999, 1000]
+console.log(Array.from(Array(1000)).map((_, index) => index + 1)) // [1, 2, 3, ..., 999, 1000]
 ```
 
 ## Реализация фильтра в JS
 
 ```js
 Array.prototype.likeFilter = function (f) {
-  let re = [];
+  let re = []
   this.forEach((e) => {
     if (f(e)) {
-      re.push(e);
+      re.push(e)
     }
-  });
-  return re;
-};
+  })
+  return re
+}
 
-const arr = [1, 2, 3, 4, 5, 6];
+const arr = [1, 2, 3, 4, 5, 6]
 
-console.log(arr.likeFilter((value) => value % 2 == 0)); // [2, 4, 6]
+console.log(arr.likeFilter((value) => value % 2 == 0)) // [2, 4, 6]
 ```
 
 ## Счетчик положительных чисел в массиве
 
 ```js
 const countOfPositive = (arr) =>
-  arr.reduce((store, current) => (current > 0 ? store + 1 : store), 0);
+  arr.reduce((store, current) => (current > 0 ? store + 1 : store), 0)
 ```
 
 ## Конвертация высоты дисплеев 16x9 в ширину
 
 ```js
-const listOf16x9Height = [1080, 720, 360];
+const listOf16x9Height = [1080, 720, 360]
 
-const listOf16x9Width = listOf16x9Height.map((height) => (height / 9) * 16);
+const listOf16x9Width = listOf16x9Height.map((height) => (height / 9) * 16)
 
-console.log(listOf16x9Width);
+console.log(listOf16x9Width)
 ```
 
 ## `forEach` у объекта
 
 ```js
-Object.prototype.forEach = Array.prototype.forEach;
+Object.prototype.forEach = Array.prototype.forEach
 
-Object.defineProperty(Object.prototype, "length", {
+Object.defineProperty(Object.prototype, 'length', {
   get: () => Object.keys(this).length,
-});
+})
 
 let a = {
   0: 123,
-  1: "test",
-};
+  1: 'test',
+}
 
-a.forEach((e) => console.log(e));
+a.forEach((e) => console.log(e))
 
-console.log(a.forEach); // forEach() { [native code] }
+console.log(a.forEach) // forEach() { [native code] }
 ```
 
 ## Ошибка в VSCode на Kubuntu (при входе в Github)
@@ -314,28 +314,28 @@ sudo apt install gnome-keyring
 
 ```js
 const createLoop = (onStep, timeout) => {
-  let running = false;
+  let running = false
 
   const iteration = () => {
-    onStep();
-    if (running) setTimeout(iteration, timeout);
-  };
+    onStep()
+    if (running) setTimeout(iteration, timeout)
+  }
 
   const start = () => {
-    running = true;
-    iteration();
-  };
+    running = true
+    iteration()
+  }
 
   const stop = () => {
-    running = false;
-  };
+    running = false
+  }
 
-  return { start, stop };
-};
+  return { start, stop }
+}
 
 const mainLoop = createLoop(() => {
-  console.log("test");
-}, 100);
+  console.log('test')
+}, 100)
 ```
 
 ## Удаление уведомлений ВКонтакте
@@ -346,40 +346,40 @@ const mainLoop = createLoop(() => {
 
 ```js
 document
-  .querySelectorAll(".top_notify_cont .ui_actions_menu")
+  .querySelectorAll('.top_notify_cont .ui_actions_menu')
   .forEach((elem) => {
-    elem.childNodes[0].click();
-  });
+    elem.childNodes[0].click()
+  })
 ```
 
 ## ~~Простая~~ тупая реализация переключения темной темы
 
 ```js
 function switchTheme() {
-  wrapper.classList.toggle("dark-theme");
-  wrapper.classList.toggle("light-theme");
+  wrapper.classList.toggle('dark-theme')
+  wrapper.classList.toggle('light-theme')
 
-  if (wrapper.classList.contains("dark-theme")) {
-    localStorage.setItem("theme", "dark");
+  if (wrapper.classList.contains('dark-theme')) {
+    localStorage.setItem('theme', 'dark')
   } else {
-    localStorage.setItem("theme", "light");
+    localStorage.setItem('theme', 'light')
   }
 }
 
-if (localStorage.getItem("theme") == "dark") {
-  themeSwitcher.setAttribute("checked", "");
-  switchTheme();
+if (localStorage.getItem('theme') == 'dark') {
+  themeSwitcher.setAttribute('checked', '')
+  switchTheme()
 } else {
-  themeSwitcher.removeAttribute("checked");
+  themeSwitcher.removeAttribute('checked')
 }
 
-themeSwitcher.addEventListener("click", switchTheme);
+themeSwitcher.addEventListener('click', switchTheme)
 ```
 
 ## Фикс тени над соседними элементами
 
 [Песочница](https://jsbin.com/muyazupuko/edit?html,css,output)
-![Скриншот](uploads/fragmenty-coda/shadows-without-bugs.webp)
+![Скриншот](/uploads/fragmenty-coda/shadows-without-bugs.webp)
 
 ```html
 <div class="wrap">
@@ -415,67 +415,67 @@ themeSwitcher.addEventListener("click", switchTheme);
 export const SlideAnimations = {
   slideUp: function (element, duration = 500) {
     return new Promise(function (resolve, reject) {
-      element.style.height = element.offsetHeight + "px";
-      element.style.transitionProperty = `height, margin, padding`;
-      element.style.transitionDuration = duration + "ms";
-      element.offsetHeight;
-      element.style.overflow = "hidden";
-      element.style.height = 0;
-      element.style.paddingTop = 0;
-      element.style.paddingBottom = 0;
-      element.style.marginTop = 0;
-      element.style.marginBottom = 0;
+      element.style.height = element.offsetHeight + 'px'
+      element.style.transitionProperty = `height, margin, padding`
+      element.style.transitionDuration = duration + 'ms'
+      element.offsetHeight
+      element.style.overflow = 'hidden'
+      element.style.height = 0
+      element.style.paddingTop = 0
+      element.style.paddingBottom = 0
+      element.style.marginTop = 0
+      element.style.marginBottom = 0
       window.setTimeout(function () {
-        element.style.display = "none";
-        element.style.removeProperty("height");
-        element.style.removeProperty("padding-top");
-        element.style.removeProperty("padding-bottom");
-        element.style.removeProperty("margin-top");
-        element.style.removeProperty("margin-bottom");
-        element.style.removeProperty("overflow");
-        element.style.removeProperty("transition-duration");
-        element.style.removeProperty("transition-property");
-        resolve(false);
-      }, duration);
-    });
+        element.style.display = 'none'
+        element.style.removeProperty('height')
+        element.style.removeProperty('padding-top')
+        element.style.removeProperty('padding-bottom')
+        element.style.removeProperty('margin-top')
+        element.style.removeProperty('margin-bottom')
+        element.style.removeProperty('overflow')
+        element.style.removeProperty('transition-duration')
+        element.style.removeProperty('transition-property')
+        resolve(false)
+      }, duration)
+    })
   },
   slideDown: function (element, duration = 500) {
     return new Promise(function (resolve, reject) {
-      element.style.removeProperty("display");
-      let display = window.getComputedStyle(element).display;
-      if (display === "none") display = "block";
-      element.style.display = display;
-      let height = element.offsetHeight;
-      element.style.overflow = "hidden";
-      element.style.height = 0;
-      element.style.paddingTop = 0;
-      element.style.paddingBottom = 0;
-      element.style.marginTop = 0;
-      element.style.marginBottom = 0;
-      element.offsetHeight;
-      element.style.transitionProperty = `height, margin, padding`;
-      element.style.transitionDuration = duration + "ms";
-      element.style.height = height + "px";
-      element.style.removeProperty("padding-top");
-      element.style.removeProperty("padding-bottom");
-      element.style.removeProperty("margin-top");
-      element.style.removeProperty("margin-bottom");
+      element.style.removeProperty('display')
+      let display = window.getComputedStyle(element).display
+      if (display === 'none') display = 'block'
+      element.style.display = display
+      let height = element.offsetHeight
+      element.style.overflow = 'hidden'
+      element.style.height = 0
+      element.style.paddingTop = 0
+      element.style.paddingBottom = 0
+      element.style.marginTop = 0
+      element.style.marginBottom = 0
+      element.offsetHeight
+      element.style.transitionProperty = `height, margin, padding`
+      element.style.transitionDuration = duration + 'ms'
+      element.style.height = height + 'px'
+      element.style.removeProperty('padding-top')
+      element.style.removeProperty('padding-bottom')
+      element.style.removeProperty('margin-top')
+      element.style.removeProperty('margin-bottom')
       window.setTimeout(function () {
-        element.style.removeProperty("height");
-        element.style.removeProperty("overflow");
-        element.style.removeProperty("transition-duration");
-        element.style.removeProperty("transition-property");
-      }, duration);
-    });
+        element.style.removeProperty('height')
+        element.style.removeProperty('overflow')
+        element.style.removeProperty('transition-duration')
+        element.style.removeProperty('transition-property')
+      }, duration)
+    })
   },
   slideToggle: function (element, duration = 500) {
-    if (window.getComputedStyle(element).display === "none") {
-      return this.slideDown(element, duration);
+    if (window.getComputedStyle(element).display === 'none') {
+      return this.slideDown(element, duration)
     } else {
-      return this.slideUp(element, duration);
+      return this.slideUp(element, duration)
     }
   },
-};
+}
 ```
 
 ## Простой рендер таблицы на JS
@@ -483,17 +483,17 @@ export const SlideAnimations = {
 ```js
 let data = [
   [1, 2, 3, 4, 5],
-  ["a", "b", "c", "d", "i"],
-];
+  ['a', 'b', 'c', 'd', 'i'],
+]
 console.log(
   data.map((row) => {
     return `<tr>${row
       .map((col) => {
-        return `<td>${col}</td>`;
+        return `<td>${col}</td>`
       })
-      .join("")}</tr>`;
+      .join('')}</tr>`
   })
-);
+)
 ```
 
 ## Запуск web-ext с firefox developer
@@ -507,30 +507,30 @@ web-ext run --firefox=firefoxdeveloperedition
 ```js
 function prompt(question, callback) {
   let stdin = process.stdin,
-    stdout = process.stdout;
+    stdout = process.stdout
 
-  stdin.resume();
-  stdout.write(question);
+  stdin.resume()
+  stdout.write(question)
 
-  stdin.once("data", function (data) {
-    callback(data.toString().trim());
-  });
+  stdin.once('data', function (data) {
+    callback(data.toString().trim())
+  })
 }
 
 prompt(
   'Введите числа через запятую, например "3.9, 6, 7.8, 6", без кавычек: ',
   function (input) {
-    let a = input.split(",");
-    console.log("Введено:", a);
-    let b = 0;
+    let a = input.split(',')
+    console.log('Введено:', a)
+    let b = 0
 
     a.forEach((num) => {
-      b += parseFloat(num);
-    });
-    console.log("Среднее арифметическое данных чисел:", b / a.length);
-    prompt("Нажмите Enter, чтобы выйти: ", function (input) {
-      process.exit();
-    });
+      b += parseFloat(num)
+    })
+    console.log('Среднее арифметическое данных чисел:', b / a.length)
+    prompt('Нажмите Enter, чтобы выйти: ', function (input) {
+      process.exit()
+    })
   }
-);
+)
 ```

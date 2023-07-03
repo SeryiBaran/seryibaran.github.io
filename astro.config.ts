@@ -23,7 +23,7 @@ export default defineConfig({
     // astroImageTools,
     critters(),
     compress({
-      html: false,
+      html: true,
       css: true,
       js: true,
       // img: false,
