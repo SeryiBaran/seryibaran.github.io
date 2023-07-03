@@ -17,12 +17,14 @@
 
 ## P.S
 
+- Astro imagetools почему-то обрезает url если файл был конвертирован в webp из png. Нужно конвертировать png в webp самому.
+
 - С Astro не работает конфиг ESLint от antfu. Если вы знаете что делать - откройте issue в этом репозитории.
 
 - Чтобы юзать оптимизированные картинки в .MDX страницах (не постах) юзайте этот код в начале файла (после Frontmatter)
 
   ```ts
-  import Img from "@/components/Img.astro"
+  import Img from '@/components/Img.astro'
 
   export const components = { img: Img }
   ```
