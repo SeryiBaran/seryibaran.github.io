@@ -48,7 +48,7 @@ export async function get(context: APIContext) {
       <span tw="ml-3 text-zinc-400">seryibaran.github.io</span>
       <div tw="flex items-center">
         <img
-          src="${new URL('/public/favicons/icons/icon-72x72.png', context.url)}"
+          src="${new URL('/favicons/icons/icon-72x72.png', context.url)}"
           tw="w-15 h-15 rounded-full"
         />
         <div tw="flex flex-col ml-4">
