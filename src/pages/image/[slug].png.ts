@@ -3,8 +3,6 @@ import { html } from 'satori-html'
 import { Resvg } from '@resvg/resvg-js'
 import { getCollection } from 'astro:content'
 import type { APIContext } from 'astro'
-import dayjs from 'dayjs'
-import 'dayjs/locale/ru'
 
 // https://www.1001fonts.com/download/font/roboto.regular.ttf
 import fontFileRegular from '@/fonts/roboto.regular.ttf'
@@ -24,23 +22,25 @@ const dimensions = {
 
 interface Props {
   title: string
+  description: string
   pubDate: Date
 }
 
 export async function get(context: APIContext) {
-  const { title, pubDate } = context.props as Props
+  const data = context.props as Props
 
-  const date = formatPostDate(pubDate)
+  const date = formatPostDate(data.pubDate)
 
   const markup = html`<div tw="bg-zinc-900 flex flex-col w-full h-full">
     <div tw="flex flex-col w-full h-5/6 p-10 pt-30">
       <div tw="text-zinc-400 text-2xl mb-6">${date}</div>
       <div
-        tw="flex text-6xl w-full font-bold leading-snug tracking-tight text-transparent bg-red-400"
+        tw="flex text-6xl w-full font-bold leading-snug tracking-tight text-transparent bg-red-400 mb-6"
         style="background-clip: text; -webkit-background-clip: text; background: linear-gradient(90deg, rgb(0, 124, 240), rgb(0, 223, 216));"
       >
-        ${title}
+        ${data.title}
       </div>
+      <div tw="flex text-4xl w-full text-zinc-400">${data.description}</div>
     </div>
     <div
       tw="w-full h-1/6 border-t border-zinc-700/50 flex p-10 items-center justify-between text-2xl"
@@ -48,7 +48,7 @@ export async function get(context: APIContext) {
       <span tw="ml-3 text-zinc-400">seryibaran.github.io</span>
       <div tw="flex items-center">
         <img
-          src="https://avatars.githubusercontent.com/u/82605415?s=160"
+          src="${new URL('/public/favicons/icons/icon-72x72.png', context.url)}"
           tw="w-15 h-15 rounded-full"
         />
         <div tw="flex flex-col ml-4">
@@ -97,6 +97,7 @@ export async function getStaticPaths() {
       },
       props: {
         title: post.data.title,
+        description: post.data.description,
         pubDate: post.data.updatedDate ?? post.data.date,
       },
     }
