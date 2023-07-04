@@ -14,7 +14,7 @@ const postSlug = process.env.CREATED_FILE.replaceAll(
 
 if (postSlug.trim() === '') {
   console.log('No posts created!')
-  process.exit(1)
+  process.exit(0)
 }
 
 const postUrl = `https://seryibaran.github.io/posts/${postSlug}`

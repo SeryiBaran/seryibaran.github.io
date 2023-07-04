@@ -13,6 +13,24 @@ import { h } from 'hastscript'
 import remarkTextrCustom from './remarkPlugins/remark-textr-custom.js'
 import remarkToc from './remarkPlugins/remark-toc.patched'
 
+import { readFileSync } from 'node:fs'
+
+// vite plugin to import fonts
+function rawFonts(ext) {
+  return {
+    name: 'vite-plugin-raw-fonts',
+    transform(_, id) {
+      if (ext.some((e) => id.endsWith(e))) {
+        const buffer = readFileSync(id)
+        return {
+          code: `export default ${JSON.stringify(buffer)}`,
+          map: null,
+        }
+      }
+    },
+  }
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://seryibaran.github.io',
@@ -63,6 +81,13 @@ export default defineConfig({
     ],
     shikiConfig: {
       theme: 'vitesse-dark',
+    },
+  },
+
+  vite: {
+    plugins: [rawFonts(['.ttf', '.woff'])],
+    optimizeDeps: {
+      exclude: ['@resvg/resvg-js'],
     },
   },
 })
