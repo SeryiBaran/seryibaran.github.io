@@ -8,7 +8,7 @@ const postSlugs = process.env.CREATED_FILE.split(' ')
   .replaceAll(/\.mdx$/gi, '')
   .replaceAll(/\.md$/gi, '')
 
-if (postSlugs.length === '') {
+if (!postSlugs.length) {
   console.log('No posts created!')
   process.exit(0)
 }
