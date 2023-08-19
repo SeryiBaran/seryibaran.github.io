@@ -37,6 +37,7 @@
     "rehype-autolink-headings": "^6.1.1",
     "rehype-slug": "^5.1.0",
     "remark-emoji": "^4.0.0",
-    "remark-textr": "^5.0.1"
+    "remark-textr": "^5.0.1",
+    "ts-node": "^10.9.1"
   }
 }
