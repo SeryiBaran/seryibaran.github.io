@@ -82,4 +82,4 @@ jobs:
       - name: 'Run bot'
         run: |
           npm ci
-          CREATED_FILE="${{steps.changedFiles.outputs.added}}" npx ts-node telegram-sender-bot/index.js
+          CREATED_FILE="${{steps.changedFiles.outputs.added}}" npx ts-node telegram-sender-bot/index.ts
