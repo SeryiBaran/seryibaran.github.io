@@ -39,10 +39,10 @@ export default defineConfig({
     sitemap(),
     critters(),
     compress({
-      html: true,
+      html: false,
       css: true,
       js: true,
-      // img: false,
+      img: false,
     }),
   ],
   markdown: {
@@ -73,7 +73,7 @@ export default defineConfig({
                 title:
                   'Перейти к этому заголовку\n\nМожно будет скопировать ссылку в браузере и\nкому-то отправить',
               },
-              '#'
+              '#',
             )
           },
         },
