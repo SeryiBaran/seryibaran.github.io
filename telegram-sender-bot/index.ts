@@ -7,7 +7,7 @@ if (
   !process.env.TG_BOT_APIKEY
 )
   throw new Error(
-    'CREATED_FILE or TG_CHANNEL_ID or TG_BOT_APIKEY is not defined!',
+    'no created file or CREATED_FILE or TG_CHANNEL_ID or TG_BOT_APIKEY is not defined!',
   )
 
 const CREATED_FILE = process.env.CREATED_FILE
