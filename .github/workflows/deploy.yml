@@ -74,7 +74,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - uses: jitterbit/get-changed-files@v1
+      - uses: jitterbit/get-changed-files@v1.2
         id: changedFiles
         with:
           format: space-delimited
