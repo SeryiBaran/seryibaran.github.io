@@ -46,7 +46,7 @@ else {
     const postUrl = `https://seryibaran.github.io/posts/${postInfo.slug}`
     await bot.api.sendMessage(
       TG_CHANNEL_ID,
-      `🔔 ${postInfo.title}
+      `🔔 Новый пост: ${postInfo.title}
 <a href="postUrl">${postUrl}</a>`,
       {
         parse_mode: 'HTML',
