@@ -13,6 +13,7 @@
   "dependencies": {
     "@resvg/resvg-js": "^2.4.1",
     "gardevoir": "^1.0.0",
+    "gray-matter": "^4.0.3",
     "satori": "^0.10.3",
     "satori-html": "^0.3.2"
   },
