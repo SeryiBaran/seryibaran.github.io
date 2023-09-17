@@ -14,7 +14,7 @@
 
   --table-head-row-bg: rgba(214, 214, 214, 0.5);
   --table-body-row-odd-bg: rgba(236, 236, 236, 0.5);
-  --table-body-row-even-bg: rgba(214, 214, 214, 0.5);
+  --table-body-row-even-bg: var(--table-head-row-bg);
   --table-cell-border-color: rgba(134, 134, 134, 0.5);
 }
 
@@ -23,10 +23,14 @@
     --c-fg: rgb(192, 192, 192);
     --c-bg: rgb(31, 31, 31);
 
-    --table-head-row-bg: rgba(85, 85, 85, 0.5);
-    --table-body-row-odd-bg: rgba(124, 124, 124, 0.5);
-    --table-body-row-even-bg: rgba(85, 85, 85, 0.5);
+    --table-head-row-bg: rgba(57, 57, 57, 0.5);
+    --table-body-row-odd-bg: rgba(80, 80, 80, 0.5);
+    --table-body-row-even-bg: var(--table-head-row-bg);
   }
+}
+
+p {
+  margin-top: 0.5rem;
 }
 
 body {
@@ -36,9 +40,21 @@ body {
   text-align: left;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  line-height: 1.5;
+  /* line-height: 1.2; */
   background: var(--c-bg);
   color: var(--c-fg);
+  font-family:
+    'Cascadia Code',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
 }
 
 a {
@@ -124,7 +140,7 @@ article > * {
 
 .astro-code {
   font-size: 0.9rem;
-  /* font-family: 'Cascadia Code', 'Jetbrains Mono', 'Source Code Pro', monospace; */
+  font-family: 'Cascadia Code', 'Jetbrains Mono', 'Source Code Pro', monospace;
 }
 
 ol,
@@ -133,6 +149,7 @@ ul {
 }
 
 article img {
+  margin-top: 0.5rem;
   display: block;
   border: 1px solid #4d91ff;
   width: auto;
@@ -161,5 +178,6 @@ summary {
 }
 
 .astro-code {
-  background-color: #202020 !important;
+  margin-top: 0.5rem;
+  background-color: #2f2f2f !important;
 }

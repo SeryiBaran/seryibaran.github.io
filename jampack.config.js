@@ -13,14 +13,14 @@ const default_options = {
     compress: true,
     jpeg: {
       options: {
-        quality: 80,
+        quality: 85,
         mozjpeg: true,
       },
     },
     png: {
       options: {
         compressionLevel: 9,
-        quality: 80,
+        quality: 85,
       },
     },
     webp: {

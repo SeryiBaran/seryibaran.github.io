@@ -26,7 +26,7 @@ interface Props {
   pubDate: Date
 }
 
-export async function get(context: APIContext) {
+export async function GET(context: APIContext) {
   const data = context.props as Props
 
   const date = formatPostDate(data.pubDate)
@@ -82,10 +82,7 @@ export async function get(context: APIContext) {
     },
   }).render()
 
-  return {
-    body: image.asPng(),
-    encoding: 'binary',
-  }
+  return new Response(image.asPng())
 }
 
 export async function getStaticPaths() {

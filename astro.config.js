@@ -39,10 +39,10 @@ export default defineConfig({
     sitemap(),
     critters(),
     compress({
-      html: false,
-      css: true,
-      js: true,
-      img: false,
+      HTML: false,
+      CSS: true,
+      JavaScript: true,
+      Image: false,
     }),
   ],
   markdown: {
