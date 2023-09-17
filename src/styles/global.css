@@ -4,6 +4,11 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/CascadiaCode.ttf');
+}
+
 p {
   margin-top: 0.5rem;
 }
