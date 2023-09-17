@@ -1,6 +1,7 @@
 ---
-import { CollectionEntry, getCollection } from 'astro:content'
+import { type CollectionEntry, getCollection } from 'astro:content'
 import BlogPost from '../../layouts/BlogPost.astro'
+import Divider from '@/components/Divider.astro'
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog')
@@ -16,5 +17,5 @@ const { Content } = await post.render()
 ---
 
 <BlogPost {...post}>
-  <Content />
+  <Content components={{ hr: Divider }} />
 </BlogPost>

@@ -1,13 +1,7 @@
 ---
-const today = new Date();
+import dayjs from 'dayjs'
 ---
 
-<footer>
-  &copy; {today.getFullYear()} SeryiBaran
+<footer class="p-6 text-center">
+  &copy; {dayjs().year()} SeryiBaran
 </footer>
-<style>
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-</style>

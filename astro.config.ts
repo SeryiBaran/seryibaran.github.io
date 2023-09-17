@@ -4,6 +4,9 @@ import sitemap from '@astrojs/sitemap'
 import critters from 'astro-critters'
 import compress from 'astro-compress'
 
+import UnoCSS from 'unocss/vite'
+import { presetUno } from 'unocss'
+
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
@@ -16,10 +19,10 @@ import remarkToc from './remarkPlugins/remark-toc.patched'
 import { readFileSync } from 'node:fs'
 
 // vite plugin to import fonts
-function rawFonts(ext) {
+function rawFonts(ext: string[]) {
   return {
     name: 'vite-plugin-raw-fonts',
-    transform(_, id) {
+    transform(_: any, id: string) {
       if (ext.some((e) => id.endsWith(e))) {
         const buffer = readFileSync(id)
         return {
@@ -27,6 +30,7 @@ function rawFonts(ext) {
           map: null,
         }
       }
+      return undefined
     },
   }
 }
@@ -60,7 +64,10 @@ export default defineConfig({
       footnoteLabel: 'Сноски',
     },
     rehypePlugins: [
+      // TODO: What the fuck... maybe fix later.
+      // @ts-expect-error
       rehypeSlug,
+      // @ts-expect-error
       [
         rehypeAutolinkHeadings,
         {
@@ -85,7 +92,12 @@ export default defineConfig({
   },
 
   vite: {
-    plugins: [rawFonts(['.ttf', '.woff'])],
+    plugins: [
+      rawFonts(['.ttf', '.woff']),
+      UnoCSS({
+        configFile: 'uno.config.ts',
+      }),
+    ],
     optimizeDeps: {
       exclude: ['@resvg/resvg-js'],
     },

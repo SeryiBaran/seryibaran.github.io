@@ -22,6 +22,8 @@
     "@antfu/eslint-config": "^0.42.0",
     "@astrojs/sitemap": "^3.0.0",
     "@divriots/jampack": "^0.20.2",
+    "@unocss/reset": "^0.55.7",
+    "@unocss/transformer-variant-group": "^0.55.7",
     "astro": "^3.1.0",
     "astro-compress": "^2.0.15",
     "astro-critters": "^2.0.11",
@@ -39,6 +41,7 @@
     "rehype-slug": "^6.0.0",
     "remark-emoji": "^4.0.0",
     "remark-textr": "^5.0.1",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "unocss": "^0.55.7"
   }
 }

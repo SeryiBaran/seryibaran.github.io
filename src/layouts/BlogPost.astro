@@ -5,6 +5,7 @@ import Header from '@/components/Header.astro'
 import Footer from '@/components/Footer.astro'
 import FormattedDate from '@/components/FormattedDate.astro'
 import { getPageTitle } from '@/utils'
+import Divider from '@/components/Divider.astro'
 
 interface Props {
   data: CollectionEntry<'blog'>['data']
@@ -34,19 +35,6 @@ if (heroImage) {
       description={description}
       image={image}
     />
-    <style>
-      .title {
-        font-size: 2em;
-        margin: 0.25em 0 0;
-      }
-      hr {
-        border-top: 1px solid #ddd;
-        margin: 1rem 0;
-      }
-      .last-updated-on {
-        font-style: italic;
-      }
-    </style>
   </head>
 
   <body>
@@ -54,16 +42,16 @@ if (heroImage) {
     <main>
       <article>
         {heroImage && <img src={heroImage} alt="" />}
-        <h1 class="title post-title">{title}</h1>
+        <h1>{title}</h1>
         <FormattedDate date={date} />
         {
           updatedDate && (
-            <div class="last-updated-on">
-              Last updated on <FormattedDate date={updatedDate} />
+            <div class="italic">
+              Последний раз обновлено <FormattedDate date={updatedDate} />
             </div>
           )
         }
-        <hr />
+        <Divider article={false} />
         <slot />
       </article>
     </main>

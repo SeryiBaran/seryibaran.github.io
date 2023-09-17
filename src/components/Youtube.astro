@@ -1,23 +1,16 @@
 ---
 interface Props {
-  id: string;
+  id: string
 }
 
-const props = Astro.props;
+const props = Astro.props
 ---
 
 <div>
   <iframe
-    class="youtube"
+    class="w-full aspect-video"
     src={`https://www.youtube-nocookie.com/embed/${props.id}`}
     frame-border="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
 </div>
-
-<style>
-  .youtube {
-    width: 100%;
-    aspect-ratio: 16/9;
-  }
-</style>

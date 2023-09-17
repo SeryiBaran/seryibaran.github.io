@@ -4,180 +4,106 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-:root {
-  --c-primary: rgb(39, 121, 255);
-  --c-primary-light: rgb(101, 160, 255);
-  --c-primary-dark: rgb(0, 85, 221);
-
-  --c-fg: rgb(31, 31, 31);
-  --c-bg: rgb(250, 250, 250);
-
-  --table-head-row-bg: rgba(214, 214, 214, 0.5);
-  --table-body-row-odd-bg: rgba(236, 236, 236, 0.5);
-  --table-body-row-even-bg: var(--table-head-row-bg);
-  --table-cell-border-color: rgba(134, 134, 134, 0.5);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --c-fg: rgb(192, 192, 192);
-    --c-bg: rgb(31, 31, 31);
-
-    --table-head-row-bg: rgba(57, 57, 57, 0.5);
-    --table-body-row-odd-bg: rgba(80, 80, 80, 0.5);
-    --table-body-row-even-bg: var(--table-head-row-bg);
-  }
-}
-
 p {
   margin-top: 0.5rem;
 }
 
 body {
-  margin: auto;
-  padding: 20px;
-  max-width: 64rem;
-  text-align: left;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  /* line-height: 1.2; */
-  background: var(--c-bg);
-  color: var(--c-fg);
-  font-family:
-    'Cascadia Code',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  @apply ma max-w-5xl p-5;
+  @apply bg-neutral-50 text-neutral-800 dark:(bg-neutral-800 text-neutral-200) font-mono;
+  @apply break-words;
+}
+
+h1 {
+  @apply text-4xl;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-2xl;
 }
 
 a {
-  color: var(--c-primary);
-}
-
-a:hover {
-  color: var(--c-primary-light);
-}
-
-a:active {
-  color: var(--c-primary-dark);
+  @apply text-primary-6 hover:text-primary-4 active:text-primary-7
+  dark:(text-primary-5 hover:text-primary-3 active:text-primary-6);
 }
 
 *:focus {
-  outline: var(--c-fg) 1px dashed;
+  @apply outline-2 outline-neutral-7 dark:outline-neutral-4 outline-dashed outline-offset-2;
 }
 
 nav a {
-  margin-right: 10px;
+  @apply mr-3;
 }
-textarea {
-  width: 100%;
-  font-size: 16px;
-}
-input {
-  font-size: 16px;
-}
-content {
-  line-height: 1.6;
-}
+
 table {
-  width: 100%;
+  @apply w-full;
 }
+
 img {
-  max-width: 100%;
-  height: auto;
+  @apply max-w-full h-auto;
 }
+
 code {
-  padding: 2px 5px;
-  background-color: rgba(138, 138, 138, 0.231);
+  @apply py-0.5 px-1 bg-neutral-4/23;
 }
+
 pre {
-  padding: 1rem;
+  @apply p-4;
 }
+
 pre > code {
-  all: unset;
+  @apply p-0 bg-transparent font-mono;
 }
+
 blockquote {
-  padding: 1rem;
-  border: 1px solid rgb(153, 153, 153);
-  font-style: italic;
+  @apply p-4 border-1px border-solid border-neutral italic;
+}
+
+blockquote > * {
+  @apply m-0 p-0;
 }
 
 table {
-  display: block;
-  overflow-x: scroll;
+  @apply block overflow-x-scroll border-collapse text-left;
   white-space: nowrap;
-  border-collapse: collapse;
-}
-
-table thead tr {
-  background: var(--table-head-row-bg);
-}
-
-table tbody tr:nth-child(odd) {
-  background: var(--table-body-row-odd-bg);
-}
-
-table tbody tr:nth-child(even) {
-  background: var(--table-body-row-even-bg);
 }
 
 table :where(td, th) {
-  padding: 0.4rem;
-  margin: 0;
-  border: var(--table-cell-border-color) solid 1px;
+  @apply p-1.6 border-neutral border-1px border-solid;
 }
 
 article > * {
-  margin: 1rem 0px;
+  @apply mx-0 my-4;
 }
 
 .astro-code {
-  font-size: 0.9rem;
-  font-family: 'Cascadia Code', 'Jetbrains Mono', 'Source Code Pro', monospace;
-}
-
-ol,
-ul {
-  margin-left: 1.4rem;
+  @apply text-sm;
 }
 
 article img {
-  margin-top: 0.5rem;
-  display: block;
-  border: 1px solid #4d91ff;
-  width: auto;
+  @apply mt-2 block border-1px border-solid border-primary-6 w-auto;
 }
 
 :where(ol, ul) li {
-  margin: 0.6rem 0;
+  @apply mx-0 my-2.4;
 }
 
 article img + em {
-  font-style: normal;
-  opacity: 0.7;
-  font-size: 0.9em;
-  display: block;
-  text-align: center;
-  margin-bottom: 1rem;
-  margin-top: 0.2rem;
+  @apply not-italic opacity-80 text-sm block text-center mb-4 mt-1;
 }
 
 .headingLink {
-  margin-right: 0.2em;
+  @apply mr-1;
 }
 
 summary {
-  cursor: pointer;
+  @apply cursor-pointer;
 }
 
 .astro-code {
-  margin-top: 0.5rem;
-  background-color: #2f2f2f !important;
+  @apply mt-2 bg-neutral-800! border-1px border-solid border-primary-6;
 }

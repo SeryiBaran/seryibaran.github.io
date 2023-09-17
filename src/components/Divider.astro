@@ -1,0 +1,19 @@
+---
+interface Props {
+  article?: boolean
+}
+
+const { article = true } = Astro.props
+---
+
+<div
+  class="border-neutral-8 dark:border-neutral-200 border-t-1px border-t-solid my-8"
+  class:list={[{ article }]}
+>
+</div>
+
+<style>
+  div.article {
+    @apply border-neutral-4 border-2px mx-auto max-w-md;
+  }
+</style>
