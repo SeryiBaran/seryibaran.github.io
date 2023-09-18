@@ -46,7 +46,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Install project dependencies
-        run: npm i
+        run: npm i && npm i @resvg/resvg-js-linux-x64-gnu
 
         # Here magic comes
       - name: Build project
