@@ -1,6 +1,5 @@
 import satori from 'satori'
 import { html } from 'satori-html'
-import { Resvg } from '@resvg/resvg-js'
 import { getCollection } from 'astro:content'
 import type { APIContext } from 'astro'
 
@@ -9,6 +8,7 @@ import fontFileRegular from '@/fonts/roboto.regular.ttf'
 // https://www.1001fonts.com/download/font/roboto.bold.ttf
 import fontFileBold from '@/fonts/roboto.bold.ttf'
 import { formatPostDate } from '@/utils'
+import sharp from 'sharp'
 
 const [fontRegular, fontBold] = [
   Buffer.from(fontFileRegular),
@@ -75,14 +75,9 @@ export async function GET(context: APIContext) {
     width: dimensions.width,
   })
 
-  const image = new Resvg(svg, {
-    fitTo: {
-      mode: 'width',
-      value: dimensions.width,
-    },
-  }).render()
+  const image = await sharp(Buffer.from(svg)).toFormat('png').toBuffer()
 
-  return new Response(image.asPng())
+  return new Response(image)
 }
 
 export async function getStaticPaths() {
