@@ -1,29 +1,58 @@
 ---
-import HeaderLink from './HeaderLink.astro'
+import { Icon } from 'astro-icon'
+
 import { SITE_TITLE } from '../consts'
+
+const links = [
+  { href: '/', title: 'Главная', icon: 'tabler:home' },
+  { href: '/posts', title: 'Посты', icon: 'tabler:file-text' },
+  { href: '/contacts', title: 'Контакты', icon: 'tabler:mail' },
+]
+
+const { pathname } = Astro.url
 ---
 
 <header>
   <div
     class="container flex flex-col sm:flex-row gap-4 text-center sm:text-start"
   >
-    <img
-      src="/favicons/icons/icon-72x72.png"
-      alt="Лого"
-      class="rounded-full h-72px w-72px ma sm:m-0"
-    />
+    <a href="/" class="link_without_effects ma sm:m-0">
+      <img
+        src="/favicons/icons/icon-72x72.png"
+        alt="Лого"
+        class="rounded-full h-72px w-72px"
+      />
+    </a>
     <div class="line-height-loose">
-      <a
-        href="/"
-        class="text-2xl link_without_effects block text-center sm:text-start"
-      >
+      <a href="/" class="text-2xl link_without_effects ma sm:m-0">
         {SITE_TITLE}
       </a>
       <nav>
-        <HeaderLink href="/">Главная</HeaderLink>
-        <HeaderLink href="/posts">Посты</HeaderLink>
-        <HeaderLink href="/contacts">Контакты</HeaderLink>
+        {
+          links.map((link) => (
+            <a
+              href={link.href}
+              class="inline-flex items-center decoration-none link_without_visited_color"
+              class:list={[
+                {
+                  isActive:
+                    link.href === pathname ||
+                    link.href === pathname.replace(/\/$/, ''),
+                },
+              ]}
+            >
+              <Icon name={link.icon} class="inline w-1em h-1em mr-1" />
+              {link.title}
+            </a>
+          ))
+        }
       </nav>
     </div>
   </div>
 </header>
+
+<style>
+  a.isActive {
+    @apply font-bold underline;
+  }
+</style>

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^1.1.0",
+    "astro-icon": "^0.8.1",
     "gray-matter": "^4.0.3",
     "satori": "^0.10.6",
     "satori-html": "^0.3.2",

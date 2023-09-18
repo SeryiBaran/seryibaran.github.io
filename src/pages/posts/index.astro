@@ -1,8 +1,5 @@
 ---
-import BaseHead from '@/components/BaseHead.astro'
-import Header from '@/components/Header.astro'
-import Footer from '@/components/Footer.astro'
-import Main from '@/components/Main.astro'
+import BlogPost from '@/layouts/BlogPost.astro'
 import { getCollection } from 'astro:content'
 import FormattedDate from '@/components/FormattedDate.astro'
 
@@ -11,46 +8,26 @@ const posts = (await getCollection('blog')).sort(
 )
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={'Посты'} description="Все посты" />
-    <style>
-      ul li {
-        margin: 0.6rem 0;
-      }
-      ul li .time {
-        display: block;
-        font-style: normal;
-        opacity: 0.7;
-        font-size: 0.9em;
-      }
-      ul li a:visited {
-        color: #a048ec;
-      }
-    </style>
-  </head>
-  <body>
-    <Header />
-    <Main>
-      <section>
-        <ul>
-          {
-            posts
-              .slice()
-              .reverse()
-              .map((post) => (
-                <li>
-                  <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
-                  <span class="time">
-                    <FormattedDate date={post.data.date} />
-                  </span>
-                </li>
-              ))
-          }
-        </ul>
-      </section>
-    </Main>
-    <Footer />
-  </body>
-</html>
+<BlogPost
+  data={{
+    title: 'Посты',
+    description: 'Мои посты',
+  }}
+  isShowDate={false}
+>
+  <ul>
+    {
+      posts
+        .slice()
+        .reverse()
+        .map((post) => (
+          <li class="m-0 my-3">
+            <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
+            <span class="block not-italic opacity-70 text-lg">
+              <FormattedDate date={post.data.date} />
+            </span>
+          </li>
+        ))
+    }
+  </ul>
+</BlogPost>

@@ -72,13 +72,18 @@ h3 {
   @apply text-2xl;
 }
 
-a {
+a:visited {
+  color: #a048ec;
+}
+
+html body a,
+.link_without_visited_color:visited {
   @apply text-primary-6 hover:text-primary-4 active:text-primary-7
   dark:(text-primary-5 hover:text-primary-3 active:text-primary-6);
 }
 
 .link_without_effects {
-  @apply active:text-inherit hover:text-inherit focus:text-inherit text-inherit no-underline focus:outline-none;
+  @apply active:text-inherit hover:text-inherit focus:text-inherit visited:text-inherit text-inherit no-underline focus:outline-none;
 }
 
 nav a {
