@@ -81,5 +81,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Run bot'
         run: |
-          npm ci
+          npm i
           CREATED_FILE="${{steps.changedFiles.outputs.added}}" npx ts-node telegram-sender-bot/index.ts
