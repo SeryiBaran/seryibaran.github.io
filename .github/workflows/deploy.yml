@@ -46,7 +46,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Install project dependencies
-        run: npm ci
+        run: npm i
 
         # Here magic comes
       - name: Build project
