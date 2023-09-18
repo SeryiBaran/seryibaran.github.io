@@ -7,7 +7,8 @@
     "allowJs": true,
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["unplugin-icons/types/astro"]
   },
   "ts-node": {
     "esm": true

@@ -5,7 +5,7 @@ import critters from 'astro-critters'
 import compress from 'astro-compress'
 
 import UnoCSS from 'unocss/vite'
-import { presetUno } from 'unocss'
+import Icons from 'unplugin-icons/vite'
 
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
@@ -96,6 +96,9 @@ export default defineConfig({
       rawFonts(['.ttf', '.woff']),
       UnoCSS({
         configFile: 'uno.config.ts',
+      }),
+      Icons({
+        compiler: 'astro',
       }),
     ],
     optimizeDeps: {

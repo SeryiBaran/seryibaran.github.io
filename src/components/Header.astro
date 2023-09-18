@@ -1,12 +1,14 @@
 ---
-import { Icon } from 'astro-icon'
+import TablerHome from '~icons/tabler/home'
+import TablerFileText from '~icons/tabler/file-text'
+import TablerMail from '~icons/tabler/mail'
 
 import { SITE_TITLE } from '../consts'
 
 const links = [
-  { href: '/', title: 'Главная', icon: 'tabler:home' },
-  { href: '/posts', title: 'Посты', icon: 'tabler:file-text' },
-  { href: '/contacts', title: 'Контакты', icon: 'tabler:mail' },
+  { href: '/', title: 'Главная', icon: TablerHome },
+  { href: '/posts', title: 'Посты', icon: TablerFileText },
+  { href: '/contacts', title: 'Контакты', icon: TablerMail },
 ]
 
 const { pathname } = Astro.url
@@ -41,7 +43,7 @@ const { pathname } = Astro.url
                 },
               ]}
             >
-              <Icon name={link.icon} class="inline w-1em h-1em" />
+              <link.icon class="inline w-1em h-1em" />
               {link.title}
             </a>
           ))
