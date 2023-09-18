@@ -5,22 +5,63 @@
  */
 
 @font-face {
-  font-family: 'Cascadia Code';
-  src: url('/CascadiaCode.woff2');
+  font-family: 'JetBrains Mono';
+  src: url('JetBrainsMono-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('JetBrainsMono-Italic.woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('JetBrainsMono-Bold.woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('JetBrainsMono-BoldItalic.woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+
+* {
+  @apply box-border;
+}
+
+*:focus {
+  @apply outline-2 outline-neutral-7 dark:outline-neutral-4 outline-dashed outline-offset-2;
 }
 
 p {
-  margin-top: 0.5rem;
+  @apply m-0 mt-2;
 }
 
 body {
+  @apply bg-slate-50 text-neutral-800 dark:(bg-zinc-800 text-neutral-200) font-mono text-lg m-0 break-words flex flex-col min-h-screen line-height-unset;
+}
+
+.container {
   @apply ma max-w-5xl p-5;
-  @apply bg-neutral-50 text-neutral-800 dark:(bg-neutral-800 text-neutral-200) font-mono;
-  @apply break-words;
+}
+
+header,
+footer {
+  @apply bg-slate-100 dark:bg-hex-313135 shadow shadow-black/20;
+}
+
+h1,
+h2,
+h3 {
+  @apply my-[0.4em];
 }
 
 h1 {
-  @apply text-4xl;
+  @apply text-4xl md:text-5xl;
 }
 
 h2 {
@@ -36,8 +77,8 @@ a {
   dark:(text-primary-5 hover:text-primary-3 active:text-primary-6);
 }
 
-*:focus {
-  @apply outline-2 outline-neutral-7 dark:outline-neutral-4 outline-dashed outline-offset-2;
+.link_without_effects {
+  @apply active:text-inherit hover:text-inherit focus:text-inherit text-inherit no-underline focus:outline-none;
 }
 
 nav a {

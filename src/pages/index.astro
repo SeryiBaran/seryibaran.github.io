@@ -1,34 +1,19 @@
 ---
-import BaseHead from '@/components/BaseHead.astro'
-import Header from '@/components/Header.astro'
-import Footer from '@/components/Footer.astro'
-import { SITE_TITLE, SITE_DESCRIPTION } from '@/consts'
+import BlogPost from '@/layouts/BlogPost.astro'
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header title={SITE_TITLE} />
-    <main>
-      <h1>SeryiBaran</h1>
+<BlogPost data={{ title: 'Главная' }}>
+  <p>Я Иван Музы́ка, начинающий Frontend разработчик.</p>
 
-      <p>Я Иван Музы́ка, начинающий Frontend разработчик.</p>
+  <p>Это мой личный сайт.</p>
 
-      <p>Это мой личный сайт.</p>
+  <p>
+    Все мои контакты находятся на странице <a href="/contacts">Контакты</a>.
+  </p>
 
-      <p>
-        Все мои контакты находятся на странице <a href="/contacts">Контакты</a>.
-      </p>
-
-      <p>
-        Вся информация о IT навыках и портфолио - на <a
-          href="https://github.com/SeryiBaran">Github</a
-        >.
-      </p>
-    </main>
-    <Footer />
-  </body>
-</html>
+  <p>
+    Вся информация о IT навыках и портфолио - на <a
+      href="https://github.com/SeryiBaran">Github</a
+    >.
+  </p>
+</BlogPost>

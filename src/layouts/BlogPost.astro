@@ -3,16 +3,25 @@ import type { CollectionEntry } from 'astro:content'
 import BaseHead from '@/components/BaseHead.astro'
 import Header from '@/components/Header.astro'
 import Footer from '@/components/Footer.astro'
+import Main from '@/components/Main.astro'
 import FormattedDate from '@/components/FormattedDate.astro'
-import { getPageTitle } from '@/utils'
 import Divider from '@/components/Divider.astro'
+import { SITE_DESCRIPTION } from '@/consts'
 
 interface Props {
-  data: CollectionEntry<'blog'>['data']
+  isShowDate?: boolean
+  data: {
+    updatedDate?: Date | undefined
+    heroImage?: string | undefined
+    title: string
+    description?: string
+    date?: Date
+  }
   slug?: CollectionEntry<'blog'>['slug']
 }
 
 const {
+  isShowDate = true,
   data: { title, description, date, updatedDate, heroImage },
   slug = null,
 } = Astro.props
@@ -31,21 +40,21 @@ if (heroImage) {
 <html lang="en">
   <head>
     <BaseHead
-      title={getPageTitle(title)}
-      description={description}
+      title={title}
+      description={description || SITE_DESCRIPTION}
       image={image}
     />
   </head>
 
   <body>
     <Header />
-    <main>
+    <Main>
       <article>
         {heroImage && <img src={heroImage} alt="" />}
         <h1>{title}</h1>
-        <FormattedDate date={date} />
+        {isShowDate && date && <FormattedDate date={date} />}
         {
-          updatedDate && (
+          isShowDate && updatedDate && (
             <div class="italic">
               Последний раз обновлено <FormattedDate date={updatedDate} />
             </div>
@@ -54,7 +63,7 @@ if (heroImage) {
         <Divider article={false} />
         <slot />
       </article>
-    </main>
+    </Main>
     <Footer />
   </body>
 </html>

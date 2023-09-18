@@ -3,13 +3,27 @@ import HeaderLink from './HeaderLink.astro'
 import { SITE_TITLE } from '../consts'
 ---
 
-<header class="mb-8">
-  <p class="text-xl">
-    {SITE_TITLE}
-  </p>
-  <nav>
-    <HeaderLink href="/">Главная</HeaderLink>
-    <HeaderLink href="/posts">Посты</HeaderLink>
-    <HeaderLink href="/contacts">Контакты</HeaderLink>
-  </nav>
+<header>
+  <div
+    class="container flex flex-col sm:flex-row gap-4 text-center sm:text-start"
+  >
+    <img
+      src="/favicons/icons/icon-72x72.png"
+      alt="Лого"
+      class="rounded-full h-72px w-72px ma sm:m-0"
+    />
+    <div class="line-height-loose">
+      <a
+        href="/"
+        class="text-2xl link_without_effects block text-center sm:text-start"
+      >
+        {SITE_TITLE}
+      </a>
+      <nav>
+        <HeaderLink href="/">Главная</HeaderLink>
+        <HeaderLink href="/posts">Посты</HeaderLink>
+        <HeaderLink href="/contacts">Контакты</HeaderLink>
+      </nav>
+    </div>
+  </div>
 </header>

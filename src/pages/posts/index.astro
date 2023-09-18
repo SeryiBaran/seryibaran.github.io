@@ -1,20 +1,20 @@
 ---
-import BaseHead from "@/components/BaseHead.astro";
-import Header from "@/components/Header.astro";
-import Footer from "@/components/Footer.astro";
-import { getCollection } from "astro:content";
-import FormattedDate from "@/components/FormattedDate.astro";
-import { getPageTitle } from "@/utils";
+import BaseHead from '@/components/BaseHead.astro'
+import Header from '@/components/Header.astro'
+import Footer from '@/components/Footer.astro'
+import Main from '@/components/Main.astro'
+import { getCollection } from 'astro:content'
+import FormattedDate from '@/components/FormattedDate.astro'
 
-const posts = (await getCollection("blog")).sort(
-  (a, b) => a.data.date.valueOf() - b.data.date.valueOf()
-);
+const posts = (await getCollection('blog')).sort(
+  (a, b) => a.data.date.valueOf() - b.data.date.valueOf(),
+)
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={getPageTitle("Посты")} description="Все посты" />
+    <BaseHead title={'Посты'} description="Все посты" />
     <style>
       ul li {
         margin: 0.6rem 0;
@@ -32,7 +32,7 @@ const posts = (await getCollection("blog")).sort(
   </head>
   <body>
     <Header />
-    <main>
+    <Main>
       <section>
         <ul>
           {
@@ -50,7 +50,7 @@ const posts = (await getCollection("blog")).sort(
           }
         </ul>
       </section>
-    </main>
+    </Main>
     <Footer />
   </body>
 </html>
