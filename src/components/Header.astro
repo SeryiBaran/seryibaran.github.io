@@ -32,7 +32,7 @@ const { pathname } = Astro.url
           links.map((link) => (
             <a
               href={link.href}
-              class="inline-flex items-center decoration-none link_without_visited_color"
+              class="inline-flex items-center decoration-none link_without_visited_color gap-1"
               class:list={[
                 {
                   isActive:
@@ -41,7 +41,7 @@ const { pathname } = Astro.url
                 },
               ]}
             >
-              <Icon name={link.icon} class="inline w-1em h-1em mr-1" />
+              <Icon name={link.icon} class="inline w-1em h-1em" />
               {link.title}
             </a>
           ))

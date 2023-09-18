@@ -1,5 +1,6 @@
 ---
 import { formatPostDate } from '@/utils'
+import Icon from 'astro-icon'
 
 export interface Props {
   date: Date
@@ -8,6 +9,7 @@ export interface Props {
 const { date } = Astro.props
 ---
 
-<time datetime={date.toISOString()}>
+<time datetime={date.toISOString()} class="inline-flex items-center gap-1">
+  <Icon name="tabler:calendar" class="w-1em h-1em" />
   {formatPostDate(date)}
 </time>
