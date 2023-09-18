@@ -46,7 +46,7 @@ export default defineConfig({
       HTML: false,
       CSS: true,
       JavaScript: true,
-      Image: false,
+      Image: true,
     }),
   ],
   markdown: {
