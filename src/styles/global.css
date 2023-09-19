@@ -160,5 +160,5 @@ summary {
 }
 
 .astro-code {
-  @apply mt-2 bg-neutral-800! border-1px border-solid border-primary-6;
+  @apply mt-2 bg-neutral-800! border-1px border-solid border-primary-6 p-4 py-8 sm:p-4 sm:text-wrap;
 }
