@@ -103,7 +103,7 @@ img {
 }
 
 code {
-  @apply py-0.5 px-1 bg-neutral-4/23;
+  @apply py-0.5 px-1 bg-neutral-4/23 text-sm font-inherit;
 }
 
 pre {
