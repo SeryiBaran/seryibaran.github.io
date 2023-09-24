@@ -22,3 +22,5 @@ pnpm-debug.log*
 .obsidian
 .jampack
 package-lock.json
+
+.idea
