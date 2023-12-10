@@ -38,7 +38,7 @@
 }
 
 *:focus {
-  @apply outline-2 outline-neutral-7 dark:outline-neutral-4 outline-dashed outline-offset-2;
+  @apply outline-1 outline-neutral-7 dark:outline-neutral-4 outline-dashed outline-offset-2;
 }
 
 p {
@@ -46,11 +46,11 @@ p {
 }
 
 body {
-  @apply bg-slate-50 text-neutral-800 dark:(bg-zinc-800 text-neutral-200) font-mono text-lg m-0 break-words flex flex-col min-h-screen line-height-unset;
+  @apply bg-slate-50 text-neutral-800 dark:(bg-zinc-800 text-neutral-200) font-mono m-0 break-words flex flex-col min-h-screen line-height-unset;
 }
 
 .container {
-  @apply ma max-w-5xl p-5;
+  @apply ma max-w-2xl p-3;
 }
 
 header,
@@ -65,15 +65,15 @@ h3 {
 }
 
 h1 {
-  @apply text-4xl md:text-5xl;
-}
-
-h2 {
   @apply text-3xl;
 }
 
-h3 {
+h2 {
   @apply text-2xl;
+}
+
+h3 {
+  @apply text-xl;
 }
 
 a:visited {
@@ -106,16 +106,8 @@ code {
   @apply py-0.5 px-1 bg-neutral-4/23 text-sm font-inherit;
 }
 
-pre {
-  @apply p-4;
-}
-
 pre > code {
   @apply p-0 bg-transparent font-mono;
-}
-
-blockquote {
-  @apply p-4 border-1px border-solid border-neutral italic;
 }
 
 blockquote > * {
@@ -132,11 +124,7 @@ table :where(td, th) {
 }
 
 article > * {
-  @apply mx-0 my-4;
-}
-
-.astro-code {
-  @apply text-sm;
+  @apply mx-0 my-3;
 }
 
 article img {

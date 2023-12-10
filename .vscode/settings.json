@@ -1,5 +1,7 @@
 {
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": { "source.fixAll": true },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
   "css.lint.unknownAtRules": "ignore"
 }

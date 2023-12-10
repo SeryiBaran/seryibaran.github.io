@@ -21,9 +21,9 @@ const posts = (await getCollection('blog')).sort(
         .slice()
         .reverse()
         .map((post) => (
-          <li class="m-0 my-3">
+          <li class="m-0 my-2">
             <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
-            <span class="block not-italic opacity-70 text-lg">
+            <span class="block not-italic opacity-70">
               <FormattedDate date={post.data.date} />
             </span>
           </li>

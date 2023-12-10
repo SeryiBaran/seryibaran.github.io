@@ -1,7 +1,7 @@
 import { defineConfig, transformerDirectives, presetUno } from 'unocss'
 import transformerVariantGroup from '@unocss/transformer-variant-group'
 
-import { colors } from 'unocss/preset-mini'
+import { colors, theme } from 'unocss/preset-mini'
 
 export default defineConfig({
   transformers: [transformerDirectives(), transformerVariantGroup()],
@@ -16,6 +16,6 @@ export default defineConfig({
     },
     fontFamily: {
       mono: "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-    },
+    }
   },
 })
