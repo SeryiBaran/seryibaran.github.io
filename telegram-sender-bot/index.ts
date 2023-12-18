@@ -13,7 +13,7 @@ if (
   !process.env.TG_CHANNEL_ID ||
   !process.env.TG_BOT_APIKEY
 )
-  console.error(
+  console.log(
     'no created file or CREATED_FILE or TG_CHANNEL_ID or TG_BOT_APIKEY is not defined!',
   )
 else {
