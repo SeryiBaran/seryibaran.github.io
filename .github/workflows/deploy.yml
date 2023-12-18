@@ -50,7 +50,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Install project dependencies
-        run: pnpm install && pnpm install --os=linux --cpu=x64 sharp
+        run: pnpm install
 
         # Here magic comes
       - name: Build project
