@@ -46,11 +46,11 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Install project dependencies
-        run: npm i
+        run: pnpm install && pnpm install --os=linux --cpu=x64 sharp
 
         # Here magic comes
       - name: Build project
-        run: npm run build
+        run: pnpm run build
 
       - name: Upload builded project
         uses: actions/upload-pages-artifact@v1
@@ -81,5 +81,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Run bot'
         run: |
-          npm i
-          CREATED_FILE="${{steps.changedFiles.outputs.added}}" npx ts-node telegram-sender-bot/index.ts
+          pnpm i
+          CREATED_FILE="${{steps.changedFiles.outputs.added}}" pnpm ts-node telegram-sender-bot/index.ts
