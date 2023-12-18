@@ -94,5 +94,5 @@ jobs:
 
       - name: 'Run bot'
         run: |
-          pnpm i
-          CREATED_FILE="${{steps.changedFiles.outputs.added}}" pnpm ts-node telegram-sender-bot/index.ts
+          pnpm install
+          CREATED_FILE="${{steps.changedFiles.outputs.added}}" pnpm run tg-bot

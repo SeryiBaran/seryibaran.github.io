@@ -5,8 +5,13 @@
   "private": true,
   "pnpm": {
     "supportedArchitectures": {
-      "os": ["win32", "linux"],
-      "cpu": ["x64"]
+      "os": [
+        "win32",
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ]
     }
   },
   "scripts": {
@@ -14,7 +19,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "tg-bot": "tsx telegram-sender-bot/index.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^2.0.1",
@@ -23,6 +29,7 @@
     "satori": "^0.10.11",
     "satori-html": "^0.3.2",
     "sharp": "^0.33.0",
+    "tsx": "^4.6.2",
     "unplugin-icons": "^0.18.1"
   },
   "devDependencies": {
