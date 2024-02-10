@@ -6,8 +6,6 @@ date: 2023-04-19
 
 import Alert from '@/components/Alert.astro'
 
-## Содержание
-
 Разные куски кода, команды и программы.
 
 Эта статья будет обновляться!
@@ -540,13 +538,14 @@ prompt(
 ![Скриншот CGit](/uploads/fragmenty-coda/docker-git-cgit.png)
 
 Использованные Docker образы:
+
 - [Git сервер](https://github.com/rockstorm101/git-server-docker)
 - [CGit сервер](https://gitlab.com/ankit-docker/cgit/-/tree/master/debian-nginx?ref_type=heads)
 
 docker-compose.yml:
 
 ```yaml
-version: "3"
+version: '3'
 
 services:
   git-server:
@@ -556,7 +555,7 @@ services:
 
     environment:
       # Password for the git user
-      GIT_PASSWORD: "LoLoLo123LoLoLo123"
+      GIT_PASSWORD: 'LoLoLo123LoLoLo123'
 
       # Path where the file with the password for the git user will be
       # mounted in the container in order to replace the default one
@@ -590,17 +589,16 @@ services:
       # - /executable/file:/home/git/git-shell-commands/no-interactive-login
 
     ports:
-      - "2222:22"
+      - '2222:22'
 
   cgit:
-    image: "ankitrgadiya/cgit:debian-nginx"
+    image: 'ankitrgadiya/cgit:debian-nginx'
     container_name: cgit
     volumes:
       - git-repositories:/git
     ports:
-      - "80:80"
+      - '80:80'
 
 volumes:
   git-repositories:
-
 ```

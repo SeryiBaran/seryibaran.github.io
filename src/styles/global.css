@@ -5,40 +5,26 @@
  */
 
 @font-face {
-  font-family: 'JetBrains Mono';
-  src: url('/JetBrainsMono-Regular.woff2');
+  font-family: 'Inconsolata-Regular';
+  src: url('/Inconsolata-Regular.ttf');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'JetBrains Mono';
-  src: url('/JetBrainsMono-Italic.woff2');
-  font-display: swap;
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('/JetBrainsMono-Bold.woff2');
+  font-family: 'Inconsolata-Regular';
+  src: url('/Inconsolata-Bold.ttf');
   font-display: swap;
   font-weight: bold;
   font-style: normal;
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('/JetBrainsMono-BoldItalic.woff2');
-  font-display: swap;
-  font-weight: bold;
-  font-style: italic;
 }
 
 * {
   @apply box-border;
 }
 
-*:focus {
-  @apply outline-1 outline-neutral-7 dark:outline-neutral-4 outline-dashed outline-offset-2;
+*:focus-visible {
+  @apply outline-1 outline-neutral-7 dark:outline-neutral-4 outline-dashed outline-offset-1;
 }
 
 p {
@@ -46,7 +32,7 @@ p {
 }
 
 body {
-  @apply bg-slate-50 text-neutral-800 dark:(bg-zinc-800 text-neutral-200) font-mono m-0 break-words flex flex-col min-h-screen line-height-unset;
+  @apply bg-slate-50 text-neutral-800 dark:(bg-zinc-800 text-neutral-200) font-mono m-0 break-words flex flex-col min-h-screen;
 }
 
 .container {
@@ -76,14 +62,20 @@ h3 {
   @apply text-xl;
 }
 
-a:visited {
+/* a:visited {
   color: #a048ec;
 }
 
+@media (prefers-color-scheme: dark) {
+  a:visited {
+    color: #c589fa;
+  }
+} */
+
 html body a,
 .link_without_visited_color:visited {
-  @apply text-primary-6 hover:text-primary-4 active:text-primary-7
-  dark:(text-primary-5 hover:text-primary-3 active:text-primary-6);
+  @apply text-primary-6 hover:text-primary-4
+  dark:(text-primary-4 hover:text-primary-3);
 }
 
 .link_without_effects {
@@ -148,5 +140,5 @@ summary {
 }
 
 .astro-code {
-  @apply mt-2 bg-neutral-800! border-1px border-solid border-primary-6 p-4 py-8 sm:p-4 sm:text-wrap;
+  @apply mt-2 border-1px border-solid border-primary-6 p-4 py-8 sm:p-4 sm:text-wrap;
 }

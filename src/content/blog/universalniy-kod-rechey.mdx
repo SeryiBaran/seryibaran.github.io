@@ -1,12 +1,10 @@
 ---
-title: "Универсальный код речей"
-description: "Что такое универсальный код речей, как его использовать и где скачать"
+title: 'Универсальный код речей'
+description: 'Что такое универсальный код речей, как его использовать и где скачать'
 date: 2023-04-27
 ---
 
-import Alert from "@/components/Alert.astro";
-
-## Содержание
+import Alert from '@/components/Alert.astro'
 
 ## Кто, что и почему
 
@@ -117,16 +115,16 @@ import Alert from "@/components/Alert.astro";
 ## Пример генератора предложений из JSON на JavaScript
 
 ```js
-const fs = require("fs");
+const fs = require('fs')
 
-const kodRechey = JSON.parse(fs.readFileSync("./kodRechey.json")); // Или fetch/import
+const kodRechey = JSON.parse(fs.readFileSync('./kodRechey.json')) // Или fetch/import
 
-const randomChoose = (arr) => arr[Math.floor(Math.random() * arr.length)];
+const randomChoose = (arr) => arr[Math.floor(Math.random() * arr.length)]
 
 const generateText = (length) =>
-  [...Array(length)].map((_) => kodRechey.map(randomChoose).join(" ") + ".");
+  [...Array(length)].map((_) => kodRechey.map(randomChoose).join(' ') + '.')
 
-console.log(generateText(3));
+console.log(generateText(3))
 /*
 [
   'Повседневная практика показывает, что сложившаяся структура организации требуют определения и уточнения системы массового участия.',
