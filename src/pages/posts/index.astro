@@ -15,18 +15,18 @@ const posts = (await getCollection('blog')).sort(
   }}
   isShowDate={false}
 >
-  <ul>
+  <ul class="p-0 flex flex-col gap-4 md:gap-0">
     {
       posts
         .slice()
+        .filter((post) => !post.data.draft)
         .reverse()
-        .filter((post) => !post.draft)
         .map((post) => (
-          <li class="m-0 my-2">
-            <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
+          <li class="m-0 gap-x-2 flex flex-col md:flex-row">
             <span class="block opacity-70 text-sm">
               <FormattedDate date={post.data.date} />
             </span>
+            <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
           </li>
         ))
     }

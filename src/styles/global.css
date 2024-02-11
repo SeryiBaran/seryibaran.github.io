@@ -61,7 +61,7 @@ body {
 }
 
 .container {
-  @apply ma max-w-2xl p-3;
+  @apply ma max-w-4xl p-4;
 }
 
 header,
@@ -153,7 +153,7 @@ article img.no-border-img {
 }
 
 :where(ol, ul) li {
-  @apply mx-0 my-2.4;
+  /* @apply mx-0 my-1.6; */
 }
 
 article img + em {

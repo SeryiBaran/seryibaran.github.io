@@ -1,6 +1,6 @@
 import 'dotenv/config'
+import fs from 'node:fs'
 import { Bot } from 'grammy'
-import fs from 'fs'
 import matter from 'gray-matter'
 
 interface PostInfo {
@@ -9,22 +9,24 @@ interface PostInfo {
 }
 
 if (
-  !process.env.CREATED_FILE ||
-  !process.env.TG_CHANNEL_ID ||
-  !process.env.TG_BOT_APIKEY
-)
+  !process.env.CREATED_FILE
+  || !process.env.TG_CHANNEL_ID
+  || !process.env.TG_BOT_APIKEY
+) {
   console.log(
     'no created file or CREATED_FILE or TG_CHANNEL_ID or TG_BOT_APIKEY is not defined!',
   )
+}
 else {
   const CREATED_FILE = process.env.CREATED_FILE
   const TG_CHANNEL_ID = process.env.TG_CHANNEL_ID
   const TG_BOT_APIKEY = process.env.TG_BOT_APIKEY
 
   const postsPaths = CREATED_FILE.split(' ').filter(
-    (file) => /.+\.md$/gi.test(file) || /.+\.mdx/gi.test(file),
+    file => /.+\.md$/gi.test(file) || /.+\.mdx/gi.test(file),
   )
 
+  // TODO: сделать обработку draft постов
   const postsInfo: PostInfo[] = postsPaths.map((path) => {
     return {
       title: matter(fs.readFileSync(path)).data.title,
