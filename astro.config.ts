@@ -45,6 +45,9 @@ export default defineConfig({
   markdown: {
     remarkRehype: {
       footnoteLabel: 'Сноски',
+      // footnoteLabelProperties: {
+      //   className: '',
+      // },
     },
     rehypePlugins: [rehypeKatex],
     remarkPlugins: [remarkMath],

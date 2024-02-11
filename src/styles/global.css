@@ -4,7 +4,7 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-@font-face {
+/* @font-face {
   font-family: 'Inconsolata-Regular';
   src: url('/Inconsolata-Regular.ttf');
   font-display: swap;
@@ -17,6 +17,31 @@
   font-display: swap;
   font-weight: bold;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('JetBrainsMono-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('JetBrainsMono-Italic.woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('JetBrainsMono-Bold.woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('JetBrainsMono-BoldItalic.woff2');
+  font-weight: bold;
+  font-style: italic;
 }
 
 * {
@@ -51,7 +76,7 @@ h3 {
 }
 
 h1 {
-  @apply text-3xl;
+  @apply text-4xl;
 }
 
 h2 {
@@ -113,6 +138,10 @@ table :where(td, th) {
 
 article > * {
   @apply mx-0 my-3;
+}
+
+article > p {
+  @apply mx-0 my-4;
 }
 
 article img {

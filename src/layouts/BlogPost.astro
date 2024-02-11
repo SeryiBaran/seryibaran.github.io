@@ -7,6 +7,7 @@ import Main from '@/components/Main.astro'
 import FormattedDate from '@/components/FormattedDate.astro'
 import Divider from '@/components/Divider.astro'
 import { SITE_DESCRIPTION } from '@/consts'
+import TablerPencil from '~icons/tabler/pencil'
 
 interface Props {
   isShowDate?: boolean
@@ -16,13 +17,14 @@ interface Props {
     title: string
     description?: string
     date?: Date
+    draft?: boolean
   }
   slug?: CollectionEntry<'blog'>['slug']
 }
 
 const {
   isShowDate = true,
-  data: { title, description, date, updatedDate, heroImage },
+  data: { title, description, date, updatedDate, heroImage, draft },
   slug = null,
 } = Astro.props
 
@@ -50,17 +52,20 @@ if (heroImage) {
     <Header />
     <Main>
       <article>
-        {heroImage && <img src={heroImage} alt="" />}
-        <h1>{title}</h1>
-        {isShowDate && date && <FormattedDate date={date} />}
-        {
-          isShowDate && updatedDate && (
-            <div class="italic">
-              Последний раз обновлено <FormattedDate date={updatedDate} />
-            </div>
-          )
-        }
-        <Divider article={false} />
+        <div class="flex flex-col gap-1">
+          {heroImage && <img src={heroImage} alt="" />}
+          <h1>{title}</h1>
+          {!draft && isShowDate && date && <FormattedDate date={date} />}
+          {
+            draft && (
+              <p class="m-0 inline-flex items-center gap-1 text-lg">
+                <TablerPencil class="w-1em h-1em" />
+                Черновик
+              </p>
+            )
+          }
+          <Divider article={false} />
+        </div>
         <slot />
       </article>
     </Main>
