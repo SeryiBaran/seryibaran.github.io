@@ -102,10 +102,6 @@ pre > code {
   @apply p-0 bg-transparent font-mono;
 }
 
-blockquote > * {
-  @apply m-0 p-0;
-}
-
 table {
   @apply block overflow-x-scroll border-collapse text-left;
   white-space: nowrap;
@@ -149,4 +145,12 @@ summary {
 
 .katex-display {
   @apply block overflow-x-auto p-2;
+}
+
+html body :where(.alert, blockquote) > * {
+  @apply m-0 p-0;
+}
+
+blockquote {
+  @apply border-primary-6 border-solid p-4 italic border-0 border-l-6px bg-primary/20;
 }
