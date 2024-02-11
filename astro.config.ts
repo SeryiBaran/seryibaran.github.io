@@ -5,6 +5,9 @@ import sitemap from '@astrojs/sitemap'
 import critters from 'astro-critters'
 import compress from 'astro-compress'
 
+import rehypeKatex from 'rehype-katex'
+import remarkMath from 'remark-math'
+
 import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
 
@@ -43,6 +46,8 @@ export default defineConfig({
     remarkRehype: {
       footnoteLabel: 'Сноски',
     },
+    rehypePlugins: [rehypeKatex],
+    remarkPlugins: [remarkMath],
     shikiConfig: {
       theme: 'one-dark-pro',
     },

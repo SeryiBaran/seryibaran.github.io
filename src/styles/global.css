@@ -142,3 +142,7 @@ summary {
 .astro-code {
   @apply mt-2 border-1px border-solid border-primary-6 p-4 py-8 sm:p-4 sm:text-wrap;
 }
+
+.katex-display {
+  @apply block overflow-x-auto p-2;
+}
