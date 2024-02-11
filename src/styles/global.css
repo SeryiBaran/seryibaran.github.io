@@ -123,6 +123,10 @@ article img {
   @apply mt-2 block border-1px border-solid border-primary-6 w-auto;
 }
 
+article img.no-border-img {
+  @apply border-none;
+}
+
 :where(ol, ul) li {
   @apply mx-0 my-2.4;
 }
