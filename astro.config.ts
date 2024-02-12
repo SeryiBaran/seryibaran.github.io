@@ -4,14 +4,14 @@ import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import critters from 'astro-critters'
 import compress from 'astro-compress'
-
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
-
 import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
 
 // vite plugin to import fonts
+import expressiveCode from 'astro-expressive-code'
+
 function rawFonts(ext: string[]) {
   return {
     name: 'vite-plugin-raw-fonts',
@@ -32,6 +32,9 @@ function rawFonts(ext: string[]) {
 export default defineConfig({
   site: 'https://seryibaran.github.io',
   integrations: [
+    expressiveCode({
+      themes: ['vitesse-dark', 'vitesse-light'],
+    }),
     mdx(),
     sitemap(),
     critters(),
@@ -51,21 +54,16 @@ export default defineConfig({
     },
     rehypePlugins: [rehypeKatex],
     remarkPlugins: [remarkMath],
-    shikiConfig: {
-      theme: 'one-dark-pro',
-    },
+    // shikiConfig: {
+    //   theme: 'one-dark-pro',
+    // },
   },
-
   vite: {
-    plugins: [
-      rawFonts(['.ttf', '.woff']),
-      UnoCSS({
-        configFile: 'uno.config.ts',
-      }),
-      Icons({
-        compiler: 'astro',
-      }),
-    ],
+    plugins: [rawFonts(['.ttf', '.woff']), UnoCSS({
+      configFile: 'uno.config.ts',
+    }), Icons({
+      compiler: 'astro',
+    })],
     optimizeDeps: {
       exclude: ['@resvg/resvg-js'],
     },

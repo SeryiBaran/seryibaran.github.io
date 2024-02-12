@@ -120,7 +120,7 @@ img {
 }
 
 code {
-  @apply py-0.5 px-1 bg-neutral-4/23 text-sm font-inherit;
+  @apply py-0.5 px-1 bg-neutral-4/23 text-[0.8em] font-inherit;
 }
 
 pre > code {
@@ -168,10 +168,6 @@ summary {
   @apply cursor-pointer;
 }
 
-.astro-code {
-  @apply mt-2 border-1px border-solid border-primary-6 p-4 py-8 sm:p-4 sm:text-wrap;
-}
-
 .katex-display {
   @apply block overflow-x-auto p-2;
 }
@@ -182,4 +178,16 @@ html body :where(.alert, blockquote) > * {
 
 blockquote {
   @apply border-primary-6 border-solid p-4 italic border-0 border-l-6px bg-primary/20;
+}
+
+.expressive-code {
+  @apply  p-0 mt-2 sm:text-wrap;
+}
+
+.expressive-code figure.frame {
+  @apply border-1px border-solid border-primary-6 rounded-0 shadow-none;
+}
+
+.expressive-code figure.frame pre {
+  @apply rounded-0;
 }
