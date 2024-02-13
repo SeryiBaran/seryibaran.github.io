@@ -1,8 +1,12 @@
 ---
-title: "Quote'ы by SeryiBaran & AnastasVik"
-description: 'Цитаты и высказывания SeryiBaran и AnastasVik'
+title: "Quote'ы by SeryiBaran & КО"
+description: 'Цитаты и высказывания SeryiBaran и всей его компании'
 date: 2024-02-11T16:41:34.759+03
 ---
+
+> (Dimasss201) 13.02.2024:
+>
+> ![alt text](/uploads/seryibaran_quoteы/9.png)
 
 > (SeryiBaran) Лайфхак: смотришь трум трум? суй ноги в розетку!
 
