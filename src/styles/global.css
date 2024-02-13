@@ -74,7 +74,7 @@ footer {
 }
 
 footer {
-  @apply shadow-b-2;
+  @apply shadow-b-2 text-sm;
 }
 
 h1,

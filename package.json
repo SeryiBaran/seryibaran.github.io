@@ -47,18 +47,9 @@
     "astro-critters": "^2.0.11",
     "dayjs": "^1.11.10",
     "dotenv": "^16.3.1",
-    "emoticon": "^4.0.1",
     "grammy": "^1.19.2",
     "hastscript": "^8.0.0",
-    "mdast": "^3.0.0",
-    "mdast-util-find-and-replace": "^3.0.1",
-    "mdast-util-toc": "^7.0.0",
-    "node-emoji": "^2.1.3",
     "prettier": "^3.1.1",
-    "rehype-autolink-headings": "^7.1.0",
-    "rehype-slug": "^6.0.0",
-    "remark-emoji": "^4.0.1",
-    "remark-textr": "^6.0.0",
     "ts-node": "^10.9.2",
     "unocss": "^0.58.0"
   }
