@@ -1,9 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content'
-import BaseHead from '@/components/BaseHead.astro'
-import Header from '@/components/Header.astro'
-import Footer from '@/components/Footer.astro'
-import Main from '@/components/Main.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
 import FormattedDate from '@/components/FormattedDate.astro'
 import Divider from '@/components/Divider.astro'
 import { SITE_DESCRIPTION } from '@/consts'
@@ -34,60 +31,48 @@ if (heroImage) {
   image = heroImage
 } else if (slug) {
   image = `/image/${slug}.png`
-} else {
-  image = '/og.png'
 }
 ---
 
-<html lang="en">
-  <head>
-    <BaseHead
-      title={title}
-      description={description || SITE_DESCRIPTION}
-      image={image}
-    />
-  </head>
-
-  <body>
-    <Header />
-    <Main>
-      <article>
-        <div class="pageInfo flex flex-col gap-1">
-          {heroImage && <img src={heroImage} alt="" />}
-          <h1>{title}</h1>
-          {
-            !draft && isShowDate && date && (
-              <FormattedDate
-                date={date}
-                isShowTime={date.getHours() !== 0 && date.getMinutes() !== 0}
-              />
-            )
-          }
-          {
-            !draft && updatedDate && (
-              <FormattedDate
-                date={updatedDate}
-                isUpdatedDate={true}
-                isShowTime={
-                  updatedDate.getHours() !== 0 && updatedDate.getMinutes() !== 0
-                }
-              />
-            )
-          }
-          {console.log(date)}
-          {
-            draft && (
-              <p class="m-0 inline-flex items-center gap-1 text-lg">
-                <TablerPencil class="w-1em h-1em" />
-                Черновик
-              </p>
-            )
-          }
-          <Divider article={false} />
-        </div>
-        <slot />
-      </article>
-    </Main>
-    <Footer />
-  </body>
-</html>
+<BaseLayout
+  title={title}
+  description={description || SITE_DESCRIPTION}
+  image={image}
+>
+  <article>
+    <div class="pageInfo flex flex-col gap-1">
+      {heroImage && <img src={heroImage} alt="" />}
+      <h1>{title}</h1>
+      {
+        !draft && isShowDate && date && (
+          <FormattedDate
+            date={date}
+            isShowTime={date.getHours() !== 0 && date.getMinutes() !== 0}
+          />
+        )
+      }
+      {
+        !draft && updatedDate && (
+          <FormattedDate
+            date={updatedDate}
+            isUpdatedDate={true}
+            isShowTime={
+              updatedDate.getHours() !== 0 && updatedDate.getMinutes() !== 0
+            }
+          />
+        )
+      }
+      {console.log(date)}
+      {
+        draft && (
+          <p class="m-0 inline-flex items-center gap-1 text-lg">
+            <TablerPencil class="w-1em h-1em" />
+            Черновик
+          </p>
+        )
+      }
+      <Divider article={false} />
+    </div>
+    <slot />
+  </article>
+</BaseLayout>

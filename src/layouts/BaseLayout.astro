@@ -1,0 +1,41 @@
+---
+import BaseHead from '@/components/BaseHead.astro'
+import Header from '@/components/Header.astro'
+import Footer from '@/components/Footer.astro'
+import Main from '@/components/Main.astro'
+import TablerArrowUp from '~icons/tabler/arrow-up'
+import { SITE_DESCRIPTION } from '../consts'
+
+interface Props {
+  title: string
+  description?: string | undefined
+  image?: string | undefined
+}
+
+const { title, description, image } = Astro.props
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <BaseHead
+      title={title}
+      description={description || SITE_DESCRIPTION}
+      image={image}
+    />
+  </head>
+  <body id="home">
+    <Header />
+    <Main>
+      <slot />
+    </Main>
+    <Footer />
+    <a
+      href="#home"
+      class="fixed right-10 bottom-10 p-4 rounded-full bg-primary-500 link_without_effects hidden md:block"
+      aria-label="Вернуться наверх"
+      title="Вернуться наверх"
+      ><TablerArrowUp class="block text-3xl text-white" /></a
+    >
+  </body>
+</html>

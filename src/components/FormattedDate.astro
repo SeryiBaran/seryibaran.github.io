@@ -12,7 +12,12 @@ export interface Props {
 const { date, isUpdatedDate = false, isShowTime = false } = Astro.props
 ---
 
-<time datetime={date.toISOString()} class="inline-flex items-center gap-1">
+<time
+  datetime={date.toISOString()}
+  class="inline-flex items-center gap-1"
+  title={isUpdatedDate ? 'Дата обновления' : 'Дата публикации'}
+  aria-label={isUpdatedDate ? 'Дата обновления' : 'Дата публикации'}
+>
   {
     isUpdatedDate ? (
       <TablerPencil class="w-1em h-1em" />

@@ -70,13 +70,17 @@ body {
 
 header,
 footer {
-  @apply bg-primary-500/4 shadow shadow-black/20;
+  @apply bg-primary-500/6 shadow shadow-black/20;
+}
+
+footer {
+  @apply shadow-b-2;
 }
 
 h1,
 h2,
 h3 {
-  @apply my-[0.4em];
+  @apply my-[0.4em] font-400;
 }
 
 :where(h1, h2, h3):not(.pageInfo :where(h1, h2, h3)) {
