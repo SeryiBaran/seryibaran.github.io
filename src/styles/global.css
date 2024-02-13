@@ -152,9 +152,9 @@ article img.no-border-img {
   @apply border-none;
 }
 
-:where(ol, ul) li {
-  /* @apply mx-0 my-1.6; */
-}
+/* :where(ol, ul) li {
+  @apply mx-0 my-1.6;
+} */
 
 article img + em {
   @apply not-italic opacity-80 text-sm block text-center mb-4 mt-1;
