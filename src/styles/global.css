@@ -56,8 +56,12 @@ p {
   @apply m-0 mt-2;
 }
 
+html {
+  @apply bg-slate-50 dark:bg-dark-800;
+}
+
 body {
-  @apply bg-slate-50 text-neutral-800 dark:(bg-zinc-800 text-neutral-200) font-mono m-0 break-words flex flex-col min-h-screen;
+  @apply bg-primary-500/5 text-neutral-800 dark:(text-neutral-300) font-mono m-0 break-words flex flex-col min-h-screen;
 }
 
 .container {
@@ -66,13 +70,17 @@ body {
 
 header,
 footer {
-  @apply bg-slate-100 dark:bg-hex-313135 shadow shadow-black/20;
+  @apply bg-primary-500/4 shadow shadow-black/20;
 }
 
 h1,
 h2,
 h3 {
   @apply my-[0.4em];
+}
+
+:where(h1, h2, h3):not(.pageInfo :where(h1, h2, h3)) {
+  @apply mt-[2em];
 }
 
 h1 {
@@ -99,8 +107,8 @@ h3 {
 
 html body a,
 .link_without_visited_color:visited {
-  @apply text-primary-6 hover:text-primary-4
-  dark:(text-primary-4 hover:text-primary-3);
+  @apply text-primary-600 hover:text-primary-400
+  dark:(text-primary-400 hover:text-primary-300);
 }
 
 .link_without_effects {
@@ -145,7 +153,7 @@ article > p {
 }
 
 article img {
-  @apply mt-2 block border-1px border-solid border-primary-6 w-auto;
+  @apply mt-2 block border-1px border-solid border-primary-600 w-auto;
 }
 
 article img.no-border-img {
@@ -177,7 +185,7 @@ html body :where(.alert, blockquote) > * {
 }
 
 blockquote {
-  @apply border-primary-6 border-solid p-4 italic border-0 border-l-6px bg-primary/20;
+  @apply border-primary-600 border-solid p-4 italic border-0 border-l-6px bg-primary-500/20;
 }
 
 .expressive-code {
@@ -185,7 +193,7 @@ blockquote {
 }
 
 .expressive-code figure.frame {
-  @apply border-1px border-solid border-primary-6 rounded-0 shadow-none;
+  @apply border-1px border-solid border-primary-600 rounded-0 shadow-none;
 }
 
 .expressive-code figure.frame pre {

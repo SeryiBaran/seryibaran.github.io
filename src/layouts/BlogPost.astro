@@ -52,10 +52,29 @@ if (heroImage) {
     <Header />
     <Main>
       <article>
-        <div class="flex flex-col gap-1">
+        <div class="pageInfo flex flex-col gap-1">
           {heroImage && <img src={heroImage} alt="" />}
           <h1>{title}</h1>
-          {!draft && isShowDate && date && <FormattedDate date={date} />}
+          {
+            !draft && isShowDate && date && (
+              <FormattedDate
+                date={date}
+                isShowTime={date.getHours() !== 0 && date.getMinutes() !== 0}
+              />
+            )
+          }
+          {
+            !draft && updatedDate && (
+              <FormattedDate
+                date={updatedDate}
+                isUpdatedDate={true}
+                isShowTime={
+                  updatedDate.getHours() !== 0 && updatedDate.getMinutes() !== 0
+                }
+              />
+            )
+          }
+          {console.log(date)}
           {
             draft && (
               <p class="m-0 inline-flex items-center gap-1 text-lg">

@@ -1,15 +1,24 @@
 ---
 import { formatPostDate } from '@/utils'
 import TablerCalendar from '~icons/tabler/calendar'
+import TablerPencil from '~icons/tabler/pencil'
 
 export interface Props {
   date: Date
+  isUpdatedDate?: boolean
+  isShowTime?: boolean
 }
 
-const { date } = Astro.props
+const { date, isUpdatedDate = false, isShowTime = false } = Astro.props
 ---
 
 <time datetime={date.toISOString()} class="inline-flex items-center gap-1">
-  <TablerCalendar class="w-1em h-1em" />
-  {formatPostDate(date)}
+  {
+    isUpdatedDate ? (
+      <TablerPencil class="w-1em h-1em" />
+    ) : (
+      <TablerCalendar class="w-1em h-1em" />
+    )
+  }
+  {formatPostDate(date, isShowTime)}
 </time>
