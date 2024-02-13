@@ -34,6 +34,10 @@ export default defineConfig({
   integrations: [
     expressiveCode({
       themes: ['vitesse-dark', 'vitesse-light'],
+      styleOverrides: {
+        codeFontFamily: '\'JetBrains Mono\', \'Inconsolata\', \'Consolas\', \'Input Mono\', \'JetBrains Mono\', \'Cascadia Code\', \'Hack\', \'Liberation Mono\', monospace',
+        uiFontFamily: 'inherit',
+      },
     }),
     mdx(),
     sitemap(),
@@ -48,15 +52,9 @@ export default defineConfig({
   markdown: {
     remarkRehype: {
       footnoteLabel: 'Сноски',
-      // footnoteLabelProperties: {
-      //   className: '',
-      // },
     },
     rehypePlugins: [rehypeKatex],
     remarkPlugins: [remarkMath],
-    // shikiConfig: {
-    //   theme: 'one-dark-pro',
-    // },
   },
   vite: {
     plugins: [rawFonts(['.ttf', '.woff']), UnoCSS({

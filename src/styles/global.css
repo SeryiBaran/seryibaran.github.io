@@ -156,11 +156,11 @@ article > p {
   @apply mx-0 my-4;
 }
 
-article img {
+article :where(img, .embed) {
   @apply mt-2 block border-1px border-solid border-primary-600 w-auto;
 }
 
-article img.no-border-img {
+article img.no-border-img-or-embed {
   @apply border-none;
 }
 
@@ -193,7 +193,7 @@ blockquote {
 }
 
 .expressive-code {
-  @apply  p-0 mt-2 sm:text-wrap;
+  @apply p-0 mt-2 sm:text-wrap;
 }
 
 .expressive-code figure.frame {
