@@ -1,0 +1,31 @@
+TODO:
+
+## Практика (Windows)
+
+Для практики будем использовать GPG4Win. Это "пакет" софта, включающий в себя сам GPG, а также плагин для Outlook и удобный графический интерфейс Kleopatra.
+
+Допустим, ваш друг хочет отправить вам какую-либо информацию.
+
+Скачиваем GPG4Win с [официального сайта](https://www.gpg4win.org/) и устанавливаем (с этим не должно быть никаких проблем) на свой компьютер и компьютер друга.
+
+Для начала, вам нужно создать пару ключей (приватный + публичный):
+
+![Создание ключей](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxcSqqBFa2d-NjNMq7U0T1DuBjDUS73_tUrJ1rlz-WKA&s)
+
+Далее, нужно экспортировать получившийся публичный ключ в файл:
+
+![AAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLTTTTTTTTTTTT](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxcSqqBFa2d-NjNMq7U0T1DuBjDUS73_tUrJ1rlz-WKA&s)
+
+Затем, передайте вашему другу этот файл любым способом. Можно отсылать даже в публичных каналах - это публичный ключ.
+
+Переходим к компьютеру вашего друга.
+
+Ваш друг должен импортировать переданный ранее файл публичного ключа:
+
+![AAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLTTTTTTTTTTTT](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxcSqqBFa2d-NjNMq7U0T1DuBjDUS73_tUrJ1rlz-WKA&s)
+
+Теперь ваш друг может зашифровать файл или текст. Файл проще всего зашифровать, нажав ПКМ по файлу в Проводнике:
+
+![AAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLTTTTTTTTTTTT](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxcSqqBFa2d-NjNMq7U0T1DuBjDUS73_tUrJ1rlz-WKA&s)
+
+Далее, после передачи зашифрованного файла вам, вам нужно его расшифровать. Проще всего это можно сделать просто открыв файл через проводник, либо нажав ПКМ и выбрав "Проверить/Расшифровать":
