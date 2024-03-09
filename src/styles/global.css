@@ -57,11 +57,11 @@ p {
 }
 
 html {
-  @apply bg-slate-50 dark:bg-dark-800;
+  @apply ;
 }
 
 body {
-  @apply bg-primary-500/5 text-neutral-800 dark:(text-neutral-300) font-mono m-0 break-words flex flex-col min-h-screen;
+  @apply bg-slate-50 text-neutral-800 dark:(bg-dark-500 text-neutral-300) font-mono m-0 break-words flex flex-col min-h-screen;
 }
 
 .container {
@@ -70,7 +70,7 @@ body {
 
 header,
 footer {
-  @apply bg-primary-500/6 shadow shadow-black/20;
+  @apply bg-slate-500/6 shadow shadow-black/20;
 }
 
 footer {
@@ -164,9 +164,9 @@ article img.no-border-img-or-embed {
   @apply border-none;
 }
 
-/* :where(ol, ul) li {
-  @apply mx-0 my-1.6;
-} */
+:where(ol, ul) li {
+  @apply mx-0 my-0.5;
+}
 
 article img + em {
   @apply not-italic opacity-80 text-sm block text-center mb-4 mt-1;
