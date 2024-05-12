@@ -2,7 +2,7 @@
 title: "Quote'ы by SeryiBaran & КО"
 description: 'Цитаты и высказывания SeryiBaran и всей его компании'
 date: 2024-02-11T16:41:34.759+03
-updatedDate: 2024-02-13T21:30:21.413+03
+updatedDate: 2024-05-12T22:24:10.584+03
 ---
 
 > (Dimasss201) 13.02.2024:
@@ -102,3 +102,13 @@ updatedDate: 2024-02-13T21:30:21.413+03
 > (she_killed_me_dead) 24.02.2024
 >
 > тааак несколько
+
+## Произведения уксусства
+
+![zepa](/uploads/seryibaran_quoteы/zepa.png)
+
+[Полная версия](/uploads/seryibaran_quoteы/zepa.png)
+
+![zepa2](/uploads/seryibaran_quoteы/zepa2.png)
+
+[Полная версия](/uploads/seryibaran_quoteы/zepa2.png)
