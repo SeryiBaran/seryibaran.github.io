@@ -35,7 +35,7 @@ export default defineConfig({
     expressiveCode({
       themes: ['vitesse-dark', 'vitesse-light'],
       styleOverrides: {
-        codeFontFamily: '\'JetBrains Mono\', \'Inconsolata\', \'Consolas\', \'Input Mono\', \'JetBrains Mono\', \'Cascadia Code\', \'Hack\', \'Liberation Mono\', monospace',
+        codeFontFamily: '\'JetBrains Mono\', \'Cascadia Code\', \'Inconsolata\', \'Consolas\', \'Input Mono\', \'JetBrains Mono\', \'Hack\', \'Liberation Mono\', monospace',
         uiFontFamily: 'inherit',
       },
     }),
@@ -57,9 +57,7 @@ export default defineConfig({
     remarkPlugins: [remarkMath],
   },
   vite: {
-    plugins: [rawFonts(['.ttf', '.woff']), UnoCSS({
-      configFile: 'uno.config.ts',
-    }), Icons({
+    plugins: [rawFonts(['.ttf', '.woff']), UnoCSS('uno.config.ts'), Icons({
       compiler: 'astro',
     })],
     optimizeDeps: {

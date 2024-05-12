@@ -1,28 +1,30 @@
 ---
+import { AUTHOR_BIRTHDAY } from '@/consts'
 import BlogPost from '@/layouts/BlogPost.astro'
+import dayjs from 'dayjs'
+
+const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
 ---
 
 <BlogPost data={{ title: 'Главная' }}>
-  <p>Я Иван Музы́ка, начинающий Frontend разработчик.</p>
-
-  <p>Это мой личный сайт.</p>
+  <p>
+    Я Иван Музы́ка, мне { authorAge } лет и я начинающий (а может быть и нет 😉)
+    Frontend разработчик.
+  </p>
 
   <p>
     Все мои контакты находятся на странице <a href="/contacts">Контакты</a>.
+    Наиболее я активен в Telegram.
   </p>
 
   <p>
     Вся информация о IT навыках и портфолио - на <a
-      href="https://github.com/SeryiBaran">Github</a
+      href="https://github.com/SeryiBaran">моем Github</a
     >.
   </p>
   <a
     href="https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/deploy.yml"
   >
-    <img
-      src="https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/deploy.yml/badge.svg"
-      alt="GitHub Pages deploy badge"
-      class="no-border-img-or-embed inline"
-    />
+    Github репозиторий этого сайта
   </a>
 </BlogPost>
