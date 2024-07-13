@@ -40,29 +40,55 @@ const { title, description, image } = Astro.props
       ></a
     >
     <div
-      class="fixed right-4 bottom-4 border border-solid border-primary bg-neutral/10 backdrop-blur"
+      class="fixed right-4 bottom-4 border border-solid border-primary bg-neutral/10 backdrop-blur hidden md:block overflow-hidden"
     >
       <div
-        class="w-[8px] h-[8px] hover:w-120 hover:h-120 hover:p-2 overflow-hidden hidden md:block relative"
+        class="lol w-[8px] h-[8px] hover:w-120 hover:h-120 hover:p-2 overflow-hidden relative"
       >
         <h2>Инструменты разраба</h2>
-        <ul class="">
+        <ul>
           <li>
             <a
-              href="/meme3_360p.mp4"
-              class="w-[128px] h-[10px] bg-gradient-to-br from-red to-blue link_without_effects inline-block"
-            ></a>
+              href="/meme3"
+              class="w-[128px] h-[20px] bg-gradient-to-br from-red to-blue link_without_effects inline-block"
+              >хыхы3</a
+            >
           </li>
           <li>
             <a
               href="/test"
-              class="w-[128px] h-[10px] bg-gradient-to-br from-red to-blue link_without_effects inline-block"
-            ></a>
+              class="w-[128px] h-[20px] bg-gradient-to-br from-red to-blue link_without_effects inline-block"
+              >тесты</a
+            >
           </li>
-          <li><img src="/meme4.jpg" class="meme_image" /></li>
-          <li><img src="/meme5.jpg" class="meme_image" /></li>
-          <li><img src="/meme6.jpg" class="meme_image" /></li>
-          <li><img src="/meme7.jpg" class="meme_image" /></li>
+          <li>
+            <a
+              href="/meme4.jpg"
+              class="w-[128px] h-[20px] bg-gradient-to-br from-violet to-green link_without_effects inline-block"
+              >хыхы4</a
+            >
+          </li>
+          <li>
+            <a
+              href="/meme5.jpg"
+              class="w-[128px] h-[20px] bg-gradient-to-br from-violet to-green link_without_effects inline-block"
+              >хыхы5</a
+            >
+          </li>
+          <li>
+            <a
+              href="/meme6.jpg"
+              class="w-[128px] h-[20px] bg-gradient-to-br from-violet to-green link_without_effects inline-block"
+              >хыхы6</a
+            >
+          </li>
+          <li>
+            <a
+              href="/meme7.jpg"
+              class="w-[128px] h-[20px] bg-gradient-to-br from-violet to-green link_without_effects inline-block"
+              >хыхы7</a
+            >
+          </li>
         </ul>
       </div>
     </div>
@@ -102,26 +128,31 @@ const { title, description, image } = Astro.props
     
     *:not(.katex-display):not(.katex-display *) {
       font-family: 'Comic Sans MS';
-    }`
+    }
+      
+    
+    .lol {
+      display: block;
+      width: 110px;
+      height: 110px;
+      padding: 0.5rem;
+    }
+    
+    `
 
       const month = 4 - 1
       const day = 1
 
-      // const month = (new Date()).getMonth()
-      // const day = (new Date()).getDate()
+      // const month = new Date().getMonth()
+      // const day = new Date().getDate()
 
       const todayDate = new Date()
 
       if (todayDate.getMonth() === month && todayDate.getDate() === day) {
         document.querySelector('header')!.outerHTML +=
-          `<h2>С первым апреля, хыхыхыха</h2>`
+          `<h2>С первым апреля, хыхыхыха Ахыа хыХ Азхыа ывщо шашщ ыпр шгщ</h2>`
         document.body.innerHTML += `<style>${css}</style>`
       }
     </script>
-    <style>
-      .meme_image {
-        @apply w-[128px] h-[10px] hover:absolute hover:top-0 hover:right-0 hover:bottom-0 hover:left-0 hover:w-auto hover:h-auto inline-block;
-      }
-    </style>
   </body>
 </html>
