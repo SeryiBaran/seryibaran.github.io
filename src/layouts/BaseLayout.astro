@@ -39,7 +39,21 @@ const { title, description, image } = Astro.props
         >Наверх</span
       ></a
     >
+    <div class="fixed right-4 bottom-4">
+      <div
+        class="w-[2px] h-[2px] hover:w-80 hover:h-80 hover:p-2 bg-white overflow-hidden flex-row flex-wrap gap-4 hidden md:flex relative"
+      >
+        <a
+          href="/meme3_360p.mp4"
+          class="w-[10px] h-[10px] bg-black link_without_effects inline-block"
+          title="meme 3"></a>
+        <img src="/meme4.jpg" class="meme_image" title="meme 4" />
+        <img src="/meme5.jpg" class="meme_image" title="meme 5" />
+        <img src="/meme6.jpg" class="meme_image" title="meme 6" />
+      </div>
+    </div>
     <script>
+      // meme1
       const css = `:where(article>*, ul>li, ol>li):nth-child(1n) {
       color: rgb(248 113 113);
     }
@@ -85,5 +99,10 @@ const { title, description, image } = Astro.props
         document.body.innerHTML += `<style>${css}</style>`
       }
     </script>
+    <style>
+      .meme_image {
+        @apply w-[10px] h-[10px] hover:absolute hover:top-0 hover:right-0 hover:bottom-0 hover:left-0 hover:w-auto hover:h-auto inline-block;
+      }
+    </style>
   </body>
 </html>

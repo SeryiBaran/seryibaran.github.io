@@ -50,4 +50,35 @@ const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
     </a>
     <!--End of RadioKOT button-->
   </p>
+  <p class="meme2">
+    {
+      Array.from(Array(49))
+        .map((_, index) => index + 1)
+        .map(() => (
+          <a href="https://www.radiokot.ru/" class="inline-block">
+            <img
+              src="https://www.radiokot.ru/files/button.gif"
+              width="88"
+              height="31"
+              border="0"
+              hspace="0"
+              vspace="0"
+              alt="РадиоКОТ - популярно об электронике. Авторские схемы, новые разработки. Обучение по электронике, микроконтроллерам, ПЛИС. Форум"
+            />
+          </a>
+        ))
+    }
+  </p>
 </BlogPost>
+
+<style>
+  .meme2 {
+    display: none;
+  }
+
+  @media (min-width: 1921px) {
+    .meme2 {
+      display: block;
+    }
+  }
+</style>
