@@ -41,15 +41,20 @@ const { title, description, image } = Astro.props
     >
     <div class="fixed right-4 bottom-4">
       <div
-        class="w-[2px] h-[2px] hover:w-80 hover:h-80 hover:p-2 bg-white overflow-hidden flex-row flex-wrap gap-4 hidden md:flex relative"
+        class="w-[2px] h-[2px] hover:w-80 hover:h-80 hover:p-2 bg-white overflow-hidden hidden md:block relative"
       >
-        <a
-          href="/meme3_360p.mp4"
-          class="w-[10px] h-[10px] bg-black link_without_effects inline-block"
-          title="meme 3"></a>
-        <img src="/meme4.jpg" class="meme_image" title="meme 4" />
-        <img src="/meme5.jpg" class="meme_image" title="meme 5" />
-        <img src="/meme6.jpg" class="meme_image" title="meme 6" />
+        <div class="flex flex-row flex-wrap gap-4">
+          <a
+            href="/meme3_360p.mp4"
+            class="w-[10px] h-[10px] bg-black link_without_effects inline-block"
+            title="meme 3"></a>
+          <img src="/meme4.jpg" class="meme_image" title="meme 4" />
+          <img src="/meme5.jpg" class="meme_image" title="meme 5" />
+          <img src="/meme6.jpg" class="meme_image" title="meme 6" />
+        </div>
+        <a href="https://www.youtube.com/channel/UCwB1KTdX2PNgA4Q79PfOydw"
+          >угугу сава сава угугу угу сава сава угу сыч угу сава</a
+        >
       </div>
     </div>
     <script>
