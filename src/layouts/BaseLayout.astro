@@ -39,55 +39,64 @@ const { title, description, image } = Astro.props
         >Наверх</span
       ></a
     >
-    <div class="fixed right-4 bottom-4">
+    <div
+      class="fixed right-4 bottom-4 border border-solid border-primary bg-neutral/10 backdrop-blur"
+    >
       <div
-        class="w-[2px] h-[2px] hover:w-80 hover:h-80 hover:p-2 bg-white overflow-hidden hidden md:block relative"
+        class="w-[8px] h-[8px] hover:w-120 hover:h-120 hover:p-2 overflow-hidden hidden md:block relative"
       >
-        <div class="flex flex-row flex-wrap gap-4">
-          <a
-            href="/meme3_360p.mp4"
-            class="w-[10px] h-[10px] bg-black link_without_effects inline-block"
-            title="meme 3"></a>
-          <img src="/meme4.jpg" class="meme_image" title="meme 4" />
-          <img src="/meme5.jpg" class="meme_image" title="meme 5" />
-          <img src="/meme6.jpg" class="meme_image" title="meme 6" />
-        </div>
-        <a href="https://www.youtube.com/channel/UCwB1KTdX2PNgA4Q79PfOydw"
-          >угугу сава сава угугу угу сава сава угу сыч угу сава</a
-        >
+        <h2>Инструменты разраба</h2>
+        <ul class="">
+          <li>
+            <a
+              href="/meme3_360p.mp4"
+              class="w-[128px] h-[10px] bg-gradient-to-br from-red to-blue link_without_effects inline-block"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="/test"
+              class="w-[128px] h-[10px] bg-gradient-to-br from-red to-blue link_without_effects inline-block"
+            ></a>
+          </li>
+          <li><img src="/meme4.jpg" class="meme_image" /></li>
+          <li><img src="/meme5.jpg" class="meme_image" /></li>
+          <li><img src="/meme6.jpg" class="meme_image" /></li>
+          <li><img src="/meme7.jpg" class="meme_image" /></li>
+        </ul>
       </div>
     </div>
     <script>
       // meme1
-      const css = `:where(article>*, ul>li, ol>li):nth-child(1n) {
+      const css = `:where(*>*, ul>li, ol>li):nth-child(1n) {
       color: rgb(248 113 113);
     }
     
-    :where(article>*, ul>li, ol>li):nth-child(2n) {
+    :where(*>*, ul>li, ol>li):nth-child(2n) {
       color: rgb(251 146 60);
     }
     
-    :where(article>*, ul>li, ol>li):nth-child(3n) {
+    :where(*>*, ul>li, ol>li):nth-child(3n) {
       color: rgb(250 204 21);
     }
     
-    :where(article>*, ul>li, ol>li):nth-child(4n) {
+    :where(*>*, ul>li, ol>li):nth-child(4n) {
       color: rgb(74 222 128);
     }
     
-    :where(article>*, ul>li, ol>li):nth-child(5n) {
+    :where(*>*, ul>li, ol>li):nth-child(5n) {
       color: rgb(56 189 248);
     }
     
-    :where(article>*, ul>li, ol>li):nth-child(6n) {
+    :where(*>*, ul>li, ol>li):nth-child(6n) {
       color: rgb(96 165 250);
     }
     
-    :where(article>*, ul>li, ol>li):nth-child(7n) {
+    :where(*>*, ul>li, ol>li):nth-child(7n) {
       color: rgb(167 139 250);
     }
     
-    :where(article>*, ul>li, ol>li) a {
+    :where(*>*, ul>li, ol>li) a {
       color: inherit !important;
     }
     
@@ -98,15 +107,20 @@ const { title, description, image } = Astro.props
       const month = 4 - 1
       const day = 1
 
+      // const month = (new Date()).getMonth()
+      // const day = (new Date()).getDate()
+
       const todayDate = new Date()
 
       if (todayDate.getMonth() === month && todayDate.getDate() === day) {
+        document.querySelector('header')!.outerHTML +=
+          `<h2>С первым апреля, хыхыхыха</h2>`
         document.body.innerHTML += `<style>${css}</style>`
       }
     </script>
     <style>
       .meme_image {
-        @apply w-[10px] h-[10px] hover:absolute hover:top-0 hover:right-0 hover:bottom-0 hover:left-0 hover:w-auto hover:h-auto inline-block;
+        @apply w-[128px] h-[10px] hover:absolute hover:top-0 hover:right-0 hover:bottom-0 hover:left-0 hover:w-auto hover:h-auto inline-block;
       }
     </style>
   </body>

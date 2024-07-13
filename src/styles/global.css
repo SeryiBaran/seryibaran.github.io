@@ -172,16 +172,16 @@ article :where(img, .embed) {
   @apply mt-2 block border-1px border-solid border-primary-600 w-auto;
 }
 
-article img.no-border-img-or-embed {
+article :where(img, .embed).no-border-img-or-embed {
   @apply border-none;
 }
 
 :where(ol, ul) li {
-  @apply mx-0 my-0.5;
+  @apply mx-0 my-2;
 }
 
-article img+em {
-  @apply not-italic opacity-80 text-sm block text-center mb-4 mt-1;
+article :where(img, .embed)+em {
+  @apply not-italic opacity-80 text-sm block mb-4 mt-1;
 }
 
 .headingLink {
@@ -209,7 +209,7 @@ blockquote {
 }
 
 .expressive-code {
-  @apply p-0 mt-2 sm:text-wrap;
+  @apply p-0 mt-2;
 }
 
 .expressive-code figure.frame {
@@ -217,5 +217,5 @@ blockquote {
 }
 
 .expressive-code figure.frame pre {
-  @apply rounded-0;
+  @apply rounded-0 sm:text-wrap;
 }

@@ -1,0 +1,47 @@
+---
+import { Code } from 'astro-expressive-code/components'
+import { QRCode, QRSvg } from 'sexy-qr'
+
+interface Props {
+  content: string
+  sizeProp?: 'small' | 'medium' | 'big'
+}
+
+const { content, sizeProp = 'small' } = Astro.props
+
+const qrCode = new QRCode({
+  content: content,
+  ecl: 'M', // 'L' | 'M' | 'Q' | 'H'
+})
+
+let size = 200 // px
+
+if (sizeProp === 'small') {
+  size = 200
+} else if (sizeProp === 'medium') {
+  size = 300
+} else if (sizeProp === 'big') {
+  size = 400
+}
+
+const qrSvg = new QRSvg(qrCode, {
+  fill: 'currentColor',
+  cornerBlocksAsCircles: false,
+  size, // px
+  radiusFactor: 0.75, // 0-1
+  cornerBlockRadiusFactor: 2, // 0-3
+  roundOuterCorners: false,
+  roundInnerCorners: false,
+  preContent: '<!-- QR Code -->',
+})
+---
+
+<p>
+  <span
+    class="embed bg-white text-primary-600 inline-block p-12"
+    set:html={qrSvg.svg}
+  />
+  {sizeProp === 'small' && <em>{content}</em>}
+  {sizeProp === 'medium' && <Code code={content} />}
+  {sizeProp === 'big' && <Code code={content} />}
+</p>
