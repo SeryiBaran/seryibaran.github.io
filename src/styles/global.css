@@ -73,11 +73,13 @@ body {
 
 header,
 footer {
-  @apply bg-slate-500/6 shadow shadow-black/20;
+  @apply bg-slate-500/6;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 footer {
   @apply shadow-b-2 text-sm;
+  box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 h1,

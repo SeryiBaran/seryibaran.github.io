@@ -39,5 +39,51 @@ const { title, description, image } = Astro.props
         >Наверх</span
       ></a
     >
+    <script>
+      const css = `:where(article>*, ul>li, ol>li):nth-child(1n) {
+      color: rgb(248 113 113);
+    }
+    
+    :where(article>*, ul>li, ol>li):nth-child(2n) {
+      color: rgb(251 146 60);
+    }
+    
+    :where(article>*, ul>li, ol>li):nth-child(3n) {
+      color: rgb(250 204 21);
+    }
+    
+    :where(article>*, ul>li, ol>li):nth-child(4n) {
+      color: rgb(74 222 128);
+    }
+    
+    :where(article>*, ul>li, ol>li):nth-child(5n) {
+      color: rgb(56 189 248);
+    }
+    
+    :where(article>*, ul>li, ol>li):nth-child(6n) {
+      color: rgb(96 165 250);
+    }
+    
+    :where(article>*, ul>li, ol>li):nth-child(7n) {
+      color: rgb(167 139 250);
+    }
+    
+    :where(article>*, ul>li, ol>li) a {
+      color: inherit !important;
+    }
+    
+    *:not(.katex-display):not(.katex-display *) {
+      font-family: 'Comic Sans MS';
+    }`
+
+      const month = 4 - 1
+      const day = 1
+
+      const todayDate = new Date()
+
+      if (todayDate.getMonth() === month && todayDate.getDate() === day) {
+        document.body.innerHTML += `<style>${css}</style>`
+      }
+    </script>
   </body>
 </html>

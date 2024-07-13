@@ -5,9 +5,9 @@ import { SITE_START } from '@/consts'
 const lastGenerationTime = dayjs().format('DD.MM.YYYY HH:mm:ss')
 ---
 
-<footer>
+<footer class="bg-primary/10">
   <div class="container">
-    <p class="mt-none">~{ SITE_START }-{dayjs().year()}, SeryiBaran.</p>
+    <p class="mt-none">~{SITE_START}-{dayjs().year()}, SeryiBaran.</p>
     <p>
       Последнее обновление сайта - {lastGenerationTime} UTC.
     </p>
