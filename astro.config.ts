@@ -2,14 +2,11 @@ import { readFileSync } from 'node:fs'
 import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
-import critters from 'astro-critters'
-import compress from 'astro-compress'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
 import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
 import expressiveCode from 'astro-expressive-code'
-import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
 
 function rawFonts(ext: string[]) {
   return {
@@ -31,25 +28,15 @@ function rawFonts(ext: string[]) {
 export default defineConfig({
   site: 'https://seryibaran.github.io',
   integrations: [
-    expressiveCode({
-      // plugins: [pluginLineNumbers()],
-      // defaultProps: {
-      //   showLineNumbers: true,
-      // },
-      themes: ['vitesse-dark', 'vitesse-light'],
-      styleOverrides: {
-        codeFontFamily: '\'JetBrains Mono\', \'Cascadia Code\', \'Inconsolata\', \'Consolas\', \'Input Mono\', \'JetBrains Mono\', \'Hack\', \'Liberation Mono\', monospace',
-        uiFontFamily: 'inherit',
-      },
-    }),
+    expressiveCode(),
     mdx(),
     sitemap(),
-    critters(),
-    compress({
-      HTML: false,
+    (await import('@playform/inline')).default({}),
+    (await import('@playform/compress')).default({
       CSS: true,
-      JavaScript: true,
+      HTML: false,
       Image: true,
+      JavaScript: true,
     }),
   ],
   markdown: {

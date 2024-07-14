@@ -1,4 +1,4 @@
-import { defineConfig, presetUno, presetWebFonts, transformerDirectives } from 'unocss'
+import { defineConfig, presetUno, transformerDirectives } from 'unocss'
 import transformerVariantGroup from '@unocss/transformer-variant-group'
 
 import { colors } from 'unocss/preset-mini'
@@ -9,18 +9,14 @@ export default defineConfig({
     presetUno({
       dark: 'media',
     }),
-    presetWebFonts({
-      fonts: [
-        { name: 'Source Sans Pro' },
-      ],
-    }),
   ],
   theme: {
     colors: {
       primary: colors.orange,
     },
     fontFamily: {
-      mono: '"Source Sans Pro","Microsoft Yahei",sans-serif, \'JetBrains Mono\', \'Cascadia Code\', \'Inconsolata\', \'Consolas\', \'Input Mono\', \'JetBrains Mono\', \'Hack\', \'Liberation Mono\', monospace',
+      mono: '"JetBrains Mono", "Cascadia Code", "Inconsolata", "Consolas", "Input Mono", "JetBrains Mono", "Hack", "Liberation Mono", monospace',
+      sans: '"Source Sans 3", "Microsoft Yahei", sans-serif',
     },
   },
 })

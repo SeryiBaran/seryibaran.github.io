@@ -4,6 +4,25 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+
+
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+
+
+
+
+
+
+
 /* @font-face {
   font-family: 'Inconsolata-Regular';
   src: url('/Inconsolata-Regular.ttf');
@@ -19,7 +38,26 @@
   font-style: normal;
 } */
 
-@font-face {
+
+
+
+
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+
+
+
+
+
+/* @font-face {
   font-family: "JetBrains Mono";
   src: url("/JetBrainsMono-Regular.woff2");
   font-weight: normal;
@@ -45,7 +83,148 @@
   src: url("/JetBrainsMono-BoldItalic.woff2");
   font-weight: bold;
   font-style: italic;
+} */
+
+
+
+
+
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+
+
+
+
+/* @font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-BlackItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-BoldItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-ExtraBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-ExtraBoldItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-ExtraLight.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-ExtraLightItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-Italic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-LightItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-MediumItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/SourceSans3/static/SourceSans3-SemiBoldItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+
+
+
+
+
+
+
+
+
+
 
 * {
   @apply box-border;
@@ -64,7 +243,9 @@ html {
 }
 
 body {
-  @apply bg-slate-50 text-neutral-800 dark:(bg-dark-500 text-neutral-300) font-mono m-0 break-words flex flex-col min-h-screen;
+  @apply bg-slate-50 text-neutral-800 dark:(bg-dark-500 text-neutral-300) m-0 break-words flex flex-col min-h-screen;
+  @apply font-sans;
+  /* @apply font-mono; */
 }
 
 .container {
@@ -173,7 +354,11 @@ table :where(td) {
 }
 
 .articleContent :where(img, .embed) {
-  @apply mt-2 block border-1px border-solid border-primary-600 w-auto;
+  @apply mt-2 border-1px border-solid border-primary-600 w-auto;
+}
+
+.articleContent img {
+  @apply block;
 }
 
 .articleContent :where(img, .embed).no-border-img-or-embed {
