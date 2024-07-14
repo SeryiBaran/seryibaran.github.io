@@ -1,7 +1,64 @@
 ---
+import TablerInfoCircleFilled from '~icons/tabler/info-circle-filled'
+import TablerAlertCircleFilled from '~icons/tabler/alert-circle-filled'
+import TablerCircleXFilled from '~icons/tabler/circle-x-filled'
+import TablerCircleCheckFilled from '~icons/tabler/circle-check-filled'
 
+interface Props {
+  type?: 'info' | 'warning' | 'error' | 'success' | 'simple'
+}
+
+const { type = 'info' } = Astro.props
 ---
 
-<div class="alert border-2px border-primary-600 border-solid p-4 bg-primary/8">
-  <slot />
-</div>
+{
+  type === 'simple' && (
+    <div class="alert border-2px border-primary-600 border-solid p-4 bg-primary/8">
+      <div class="alert_content">
+        <slot />
+      </div>
+    </div>
+  )
+}
+
+{
+  type !== 'simple' && (
+    <div
+      class="flex items-center p-4 mb-4 text-sm border border-solid rounded"
+      role="alert"
+      class:list={[type]}
+    >
+      {type === 'info' && (
+        <TablerInfoCircleFilled class="flex-shrink-0 inline w-5 h-5 me-3" />
+      )}
+      {type === 'warning' && (
+        <TablerAlertCircleFilled class="flex-shrink-0 inline w-5 h-5 me-3" />
+      )}
+      {type === 'error' && (
+        <TablerCircleXFilled class="flex-shrink-0 inline w-5 h-5 me-3" />
+      )}
+      {type === 'success' && (
+        <TablerCircleCheckFilled class="flex-shrink-0 inline w-5 h-5 me-3" />
+      )}
+      <span class="sr-only">Info</span>
+      <div class="alert_content">
+        <slot />
+      </div>
+    </div>
+  )
+}
+
+<style>
+  .info {
+    @apply text-blue-800 border-blue-300 bg-blue-50 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-800;
+  }
+  .warning {
+    @apply text-yellow-800 border-yellow-300 bg-yellow-50 dark:bg-yellow-900/20 dark:text-yellow-400 dark:border-yellow-800;
+  }
+  .error {
+    @apply text-red-800 border-red-300 bg-red-50 dark:bg-red-900/20 dark:text-red-400 dark:border-red-800;
+  }
+  .success {
+    @apply text-green-800 border-green-300 bg-green-50 dark:bg-green-900/20 dark:text-green-400 dark:border-green-800;
+  }
+</style>

@@ -48,28 +48,19 @@ const posts = (await getCollection('blog')).sort(
   image={image}
 >
   <article class:list={[{ isBlogPost }]}>
-    <div class="pageInfo flex flex-col gap-1">
+    <div class="pageInfo flex flex-col gap-3">
       {heroImage && <img src={heroImage} alt="" />}
-      <h1>{title}</h1>
-      {
-        !draft && isShowDate && date && (
-          <FormattedDate
-            date={date}
-            isShowTime={date.getHours() !== 0 && date.getMinutes() !== 0}
-          />
-        )
-      }
-      {
-        !draft && updatedDate && (
-          <FormattedDate
-            date={updatedDate}
-            isUpdatedDate={true}
-            isShowTime={
-              updatedDate.getHours() !== 0 && updatedDate.getMinutes() !== 0
-            }
-          />
-        )
-      }
+      <h1 class="mb-0">{title}</h1>
+      {description && <p class="opacity-70 m-0">{description}</p>}
+
+      <div class="flex flex-row flex-wrap gap-x-3 gap-y-0.3 opacity-70">
+        {!draft && isShowDate && date && <FormattedDate date={date} />}
+        {
+          !draft && updatedDate && (
+            <FormattedDate date={updatedDate} isUpdatedDate={true} />
+          )
+        }
+      </div>
       {
         draft && (
           <p class="m-0 inline-flex items-center gap-1 text-lg">
@@ -80,7 +71,9 @@ const posts = (await getCollection('blog')).sort(
       }
       <Divider article={false} />
     </div>
-    <slot />
+    <div class="articleContent">
+      <slot />
+    </div>
   </article>
   {
     isBlogPost && (

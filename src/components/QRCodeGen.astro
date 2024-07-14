@@ -1,6 +1,7 @@
 ---
 import { Code } from 'astro-expressive-code/components'
 import { QRCode, QRSvg } from 'sexy-qr'
+import Alert from './Alert.astro'
 
 interface Props {
   content: string
@@ -38,10 +39,14 @@ const qrSvg = new QRSvg(qrCode, {
 
 <p>
   <span
-    class="embed bg-white text-primary-600 inline-block p-12"
+    class="embed bg-white text-primary-600 inline-block p-12 max-sm:hidden"
     set:html={qrSvg.svg}
   />
-  {sizeProp === 'small' && <em>{content}</em>}
-  {sizeProp === 'medium' && <Code code={content} />}
-  {sizeProp === 'big' && <Code code={content} />}
+  <div class="sm:hidden">
+    <Alert>
+      QR код был скрыт из-за слишком маленького разрешения экрана. Ниже
+      представлено его содержимое:
+    </Alert>
+    <Code code={content} />
+  </div>
 </p>

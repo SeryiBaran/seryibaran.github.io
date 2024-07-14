@@ -1,6 +1,7 @@
 ---
 import PostPage from '@/layouts/PostPage.astro'
 import QRCodeGen from '@/components/QRCodeGen.astro'
+import Alert from '@/components/Alert.astro'
 ---
 
 <PostPage
@@ -10,6 +11,17 @@ import QRCodeGen from '@/components/QRCodeGen.astro'
   }}
   isShowDate={false}
 >
+  {
+    ['info', 'warning', 'error', 'success', 'simple'].map((type) => (
+      <Alert type={type}>
+        Внимание! Мой VK аккаунт{' '}
+        <a href="https://vk.com/ivanchai6">@ivanchai6</a> скоро удалится, т.к. у
+        меня нет доступа к номеру телефона. Теперь у меня другой VK аккаунт на
+        другом телефоне, он указан на странице <a href="/contacts">Контакты</a>.
+      </Alert>
+    ))
+  }
+
   <p>test</p>
   <QRCodeGen content="https://seryibaran.github.io" />
   <QRCodeGen

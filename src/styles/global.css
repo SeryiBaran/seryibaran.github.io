@@ -160,23 +160,23 @@ table :where(td) {
   @apply bg-neutral/10 dark:(bg-neutral/6);
 }
 
-article.isBlogPost {
+.articleContent>p {
   @apply text-justify;
 }
 
-article>* {
+.articleContent>* {
   @apply mx-0 my-3;
 }
 
-article>p {
+.articleContent>p {
   @apply mx-0 my-4;
 }
 
-article :where(img, .embed) {
+.articleContent :where(img, .embed) {
   @apply mt-2 block border-1px border-solid border-primary-600 w-auto;
 }
 
-article :where(img, .embed).no-border-img-or-embed {
+.articleContent :where(img, .embed).no-border-img-or-embed {
   @apply border-none;
 }
 
@@ -184,7 +184,7 @@ article :where(img, .embed).no-border-img-or-embed {
   @apply mx-0 my-1.8;
 }
 
-article :where(img, .embed)+em {
+.articleContent :where(img, .embed)+em {
   @apply not-italic opacity-80 text-sm block mb-4 mt-1;
 }
 
@@ -204,7 +204,7 @@ summary {
   @apply block overflow-x-auto p-4;
 }
 
-html body :where(.alert, blockquote)>* {
+html body :where(.alert_content, blockquote)>p {
   @apply m-0 p-0;
 }
 

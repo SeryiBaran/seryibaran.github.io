@@ -8,9 +8,8 @@ import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
 import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
-
-// vite plugin to import fonts
 import expressiveCode from 'astro-expressive-code'
+import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
 
 function rawFonts(ext: string[]) {
   return {
@@ -33,6 +32,10 @@ export default defineConfig({
   site: 'https://seryibaran.github.io',
   integrations: [
     expressiveCode({
+      // plugins: [pluginLineNumbers()],
+      // defaultProps: {
+      //   showLineNumbers: true,
+      // },
       themes: ['vitesse-dark', 'vitesse-light'],
       styleOverrides: {
         codeFontFamily: '\'JetBrains Mono\', \'Cascadia Code\', \'Inconsolata\', \'Consolas\', \'Input Mono\', \'JetBrains Mono\', \'Hack\', \'Liberation Mono\', monospace',
