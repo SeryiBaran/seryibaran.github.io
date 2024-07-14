@@ -7,5 +7,5 @@ export function getPageTitle(title: string) {
 }
 
 export function formatPostDate(date: Date, isShowTime: boolean = false) {
-  return dayjs(date.toISOString()).locale('ru').format(isShowTime ? 'DD.MM.YYYY HH:mm UTC' : 'DD.MM.YYYY')
+  return dayjs(date.toISOString()).utc().locale('ru').format(isShowTime ? 'DD.MM.YYYY HH:mm UTC' : 'DD.MM.YYYY')
 }
