@@ -153,6 +153,20 @@ const { title, description, image } = Astro.props
           `<h2>С первым апреля, хыхыхыха Ахыа хыХ Азхыа ывщо шашщ ыпр шгщ</h2>`
         document.body.innerHTML += `<style>${css}</style>`
       }
+
+      // meme8
+      if (
+        navigator.userAgent.includes('Linux') &&
+        navigator.userAgent.includes('Firefox') &&
+        !navigator.userAgent.includes('Android')
+      ) {
+        document.body.innerHTML += `
+        <style>
+          body {
+            background-image: url('/meme8.png');
+          }
+        </style>`
+      }
     </script>
   </body>
 </html>
