@@ -12,7 +12,7 @@ export default defineConfig({
   ],
   theme: {
     colors: {
-      primary: colors.green,
+      primary: colors.orange,
     },
     fontFamily: {
       mono: '"JetBrains Mono", "Cascadia Code", "Inconsolata", "Consolas", "Input Mono", "JetBrains Mono", "Hack", "Liberation Mono", monospace',

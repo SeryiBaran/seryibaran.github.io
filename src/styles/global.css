@@ -330,15 +330,15 @@ table {
 }
 
 table :where(td, th) {
-  @apply p-1 px-2 border-neutral/60 dark:(border-neutral-600) border-1px border-solid;
+  @apply p-1 px-2 border-primary/26 border-1px border-solid;
 }
 
 table :where(th) {
-  @apply bg-neutral/24 dark:(bg-neutral/20);
+  @apply bg-primary/16 dark:(bg-primary/12);
 }
 
 table :where(td) {
-  @apply bg-neutral/10 dark:(bg-neutral/6);
+  @apply bg-primary/6 dark:(bg-primary/2);
 }
 
 .articleContent>p {

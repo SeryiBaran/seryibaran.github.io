@@ -1,5 +1,4 @@
 ---
-import TablerMessageFilled from '~icons/tabler/message-filled'
 import TablerInfoCircleFilled from '~icons/tabler/info-circle-filled'
 import TablerAlertCircleFilled from '~icons/tabler/alert-circle-filled'
 import TablerCircleXFilled from '~icons/tabler/circle-x-filled'
@@ -9,7 +8,7 @@ interface Props {
   type?: 'simple' | 'primary' | 'info' | 'warning' | 'error' | 'success'
 }
 
-const { type = 'primary' } = Astro.props
+const { type = 'simple' } = Astro.props
 ---
 
 {
