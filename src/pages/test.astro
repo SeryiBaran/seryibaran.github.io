@@ -11,8 +11,14 @@ import Alert from '@/components/Alert.astro'
   }}
   isShowDate={false}
 >
+  <Alert>
+    Внимание! Мой VK аккаунт{' '}
+    <a href="https://vk.com/ivanchai6">@ivanchai6</a> скоро удалится, т.к. у меня
+    нет доступа к номеру телефона. Теперь у меня другой VK аккаунт на другом телефоне,
+    он указан на странице <a href="/contacts">Контакты</a>.
+  </Alert>
   {
-    ['info', 'warning', 'error', 'success', 'simple'].map((type) => (
+    ['info', 'warning', 'error', 'success'].map((type) => (
       <Alert type={type}>
         Внимание! Мой VK аккаунт{' '}
         <a href="https://vk.com/ivanchai6">@ivanchai6</a> скоро удалится, т.к. у
