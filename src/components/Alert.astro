@@ -6,10 +6,10 @@ import TablerCircleXFilled from '~icons/tabler/circle-x-filled'
 import TablerCircleCheckFilled from '~icons/tabler/circle-check-filled'
 
 interface Props {
-  type?: 'simple' | 'message' | 'info' | 'warning' | 'error' | 'success'
+  type?: 'simple' | 'primary' | 'info' | 'warning' | 'error' | 'success'
 }
 
-const { type = 'message' } = Astro.props
+const { type = 'primary' } = Astro.props
 ---
 
 {
@@ -29,10 +29,7 @@ const { type = 'message' } = Astro.props
       role="alert"
       class:list={[type]}
     >
-      {type === 'message' && (
-        <TablerMessageFilled class="flex-shrink-0 inline w-5 h-5 me-3" />
-      )}
-      {type === 'info' && (
+      {(type === 'info' || type === 'primary') && (
         <TablerInfoCircleFilled class="flex-shrink-0 inline w-5 h-5 me-3" />
       )}
       {type === 'warning' && (
@@ -53,7 +50,7 @@ const { type = 'message' } = Astro.props
 }
 
 <style>
-  .message {
+  .primary {
     @apply border-primary-300 bg-primary-50 dark:bg-primary-900/20  dark:border-primary-800;
   }
   .info {

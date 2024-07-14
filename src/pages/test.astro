@@ -2,6 +2,15 @@
 import PostPage from '@/layouts/PostPage.astro'
 import QRCodeGen from '@/components/QRCodeGen.astro'
 import Alert from '@/components/Alert.astro'
+
+const alertsTypes: (
+  | 'simple'
+  | 'primary'
+  | 'info'
+  | 'warning'
+  | 'error'
+  | 'success'
+)[] = ['simple', 'primary', 'info', 'warning', 'error', 'success']
 ---
 
 <PostPage
@@ -11,19 +20,13 @@ import Alert from '@/components/Alert.astro'
   }}
   isShowDate={false}
 >
-  <Alert>
-    Внимание! Мой VK аккаунт{' '}
-    <a href="https://vk.com/ivanchai6">@ivanchai6</a> скоро удалится, т.к. у меня
-    нет доступа к номеру телефона. Теперь у меня другой VK аккаунт на другом телефоне,
-    он указан на странице <a href="/contacts">Контакты</a>.
-  </Alert>
   {
-    ['info', 'warning', 'error', 'success'].map((type) => (
+    alertsTypes.map((type) => (
       <Alert type={type}>
-        Внимание! Мой VK аккаунт{' '}
-        <a href="https://vk.com/ivanchai6">@ivanchai6</a> скоро удалится, т.к. у
-        меня нет доступа к номеру телефона. Теперь у меня другой VK аккаунт на
-        другом телефоне, он указан на странице <a href="/contacts">Контакты</a>.
+        Мой VK аккаунт <a href="https://vk.com/ivanchai6">@ivanchai6</a> скоро
+        удалится, т.к. у меня нет доступа к номеру телефона. Теперь у меня
+        другой VK аккаунт на другом телефоне, он указан на странице{' '}
+        <a href="/contacts">Контакты</a>.
       </Alert>
     ))
   }
