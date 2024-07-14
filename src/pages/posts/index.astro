@@ -1,5 +1,5 @@
 ---
-import BlogPost from '@/layouts/BlogPost.astro'
+import PostPage from '@/layouts/PostPage.astro'
 import { getCollection } from 'astro:content'
 import FormattedDate from '@/components/FormattedDate.astro'
 
@@ -8,21 +8,21 @@ const posts = (await getCollection('blog')).sort(
 )
 ---
 
-<BlogPost
+<PostPage
   data={{
     title: 'Посты',
     description: 'Мои посты',
   }}
   isShowDate={false}
 >
-  <ul class="p-0 flex flex-col gap-4 md:gap-0">
+  <ul class="p-0 max-sm:flex max-sm:flex-col max-sm:gap-y-4">
     {
       posts
         .slice()
         .filter((post) => !post.data.draft)
         .reverse()
         .map((post) => (
-          <li class="gap-x-2 flex flex-col md:flex-row">
+          <li class="gap-x-2 flex flex-col sm:flex-row">
             <span class="block opacity-70 text-sm">
               <FormattedDate date={post.data.date} />
             </span>
@@ -31,4 +31,13 @@ const posts = (await getCollection('blog')).sort(
         ))
     }
   </ul>
-</BlogPost>
+  <!-- <div class="my-4 p-0 grid grid-cols-1 md:grid-cols-1 gap-4">
+    {
+      posts
+        .slice()
+        .filter((post) => !post.data.draft)
+        .reverse()
+        .map((post) => <PostCard post={post} />)
+    }
+  </div> -->
+</PostPage>

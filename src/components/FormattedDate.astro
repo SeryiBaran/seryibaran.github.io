@@ -7,23 +7,36 @@ export interface Props {
   date: Date
   isUpdatedDate?: boolean
   isShowTime?: boolean
+  isShowIcon?: boolean
+  isColored?: boolean
 }
 
-const { date, isUpdatedDate = false, isShowTime = false } = Astro.props
+const {
+  date,
+  isUpdatedDate = false,
+  isShowTime = false,
+  isShowIcon = true,
+  isColored = false,
+} = Astro.props
 ---
 
 <time
   datetime={date.toISOString()}
   class="inline-flex items-center gap-1"
+  class:list={[{ isColored }]}
   title={isUpdatedDate ? 'Дата обновления' : 'Дата публикации'}
   aria-label={isUpdatedDate ? 'Дата обновления' : 'Дата публикации'}
 >
   {
-    isUpdatedDate ? (
-      <TablerPencil class="w-1em h-1em" />
-    ) : (
-      <TablerCalendar class="w-1em h-1em" />
-    )
+    isUpdatedDate
+      ? isShowIcon && <TablerPencil class="w-1em h-1em" />
+      : isShowIcon && <TablerCalendar class="w-1em h-1em" />
   }
   {formatPostDate(date, isShowTime)}
 </time>
+
+<style>
+  time.isColored {
+    @apply text-primary-800 dark:text-primary-200;
+  }
+</style>

@@ -116,11 +116,11 @@ h3 {
 
 html body a,
 .link_without_visited_color:visited {
-  @apply text-primary-600 hover:text-primary-400 dark:(text-primary-400 hover:text-primary-300);
+  @apply text-primary-600 hover:text-primary-400 dark:(text-primary-400 hover:text-primary-300) transition-50 transition-colors;
 }
 
 .link_without_effects {
-  @apply active:text-inherit hover:text-inherit focus:text-inherit visited:text-inherit text-inherit no-underline focus:outline-none;
+  @apply active:text-inherit hover:text-inherit focus:text-inherit visited:text-inherit text-inherit no-underline outline-none focus:outline-none;
 }
 
 nav a {
@@ -160,6 +160,10 @@ table :where(td) {
   @apply bg-neutral/10 dark:(bg-neutral/6);
 }
 
+article.isBlogPost {
+  @apply text-justify;
+}
+
 article>* {
   @apply mx-0 my-3;
 }
@@ -177,7 +181,7 @@ article :where(img, .embed).no-border-img-or-embed {
 }
 
 :where(ol, ul) li {
-  @apply mx-0 my-2;
+  @apply mx-0 my-1.8;
 }
 
 article :where(img, .embed)+em {
@@ -218,4 +222,17 @@ blockquote {
 
 .expressive-code figure.frame pre {
   @apply rounded-0 sm:text-wrap;
+}
+
+img[src*='#left'] {
+  @apply sm:mr-6 sm:float-left;
+}
+
+img[src*='#right'] {
+  @apply sm:ml-6 sm:float-right;
+}
+
+img[src*='#center'] {
+  display: block;
+  margin: auto;
 }

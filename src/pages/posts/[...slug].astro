@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content'
-import BlogPost from '../../layouts/BlogPost.astro'
+import PostPage from '../../layouts/PostPage.astro'
 import Divider from '@/components/Divider.astro'
 
 export async function getStaticPaths() {
@@ -16,6 +16,6 @@ const post = Astro.props
 const { Content } = await post.render()
 ---
 
-<BlogPost {...post}>
+<PostPage {...post} isBlogPost={true}>
   <Content components={{ hr: Divider }} />
-</BlogPost>
+</PostPage>

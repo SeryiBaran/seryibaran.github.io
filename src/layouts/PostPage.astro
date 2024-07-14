@@ -5,6 +5,8 @@ import FormattedDate from '@/components/FormattedDate.astro'
 import Divider from '@/components/Divider.astro'
 import { SITE_DESCRIPTION } from '@/consts'
 import TablerPencil from '~icons/tabler/pencil'
+import { getCollection } from 'astro:content'
+import PostCard from '@/components/PostCard.astro'
 
 interface Props {
   isShowDate?: boolean
@@ -17,12 +19,14 @@ interface Props {
     draft?: boolean
   }
   slug?: CollectionEntry<'blog'>['slug']
+  isBlogPost?: boolean
 }
 
 const {
   isShowDate = true,
   data: { title, description, date, updatedDate, heroImage, draft },
   slug = null,
+  isBlogPost = false,
 } = Astro.props
 
 let image
@@ -32,6 +36,10 @@ if (heroImage) {
 } else if (slug) {
   image = `/image/${slug}.png`
 }
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => a.data.date.valueOf() - b.data.date.valueOf(),
+)
 ---
 
 <BaseLayout
@@ -39,7 +47,7 @@ if (heroImage) {
   description={description || SITE_DESCRIPTION}
   image={image}
 >
-  <article>
+  <article class:list={[{ isBlogPost }]}>
     <div class="pageInfo flex flex-col gap-1">
       {heroImage && <img src={heroImage} alt="" />}
       <h1>{title}</h1>
@@ -74,4 +82,26 @@ if (heroImage) {
     </div>
     <slot />
   </article>
+  {
+    isBlogPost && (
+      <div>
+        <div class="mt-20 mb-12 my-2">
+          <Divider article={false} />
+        </div>
+        <section>
+          <p class="text-xl">Вам также может понравиться:</p>
+          <div class="my-4 p-0 grid grid-cols-1 md:grid-cols-3 gap-4">
+            {posts
+              .slice()
+              .filter((post) => !post.data.draft)
+              .reverse()
+              .slice(0, 6)
+              .map((post) => (
+                <PostCard post={post} />
+              ))}
+          </div>
+        </section>
+      </div>
+    )
+  }
 </BaseLayout>

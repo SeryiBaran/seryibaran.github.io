@@ -1,13 +1,13 @@
 ---
 import { AUTHOR_BIRTHDAY } from '@/consts'
-import BlogPost from '@/layouts/BlogPost.astro'
+import PostPage from '@/layouts/PostPage.astro'
 import dayjs from 'dayjs'
 import Alert from '@/components/Alert.astro'
 
 const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
 ---
 
-<BlogPost data={{ title: 'Главная' }}>
+<PostPage data={{ title: 'Главная' }}>
   <Alert
     >Внимание! Мой VK аккаунт <a href="https://vk.com/ivanchai6">@ivanchai6</a> скоро
     удалится, т.к. у меня нет доступа к номеру телефона. Теперь у меня другой VK
@@ -69,7 +69,7 @@ const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
         ))
     }
   </p>
-</BlogPost>
+</PostPage>
 
 <style>
   .meme2 {

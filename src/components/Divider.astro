@@ -7,13 +7,13 @@ const { article = true } = Astro.props
 ---
 
 <div
-  class="border-neutral-800 dark:border-neutral-200 border-t-1px border-t-solid my-2"
+  class="border-primary-800 dark:border-primary-200 border-t-1px border-t-solid my-2 opacity-40"
   class:list={[{ article }]}
 >
 </div>
 
 <style>
   div.article {
-    @apply border-neutral-400 border-2px mx-auto max-w-md my-10;
+    @apply border-primary-400 border-2px mx-auto max-w-md my-10;
   }
 </style>
