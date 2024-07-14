@@ -22,8 +22,8 @@ const posts = (await getCollection('blog')).sort(
         .filter((post) => !post.data.draft)
         .reverse()
         .map((post) => (
-          <li class="gap-x-2 flex flex-col sm:flex-row">
-            <span class="block opacity-70 text-sm">
+          <li class="gap-x-2 flex flex-col sm:flex-row sm:items-center">
+            <span class="opacity-70 text-sm flex flex-row items-center">
               <FormattedDate date={post.data.date} />
             </span>
             <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
