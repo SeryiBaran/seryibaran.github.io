@@ -1,17 +1,16 @@
 ---
 import dayjs from 'dayjs'
 import { SITE_START } from '@/consts'
-import utc from 'dayjs/plugin/utc'
-dayjs.extend(utc)
+import { formatPostDate } from '@/utils'
 
-const lastGenerationTime = dayjs.utc().format('DD.MM.YYYY HH:mm:ss')
+const lastGenerationTime = formatPostDate(new Date(), true)
 ---
 
 <footer class="bg-primary/10">
   <div class="container">
     <p class="mt-none">~{SITE_START}-{dayjs().year()}, SeryiBaran.</p>
     <p>
-      Последнее обновление сайта - {lastGenerationTime} UTC.
+      Последнее обновление сайта - {lastGenerationTime}.
     </p>
     <p
       xmlns:cc="http://creativecommons.org/ns#"

@@ -14,7 +14,7 @@ export interface Props {
 const {
   date,
   isUpdatedDate = false,
-  isShowTime = true,
+  isShowTime = false,
   isShowIcon = true,
   isColored = false,
 } = Astro.props
@@ -26,7 +26,7 @@ const showTime = date.getHours() !== 0 && date.getMinutes() !== 0 && isShowTime
   datetime={date.toISOString()}
   class="inline-flex items-center gap-1"
   class:list={[{ isColored }]}
-  title={formatPostDate(date, true)}
+  title={formatPostDate(date, showTime)}
   aria-label={isUpdatedDate ? 'Дата обновления' : 'Дата публикации'}
 >
   {
