@@ -40,4 +40,12 @@ export const pages_info = [{
     title: 'Посты',
     description: 'Мои посты',
   },
+}, {
+  params: {
+    slug: 'page__404',
+  },
+  props: {
+    title: '404',
+    description: '',
+  },
 }]

@@ -18,14 +18,14 @@ interface Props {
     date?: Date
     draft?: boolean
   }
-  slug?: CollectionEntry<'blog'>['slug']
+  slug: CollectionEntry<'blog'>['slug'] | string
   isBlogPost?: boolean
 }
 
 const {
   isShowDate = true,
   data: { title, description, date, updatedDate, heroImage, draft },
-  slug = null,
+  slug,
   isBlogPost = false,
 } = Astro.props
 
@@ -44,11 +44,12 @@ const posts = (await getCollection('blog')).sort(
   title={title}
   description={description || SITE_DESCRIPTION}
   image={image}
+  slug={slug}
 >
   <article class:list={[{ isBlogPost }]}>
     <div class="pageInfo flex flex-col gap-3">
-      {heroImage && <img src={heroImage} alt="Hero image" />}
-      <!-- {image && <img src={image} alt="Hero image" />} -->
+      <!-- {heroImage && <img src={heroImage} alt="Hero image" />} -->
+      {image && <img src={image} alt="Hero image" />}
       <h1 class="mb-0">{title}</h1>
       {description && <p class="opacity-70 m-0">{description}</p>}
 

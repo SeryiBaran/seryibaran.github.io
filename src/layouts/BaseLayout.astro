@@ -10,17 +10,24 @@ interface Props {
   title: string
   description?: string | undefined
   image?: string | undefined
+  slug: string
 }
 
-const { title, description, image } = Astro.props
+const props = Astro.props
+
+let image = props.image
+
+if (image === undefined) {
+  image = `/image/${props.slug}.png`
+}
 ---
 
 <!doctype html>
 <html lang="ru">
   <head>
     <BaseHead
-      title={title}
-      description={description || SITE_DESCRIPTION}
+      title={props.title}
+      description={props.description || SITE_DESCRIPTION}
       image={image}
     />
   </head>

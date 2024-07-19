@@ -13,6 +13,7 @@ const posts = (await getCollection('blog')).sort(
     title: 'Посты',
     description: 'Мои посты',
   }}
+  slug="page__posts"
   isShowDate={false}
 >
   <ul class="p-0 max-sm:flex max-sm:flex-col max-sm:gap-y-3">
