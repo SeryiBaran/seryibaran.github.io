@@ -1,5 +1,5 @@
 ---
-title: 'Инструкция по обработке картинок от @frozenshift'
+title: 'Инструкция по обработке картинок от frozenshift'
 description: 'Взято из Telegram чата - не моё.'
 date: 2024-07-17T12:32:35.386+03
 ---
@@ -62,8 +62,7 @@ date: 2024-07-17T12:32:35.386+03
 - Называем его `clear-image.js` и ложим в корень:
 
   ```js
-  // eslint-disable-next-line no-undef
-  const fs = require('fs')
+  s = require('node:fs')
   const directory = 'src/assets/images/crop-img/'
 
   fs.rm(directory, { recursive: true }, (err) => {

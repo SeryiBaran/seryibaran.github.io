@@ -1,7 +1,8 @@
 import { defineConfig, presetUno, transformerDirectives } from 'unocss'
 import transformerVariantGroup from '@unocss/transformer-variant-group'
-
 import { colors } from 'unocss/preset-mini'
+
+import { PRIMARY_COLOR } from './src/consts'
 
 export default defineConfig({
   transformers: [transformerDirectives(), transformerVariantGroup()],
@@ -12,7 +13,7 @@ export default defineConfig({
   ],
   theme: {
     colors: {
-      primary: colors.orange,
+      primary: colors[PRIMARY_COLOR],
     },
     fontFamily: {
       mono: '"JetBrains Mono", "Cascadia Code", "Inconsolata", "Consolas", "Input Mono", "JetBrains Mono", "Hack", "Liberation Mono", monospace',
