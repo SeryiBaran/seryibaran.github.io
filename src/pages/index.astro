@@ -3,7 +3,6 @@ import { AUTHOR_BIRTHDAY } from '@/consts'
 import PageLayout from '@/layouts/PageLayout.astro'
 import dayjs from 'dayjs'
 import Alert from '@/components/Alert.astro'
-import QRCodeGen from '@/components/QRCodeGen.astro'
 
 const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
 ---
@@ -177,7 +176,25 @@ const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
 
   <h2>Всякое</h2>
 
-  <QRCodeGen content="3.14159265358979323846264" />
+  <p>Число Pi на баркодах (Ну с ума я сошел, да, и что?)</p>
+
+  <img src="/pi_barcodes/aztec_code__3.1415926535897932384626433.png" />
+  <em>Aztec Code</em>
+
+  <img src="/pi_barcodes/code_39_extended__3.1415926535897932384626433.png" />
+  <em>Code 39 Extended</em>
+
+  <img src="/pi_barcodes/code_128__3.1415926535897932384626433.png" />
+  <em>Code 128</em>
+
+  <img src="/pi_barcodes/data_matrix__3.1415926535897932384626433.png" />
+  <em>Data Matrix</em>
+
+  <img src="/pi_barcodes/micro_qr__3.1415926535897932384626433.png" />
+  <em>Micro QR</em>
+
+  <img src="/pi_barcodes/qr__3.1415926535897932384626433.png" />
+  <em>QR</em>
 
   <p>
     <!--RadioKOT button-->

@@ -366,10 +366,6 @@ table :where(td) {
   @apply block;
 }
 
-.articleContent>img {
-  @apply inline-block;
-}
-
 .articleContent :where(img, .embed).no-border-img-or-embed {
   @apply border-none;
 }
@@ -379,7 +375,7 @@ table :where(td) {
 }
 
 .articleContent :where(img, .embed)+em {
-  @apply not-italic opacity-80 text-sm block mb-4 mt-1;
+  @apply not-italic opacity-80 text-sm block mb-4 mt--2;
 }
 
 .headingLink {
