@@ -217,7 +217,12 @@
 
 
 
-
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/JetBrainsMono-Regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 
@@ -317,7 +322,7 @@ img {
 }
 
 code {
-  @apply py-0.5 px-1 bg-neutral-400/23 text-[0.8em] font-inherit;
+  @apply py-0.5 px-1 bg-neutral-400/23 text-[0.8em] font-mono;
 }
 
 pre>code {

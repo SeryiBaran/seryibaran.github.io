@@ -3,6 +3,7 @@ import { AUTHOR_BIRTHDAY } from '@/consts'
 import PageLayout from '@/layouts/PageLayout.astro'
 import dayjs from 'dayjs'
 import Alert from '@/components/Alert.astro'
+import QRCodeGen from '@/components/QRCodeGen.astro'
 
 const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
 ---
@@ -42,6 +43,7 @@ const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
     <li>Astro</li>
     <li>Расширения - Manifest V2/V3, Telegram боты - GrammY.js</li>
     <li>Терминал, Git, PowerShell, Bash</li>
+    <li>Написать по памяти <code>3.1415926535897932384626433</code></li>
   </ol>
 
   <h2>Что я <del>на</del>делал/форкнул</h2>
@@ -49,60 +51,73 @@ const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
   <ul>
     <li>
       <a href="https://github.com/SeryiBaran/maket-web-dev-project"
-        >Макет &quot;Web Development Project&quot;</a>
+        >Макет &quot;Web Development Project&quot;</a
+      >
     </li>
     <li>
       <a href="https://github.com/SeryiBaran/maket-agency"
-        >Макет &quot;Agency&quot;</a>
+        >Макет &quot;Agency&quot;</a
+      >
     </li>
     <li>
       <a href="https://github.com/SeryiBaran/telehumpter"
-        >Пародия на Twitter - Telehumpter</a>
+        >Пародия на Twitter - Telehumpter</a
+      >
     </li>
     <li><a href="https://github.com/SeryiBaran/todo-vue">Todo на Vue</a></li>
     <li>
       <a href="https://github.com/f5ociety/Bridge-of-Liberty"
-        >Сайт для проекта Мост Свободы</a>
+        >Сайт для проекта Мост Свободы</a
+      >
     </li>
     <li>
       <a href="https://github.com/SeryiBaran/Privacy-Search-Companion"
-        >Firefox расширение Privacy Search Companion</a>
+        >Firefox расширение Privacy Search Companion</a
+      >
     </li>
     <li>
       <a href="https://github.com/SeryiBaran/SBStartpage"
-        >Простая стартовая страница для браузера</a>
+        >Простая стартовая страница для браузера</a
+      >
     </li>
     <li>
       <a href="https://github.com/SeryiBaran/PSC-site"
-        >Сайт для проекта Privacy Search Companion</a>
+        >Сайт для проекта Privacy Search Companion</a
+      >
     </li>
     <li>
       <a href="https://github.com/SeryiBaran/seryibaran.github.io">Свой сайт</a>
     </li>
     <li>
       <a href="https://github.com/SeryiBaran/generated-calc"
-        >Генератор немного неоптимизированного калькулятора</a>
+        >Генератор немного неоптимизированного калькулятора</a
+      >
     </li>
     <li>
       <a href="https://github.com/SeryiBaran/tailvue-starter"
-        >Стартовый шаблон Vue + TypeScript</a>
+        >Стартовый шаблон Vue + TypeScript</a
+      >
     </li>
     <li>
       <a href="https://github.com/SeryiBaran/yt-dlp-python-gui"
-        >GUI для Yt-dlp</a>
+        >GUI для Yt-dlp</a
+      >
     </li>
     <li>
       <a href="https://github.com/SeryiBaran/ffmpeg_installer"
-        >Установщик FFmpeg для Windows</a>
+        >Установщик FFmpeg для Windows</a
+      >
     </li>
     <li>
       <a href="https://github.com/SeryiBaran/snowbowles-script"
         >Транспилируемый язык программирования &quot;snowbowles-script
-        (SNOWBOWLEScript)&quot;</a>
+        (SNOWBOWLEScript)&quot;</a
+      >
     </li>
     <li>
       <a href="https://github.com/SeryiBaran/encoding-visualization"
-        >Визуализация текста в разных кодировках в терминале</a>
+        >Визуализация текста в разных кодировках в терминале</a
+      >
     </li>
     <li>
       TG боты<ul>
@@ -115,7 +130,8 @@ const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
         </li>
         <li>
           <a href="https://github.com/SeryiBaran/code-colorizer-bot"
-            >TG бот создающий красивый скриншот кода из сообщения</a>
+            >TG бот создающий красивый скриншот кода из сообщения</a
+          >
         </li>
       </ul>
     </li>
@@ -123,7 +139,8 @@ const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
       Docker<ul>
         <li>
           <a href="https://github.com/SeryiBaran/drone-gitea-on-docker"
-            >Форк примера Gitea + Drone</a>
+            >Форк примера Gitea + Drone</a
+          >
         </li>
       </ul>
     </li>
@@ -131,7 +148,8 @@ const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
       Электроника<ul>
         <li>
           <a href="https://github.com/SeryiBaran/ardustat"
-            >Термостат на Arduino</a>
+            >Термостат на Arduino</a
+          >
         </li>
       </ul>
     </li>
@@ -139,7 +157,8 @@ const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
       VSCode<ul>
         <li>
           <a href="https://github.com/SeryiBaran/platformio-big-buttons"
-            >Большие удобные кнопки для PlatformIO</a>
+            >Большие удобные кнопки для PlatformIO</a
+          >
         </li>
       </ul>
     </li>
@@ -155,6 +174,11 @@ const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
   >
     Github репозиторий этого сайта
   </a>
+
+  <h2>Всякое</h2>
+
+  <QRCodeGen content="3.14159265358979323846264" />
+
   <p>
     <!--RadioKOT button-->
     <a href="https://www.radiokot.ru/">
