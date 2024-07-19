@@ -1,5 +1,5 @@
 ---
-import PostPage from '@/layouts/PostPage.astro'
+import PageLayout from '@/layouts/PageLayout.astro'
 
 const links = [
   {
@@ -57,13 +57,12 @@ const links = [
 ]
 ---
 
-<PostPage
+<PageLayout
   data={{
     title: 'Контакты',
     description: 'Мои контакты',
+    slug: 'page__contacts',
   }}
-  slug="page__contacts"
-  isShowDate={false}
 >
   <ul>
     {
@@ -75,4 +74,4 @@ const links = [
     }
     <li>E-Mail: anderchiser COMMERCIAL_AT yandex.ru</li>
   </ul>
-</PostPage>
+</PageLayout>

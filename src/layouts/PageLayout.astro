@@ -1,0 +1,25 @@
+---
+import PostPage from '@/layouts/PostPage.astro'
+
+interface Data {
+  title: string
+  description?: string
+  slug: string
+}
+
+interface Props {
+  data?: Data
+  content?: Data
+}
+
+const props = Astro.props
+---
+
+<PostPage
+  data={props.data! || props.content!}
+  slug={props.data?.slug! || props.content?.slug!}
+  isShowDate={false}
+  isBlogPost={false}
+>
+  <slot />
+</PostPage>

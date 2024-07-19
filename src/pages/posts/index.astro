@@ -1,5 +1,5 @@
 ---
-import PostPage from '@/layouts/PostPage.astro'
+import PageLayout from '@/layouts/PageLayout.astro'
 import { getCollection } from 'astro:content'
 import FormattedDate from '@/components/FormattedDate.astro'
 
@@ -8,13 +8,12 @@ const posts = (await getCollection('blog')).sort(
 )
 ---
 
-<PostPage
+<PageLayout
   data={{
     title: 'Посты',
     description: 'Мои посты',
+    slug: 'page__posts',
   }}
-  slug="page__posts"
-  isShowDate={false}
 >
   <ul class="p-0 max-sm:flex max-sm:flex-col max-sm:gap-y-3">
     {
@@ -41,4 +40,4 @@ const posts = (await getCollection('blog')).sort(
         .map((post) => <PostCard post={post} />)
     }
   </div> -->
-</PostPage>
+</PageLayout>

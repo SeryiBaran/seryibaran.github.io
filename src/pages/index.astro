@@ -1,19 +1,25 @@
 ---
 import { AUTHOR_BIRTHDAY } from '@/consts'
-import PostPage from '@/layouts/PostPage.astro'
+import PageLayout from '@/layouts/PageLayout.astro'
 import dayjs from 'dayjs'
 import Alert from '@/components/Alert.astro'
 
 const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
 ---
 
-<PostPage data={{ title: 'Главная' }} slug="page__index">
+<PageLayout
+  data={{
+    title: 'Главная',
+    slug: 'page__index',
+  }}
+>
   <Alert>
     Мой VK аккаунт <a href="https://vk.com/ivanchai6">@ivanchai6</a> скоро удалится,
     т.к. у меня нет доступа к номеру телефона. Теперь у меня другой VK аккаунт на
     другом телефоне, он указан на странице{' '}
     <a href="/contacts">Контакты</a>.
   </Alert>
+
   <p>
     Я Иван Музы́ка, мне {authorAge} лет и я начинающий (а может быть и нет 😉) Frontend
     разработчик.
@@ -24,11 +30,126 @@ const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
     Наиболее я активен в Telegram.
   </p>
 
+  <h2>Что я умею</h2>
+
+  <ol>
+    <li>HTML</li>
+    <li>CSS3, SASS, PostCSS, Tailwind, UnoCSS</li>
+    <li>JavaScript, TypeScript</li>
+    <li>Vue.js, Pinia</li>
+    <li>ESlint, Prettier</li>
+    <li>Vite, Rollup, Vitest, Jest</li>
+    <li>Astro</li>
+    <li>Расширения - Manifest V2/V3, Telegram боты - GrammY.js</li>
+    <li>Терминал, Git, PowerShell, Bash</li>
+  </ol>
+
+  <h2>Что я <del>на</del>делал/форкнул</h2>
+
+  <ul>
+    <li>
+      <a href="https://github.com/SeryiBaran/maket-web-dev-project"
+        >Макет &quot;Web Development Project&quot;</a>
+    </li>
+    <li>
+      <a href="https://github.com/SeryiBaran/maket-agency"
+        >Макет &quot;Agency&quot;</a>
+    </li>
+    <li>
+      <a href="https://github.com/SeryiBaran/telehumpter"
+        >Пародия на Twitter - Telehumpter</a>
+    </li>
+    <li><a href="https://github.com/SeryiBaran/todo-vue">Todo на Vue</a></li>
+    <li>
+      <a href="https://github.com/f5ociety/Bridge-of-Liberty"
+        >Сайт для проекта Мост Свободы</a>
+    </li>
+    <li>
+      <a href="https://github.com/SeryiBaran/Privacy-Search-Companion"
+        >Firefox расширение Privacy Search Companion</a>
+    </li>
+    <li>
+      <a href="https://github.com/SeryiBaran/SBStartpage"
+        >Простая стартовая страница для браузера</a>
+    </li>
+    <li>
+      <a href="https://github.com/SeryiBaran/PSC-site"
+        >Сайт для проекта Privacy Search Companion</a>
+    </li>
+    <li>
+      <a href="https://github.com/SeryiBaran/seryibaran.github.io">Свой сайт</a>
+    </li>
+    <li>
+      <a href="https://github.com/SeryiBaran/generated-calc"
+        >Генератор немного неоптимизированного калькулятора</a>
+    </li>
+    <li>
+      <a href="https://github.com/SeryiBaran/tailvue-starter"
+        >Стартовый шаблон Vue + TypeScript</a>
+    </li>
+    <li>
+      <a href="https://github.com/SeryiBaran/yt-dlp-python-gui"
+        >GUI для Yt-dlp</a>
+    </li>
+    <li>
+      <a href="https://github.com/SeryiBaran/ffmpeg_installer"
+        >Установщик FFmpeg для Windows</a>
+    </li>
+    <li>
+      <a href="https://github.com/SeryiBaran/snowbowles-script"
+        >Транспилируемый язык программирования &quot;snowbowles-script
+        (SNOWBOWLEScript)&quot;</a>
+    </li>
+    <li>
+      <a href="https://github.com/SeryiBaran/encoding-visualization"
+        >Визуализация текста в разных кодировках в терминале</a>
+    </li>
+    <li>
+      TG боты<ul>
+        <li>
+          <a href="https://github.com/SeryiBaran/telegram-clicker"
+            >Игра-кликер в виде TG бота</a
+          > (и её <a href="https://stackblitz.com/edit/vitejs-vite-ywdam5"
+            >порт в Web</a
+          >)
+        </li>
+        <li>
+          <a href="https://github.com/SeryiBaran/code-colorizer-bot"
+            >TG бот создающий красивый скриншот кода из сообщения</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Docker<ul>
+        <li>
+          <a href="https://github.com/SeryiBaran/drone-gitea-on-docker"
+            >Форк примера Gitea + Drone</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Электроника<ul>
+        <li>
+          <a href="https://github.com/SeryiBaran/ardustat"
+            >Термостат на Arduino</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      VSCode<ul>
+        <li>
+          <a href="https://github.com/SeryiBaran/platformio-big-buttons"
+            >Большие удобные кнопки для PlatformIO</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
   <p>
-    Вся информация о IT навыках и портфолио - на <a
-      href="https://github.com/SeryiBaran">моем Github</a
+    И ещё много интересного/неинтересного <a
+      href="https://github.com/SeryiBaran?tab=repositories">тут</a
     >.
   </p>
+
   <a
     href="https://github.com/SeryiBaran/seryibaran.github.io/actions/workflows/deploy.yml"
   >
@@ -68,7 +189,7 @@ const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
         ))
     }
   </p>
-</PostPage>
+</PageLayout>
 
 <style>
   .meme2 {

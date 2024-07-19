@@ -6,6 +6,13 @@ import 'dayjs/locale/ru'
 
 dayjs.extend(utc)
 
+/**
+ * Expand nominal types to their substructures for better intellisense
+ */
+export type Expand<T> = T extends (...args: infer A) => infer R
+  ? (...args: Expand<A>) => Expand<R>
+  : T extends any ? { [K in keyof T]: Expand<T[K]> } : never
+
 export function getPageTitle(title: string) {
   return `${title} - ${SITE_TITLE}`
 }

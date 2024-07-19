@@ -1,5 +1,5 @@
 ---
-import PostPage from '@/layouts/PostPage.astro'
+import PageLayout from '@/layouts/PageLayout.astro'
 import QRCodeGen from '@/components/QRCodeGen.astro'
 import Alert from '@/components/Alert.astro'
 
@@ -13,13 +13,12 @@ const alertsTypes: (
 )[] = ['simple', 'primary', 'info', 'warning', 'error', 'success']
 ---
 
-<PostPage
+<PageLayout
   data={{
     title: 'Тест',
     description: 'Тест',
+    slug: 'page__test',
   }}
-  isShowDate={false}
-  slug="page__test"
 >
   {
     alertsTypes.map((type) => (
@@ -42,4 +41,4 @@ const alertsTypes: (
     sizeProp="big"
     content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, quia nesciunt impedit hic suscipit ad ex tempora officia error maxime nemo dolorem, voluptates voluptatum quisquam, incidunt sequi aut quasi delectus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, quia nesciunt impedit hic suscipit ad ex tempora officia error maxime nemo dolorem, voluptates voluptatum quisquam, incidunt sequi aut quasi delectus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, quia nesciunt impedit hic suscipit ad ex tempora officia error maxime nemo dolorem, voluptates voluptatum quisquam, incidunt sequi aut quasi delectus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, quia nesciunt impedit hic suscipit ad ex tempora officia error maxime nemo dolorem, voluptates voluptatum quisquam, incidunt sequi aut quasi delectus."
   />
-</PostPage>
+</PageLayout>

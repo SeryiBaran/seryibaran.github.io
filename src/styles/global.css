@@ -345,7 +345,7 @@ table :where(td) {
   @apply text-justify;
 }
 
-.articleContent>* {
+.articleContent>*:not(h1, h2, h3) {
   @apply mx-0 my-3;
 }
 
@@ -359,6 +359,10 @@ table :where(td) {
 
 .articleContent img {
   @apply block;
+}
+
+.articleContent>img {
+  @apply inline-block;
 }
 
 .articleContent :where(img, .embed).no-border-img-or-embed {

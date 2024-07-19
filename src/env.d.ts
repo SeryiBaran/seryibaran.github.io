@@ -14,7 +14,7 @@ declare module 'astro-imagetools'
 declare module 'remark-emoji' {
   // TypeScript Version: 4.8
 
-  import { RemarkPlugin } from '@astrojs/markdown-remark'
+  import type { RemarkPlugin } from '@astrojs/markdown-remark'
 
   export interface RemarkEmojiOptions {
     /**

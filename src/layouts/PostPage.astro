@@ -8,63 +8,62 @@ import TablerPencil from '~icons/tabler/pencil'
 import { getCollection } from 'astro:content'
 import PostCard from '@/components/PostCard.astro'
 
+interface Data {
+  updatedDate?: Date | undefined
+  heroImage?: string | undefined
+  title: string
+  description?: string
+  date?: Date
+  draft?: boolean
+}
+
 interface Props {
-  isShowDate?: boolean
-  data: {
-    updatedDate?: Date | undefined
-    heroImage?: string | undefined
-    title: string
-    description?: string
-    date?: Date
-    draft?: boolean
-  }
+  data: Data
   slug: CollectionEntry<'blog'>['slug'] | string
+  isShowDate?: boolean
   isBlogPost?: boolean
 }
 
-const {
-  isShowDate = true,
-  data: { title, description, date, updatedDate, heroImage, draft },
-  slug,
-  isBlogPost = false,
-} = Astro.props
-
-let image = heroImage
-
-if (image === undefined) {
-  image = `/image/${slug}.png`
-}
+const { data, slug, isShowDate = true, isBlogPost = false } = Astro.props
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => a.data.date.valueOf() - b.data.date.valueOf(),
 )
+
+const resultIsShowDate =
+  !data?.draft && isShowDate && (data?.date || data?.updatedDate)
+const resultTitle = data.title
+const resultDescription = data?.description
+const hasHeroImage = Boolean(data?.heroImage)
+const resultImage = data?.heroImage || `/image/${slug}.png`
+console.log(Astro.props)
 ---
 
 <BaseLayout
-  title={title}
-  description={description || SITE_DESCRIPTION}
-  image={image}
+  title={resultTitle}
+  description={resultDescription || SITE_DESCRIPTION}
+  image={resultImage}
   slug={slug}
 >
   <article class:list={[{ isBlogPost }]}>
     <div class="pageInfo flex flex-col gap-3">
-      {heroImage && <img src={heroImage} alt="Hero image" />}
-      <!-- {image && <img src={image} alt="Hero image" />} -->
-      <h1 class="mb-0">{title}</h1>
-      {description && <p class="opacity-70 m-0">{description}</p>}
+      {hasHeroImage && <img src={resultImage} alt="Hero image" />}
+      <!-- {resultImage && <img src={resultImage} alt="Hero image" />} -->
+      <h1 class="mb-0">{resultTitle}</h1>
+      {resultDescription && <p class="opacity-70 m-0">{resultDescription}</p>}
 
       {
-        !draft && isShowDate && (date || updatedDate) && (
+        resultIsShowDate && (
           <div class="flex flex-row flex-wrap gap-x-3 gap-y-0.3 opacity-70">
-            {!draft && isShowDate && date && <FormattedDate date={date} />}
-            {!draft && updatedDate && (
-              <FormattedDate date={updatedDate} isUpdatedDate={true} />
+            {data?.date && <FormattedDate date={data?.date} />}
+            {data?.updatedDate && (
+              <FormattedDate date={data?.updatedDate} isUpdatedDate={true} />
             )}
           </div>
         )
       }
       {
-        draft && (
+        data?.draft && (
           <p class="m-0 inline-flex items-center gap-1 text-lg">
             <TablerPencil class="w-1em h-1em" />
             Черновик
