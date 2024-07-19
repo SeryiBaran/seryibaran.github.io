@@ -10,7 +10,7 @@ import fontFileRegular from '@/fonts/roboto.regular.ttf'
 // https://www.1001fonts.com/download/font/roboto.bold.ttf
 import fontFileBold from '@/fonts/roboto.bold.ttf'
 import { formatPostDate } from '@/utils'
-import { AUTHOR, POST_OG_COLOR, SITE_DOMAIN, pages_info } from '@/consts'
+import { AUTHOR, POST_OG_COLOR, SITE_DOMAIN, pagesDataForOGImagesGen } from '@/consts'
 
 const [fontRegular, fontBold] = [
   Buffer.from(fontFileRegular),
@@ -102,5 +102,5 @@ export async function getStaticPaths() {
       },
     }
   })
-  return [...paths, ...pages_info]
+  return [...paths, ...pagesDataForOGImagesGen]
 }

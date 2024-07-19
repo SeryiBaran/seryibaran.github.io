@@ -16,7 +16,7 @@ export const PRIMARY_COLOR = 'indigo'
 
 export const POST_OG_COLOR = colors[PRIMARY_COLOR][500]
 
-export const pages_info = [{
+export const pagesDataForOGImagesGen = [{
   params: {
     slug: 'page__index',
   },
