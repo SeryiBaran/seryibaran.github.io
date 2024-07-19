@@ -36,8 +36,8 @@ export async function GET(context: APIContext) {
     <div tw="bg-zinc-900/90 flex flex-col w-full h-full">
       <div tw="flex flex-col w-full h-5/6 p-10 pt-12">
         <div tw="text-zinc-400 text-3xl mb-6 flex flex-row">
-          ${data.date ? `<time class="flex flex-row items-center mr-10"><img src="${new URL('/favicons/icons/og_image_icon_date.png', context.url)}" tw="mr-2 h-8 w-8" />${formatPostDate(data.date)}</time>` : ''}
-          ${data.updatedDate ? `<time class="flex flex-row items-center"><img src="${new URL('/favicons/icons/og_image_icon_updatedDate.png', context.url)}" tw="mr-2 h-8 w-8" />${formatPostDate(data.updatedDate)}</time>` : ''}
+          ${data.date ? `<time class="flex flex-row items-center mr-10"><img width="2rem" height="2rem" src="${new URL('/favicons/icons/og_image_icon_date.png', context.url)}" tw="mr-2 h-8 w-8" />${formatPostDate(data.date)}</time>` : ''}
+          ${data.updatedDate ? `<time class="flex flex-row items-center"><img width="2rem" height="2rem" src="${new URL('/favicons/icons/og_image_icon_updatedDate.png', context.url)}" tw="mr-2 h-8 w-8" />${formatPostDate(data.updatedDate)}</time>` : ''}
         </div>
         <div
           tw="flex text-6xl w-full font-bold leading-snug tracking-tight text-transparent mb-6"
@@ -52,6 +52,7 @@ export async function GET(context: APIContext) {
       >
         <div tw="flex items-center">
           <img
+            width="3.75rem" height="3.75rem"
             src="${new URL('/favicons/icons/icon-72x72.png', context.url)}"
             tw="w-15 h-15 rounded-full"
           />
@@ -59,7 +60,7 @@ export async function GET(context: APIContext) {
             <span tw="text-zinc-400">${AUTHOR}</span>
           </div>
         </div>
-        <span tw="text-zinc-400 flex flex-row items-center"><img src="${new URL('/favicons/icons/og_image_icon_www.png', context.url)}" tw="mr-2 h-10 w-10" />${SITE_DOMAIN}</span>
+        <span tw="text-zinc-400 flex flex-row items-center"><img width="2.5rem" height="2.5rem" src="${new URL('/favicons/icons/og_image_icon_www.png', context.url)}" tw="mr-2 h-10 w-10" />${SITE_DOMAIN}</span>
       </div>
     </div>
   </div>`)
