@@ -9,8 +9,8 @@ export const SITE_DESCRIPTION = 'Сайт SeryiBaran'
 export const AUTHOR_NAME = 'Иван'
 export const AUTHOR_SURNAME = 'Музыка'
 export const AUTHOR = `SeryiBaran (${AUTHOR_NAME} ${AUTHOR_SURNAME[0]}.)`
-export const AUTHOR_BIRTHDAY = '2008-10-15'
-export const SITE_START = '2021-08-17'
+export const AUTHOR_BIRTHDAY = '2008-10-15T12:00:00.000Z'
+export const SITE_START = '2021-08-17T12:00:00.000Z'
 
 export const PRIMARY_COLOR = 'indigo'
 

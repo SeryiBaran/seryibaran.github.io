@@ -8,7 +8,9 @@ const lastGenerationTime = formatPostDate(new Date(), true)
 
 <footer class="bg-primary/10">
   <div class="container">
-    <p class="mt-none">~{SITE_START}-{dayjs().year()}, SeryiBaran.</p>
+    <p class="mt-none">
+      ~{formatPostDate(SITE_START)}-{dayjs().year()}, SeryiBaran.
+    </p>
     <p>
       Последнее обновление сайта - {lastGenerationTime}.
     </p>

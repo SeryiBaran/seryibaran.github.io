@@ -36,8 +36,8 @@ export async function GET(context: APIContext) {
     <div tw="bg-zinc-900/90 flex flex-col w-full h-full">
       <div tw="flex flex-col w-full h-5/6 p-10 pt-12">
         <div tw="text-zinc-400 text-3xl mb-6 flex flex-row">
-          ${data.date ? `<time class="flex flex-row items-center mr-6"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" tw="h-8 w-8 mr-2"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm12-4v4M8 3v4m-4 4h16m-9 4h1m0 0v3"/></svg>${formatPostDate(data.date)}</time>` : ''}
-          ${data.updatedDate ? `<time class="flex flex-row items-center"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" tw="h-8 w-8 mr-2"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 20h4L18.5 9.5a2.828 2.828 0 1 0-4-4L4 16zm9.5-13.5l4 4"/></svg>${formatPostDate(data.updatedDate)}</time>` : ''}
+          ${data.date ? `<time class="flex flex-row items-center mr-10"><img src="${new URL('/og_image_icon_date.png', context.url)}" tw="mr-2 h-8 w-8" />${formatPostDate(data.date)}</time>` : ''}
+          ${data.updatedDate ? `<time class="flex flex-row items-center"><img src="${new URL('/og_image_icon_updatedDate.png', context.url)}" tw="mr-2 h-8 w-8" />${formatPostDate(data.updatedDate)}</time>` : ''}
         </div>
         <div
           tw="flex text-6xl w-full font-bold leading-snug tracking-tight text-transparent mb-6"
@@ -59,7 +59,7 @@ export async function GET(context: APIContext) {
             <span tw="text-zinc-400">${AUTHOR}</span>
           </div>
         </div>
-        <span tw="text-zinc-400 flex flex-row items-center"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" tw="h-8 w-8 mr-2"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/><path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g></svg>${SITE_DOMAIN}</span>
+        <span tw="text-zinc-400 flex flex-row items-center"><img src="${new URL('/og_image_icon_www.png', context.url)}" tw="mr-2 h-10 w-10" />${SITE_DOMAIN}</span>
       </div>
     </div>
   </div>`)

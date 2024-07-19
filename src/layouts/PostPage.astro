@@ -87,7 +87,7 @@ console.log(Astro.props)
           <div class="my-4 p-0 grid grid-cols-1 md:grid-cols-3 gap-4">
             {posts
               .slice()
-              .filter((post) => !post.data.draft)
+              .filter((post) => !post.data.draft && !(post.data === data))
               .reverse()
               .slice(0, 6)
               .map((post) => (
