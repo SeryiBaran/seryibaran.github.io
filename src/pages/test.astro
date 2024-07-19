@@ -1,6 +1,5 @@
 ---
 import PageLayout from '@/layouts/PageLayout.astro'
-import QRCodeGen from '@/components/QRCodeGen.astro'
 import Alert from '@/components/Alert.astro'
 
 const alertsTypes: (
@@ -32,13 +31,4 @@ const alertsTypes: (
   }
 
   <p>test</p>
-  <QRCodeGen content="https://seryibaran.github.io" />
-  <QRCodeGen
-    sizeProp="medium"
-    content=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, quia nesciunt impedit hic suscipit ad ex tempora officia error maxime nemo dolorem, voluptates voluptatum quisquam, incidunt sequi aut quasi delectus. Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-  />
-  <QRCodeGen
-    sizeProp="big"
-    content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, quia nesciunt impedit hic suscipit ad ex tempora officia error maxime nemo dolorem, voluptates voluptatum quisquam, incidunt sequi aut quasi delectus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, quia nesciunt impedit hic suscipit ad ex tempora officia error maxime nemo dolorem, voluptates voluptatum quisquam, incidunt sequi aut quasi delectus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, quia nesciunt impedit hic suscipit ad ex tempora officia error maxime nemo dolorem, voluptates voluptatum quisquam, incidunt sequi aut quasi delectus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, quia nesciunt impedit hic suscipit ad ex tempora officia error maxime nemo dolorem, voluptates voluptatum quisquam, incidunt sequi aut quasi delectus."
-  />
 </PageLayout>
