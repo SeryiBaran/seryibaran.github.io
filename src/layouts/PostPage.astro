@@ -18,7 +18,7 @@ interface Props {
     date?: Date
     draft?: boolean
   }
-  slug: CollectionEntry<'blog'>['slug'] | string
+  slug?: CollectionEntry<'blog'>['slug']
   isBlogPost?: boolean
 }
 
