@@ -7,6 +7,7 @@ import remarkMath from 'remark-math'
 import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
 import expressiveCode from 'astro-expressive-code'
+import purgecss from 'astro-purgecss'
 
 function rawFonts(ext: string[]) {
   return {
@@ -34,10 +35,11 @@ export default defineConfig({
     (await import('@playform/inline')).default({}),
     (await import('@playform/compress')).default({
       CSS: true,
-      HTML: false,
+      HTML: true,
       Image: true,
       JavaScript: true,
     }),
+    purgecss(),
   ],
   markdown: {
     remarkRehype: {

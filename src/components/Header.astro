@@ -2,6 +2,7 @@
 import TablerHome from '~icons/tabler/home'
 import TablerFileText from '~icons/tabler/file-text'
 import TablerMail from '~icons/tabler/mail'
+import TablerBriefcase from '~icons/tabler/briefcase'
 
 import { SITE_TITLE } from '../consts'
 
@@ -9,6 +10,7 @@ const links = [
   { href: '/', title: 'Главная', icon: TablerHome },
   { href: '/posts', title: 'Посты', icon: TablerFileText },
   { href: '/contacts', title: 'Контакты', icon: TablerMail },
+  { href: '/readme', title: 'README', icon: TablerBriefcase },
 ]
 
 const { pathname } = Astro.url
@@ -20,7 +22,7 @@ const { pathname } = Astro.url
   >
     <a href="/" class="link_without_effects ma sm:m-0 inline-flex items-center">
       <img
-        src="/favicons/logo.png"
+        src="/favicons/logo_78x78.png"
         alt="Лого"
         class="rounded-full h-52px w-52px"
       />

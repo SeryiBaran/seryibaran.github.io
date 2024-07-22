@@ -62,6 +62,7 @@
   src: url("/JetBrainsMono-Regular.woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -69,6 +70,7 @@
   src: url("/JetBrainsMono-Italic.woff2");
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -76,6 +78,7 @@
   src: url("/JetBrainsMono-Bold.woff2");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -83,6 +86,7 @@
   src: url("/JetBrainsMono-BoldItalic.woff2");
   font-weight: bold;
   font-style: italic;
+  font-display: swap;
 } */
 
 
@@ -106,92 +110,105 @@
 /* @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-Black.ttf");
-  font-weight: normal;
+  font-weight: black;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-BlackItalic.ttf");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: black;
+  font-style: italic;
+  font-display: swap;
 } */
 
 @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-Bold.ttf");
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-BoldItalic.ttf");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
 /* @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-ExtraBold.ttf");
-  font-weight: normal;
+  font-weight: extrabold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-ExtraBoldItalic.ttf");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: extrabold;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-ExtraLight.ttf");
-  font-weight: normal;
+  font-weight: extralight;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-ExtraLightItalic.ttf");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: extralight;
+  font-style: italic;
+  font-display: swap;
 } */
 
 @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-Italic.ttf");
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 /* @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-Light.ttf");
-  font-weight: normal;
+  font-weight: light;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-LightItalic.ttf");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: light;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-Medium.ttf");
-  font-weight: normal;
+  font-weight: medium;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-MediumItalic.ttf");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: medium;
+  font-style: italic;
+  font-display: swap;
 } */
 
 @font-face {
@@ -199,20 +216,23 @@
   src: url("/SourceSans3/static/SourceSans3-Regular.ttf");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-SemiBold.ttf");
-  font-weight: normal;
+  font-weight: semibold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Source Sans 3";
   src: url("/SourceSans3/static/SourceSans3-SemiBoldItalic.ttf");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: semibold;
+  font-style: italic;
+  font-display: swap;
 } */
 
 
@@ -222,6 +242,7 @@
   src: url("/JetBrainsMono-Regular.woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 
@@ -271,15 +292,15 @@ footer {
 h1,
 h2,
 h3 {
-  @apply my-[0.4em] font-400;
+  @apply my-[0.4em] font-bold;
 }
 
 :where(h1, h2, h3):not(.pageInfo :where(h1, h2, h3)) {
-  @apply mt-[2em];
+  @apply mt-[1.4em];
 }
 
 h1 {
-  @apply text-4xl;
+  @apply text-3xl;
 }
 
 h2 {
@@ -350,7 +371,7 @@ table :where(td) {
   @apply text-justify;
 }
 
-.articleContent>*:not(h1, h2, h3) {
+.articleContent>*:not(h1, h2, h3, img) {
   @apply mx-0 my-3;
 }
 
@@ -375,7 +396,7 @@ table :where(td) {
 }
 
 .articleContent :where(img, .embed)+em {
-  @apply not-italic opacity-80 text-sm block mb-4 mt--2;
+  @apply not-italic opacity-80 text-sm block mb-4 mt-0;
 }
 
 .headingLink {

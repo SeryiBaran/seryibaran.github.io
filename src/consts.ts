@@ -40,4 +40,12 @@ export const pagesDataForOGImagesGen = [{
     title: 'Посты',
     description: 'Мои посты',
   },
+}, {
+  params: {
+    slug: 'page__readme',
+  },
+  props: {
+    title: 'README',
+    description: 'Мои проекты, навыки и т.д.',
+  },
 }]
