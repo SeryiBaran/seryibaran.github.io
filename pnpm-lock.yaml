@@ -47,6 +47,9 @@ importers:
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
+      katex:
+        specifier: ^0.16.11
+        version: 0.16.11
       rehype-katex:
         specifier: ^7.0.0
         version: 7.0.0
