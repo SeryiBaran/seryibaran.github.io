@@ -23,6 +23,7 @@
     "astro-expressive-code": "^0.35.3",
     "astro-icon": "^1.1.0",
     "astro-purgecss": "^4.1.1",
+    "dotenv": "^16.4.5",
     "grammy": "^1.27.0",
     "gray-matter": "^4.0.3",
     "katex": "^0.16.11",
