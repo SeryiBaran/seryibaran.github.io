@@ -1,7 +1,6 @@
 # build output
 dist/
-# generated types
-.astro/
+.output/
 
 # dependencies
 node_modules/
@@ -14,13 +13,13 @@ pnpm-debug.log*
 
 
 # environment variables
-.env*
+.env
+.env.production
 
 # macOS-specific files
 .DS_Store
 
-.obsidian
-.jampack
-package-lock.json
-
-.idea
+# misc
+*.pem
+.cache
+.astro

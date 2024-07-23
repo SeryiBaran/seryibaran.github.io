@@ -31,7 +31,7 @@ else {
     return {
       title: matter(fs.readFileSync(path)).data.title,
       slug: path
-        .replaceAll(/^src\/content\/blog\//gi, '')
+        .replaceAll(/^src\/content\/post\//gi, '')
         .replaceAll(/\.mdx$/gi, '')
         .replaceAll(/\.md$/gi, ''),
     }

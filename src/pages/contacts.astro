@@ -1,5 +1,10 @@
 ---
-import PageLayout from '@/layouts/PageLayout.astro'
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	description: "Все мои контакты",
+	title: "Контакты",
+};
 
 const links = [
   {
@@ -57,21 +62,18 @@ const links = [
 ]
 ---
 
-<PageLayout
-  data={{
-    title: 'Контакты',
-    description: 'Мои контакты',
-    slug: 'page__contacts',
-  }}
->
-  <ul>
-    {
-      links.map((link) => (
-        <li>
-          <a href={link.href}>{link.title}</a>
-        </li>
-      ))
-    }
-    <li>E-Mail: anderchiser COMMERCIAL_AT yandex.ru</li>
-  </ul>
+<PageLayout meta={meta}>
+	<div>
+		<h1 class="title mb-6">Контакты</h1>
+		<ul class="mb-4 list-inside list-disc">
+      {
+        links.map((link) => (
+          <li>
+            <a class="cactus-link" href={link.href}>{link.title}</a>
+          </li>
+        ))
+      }
+      <li>E-Mail: anderchiser COMMERCIAL_AT yandex.ru</li>
+    </ul>
+	</div>
 </PageLayout>

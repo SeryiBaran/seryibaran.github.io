@@ -1,160 +1,113 @@
 ---
-import 'virtual:uno.css'
+import type { SiteMeta } from "@/types";
+
+import { siteConfig } from "@/site-config";
+
 import 'katex/dist/katex.css'
-// Import the global.css file here so that it is included on
-// all pages through the use of the <BaseHead /> component.
-import '../styles/global.css'
-import { SITE_TITLE } from '@/consts'
-import { getPageTitle } from '@/utils'
 
-export interface Props {
-  title?: string
-  description: string | undefined
-  image?: string | undefined
-}
+import "../styles/global.css";
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+type Props = SiteMeta;
 
-const { title, description, image } = Astro.props
+const { articleDate, description, ogImage, title } = Astro.props;
 
-const normalizedTitle = !!title ? getPageTitle(title) : SITE_TITLE
+const titleSeparator = "•";
+const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url).href;
 ---
 
-<!-- Global Metadata -->
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<meta name="generator" content={Astro.generator} />
+<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<title>{siteTitle}</title>
 
-<!-- Canonical URL -->
-<link rel="canonical" href={canonicalURL} />
+{/* Icons / Favicon */}
+<link href="/favicon.ico" rel="icon" sizes="any" />
+<link href="/icon.svg" rel="icon" type="image/svg+xml" />
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="/manifest.webmanifest" rel="manifest" />
+<link href={canonicalURL} rel="canonical" />
 
-<!-- Primary Meta Tags -->
-<title>{normalizedTitle}</title>
-<meta name="title" content={normalizedTitle} />
-<meta name="description" content={description} />
+{/* Primary Meta Tags */}
+<meta content={siteTitle} name="title" />
+<meta content={description} name="description" />
+<meta content={siteConfig.author} name="author" />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content={Astro.url} />
-<meta property="og:title" content={normalizedTitle} />
-<meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image || '/og.png', Astro.url)} />
+{/* Theme Colour */}
+<meta content="" name="theme-color" />
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:title" content={normalizedTitle} />
-<meta property="twitter:description" content={description} />
-<meta
-  property="twitter:image"
-  content={new URL(image || '/og.png', Astro.url)}
-/>
+{/* Open Graph / Facebook */}
+<meta content={articleDate ? "article" : "website"} property="og:type" />
+<meta content={title} property="og:title" />
+<meta content={description} property="og:description" />
+<meta content={canonicalURL} property="og:url" />
+<meta content={siteConfig.title} property="og:site_name" />
+<meta content={siteConfig.ogLocale} property="og:locale" />
+<meta content={socialImageURL} property="og:image" />
+<meta content="1200" property="og:image:width" />
+<meta content="630" property="og:image:height" />
+{
+	articleDate && (
+		<>
+			<meta content={siteConfig.author} property="article:author" />
+			<meta content={articleDate} property="article:published_time" />
+		</>
+	)
+}
 
-<!-- Favicons -->
+{/* Twitter */}
+<meta content="summary_large_image" property="twitter:card" />
+<meta content={canonicalURL} property="twitter:url" />
+<meta content={title} property="twitter:title" />
+<meta content={description} property="twitter:description" />
+<meta content={socialImageURL} property="twitter:image" />
+
+{/* Sitemap */}
+<link href="/sitemap-index.xml" rel="sitemap" />
+
+{/* RSS auto-discovery */}
+<link href="/rss.xml" rel="alternate" title={siteConfig.title} type="application/rss+xml" />
+
+{/* Webmentions */}
+{
+	siteConfig.webmentions && (
+		<>
+			<link href={siteConfig.webmentions.link} rel="webmention" />
+			{siteConfig.webmentions.pingback && (
+				<link href={siteConfig.webmentions.pingback} rel="pingback" />
+			)}
+		</>
+	)
+}
+
+<meta content={Astro.generator} name="generator" />
+
 <link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="/favicons/apple-touch-icon.png"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="32x32"
-  href="/favicons/favicon-32x32.png"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="16x16"
-  href="/favicons/favicon-16x16.png"
-/>
-<link rel="manifest" href="/manifest.webmanifest" />
-<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-<link rel="shortcut icon" href="/favicons/favicon.ico" />
-<meta name="msapplication-TileColor" content="#da532c" />
-<meta name="msapplication-config" content="/favicons/browserconfig.xml" />
-<meta name="theme-color" content="#ffffff" />
-
-<link rel="icon" type="image/svg+xml" href="/favicons/favicon.ico" />
-
-<!-- <link
   rel="preload"
-  href="/Inconsolata-Regular.ttf"
+  href="/SourceCodePro/static/SourceCodePro-Regular.ttf"
   as="font"
   type="font/ttf"
   crossorigin
 />
 <link
   rel="preload"
-  href="/Inconsolata-Bold.ttf"
-  as="font"
-  type="font/ttf"
-  crossorigin
-/> -->
-
-<!-- <link
-  rel="preload"
-  href="/JetBrainsMono-Regular.woff2"
-  as="font"
-  type="font/woff2"
-  crossorigin
-/>
-<link
-  rel="preload"
-  href="/JetBrainsMono-Bold.woff2"
-  as="font"
-  type="font/woff2"
-  crossorigin
-/>
-<link
-  rel="preload"
-  href="/JetBrainsMono-Italic.woff2"
-  as="font"
-  type="font/woff2"
-  crossorigin
-/>
-<link
-  rel="preload"
-  href="/JetBrainsMono-BoldItalic.woff2"
-  as="font"
-  type="font/woff2"
-  crossorigin
-/> -->
-
-<link
-  rel="preload"
-  href="/SourceSans3/static/SourceSans3-Regular.ttf"
+  href="/SourceCodePro/static/SourceCodePro-Italic.ttf"
   as="font"
   type="font/ttf"
   crossorigin
 />
 <link
   rel="preload"
-  href="/SourceSans3/static/SourceSans3-Bold.ttf"
+  href="/SourceCodePro/static/SourceCodePro-Bold.ttf"
   as="font"
   type="font/ttf"
   crossorigin
 />
 <link
   rel="preload"
-  href="/SourceSans3/static/SourceSans3-Italic.ttf"
+  href="/SourceCodePro/static/SourceCodePro-BoldItalic.ttf"
   as="font"
   type="font/ttf"
-  crossorigin
-/>
-<link
-  rel="preload"
-  href="/SourceSans3/static/SourceSans3-BoldItalic.ttf"
-  as="font"
-  type="font/ttf"
-  crossorigin
-/>
-
-<link
-  rel="preload"
-  href="/JetBrainsMono-Regular.woff2"
-  as="font"
-  type="font/woff2"
   crossorigin
 />

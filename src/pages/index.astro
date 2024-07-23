@@ -1,38 +1,111 @@
 ---
-import { AUTHOR_BIRTHDAY } from '@/consts'
-import PageLayout from '@/layouts/PageLayout.astro'
-import dayjs from 'dayjs'
-import Alert from '@/components/Alert.astro'
+import SocialList from "@/components/SocialList.astro";
+import PostPreview from "@/components/blog/PostPreview.astro";
+import { getAllPosts, sortMDByDate } from "@/data/post";
+import PageLayout from "@/layouts/Base.astro";
 
-const authorAge = dayjs().diff(dayjs(AUTHOR_BIRTHDAY), 'year')
+const MAX_POSTS = 10;
+const allPosts = await getAllPosts();
+const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
+
+const cactusTech: { desc: string; href: string; title: string }[] = [
+  {
+    desc: "Build fast websites, faster.",
+    href: "https://astro.build",
+    title: "Astro",
+  },
+  {
+    desc: "Rapidly build modern websites without ever leaving your HTML.",
+    href: "https://tailwindcss.com",
+    title: "Tailwind CSS",
+  },
+  {
+    desc: "Simple and easy-to-use markup language.",
+    href: "https://www.markdownguide.org/",
+    title: "Markdown",
+  },
+  {
+    desc: "Markdown for the component era.",
+    href: "https://mdxjs.com/",
+    title: "MDX",
+  },
+  {
+    desc: "Generating png Open Graph images for blog posts.",
+    href: "https://github.com/vercel/satori",
+    title: "Satori",
+  },
+  {
+    desc: "A fully static search library.",
+    href: "https://pagefind.app/",
+    title: "Pagefind",
+  },
+  {
+    desc: "An easy to use Icon component for Astro.",
+    href: "https://github.com/natemoo-re/astro-icon#readme",
+    title: "Astro Icon",
+  },
+  {
+    desc: "Highly customisable source code & syntax highlighter",
+    href: "https://expressive-code.com/",
+    title: "Expressive Code",
+  },
+];
 ---
 
-<PageLayout
-  data={{
-    title: 'Главная',
-    slug: 'page__index',
-  }}
->
-  <Alert>
-    Мой VK аккаунт <a href="https://vk.com/ivanchai6">@ivanchai6</a> скоро удалится,
-    т.к. у меня нет доступа к номеру телефона. Теперь у меня другой VK аккаунт на
-    другом телефоне, он указан на странице{' '}
-    <a href="/contacts">Контакты</a>.
-  </Alert>
-
-  <p>
-    Я Иван Музы́ка, мне {authorAge} лет и я начинающий (а может быть и нет 😉) Frontend
-    разработчик.
-  </p>
-
-  <p>
-    Вся инфа о моих проектах и навыках находится на странице <a href="/readme"
-      >README</a
-    >.
-  </p>
-
-  <p>
-    Все мои контакты находятся на странице <a href="/contacts">Контакты</a>.
-    Наиболее я активен в Telegram.
-  </p>
+<PageLayout meta={{ title: "Главная" }}>
+  <section>
+    <h1 class="title mb-6">SeryiBaran</h1>
+    <p class="mb-4 text-md text-red-500">
+      ! Мой VK аккаунт <a class="cactus-link" href="https://vk.com/ivanchai6">@ivanchai6</a> скоро удалится,
+      т.к. у меня нет доступа к номеру телефона. Теперь у меня другой VK аккаунт на другом телефоне,
+      он указан на странице <a class="cactus-link" href="/contacts">Контакты</a>.
+    </p>
+    <p class="mb-4">
+      Привет! Я Иван Музы́ка, мне {new Date().getFullYear() - 2008} лет и я начинающий (а может быть и
+      нет 😉) Frontend разработчик.
+    </p>
+    <p class="mb-4">
+      Вся инфа обо мне и сайте + список моих проектов и навыков находится на <a class="cactus-link" href="/about">странице Хто я</a>.
+    </p>
+    <p class="mb-4">
+      Все мои контакты находятся на странице <a class="cactus-link" href="/contacts">Контакты</a>. Наиболее я активен в
+      Telegram.
+    </p>
+    <p class="mb-4">
+      А ещё я знаю <a class="cactus-link" href="/My4xNDE1OTI2NTM1ODk3OTMyMzg0NjI2NDMzODMyNzk1MDI4ODQxOTcxNjkzOTk=">3.141592653589793238462643383279502884197169399</a>.
+    </p>
+    <SocialList />
+  </section>
+  <section aria-label="Blog post list" class="mt-16">
+    <h2 class="title mb-4 text-xl">Последние посты</h2>
+    <ul class="space-y-4">
+      {
+        allPostsByDate.map((p) => (
+          <li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
+            <PostPreview post={p} />
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+  <section class="mt-16">
+    <h2 class="title mb-4 text-xl">Технологии</h2>
+    <dl class="space-y-4">
+      {
+        cactusTech.map(({ desc, href, title }) => (
+          <div class="flex flex-col gap-2 sm:flex-row">
+            <dt>
+              <span class="flex">
+                <a class="cactus-link" href={href} rel="noopener noreferrer" target="_blank">
+                  {title}
+                </a>
+                :
+              </span>
+            </dt>
+            <dd>{desc}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </section>
 </PageLayout>

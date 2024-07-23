@@ -1,39 +1,33 @@
-import { readFileSync } from 'node:fs'
-import { defineConfig } from 'astro/config'
-import mdx from '@astrojs/mdx'
-import sitemap from '@astrojs/sitemap'
-import rehypeKatex from 'rehype-katex'
-import remarkMath from 'remark-math'
-import UnoCSS from 'unocss/vite'
-import Icons from 'unplugin-icons/vite'
-import expressiveCode from 'astro-expressive-code'
-import purgecss from 'astro-purgecss'
+import mdx from "@astrojs/mdx";
+import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
+import { defineConfig } from "astro/config";
+import expressiveCode from "astro-expressive-code";
+import icon from "astro-icon";
+import fs from "fs";
+import remarkUnwrapImages from "remark-unwrap-images";
+import purgecss from "astro-purgecss";
+import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
 
-function rawFonts(ext: string[]) {
-  return {
-    name: 'vite-plugin-raw-fonts',
-    transform(_: any, id: string) {
-      if (ext.some(e => id.endsWith(e))) {
-        const buffer = readFileSync(id)
-        return {
-          code: `export default ${JSON.stringify(buffer)}`,
-          map: null,
-        }
-      }
-      return undefined
-    },
-  }
-}
+import { expressiveCodeOptions } from "./src/site.config";
+import { remarkReadingTime } from "./src/utils/remark-reading-time";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://seryibaran.github.io',
+  image: {
+    domains: ["webmention.io"],
+  },
   integrations: [
-    expressiveCode(),
-    mdx(),
+    expressiveCode(expressiveCodeOptions),
+    icon(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
     sitemap(),
-    (await import('@playform/inline')).default({}),
-    (await import('@playform/compress')).default({
+    mdx(),
+    (await import("@playform/inline")).default({}),
+    (await import("@playform/compress")).default({
       CSS: true,
       HTML: true,
       Image: true,
@@ -42,18 +36,42 @@ export default defineConfig({
     purgecss(),
   ],
   markdown: {
-    remarkRehype: {
-      footnoteLabel: 'Сноски',
-    },
     rehypePlugins: [rehypeKatex],
-    remarkPlugins: [remarkMath],
-  },
-  vite: {
-    plugins: [rawFonts(['.ttf', '.woff']), UnoCSS('uno.config.ts'), Icons({
-      compiler: 'astro',
-    })],
-    optimizeDeps: {
-      exclude: ['@resvg/resvg-js'],
+    // @ts-ignore
+    remarkPlugins: [remarkUnwrapImages, remarkReadingTime, remarkMath],
+    remarkRehype: {
+      footnoteLabel: "Сноски",
+      footnoteLabelProperties: {
+        className: [""],
+      },
     },
   },
-})
+  // https://docs.astro.build/en/guides/prefetch/
+  prefetch: true,
+  // ! Please remember to replace the following site property with your own domain
+  site: "https://seryibaran.github.io/",
+  vite: {
+    optimizeDeps: {
+      exclude: ["@resvg/resvg-js"],
+    },
+    plugins: [rawFonts([".ttf", ".woff"])],
+  },
+});
+
+function rawFonts(ext: string[]) {
+  return {
+    name: "vite-plugin-raw-fonts",
+    // @ts-expect-error:next-line
+    transform(_, id) {
+      // eslint-disable-next-line
+      if (ext.some((e) => id.endsWith(e))) {
+        // eslint-disable-next-line
+        const buffer = fs.readFileSync(id);
+        return {
+          code: `export default ${JSON.stringify(buffer)}`,
+          map: null,
+        };
+      }
+    },
+  };
+}

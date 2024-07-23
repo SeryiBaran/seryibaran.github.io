@@ -1,44 +1,18 @@
 ---
-import { formatPostDate } from '@/utils'
-import TablerCalendar from '~icons/tabler/calendar'
-import TablerPencil from '~icons/tabler/pencil'
+import type { HTMLAttributes } from "astro/types";
 
-export interface Props {
-  date: Date
-  isUpdatedDate?: boolean
-  isShowTime?: boolean
-  isShowIcon?: boolean
-  isColored?: boolean
-}
+import { getFormattedDate } from "@/utils";
 
-const {
-  date,
-  isUpdatedDate = false,
-  isShowTime = false,
-  isShowIcon = true,
-  isColored = false,
-} = Astro.props
+type Props = HTMLAttributes<"time"> & {
+	date: Date;
+	dateTimeOptions?: Intl.DateTimeFormatOptions;
+};
 
-const showTime = date.getHours() !== 0 && date.getMinutes() !== 0 && isShowTime
+const { date, dateTimeOptions, ...attrs } = Astro.props;
+
+const postDate = getFormattedDate(date, dateTimeOptions);
 ---
 
-<time
-  datetime={date.toISOString()}
-  class="inline-flex items-center gap-1"
-  class:list={[{ isColored }]}
-  title={formatPostDate(date, showTime)}
-  aria-label={isUpdatedDate ? 'Дата обновления' : 'Дата публикации'}
->
-  {
-    isUpdatedDate
-      ? isShowIcon && <TablerPencil class="w-1em h-1em" />
-      : isShowIcon && <TablerCalendar class="w-1em h-1em" />
-  }
-  {formatPostDate(date, showTime)}
+<time datetime={date.toISOString()} {...attrs}>
+	{postDate}
 </time>
-
-<style>
-  time.isColored {
-    @apply text-primary-800 dark:text-primary-200;
-  }
-</style>

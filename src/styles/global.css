@@ -1,235 +1,130 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-
-
-
-
-
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-
-
-
-
-
-
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* @font-face {
-  font-family: 'Inconsolata-Regular';
-  src: url('/Inconsolata-Regular.ttf');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Inconsolata-Regular';
-  src: url('/Inconsolata-Bold.ttf');
-  font-display: swap;
-  font-weight: bold;
-  font-style: normal;
-} */
-
-
-
-
-
-
-
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-
-
-
-
-
-
-/* @font-face {
-  font-family: "JetBrains Mono";
-  src: url("/JetBrainsMono-Regular.woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("/JetBrainsMono-Italic.woff2");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("/JetBrainsMono-Bold.woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("/JetBrainsMono-BoldItalic.woff2");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-} */
-
-
-
-
-
-
-
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-
-
-
-
-
-/* @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-Black.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-Black.ttf");
   font-weight: black;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-BlackItalic.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-BlackItalic.ttf");
   font-weight: black;
   font-style: italic;
   font-display: swap;
-} */
+}
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-Bold.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-Bold.ttf");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-BoldItalic.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-BoldItalic.ttf");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
-/* @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-ExtraBold.ttf");
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-ExtraBold.ttf");
   font-weight: extrabold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-ExtraBoldItalic.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-ExtraBoldItalic.ttf");
   font-weight: extrabold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-ExtraLight.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-ExtraLight.ttf");
   font-weight: extralight;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-ExtraLightItalic.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-ExtraLightItalic.ttf");
   font-weight: extralight;
   font-style: italic;
   font-display: swap;
-} */
+}
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-Italic.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-Italic.ttf");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
-/* @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-Light.ttf");
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-Light.ttf");
   font-weight: light;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-LightItalic.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-LightItalic.ttf");
   font-weight: light;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-Medium.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-Medium.ttf");
   font-weight: medium;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-MediumItalic.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-MediumItalic.ttf");
   font-weight: medium;
   font-style: italic;
   font-display: swap;
-} */
+}
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-Regular.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-Regular.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-/* @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-SemiBold.ttf");
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-SemiBold.ttf");
   font-weight: semibold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/SourceSans3/static/SourceSans3-SemiBoldItalic.ttf");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-SemiBoldItalic.ttf");
   font-weight: semibold;
   font-style: italic;
   font-display: swap;
@@ -238,201 +133,83 @@
 
 
 @font-face {
-  font-family: "JetBrains Mono";
-  src: url("/JetBrainsMono-Regular.woff2");
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-Regular.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-
-
-
-
-
-
-
-* {
-  @apply box-border;
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
-*:focus-visible {
-  @apply outline-1 outline-neutral-7 dark:outline-neutral-4 outline-dashed outline-offset-1;
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
-p {
-  @apply m-0 mt-2;
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/SourceCodePro/static/SourceCodePro-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
-html {
-  @apply;
+
+@layer base {
+	:root,
+	:root[data-theme="light"] {
+		color-scheme: light;
+		/* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
+		--theme-bg: 0deg 0% 98%;
+		--theme-link: 172deg 18% 41%;
+		--theme-text: 203deg 11% 15%;
+		--theme-accent: 351deg 66% 48%;
+		--theme-accent-2: 0deg 0% 7%;
+		--theme-quote: 351deg 66% 48%;
+	}
+
+	:root[data-theme="dark"] {
+		color-scheme: dark;
+		--theme-bg: 210deg 6% 12%;
+		--theme-link: 330deg 49% 67%;
+		--theme-text: 220deg 3% 79%;
+		--theme-accent: 159deg 64% 45%;
+		--theme-accent-2: 0deg 0% 93%;
+		--theme-quote: 102deg 100% 86%;
+	}
+
+	html {
+		@apply scroll-smooth;
+	}
+
+	body {
+		@apply mx-auto flex min-h-screen max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
+	}
 }
 
-body {
-  @apply bg-slate-50 text-neutral-800 dark:(bg-dark-500 text-neutral-300) m-0 break-words flex flex-col min-h-screen;
-  @apply font-sans;
-  /* @apply font-mono; */
+img + em {
+  display: block;
+  margin-top: -1rem;
+  font-size: 90%;
+  opacity: 90;
 }
 
-.container {
-  @apply ma max-w-4xl p-4;
-}
-
-header,
-footer {
-  @apply bg-slate-500/6;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-}
-
-footer {
-  @apply shadow-b-2 text-sm;
-  box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.2);
-}
-
-h1,
-h2,
-h3 {
-  @apply my-[0.4em] font-bold;
-}
-
-:where(h1, h2, h3):not(.pageInfo :where(h1, h2, h3)) {
-  @apply mt-[1.4em];
-}
-
-h1 {
-  @apply text-3xl;
-}
-
-h2 {
-  @apply text-2xl;
-}
-
-h3 {
-  @apply text-xl;
-}
-
-/* a:visited {
-  color: #a048ec;
-}
-
-@media (prefers-color-scheme: dark) {
-  a:visited {
-    color: #c589fa;
-  }
-} */
-
-html body a,
-.link_without_visited_color:visited {
-  @apply text-primary-600 hover:text-primary-400 dark:(text-primary-400 hover:text-primary-300) transition-50 transition-colors;
-}
-
-.link_without_effects {
-  @apply active:text-inherit hover:text-inherit focus:text-inherit visited:text-inherit text-inherit no-underline outline-none focus:outline-none;
-}
-
-nav a {
-  @apply mr-3;
-}
-
-table {
-  @apply w-full;
-}
-
-img {
-  @apply max-w-full h-auto;
-}
-
-code {
-  @apply py-0.5 px-1 bg-neutral-400/23 text-[0.8em] font-mono;
-}
-
-pre>code {
-  @apply p-0 bg-transparent font-mono;
-}
-
-table {
-  @apply block overflow-x-auto border-collapse text-left;
-  white-space: nowrap;
-}
-
-table :where(td, th) {
-  @apply p-1 px-2 border-primary/26 border-1px border-solid;
-}
-
-table :where(th) {
-  @apply bg-primary/16 dark:(bg-primary/12);
-}
-
-table :where(td) {
-  @apply bg-primary/6 dark:(bg-primary/2);
-}
-
-.articleContent>p {
-  @apply text-justify;
-}
-
-.articleContent>*:not(h1, h2, h3, img) {
-  @apply mx-0 my-3;
-}
-
-.articleContent>p {
-  @apply mx-0 my-4;
-}
-
-.articleContent :where(img, .embed) {
-  @apply mt-2 border-1px border-solid border-primary-600 w-auto;
-}
-
-.articleContent img {
-  @apply block;
-}
-
-.articleContent :where(img, .embed).no-border-img-or-embed {
-  @apply border-none;
-}
-
-:where(ol, ul) li {
-  @apply mx-0 my-1.8;
-}
-
-.articleContent :where(img, .embed)+em {
-  @apply not-italic opacity-80 text-sm block mb-4 mt-0;
-}
-
-.headingLink {
-  @apply mr-1;
-}
-
-summary {
-  @apply cursor-pointer;
-}
-
-.katex-display {
-  @apply border-1px border-solid border-primary-600;
+.katex-display, .expressive-code {
+  @apply border border-solid border-neutral-500/30 rounded-md;
 }
 
 .katex-display .katex-html {
   @apply block overflow-x-auto p-4;
-}
-
-html body :where(.alert_content, blockquote)>p {
-  @apply m-0 p-0;
-}
-
-blockquote {
-  @apply border-primary-600 border-solid p-4 italic border-0 border-l-6px bg-primary-500/20;
-}
-
-.expressive-code {
-  @apply p-0 mt-2;
-}
-
-.expressive-code figure.frame {
-  @apply border-1px border-solid border-primary-600 rounded-0 shadow-none;
-}
-
-.expressive-code figure.frame pre {
-  @apply rounded-0 sm:text-wrap;
 }
 
 img[src*='#left'] {
