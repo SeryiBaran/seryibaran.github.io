@@ -224,3 +224,21 @@ img[src*='#center'] {
   display: block;
   margin: auto;
 }
+
+html {
+  position: relative;
+  z-index: 1;
+}
+html:before {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100vw;
+  width: 100%;
+  background-image: url('/bg.jpg');
+  background-size: contain;
+  content: '';
+  opacity: 0.18;
+}
