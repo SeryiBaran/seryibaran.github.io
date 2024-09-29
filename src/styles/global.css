@@ -229,7 +229,7 @@ html {
   position: relative;
   z-index: 1;
 }
-html:before {
+/* html:before {
   z-index: -1;
   position: absolute;
   top: 0;
@@ -241,4 +241,4 @@ html:before {
   background-size: contain;
   content: '';
   opacity: 0.18;
-}
+} */
