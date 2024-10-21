@@ -28,12 +28,12 @@ export default defineConfig({
     mdx(),
     (await import("@playform/inline")).default({}),
     (await import("@playform/compress")).default({
-      CSS: false, // cant process some styles (maybe from libs)
+      CSS: false,
       HTML: true,
       Image: true,
       JavaScript: true,
     }),
-    purgecss(),
+    //purgecss(),
   ],
   markdown: {
     rehypePlugins: [rehypeKatex],
