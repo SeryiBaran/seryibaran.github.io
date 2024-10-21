@@ -6,7 +6,7 @@ import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import fs from "fs";
 import remarkUnwrapImages from "remark-unwrap-images";
-import purgecss from "astro-purgecss";
+//import purgecss from "astro-purgecss";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 
