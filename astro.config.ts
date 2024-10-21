@@ -28,7 +28,7 @@ export default defineConfig({
     mdx(),
     (await import("@playform/inline")).default({}),
     (await import("@playform/compress")).default({
-      CSS: true,
+      CSS: false, // cant process some styles (maybe from libs)
       HTML: true,
       Image: true,
       JavaScript: true,
