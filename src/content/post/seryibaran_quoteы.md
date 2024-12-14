@@ -6,6 +6,11 @@ updatedDate: 2024-05-12T22:24:10.584+03
 tags: ["shit"]
 ---
 
+> (SeryiBaran) 14.12.2024
+>
+> Моё железо (скрин 14.12.2024)
+> ![alt text](/uploads/seryibaran_quoteы/2024-12-14T17.36.20Z__0000c6__b6111382.jpg)
+
 > (Dimasss201) 13.02.2024:
 >
 > ![alt text](/uploads/seryibaran_quoteы/9.png)
