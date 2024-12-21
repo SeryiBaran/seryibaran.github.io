@@ -1,0 +1,3868 @@
+commit 3ccab0dbe363800f6985accae54a94a91dea336a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Dec 15 00:44:15 2024 +0300
+
+    upd
+
+commit 922708c651e258ab7210d6dcb4cd26ec7fbe68aa
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Dec 15 00:19:39 2024 +0300
+
+    upd
+
+commit 71173f36918405378fd9f1c51dc16c4c86281e8c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Dec 14 17:40:01 2024 +0300
+
+    upd
+
+commit d63a99a5c7dc5a117f932263cdb9b6cea095043d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Oct 25 13:13:49 2024 +0300
+
+    upd
+
+commit 56856c970a6f7b67bba21a85a7825c081db086b2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Oct 21 19:52:29 2024 +0300
+
+    Update astro.config.ts
+
+commit d1644e7047900ebb450f5006879c72f7ef826269
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Oct 21 19:50:18 2024 +0300
+
+    Update astro.config.ts
+
+commit 15b43817e460f3e8d0361c7d4ad31b36896da646
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Oct 21 19:42:49 2024 +0300
+
+    Update astro.config.ts trying to fix styles
+
+commit 2c261dce80ba2f9ebb7def8e9981fc23496b0e6b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Sep 29 12:37:05 2024 +0300
+
+    about page fix link
+
+commit 6783a589726f49dd6c9e3b0bd0914f38101d2694
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Sep 29 12:36:14 2024 +0300
+
+    remove big owl bg
+
+commit 4465cca26bfe206b17188cc6cad32b545f6b2822
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Sep 29 12:34:04 2024 +0300
+
+    about page
+
+commit 94b726fb80617fecf649e5600f3f066f91e03129
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Aug 9 21:13:10 2024 +0300
+
+    upd
+
+commit 4b007360fc00e8369d646b9ba8d32b91a5331d3a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Aug 8 16:52:13 2024 +0300
+
+    upd
+
+commit e6dbd1a07086a71edc16e52329e978e4fd15ea6c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 3 17:22:46 2024 +0300
+
+    сова угу
+
+commit 14c55ef28a535287887187983984c5465d02476e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 26 12:13:28 2024 +0300
+
+    upd
+
+commit 940294b59e45a78b3c8bc3d07e843a19f10f426f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 25 22:36:20 2024 +0300
+
+    upd
+
+commit f8c1928ed876678f59137c912ed0ffb01f5afad4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 23 17:06:36 2024 +0300
+
+    fix bot
+
+commit 36b2883c43567b4acfaa897d9292836b8063583c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 23 16:59:26 2024 +0300
+
+    fix bot
+
+commit 027a3a3d4d24ed6c7562fa48f8e1b0e48f36c318
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 23 16:47:29 2024 +0300
+
+    fix
+
+commit 683d9846188d916bb30f32e47693e409e9d7a2fe
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 23 16:45:36 2024 +0300
+
+    big upd
+
+commit ecac7a3501f516885672e018fe6f5db235e5849f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 22 17:46:09 2024 +0300
+
+    upd
+
+commit d1a46dc06fa205b10ce0b4a75e335c9c9857b3c6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 21 22:52:00 2024 +0300
+
+    upd
+
+commit e4f5b249398f160e9ea41a36fd7cbb1aa1719c76
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 21 15:21:33 2024 +0300
+
+    update pi
+
+commit 65b1583cbc95e150c960fe0b0c0777e42632540f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 20 16:17:17 2024 +0300
+
+    update pi
+
+commit b5e11aef5adeeb19877639ccc53743752b738181
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 22:41:41 2024 +0300
+
+    fix вслепую (вспомнил что может баговать)
+
+commit c7ac19fdbf9e0217496cd86fb6d7618c02bc3636
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 22:38:48 2024 +0300
+
+    pi
+
+commit c66d94fe7a8f1acd49e9bc88d93d4e5e9cbf3652
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 22:00:54 2024 +0300
+
+    fix mono fonts
+
+commit 42218eeebc58844c3c7679dce57471f2a2d5e60c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 21:35:22 2024 +0300
+
+    upd
+
+commit fdc2b24c482572d45e1dbf59f94bd9b0d9ecc12a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 21:34:03 2024 +0300
+
+    remove unused code
+
+commit 6c884ad237212fcb330a93d1295c752839e66c66
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 21:31:45 2024 +0300
+
+    try to fix
+
+commit 07a9eb073003e0d976b2e13d53223b3afc308f4c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 21:27:31 2024 +0300
+
+    try to fix
+
+commit 1073f2ec59d5edeb4eb34d2e7bcb8c7ca92e81b1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 21:19:09 2024 +0300
+
+    upd
+
+commit d141eebc693369fbbcdad67953750331404cd722
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 21:17:47 2024 +0300
+
+    fixes
+
+commit 0a68d6ddf0ddf4e2b79d17fa2f7adad9eb399186
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 20:07:47 2024 +0300
+
+    upd
+
+commit ba233bc5964c3ecdfed75415a82d94149e5e31e3
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 19:37:10 2024 +0300
+
+    upd
+
+commit 639956d480a5d0c905934681994296865835235e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 15:40:56 2024 +0300
+
+    upd
+
+commit a6fd27858c9f2da2ddeb68b49825d0d9fd09f926
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 15:37:14 2024 +0300
+
+    upd
+
+commit c8e246efbd82244f91774a9148ebf8374b7abd95
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 15:08:13 2024 +0300
+
+    upd
+
+commit 9ebea6949a3ff39cb17e90d2c5e0abc128e4fd51
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 19 15:07:25 2024 +0300
+
+    upd
+
+commit 45f8f157e90b1be0888b9d8cc6ba8fb4f551655a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 18 12:37:35 2024 +0300
+
+    upd
+
+commit 15d09238a146b95c4b587f5548a194931922633b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 17 12:41:31 2024 +0300
+
+    add article: frozenshift_guide_to_web_images
+
+commit cadb94b270ac684b2240d2151745d5a35858b451
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 15 16:22:16 2024 +0300
+
+    upd
+
+commit ad3e71d4632ecf28b8eeaa86193af8a1f0d6aa6e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 15 11:10:23 2024 +0300
+
+    fix: date and time format
+
+commit b858e74570bb9d619efcacf661cdfe284dbd0701
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 14 22:45:18 2024 +0300
+
+    upd
+
+commit 5c2480f4f201a761ec91bee4f57250eb4053f0bb
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 14 22:18:21 2024 +0300
+
+    upd
+
+commit 5cb446271189b1d72bba6c8cf9516d4c6b4fe8ac
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 14 19:27:48 2024 +0300
+
+    upd
+
+commit 741e7ce9b155af3d35b159e207c6383e67d1eb43
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 14 19:14:51 2024 +0300
+
+    upd
+
+commit 7d2658715b65b2fa0462181a0d62395a7a8a7694
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 14 18:05:25 2024 +0300
+
+    fix
+
+commit 3a8aa76af54ee0a6c78eb94c71c62e09ecfd3aad
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 14 18:02:50 2024 +0300
+
+    upd
+
+commit 3f897aaa89e3a055861768acea002096d7f8b274
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 14 17:26:28 2024 +0300
+
+    update deps
+
+commit c2ff92d34421ca55f6278ba2d3ba25c6730c5257
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 14 16:40:53 2024 +0300
+
+    feat
+
+commit 2d9437fa9b3e0706ec2277f13f033030114d44ee
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 14 14:27:53 2024 +0300
+
+    feat
+
+commit e157250e4887fdd63e3814ec8e5dc0e96f45c940
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 14 12:48:44 2024 +0300
+
+    upd
+
+commit b460b7977cf12e338518a0459c35752799b8cfb4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 14 12:47:45 2024 +0300
+
+    fix
+
+commit e4d8e752a5be38c71f8ba0f96e1216f0dd3de935
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 14 12:45:30 2024 +0300
+
+    feat
+
+commit 070f093a780be0146124eaaf4f461f87dea5cf01
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 13 22:59:47 2024 +0300
+
+    feat
+
+commit 8774db0ff5d7de791b1fa6386731a8382320d2bb
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 13 22:36:33 2024 +0300
+
+    features
+
+commit 7c1908afcad6295b4263c7bfcf23ca500cecfce4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 13 18:33:42 2024 +0300
+
+    what_is_gpg updatedDate
+
+commit b539592de587f318b5194fb0d0f157474aa3c691
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 13 18:10:33 2024 +0300
+
+    what_is_gpg article
+
+commit 85720f4cd9ac786dfbe2a70f16f775df89e9bf56
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 13 17:05:52 2024 +0300
+
+    fix
+
+commit 7ca389bea6f91a64287f26caf92c187b36a13413
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 13 16:56:16 2024 +0300
+
+    fix
+
+commit ef6f34a24e5783561ac309fdcb0a061f00e5e41a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 13 16:02:18 2024 +0300
+
+    feat: colors
+
+commit c50260238616ac12ae9c239f09ec7463be0b991e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 11 15:26:44 2024 +0300
+
+    upd
+
+commit 95e3d731bc881e9133cbfd042c046a175b0578e7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 11 14:57:10 2024 +0300
+
+    upd
+
+commit c8f03fed156bd6c50550d01c98132a99528110d2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 11 13:17:18 2024 +0300
+
+    upd
+
+commit ebdedb8a49eb488b5f1955347cab09f78d286186
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 10 21:17:24 2024 +0300
+
+    upd
+
+commit 89586014018423d33d08c8d0ad2c48932e0417e5
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 6 10:33:30 2024 +0300
+
+    change youtube username
+
+commit 1c3b900862b7c452ee6dc5b099c035363adc0265
+Merge: f1f40c4 602209c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 1 10:58:15 2024 +0300
+
+    Merge branch 'main' of ssh://github.com/SeryiBaran/seryibaran.github.io
+
+commit f1f40c4a4ae81c86bac122623616ea6f40bc5e8d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 1 10:56:13 2024 +0300
+
+    fix: what_is_gpg.mdx
+
+commit 602209c9e7a2c29c6c3b89fdd4114c2b1a1aafdf
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jun 26 15:12:15 2024 +0300
+
+    Update index.astro
+
+commit c37623d3f1be1dc980f97fd43d0b480bd91f5ea4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun May 12 23:08:20 2024 +0300
+
+    upd
+
+commit 31662fbec98b4c01f52626c94e86c96c1f3d7dc6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun May 12 22:37:51 2024 +0300
+
+    upd
+
+commit a75c84d9c720b4bd134394f9bcfb42c280af0544
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Mar 18 10:39:17 2024 +0300
+
+    fix
+
+commit 04559e958048e83eb2dc573ba8659eaccda86c3b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Mar 9 20:15:04 2024 +0300
+
+    upd
+
+commit a7e36e3961bcd5dc63c357c519cc93da805ff078
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Mar 9 18:01:29 2024 +0300
+
+    upd
+
+commit 35c767051c932ca0b8c8fc9954b2291e40dfa7fe
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Mar 9 17:43:52 2024 +0300
+
+    upd
+
+commit 5901fa646b54d4b601056cfa88c53043548232a4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Mar 6 16:21:31 2024 +0300
+
+    pravila-dlya-it-chatov: update updatedDate
+
+commit 40357cdc29dc539e9f45c9ce53e80084b3996e3f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Mar 6 16:17:29 2024 +0300
+
+    pravila-dlya-it-chatov: add info about davids
+
+commit 55db7b29f10bbe2d42c28f4d42b56b7c69d3c697
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Feb 24 22:13:30 2024 +0300
+
+    add quote
+
+commit 42a403287d0ad268a8cd826adcabdf7563625df0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 16 15:37:12 2024 +0300
+
+    fix
+
+commit b7f1a36237b199c18e7a7d2154f4bdf89781a394
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 15 12:02:48 2024 +0300
+
+    feat: add formulas to how_to_divide_cookie_by_3
+
+commit d2e307db574d86f5cf5d02f5f02e06059ee1752a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 14 11:10:43 2024 +0300
+
+    fix
+
+commit 370a6c95b4f4c7b4229e62135b5c59874dfec210
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 14 11:09:12 2024 +0300
+
+    fix
+
+commit 232a9ef40106e988758a00f5515e84ead84bc74b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 14 11:07:47 2024 +0300
+
+    fix
+
+commit 2f0751d73004cf88d88d88169dc7aed638d2fda2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 14 11:04:57 2024 +0300
+
+    remake how_to_use_gpg to what_is_gpg
+
+commit 6455e5ddd70fb6e8f648b5eb2686cde615bc2cf7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 14 10:57:09 2024 +0300
+
+    edt
+
+commit 7e68111f3aa35b22eb1786b37f034cb3cab9cdf6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Feb 13 23:20:34 2024 +0300
+
+    chore:remove unused packages
+
+commit 550b2f19dfeba72335381b47a934e2dcec43a12f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Feb 13 23:15:38 2024 +0300
+
+    feat: ui improve
+
+commit 504fe173ddf57d50aac36582362630f9b514648c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Feb 13 23:02:05 2024 +0300
+
+    upd
+
+commit c7f715ab61bc77be41fb9bae4204e1e7db5b5962
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Feb 13 21:42:13 2024 +0300
+
+    fix: fix active link style in header
+
+commit 52c2a6f9d9cc2003d7bf794f02ae07bf2a386ab0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Feb 13 21:37:09 2024 +0300
+
+    ui improve
+    
+    improve colors, date etc.
+
+commit 3e4adef4fb24e8caad62615b5dbb61c91fc99d40
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Feb 13 19:21:15 2024 +0300
+
+    fix
+
+commit 27ed50f6cbcea8a917b0f2671ece5dec92e69ac8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Feb 13 19:18:53 2024 +0300
+
+    add quote
+
+commit 2d98e1cdae3b5acebcce6f324536986fd27e4b64
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Feb 13 15:41:07 2024 +0300
+
+    add message
+
+commit 4a66679a98efb68a1871dbb30fd1646fa200a196
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Feb 13 15:15:55 2024 +0300
+
+    256 divisions. fuck
+
+commit da4263432ad0e92ae5d00894803cef1211c256c9
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Feb 13 14:09:41 2024 +0300
+
+    fix
+
+commit 0f2ff4c8dbfcc5ba4eadc78d13c4cd0b86de725d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Feb 13 14:09:20 2024 +0300
+
+    гзв
+
+commit 7cab6e8f3b3bc225e7187017519712b6be95867e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Feb 12 22:47:39 2024 +0300
+
+    fix: add "UTC" to last generated date in footer
+
+commit 9e6f8d6f865941d0cce476fe946320fdd44b7cc1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Feb 12 22:43:59 2024 +0300
+
+    fix
+
+commit ed4984be88a60b1a9859e5d956af9d7981c63d5a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Feb 12 12:37:58 2024 +0300
+
+    feat: install Expressive Code
+
+commit 8295e78c54b67464f780079619f60d30441a591b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Feb 12 11:40:27 2024 +0300
+
+    fix fonts 2
+
+commit bca7b8213a5ff0cb153414cd6d7a2bb7b61336f1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Feb 12 11:24:01 2024 +0300
+
+    fix fonts
+
+commit a86e0be7de8e27697989ddc615669f5e7e6e150f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 11 22:56:46 2024 +0300
+
+    upd
+
+commit 750053cb96e165c2b7a592fcea4979064285d591
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 11 22:41:48 2024 +0300
+
+    upd
+
+commit 397171886f1450ee08a4ebb15cac7ceef529aaae
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 11 18:02:04 2024 +0300
+
+    add "Quote'ы by SeryiBaran & AnastasVik"
+
+commit b3598d448e63296291da2b151be9fe25b64f5d4e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 11 16:48:21 2024 +0300
+
+    add article: Quote'ы by SeryiBaran
+
+commit 413039754bafa45bbf7e245ffdedd6a6660d9aee
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 11 15:40:05 2024 +0300
+
+    fix: logo
+
+commit f41446355938bd185771306bca91117a3b1026dc
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 11 15:33:02 2024 +0300
+
+    feat: footer upd
+
+commit 6881f013fc5bbbde53c617f139a1765f50443bf6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 11 14:45:52 2024 +0300
+
+    feat: add 2 articles
+
+commit ff5e6ce8ffbcb355e3549912e9fabad8edb241b4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Feb 10 20:53:28 2024 +0300
+
+    minimalistic
+
+commit d98bc28efbfde43558793660dcc30feac09d7219
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Feb 10 20:22:03 2024 +0300
+
+    change font
+
+commit 6c4fba5a7b1a59b559a79f4ac69f3243c3e51a49
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Dec 18 11:53:35 2023 +0300
+
+    fix
+
+commit 0077a42a1738fd014cc4f48ec3b447b1020c5080
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Dec 18 11:46:23 2023 +0300
+
+    fix: move lock files back
+
+commit f8190178ec25ad995a2efab18dc5b15f8d169558
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Dec 18 11:43:53 2023 +0300
+
+    fix: fix
+
+commit 265c2c9d50e410178a30b37078bccff1a7579166
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Dec 18 11:41:29 2023 +0300
+
+    fix: try to fix
+
+commit 0d0c7732c6f6a16642a76a75bfcd661b3a267e6a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Dec 18 11:38:46 2023 +0300
+
+    fix: fix
+
+commit 7e69ce7987babd6116f89af76bb29cb63a370172
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Dec 18 11:37:19 2023 +0300
+
+    fix: try to fix
+
+commit 4276114274c8d82ca8a4d4cdb92a2cf54a82f97f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Dec 18 11:34:52 2023 +0300
+
+    fix: remove lock files
+
+commit 79391b6a4bb099618c058f41cf6c9ce2b3ab9682
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Dec 18 11:26:29 2023 +0300
+
+    fix(tg-sender-bot): remove error if no posts created
+
+commit 4cd8a9f212025792d15f7bad32e49202145c93d0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Dec 14 19:20:53 2023 +0300
+
+    fix esling config ^& update deps
+
+commit 4da83d4ecfb2b7b7878a2241f8dc03a59dcabe89
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Dec 10 23:16:52 2023 +0300
+
+    немного изменил дизайн
+
+commit 8c7223a925ea792c2332a9b8c664a2065f480cb1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Oct 29 15:15:45 2023 +0300
+
+    update "test-of-offices"
+
+commit e6408675f2a091de7645357b3fc9214051043d40
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Oct 29 11:28:33 2023 +0300
+
+    add "test-of-offices.mdx"
+
+commit ff27182a6f5f0820d5a1ccf26f634186d3f6449d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Oct 4 11:55:23 2023 +0300
+
+    add image
+
+commit 314adb6d8fb8cf624d960ba5a16232107850879e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Oct 4 11:48:50 2023 +0300
+
+    edit "fragmenty-coda"
+
+commit f8255b3ecb425f6c4fd84ca306e0ebc154dd7b43
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Oct 4 09:30:33 2023 +0300
+
+    fix
+
+commit 1bfe8b0c4b53c734f1a2bd9d259cc9ec1ea90349
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Oct 3 20:11:27 2023 +0300
+
+    add ahk script
+
+commit 7cec8ff78feba08cc46f014c54ce61ab8bc5ac7b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Sep 24 09:48:12 2023 +0300
+
+    pnpm
+
+commit 7fc39d8fbf4a38ffa825b7fbb774513eae9bf05a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Sep 21 09:51:00 2023 +0300
+
+    fix ^<code^> font
+
+commit d088a466e3c004a25f2ee055165985ec7f371671
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Sep 19 12:53:59 2023 +0300
+
+    edit "pravila-dlya-it-chatov" && enable text-wrap in code on desktops
+
+commit af4a9736f2af3402be92037aad0ed538cadb3b20
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Sep 19 10:47:03 2023 +0300
+
+    optimize fonts
+
+commit b7080989a9d4833f6f53b0f2bd7afae3a10e8ee9
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 22:21:28 2023 +0300
+
+    fix fonts
+
+commit dfc94a2f64bd19e4a74de036f89848ace4a2e248
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 22:17:20 2023 +0300
+
+    fix
+
+commit da6d6bbc598ebc88aaff67f4525585a26312b5cb
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 22:09:11 2023 +0300
+
+    add iconifyto deps
+
+commit fac51a42d210b0d4e06f67d8cb10e51e23808d93
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 22:05:04 2023 +0300
+
+    fix
+
+commit fef5d652dd2e94a2f8549ae235d49b4affe2a8b1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 22:02:27 2023 +0300
+
+    improve 404 page
+
+commit decf717e69f1a337e0e222aae518996b609969b6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 21:56:03 2023 +0300
+
+    date icon
+
+commit 4074420d9e08c905ea4b1ba3d40e133c77fe0b45
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 21:52:27 2023 +0300
+
+    improve
+
+commit 79979ffd63e3610d3dad13ae6fc38c7a8b4427c4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 20:51:31 2023 +0300
+
+    fix 404 page
+
+commit c9b5351a1c09edf419889415d42ae9f235bba4e6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 20:47:16 2023 +0300
+
+    upd
+
+commit 6bb43befdd8197cebd71132dd6a64112e3645a9c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 16:26:53 2023 +0300
+
+    move to woff2 from ttf
+
+commit 6dead9200eae43d0eb78684ade4d6a628744938f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 11:07:06 2023 +0300
+
+    fix bot
+
+commit af6d6a583a5f54dd5c68af53b5c6156c7b4076ec
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 11:06:10 2023 +0300
+
+    move to sharp from resvg
+
+commit 7f3ad0ceab98197f6b5e9e68f06134fa0341d8ef
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 10:59:50 2023 +0300
+
+    add compression of images
+
+commit dc90261416fedcccb902d470e72d2e5340453fde
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 10:56:05 2023 +0300
+
+    remove jampack
+
+commit 4681ae646385c785d8b7be004142cab4f87e1ae5
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 10:52:58 2023 +0300
+
+    Update package.json
+
+commit 9bf436a2b1e88011a423de4a58b42a962eddecaf
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 10:48:41 2023 +0300
+
+    Update deploy.yml
+
+commit 2c5a9f2a8f350def5fee0c00c804b26f8a08cdcd
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 18 10:44:28 2023 +0300
+
+    Update deploy.yml
+
+commit ca6bf755124403b997ae5b4c245c5de8c05f9a0f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Sep 17 21:46:16 2023 +0300
+
+    download cascadia code font to public
+
+commit 64cc168974b7519a77e718b89659e098d5c0311b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Sep 17 21:07:19 2023 +0300
+
+    improve many
+
+commit c7cc3bb8d13f5335cea75ea358f091abd941e304
+Merge: 02a1527 3f5cdf4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Sep 17 17:43:38 2023 +0300
+
+    Merge branch 'main' of ssh://github.com/SeryiBaran/seryibaran.github.io
+
+commit 02a1527f0d978fe182921a520a23179d2f7a426a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Sep 17 17:43:24 2023 +0300
+
+    upgrade deps && change font
+
+commit 3f5cdf4ab820ef953888d550dd64d938acdeb394
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Sep 1 21:37:19 2023 +0300
+
+    Update how-to-proxy-all-traffic-by-tor-on-windows.mdx
+
+commit 338af8a1ce19b143d9e2836a3bf68b291a2bf3e1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Sep 1 20:47:57 2023 +0300
+
+    improve tg bot sender message
+
+commit 8589a94f805ac1b60cf01ed1f0525e86efe337d5
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Sep 1 20:43:24 2023 +0300
+
+    improve new post sender bot
+
+commit 9dd461aa032ec61ad186aa0c2e9bf3a7f36e589b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Sep 1 20:08:18 2023 +0300
+
+    new post about tor
+
+commit 4f95ca7b3a0a4e9a0d3656678aea76fb6fe4c4ce
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 14:33:37 2023 +0300
+
+    remove test post
+
+commit 91617e03de1aad2e8465ee454d0977e052959cd1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 14:30:57 2023 +0300
+
+    add test post
+
+commit 87ca799443eb9253b1ff9c68be7849ba552160ab
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 14:27:16 2023 +0300
+
+    fix
+
+commit 36e0b84b093c1566cb4da0cc0772ba6940d309fb
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 14:23:45 2023 +0300
+
+    fix
+
+commit 990b2993485f6599d7283225597f3924526d2500
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 14:20:18 2023 +0300
+
+    fix
+
+commit 73e255eb6f588c26acffa21e0a88720efc35dc92
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 14:20:10 2023 +0300
+
+    Revert "create test post"
+    
+    This reverts commit 8f0aac4aa6e766b9bb05ebd69d21648755bc808b.
+
+commit 8f0aac4aa6e766b9bb05ebd69d21648755bc808b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 14:18:32 2023 +0300
+
+    create test post
+
+commit d6401ba9cc9b531e32f67248a4478bd0c9194570
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 14:15:00 2023 +0300
+
+    move bot to ts
+
+commit 288881e1d6cdf1383eb06b7f5d72bbc7e4532296
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 13:57:40 2023 +0300
+
+    fix
+
+commit ac45d1ac8fc0e02968ccaba6a1373ebf164ffb25
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 13:54:49 2023 +0300
+
+    try to improve tg bot
+
+commit bd0e210952caf2aec9694f23efaf1ee489b9ea9f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 13:46:03 2023 +0300
+
+    update gh actions again
+
+commit 6a698ade7ab33696fa8cca1b473f349d16eee340
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 13:44:02 2023 +0300
+
+    update gh action
+
+commit 900cc365c809e0a1eee7f5f2cd092fd283c6f53c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 19 13:10:37 2023 +0300
+
+    add article and improve images quality
+
+commit f8b0fdfe120ef868deefbcdcb95904efdac7a9eb
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 12 18:40:25 2023 +0300
+
+    update
+
+commit a898bbfb1fe36b459c2342b299d12880c477b479
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 18 11:13:19 2023 +0300
+
+    add official ahk windows example
+
+commit 96738a704ec45034f4961f0289648d582df3cf4d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 18 11:04:13 2023 +0300
+
+    new post about ahk scripts
+
+commit bef250a9926352a99463fe0fb92e8c8fc91e7e99
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 4 22:18:38 2023 +0300
+
+    add @divriots/jampack
+
+commit 97d721b6a5acfe8311fc52f67157572516b1f22e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 4 22:13:16 2023 +0300
+
+    fix
+
+commit 1f032e8f12d00cab0b49a8c0408b35146c461867
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 4 10:56:51 2023 +0300
+
+    improve og images
+
+commit c09ce924d45a587cca5b0706837a0e61b328eb6c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 4 10:46:43 2023 +0300
+
+    fix bot && add og image generation
+
+commit eff38ab92253cca45fdab3ac29e2f183895261c2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 21:37:12 2023 +0300
+
+    improve readme and bot && remove test post
+
+commit e90775392d5924d8f15daf02e35b958ce8caf08c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 21:35:38 2023 +0300
+
+    improve readme and bot && remove test post
+
+commit f6f83525c64276449d38a61101fc753db2db75ce
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 21:27:06 2023 +0300
+
+    test
+
+commit 715d9bedd7e63e3505d212d60f3de24712b34d3a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 21:22:31 2023 +0300
+
+    delete test.md but add test2.md
+
+commit 4cdef11acfcbfd20485055510672aae33488daba
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 21:21:43 2023 +0300
+
+    improve script
+
+commit bf50e7dbf072288b38486ab9ed2bef751296e6a1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 21:15:48 2023 +0300
+
+    create test.md && improve telegram-sender-bot
+
+commit 9aa75b23b91bf9eae78d83ddc392572fa0cf4f26
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 21:12:03 2023 +0300
+
+    remove post
+
+commit 1bcd12d630331c0c466207ca5f8c891b8ca579fa
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 21:11:41 2023 +0300
+
+    fix
+
+commit 5eeb013145b7f72255e15c350698d773bd5a2bf2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 21:04:42 2023 +0300
+
+    test post
+
+commit d030beddbc00714f1919cbda511313614db1e488
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 21:02:16 2023 +0300
+
+    one workflow
+
+commit 786d012f9c84b059f9e3b23ba4403ebafcaa7122
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 20:55:49 2023 +0300
+
+    create telegram sender bot
+
+commit ffd5f47ab2c17ff7a04adbf7cec62153624ea917
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 19:32:25 2023 +0300
+
+    remove shit from readme
+
+commit c70ba20bf479d1625df4446c56165c164fc90e77
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 19:31:50 2023 +0300
+
+    gh workflow improve
+
+commit 53ee18c9f6befbfea09fde7831915d0003315fa2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 19:26:38 2023 +0300
+
+    div to blockquote in alert
+
+commit ee51c8b59082cfd668908fb96a5111619011e861
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 18:45:46 2023 +0300
+
+    fix images styling
+
+commit b4a5341997009ab6637f7448df0bd590c32250ec
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 18:42:53 2023 +0300
+
+    fix
+
+commit 18a8517149c7711e2337875487b6e66c5ddcb819
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 18:41:32 2023 +0300
+
+    remove astro-imagetools
+
+commit 6ab2bcba00060095bc8945b5e16aeb6cf7108671
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 18:40:57 2023 +0300
+
+    try to fix
+
+commit 4d073a6b24d4cf8474be4112bba39aa15090bca8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 18:28:25 2023 +0300
+
+    try to fix
+
+commit f12f75d48e20ece86ee4135bbe0a7015a633ae78
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 18:05:49 2023 +0300
+
+    try to fix
+
+commit 74aee551638c6b2277a0855a745e08b6691d6215
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 18:02:14 2023 +0300
+
+    remove html compress
+
+commit f1dfbe9b5312f954f769f7dac296c8d1e924fde8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 17:51:49 2023 +0300
+
+    fix
+
+commit 3246766ca0ffcc878a7824b5f854eb5bba9d6f25
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 17:40:09 2023 +0300
+
+    fix
+
+commit ece8f2d0b4f3ab17863bcccad5cc23b679ace84f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 17:36:30 2023 +0300
+
+    disable astro-imagetools
+
+commit 9988c232703e956fc59963b3a5e6999266b7c3f2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 3 17:31:15 2023 +0300
+
+    fix images
+
+commit 21caf6a9cdbab42bc627c3f9e8a39ebd3d42fd34
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jun 21 17:06:37 2023 +0300
+
+    move about text to index page
+
+commit d45e94e707e5dd1344fb841c944cbfabd06f1ed2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jun 21 17:01:22 2023 +0300
+
+    styles
+
+commit f63df244dc6a50c7f5ea03fe17540a316d6031f8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun May 28 17:50:57 2023 +0300
+
+    contacts
+
+commit 7c1fa3f6c591144f40ed9c78537a890732f6911f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun May 28 13:25:30 2023 +0300
+
+    obsidian paths fix
+
+commit 80e281d824f2cf804a69dfd3efa96ce5fb3914a7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun May 28 10:48:19 2023 +0300
+
+    fragmenty-code.mdx: mini text improve
+
+commit b8eaf97c784e2d5f20f912a447bba2e4b2b6cb89
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun May 28 10:27:11 2023 +0300
+
+    fragmenty-coda.mdx: fix ts
+
+commit 35b7e74ddfcd9ccf5f582c685d5f8caa8df249ff
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat May 27 22:07:05 2023 +0300
+
+    set monospace to code blocks
+
+commit 503b7ed69f790ea52df2ae8a8ce211c76f48fc49
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat May 27 22:05:01 2023 +0300
+
+    fragmenty-coda: improve generatePyramid
+
+commit 7d863623fa0c2ec86912bf8be744593e58285a5d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat May 27 20:51:48 2023 +0300
+
+    fragmenty-coda.mdx: add star triangle generation
+
+commit 4518c5897b4db2b085d3b9ade8613014b02a8597
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri May 26 21:12:11 2023 +0300
+
+    remove test post
+
+commit 7950d1d0888b98b502d17ee0ad22504b8c6413ae
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri May 26 20:57:47 2023 +0300
+
+    prettier
+
+commit 4c3b803abd703e7589c34e9f152df85e30d3f235
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri May 26 20:05:27 2023 +0300
+
+    improve
+    
+    просрал пол дня на ПРОБЕЛ...
+
+commit a5befffa88d6c3b6d6adac1efa9f553bb43339fa
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri May 26 17:37:10 2023 +0300
+
+    improve
+
+commit 0c5dc454708619a4f797e62ebbabca8476183e6d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri May 26 15:52:11 2023 +0300
+
+    Update README.md
+
+commit 977a7b0754e9c72e28fa43ffdd1c5eb780152669
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri May 26 10:09:59 2023 +0300
+
+    fix
+
+commit 0da5073ffaab563a3dd8ad7a2163c4ecd173f5b8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu May 25 15:56:04 2023 +0300
+
+    frontmatter cms
+
+commit fdccbf8108cd7b9835abd77391f6a2932bea91f0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu May 25 14:41:14 2023 +0300
+
+    improve posts page
+
+commit 295e1ec5d4d9c42125650fd60a0c727abad20be6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu May 25 14:37:32 2023 +0300
+
+    image description (<em>) styles
+
+commit 34a328b0e4ee196d940e03a8bdb7b20073d32f6a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu May 25 14:31:32 2023 +0300
+
+    ui improve
+
+commit a81ca346246777d2d45e96550ec98a640111bb8c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu May 25 14:12:39 2023 +0300
+
+    remove custom color in .time in posts list
+
+commit 337cfa7f14ab8629c3cb79941528e09f296dbd9a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu May 25 13:54:14 2023 +0300
+
+    images fix && remove unused .js file in public
+
+commit 6cbe6d67582769f4684bd21ba216a6d777537b2e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu May 25 13:38:35 2023 +0300
+
+    ui improvements
+
+commit 16b36c316104ad700f592608f20202e1e4fe3091
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu May 25 13:11:53 2023 +0300
+
+    astro-critters + astro-compress
+
+commit 3713120807003f2ce906a9784dbba5a094a9cbf2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu May 25 12:56:35 2023 +0300
+
+    many fixes and improvements
+
+commit 7cc324f250d76e1db35b73f49a4231b46ae69ff3
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed May 24 22:35:46 2023 +0300
+
+    Update index.astro
+
+commit cc466ba2a8ee21df1244c7da4430fff9cb7ad2f5
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed May 24 22:33:58 2023 +0300
+
+    site redesign to simple
+
+commit 5e337196f5e0bb12f9d3feb474f348a0ef2e4d5d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed May 17 12:17:03 2023 +0300
+
+    `launch.json` VSCode для дебага Vite+Vue в Яндекс Браузере
+
+commit 30ce2146a45b9aa90205ff9c662ebb582b1509ce
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Apr 27 17:02:44 2023 +0300
+
+    posts/universalniy-kod-rechey: shortened text generator code
+
+commit 29db0e335ad765e1239fa5ed3d36481f8b90d5ce
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Apr 27 15:29:29 2023 +0300
+
+    dance with ogimages
+
+commit f7e257e541306ecc2a231065eecfe3c2b1bb4041
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Apr 27 14:48:34 2023 +0300
+
+    fix: remove "linux)" from posts/posts/pravila-dlya-it-chatov
+
+commit b5a46a414482b373296748b0c447a6ea57204eaf
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Apr 27 14:45:52 2023 +0300
+
+    add article "Универсальный код речей"
+
+commit 90a773299e23965f06b410aef92944c376e908b3
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Apr 22 16:36:14 2023 +0300
+
+    fix: prevent deletion of elements between TOC and next heading
+
+commit 32b90ae724aeb822c7e00733ed023edc0ba4c766
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Apr 20 18:11:03 2023 +0300
+
+    anti-problem-xy question template in rules
+
+commit b6b879ecfc0479b46148ce98e09a2d2b5280e7d4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Apr 19 22:16:55 2023 +0300
+
+    Update README.md
+
+commit c26409e4452fea13fe84a730f80c3c76352e92d9
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Apr 19 22:08:09 2023 +0300
+
+    fix package-lock.json && posts/fragmenty-coda.mdx - update reatom code example
+
+commit 6cb5c339b2fc9e0ac93b8d534c306983ace7d740
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Apr 19 21:48:08 2023 +0300
+
+    remark plugins
+
+commit c3b028e1e135e09f356691eff713127942f11d04
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Apr 19 21:37:02 2023 +0300
+
+    improve
+
+commit ec9b493c91b03da67cb5d6b27114191521d29b60
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Apr 19 20:54:42 2023 +0300
+
+    improve many
+
+commit 5c32f03648aebec242e6e491c4468ac4129fa24c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Apr 19 20:29:14 2023 +0300
+
+    fixes
+
+commit de3a551dc1a7f65f0caaece4aa3857ad7e00a2be
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Apr 19 20:21:11 2023 +0300
+
+    remove yarn.lock
+
+commit ce7e990112a689d1ca31ac40c6954ea826d561d3
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Apr 19 20:20:49 2023 +0300
+
+    posts/fragmenty-coda.mdx - big update
+
+commit b68a925b7c91575c2531493cecafa3e0668930bc
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Apr 19 13:40:44 2023 +0300
+
+    posts/fragmenty-coda.mdx
+    
+    add ts reactivity with createEffect example
+
+commit 18f75f48c624647e5423ffdbb0c2de65657f9c6b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Apr 19 12:40:19 2023 +0300
+
+    posts/fragmenty-coda.mdx
+    
+    add simple ts reactivity example
+
+commit 826d90a1a201eeefca2dca9c3ab0de75c482c37d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Apr 13 16:15:24 2023 +0300
+
+    improve many
+
+commit 3cc8a4804024510b681dde01b2b36fa938e50d47
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Apr 12 16:55:20 2023 +0300
+
+    code fragment - randomHSL
+
+commit 286e988912531776910b7fee3ca514258c9f405c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Apr 12 12:26:11 2023 +0300
+
+    fix
+
+commit a614619eeb0925ec0d58f99eb913f8de59d3891f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Apr 11 15:15:09 2023 +0300
+
+    add link to https://typestrong.org/ts-node/docs/imports
+
+commit da1da9e8af76220354b7528f095848e731d0f14c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Apr 11 14:09:42 2023 +0300
+
+    improve color in darkmode
+
+commit a903f4a26398e6b1969319e83a4560f4ae387fe6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Apr 10 21:14:47 2023 +0300
+
+    ts-node-esm to `"esm": true` in article about ts-node
+
+commit 1bd79b856b3e010d612ee58f584b8c11276639a9
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Apr 10 20:17:36 2023 +0300
+
+    add article about ts-node
+    
+    'Как исправить ошибку с ts-node "Unknown file extension .ts"?'
+
+commit 14a06b7c1c125e50c9fbd9a47154728e180b9dec
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Mar 14 20:46:44 2023 +0300
+
+    vscode
+
+commit 8cdde3fdc0ac3a18f74bd0e57c0756b4f4d715ef
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Mar 7 14:39:54 2023 +0300
+
+    about
+
+commit fe91b30c5b9be155d2b4540b0942effee0b705ab
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Mar 3 18:51:21 2023 +0300
+
+    move portfolio to github
+
+commit 62dcb9febc56c8f2537ed3a931d0dd5bd0226a62
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Mar 2 15:39:57 2023 +0300
+
+    add maket-agency to portfolio
+
+commit 0134ecf6fa7bb58d0ef037629722df72ed1dd055
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Mar 1 21:37:04 2023 +0300
+
+    cpp rus fix in fragments
+
+commit 76887157b2002ca45f5c3d9c1f1122e0e7b1d064
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Mar 1 19:50:23 2023 +0300
+
+    portfolio: add calculator
+
+commit 9b835679afd03e9b4bb2cf78e2040322431a64a7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Feb 28 19:24:39 2023 +0300
+
+    add nuxt into portfolio
+
+commit 72747265b0919b003392d00e6456c9998e844cbb
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 26 21:47:33 2023 +0300
+
+    fix
+
+commit d03f09666537fa8b81dfcb659a2a15ee3e1d3835
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 26 21:40:06 2023 +0300
+
+    roboto font
+
+commit de0b9c87191934eee5b73a6daa4e35a0bbc1f859
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 26 19:45:37 2023 +0300
+
+    defer
+    
+    https://www.webpagetest.org/
+
+commit ec9cc45218c32447083d61d8c0fafbc34dabbcd5
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 26 19:06:57 2023 +0300
+
+    remove too fat twemoji
+
+commit 7acb1bbce93ccab5bfb6f611ecdd8fc19ed0a796
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 26 19:05:12 2023 +0300
+
+    critters
+
+commit 63d2b1547f554098b663a6c56eb7c010da8d9336
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 26 19:00:46 2023 +0300
+
+    scripts
+
+commit 6c7fc35ca6d56404e633e531e79173af343ea333
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 26 17:55:13 2023 +0300
+
+    remark emoji and footnotes!!
+
+commit bbefe006d5f251a683132cb65737ac60baf7ac40
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 26 17:41:37 2023 +0300
+
+    typography
+
+commit 7d9488edab5fc9e0e76873c916baad0f1ef36c60
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 26 17:04:07 2023 +0300
+
+    comments!!
+
+commit b0571325c934009ab6c2200e1d47d6d759d02766
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 26 16:11:48 2023 +0300
+
+    emojies!
+
+commit 6ba94f97332667a4c015c3e42dc17631531d31ec
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 26 15:49:09 2023 +0300
+
+    remove image in about and add normal site description
+
+commit 27c7cc7e323e7305327f419309d6cbade851849b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Feb 26 15:15:54 2023 +0300
+
+    imageees!
+
+commit f2ddb14bb7d6cdb67437a657d59b93b1134d949f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Feb 25 19:05:17 2023 +0300
+
+    layouts etc
+
+commit 4c27521d945a3e919e9b886e57ef9f785a43041f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Feb 25 17:31:11 2023 +0300
+
+    remove shit previews
+
+commit 63f29576cf9c8c41312012e5b3c980e3570b0a5a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 22:13:34 2023 +0300
+
+    fix lang in Datetime
+
+commit ec0c8d5404dec8a684961f1d416c20e13af7ddc2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 22:10:20 2023 +0300
+
+    rename Toast to Alert
+
+commit edf3d96229d8123da72090ca0315f46440b19f98
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 22:07:41 2023 +0300
+
+    fix line height of icon in toast
+
+commit 19e5f9c915fe1daa74493d5732d7a5c2b2ded213
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 22:03:41 2023 +0300
+
+    fix
+
+commit ca9397372f830d101858341c81a0a5c09041eeb1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 22:03:24 2023 +0300
+
+    toast colors
+
+commit a19e67da3f25ff36352b159269e1619f87a3803b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 21:49:08 2023 +0300
+
+    toast colors
+
+commit 9d3a277f90899904acf1a38848db725001368deb
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 21:11:55 2023 +0300
+
+    fix darkmode
+
+commit 9ac2cc8fbb3c5026656c9526bcf14ff092753251
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 21:02:21 2023 +0300
+
+    youtube embed
+
+commit 65fd95058bb55e1d6f8f0da0260b0a60a83e8227
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 20:57:54 2023 +0300
+
+    tailwind + Toast
+
+commit d5a71d51d3ece56856caf3dc89252ef294c6f969
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 19:35:19 2023 +0300
+
+    tables content wrapping
+
+commit 9d00e8e59dfd7f532deaa1cc6675022325fb89ab
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 18:52:31 2023 +0300
+
+    header
+
+commit c91c9efbcad1cdd4ee0f9f8c1204d47605753482
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 18:43:42 2023 +0300
+
+    code copy button
+
+commit e6fc81006e4db8421ceada5cd73ab9f67a5b4dac
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 18:00:44 2023 +0300
+
+    remove unused code
+
+commit 2f0719c37d5fade7f468bffa5849f6e130592f8c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 17:52:17 2023 +0300
+
+    giscus comments
+
+commit b8a1e736f8967d8603cf4bfbc6fea9fe20778055
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 16:38:19 2023 +0300
+
+    fix
+    
+    https://github.com/evanw/esbuild/issues/1051#issuecomment-1006992549
+
+commit e93beb1f36637bff901d8adbdbfbdcd6048f4579
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 16:26:35 2023 +0300
+
+    svg to png!
+    
+    https://dev.to/anasrin/generate-image-from-html-using-satori-and-resvg-46j6
+
+commit 54d6fa1d458c1e3f0dee92489c532f1d071fc9ac
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 16:19:45 2023 +0300
+
+    fuckin og doesnt support svg =((
+
+commit c8626c725c07da3556ecd84f7db77d4da3db4307
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 16:14:08 2023 +0300
+
+    svgFallbackImages folder
+
+commit 7159f934934f4e8a51773033e59e66146f967033
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 16:12:26 2023 +0300
+
+    super svg fallback images
+
+commit 0d90a57f5efd9a4e0229abc69d5c97840ef1e571
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 15:49:24 2023 +0300
+
+    generateOgImage && 404 fix
+
+commit ffbe08d007fba303379665d21c835c06b23510ab
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 15:30:59 2023 +0300
+
+    local fonts
+
+commit 67dbd14612770a92e9529d216697ac8f67074fb7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 15:18:57 2023 +0300
+
+    much -_-
+
+commit 4f25744c523aeeb9df61869436d02fa4128cbcb1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 15:05:32 2023 +0300
+
+    fix
+
+commit 6c9060348e5c1a88c055e42970aafe3ed80447ce
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 15:03:36 2023 +0300
+
+    fix
+
+commit 2fd6f38c6da72721b3ca42acdb0a3f4f098381db
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 15:03:07 2023 +0300
+
+    AstroPaper!
+
+commit 51ec30a52aef0cb4c5f43d955e6b52fec97c9a7e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 11:32:17 2023 +0300
+
+    fix
+
+commit e5087cecc1f1cf3b727462544a2a0240550e904c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 11:31:58 2023 +0300
+
+    normal markdown validation error message
+
+commit 7565547ddccab104652435e07c1b3fc20ae42e9f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 11:10:00 2023 +0300
+
+    astro-icon instead of cdn iconify
+
+commit 6f9e0bd6b69fa937a43afe8a924c6bcd0eac45cb
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 10:32:50 2023 +0300
+
+    fix link on index page
+
+commit 26ab335fa76bf2fb2d3f438b2b182f98da290171
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Feb 24 10:19:11 2023 +0300
+
+    remove padding of github icon in header
+
+commit 55d80370ddfdcf29fc43fbcd8cbb0c32386006af
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 21:46:47 2023 +0300
+
+    fontawesome to iconify
+
+commit a706b98a4e57f2ee22f774b6d98ed22e8e60ce87
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 21:07:02 2023 +0300
+
+    fix: "Проекты" => "Контакты" in contacts.astro
+
+commit 2954d1b20b361d435fd7e6955caeaa71bdba487f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 20:59:33 2023 +0300
+
+    fix date in kak-polzovatsa-google
+
+commit 2e156d0bbf1a8d3c520db1c5e5c8cb2db93525fd
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 20:58:09 2023 +0300
+
+    layouts
+
+commit d3e5b313fcd8afa4dffd12760d45e12b4f0f99c7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 20:37:04 2023 +0300
+
+    fix layouts
+
+commit 8dd9d099e510e946ad239127030e55b57d916c33
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 19:35:08 2023 +0300
+
+    optimize ContentLayout
+
+commit c5136048d7ad30bdd240353dc6213bb0250191ce
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 19:29:35 2023 +0300
+
+    move posts list to component
+
+commit c5c733a722cf601fe828c6b1c005994f8b0c1fec
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 18:53:18 2023 +0300
+
+    remove fucking pwa
+
+commit 3fe1b95dfd054f405cdbdbc06a67a6a83c169f91
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 18:47:27 2023 +0300
+
+    .
+
+commit 4f8dfb2a78fa8b302c879179faacf66937820d08
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 18:38:25 2023 +0300
+
+    fix!!!!!
+
+commit e68052ff772600fdf3d62b465da7417414c684c1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 18:34:10 2023 +0300
+
+    trying to fix redirect on ctrl+shift+r + ctrl+r
+
+commit 4a308fff70b792b69a8eef3b0148b6f396d497f8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 18:28:31 2023 +0300
+
+    ffffffffffffffffuck
+
+commit 1a564545b0f21ea16a74e4df6fd9339a2cf8a0e6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 18:26:07 2023 +0300
+
+    да работай ты уже ну е
+
+commit aa43537b2551971dc01ad2a3ba8d61e247f63bd0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 18:24:19 2023 +0300
+
+    fix
+
+commit 1f58a87bfa4cf16b6b9c8796a7b5ec4ac476115a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 18:21:29 2023 +0300
+
+    test 2
+
+commit 85537621de5c0f5d7a3e1eb1e110584c0166e276
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 18:19:06 2023 +0300
+
+    test!
+
+commit 4e1877180bf736811988a38d4323c5c9150da16d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 18:14:07 2023 +0300
+
+    trying pwa again =(((((((((
+
+commit 0b18b6e958653ff47b087a0540c4934e69c07ff7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 18:01:07 2023 +0300
+
+    remove shit from about
+
+commit 8136e7069831a4e396d220a62d6fbaf94b848a23
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 17:55:22 2023 +0300
+
+    remove old text in about
+
+commit 10e50cf8231b4aeeecfc48b5761a10e85f33810f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 17:51:28 2023 +0300
+
+    try to get auto cache updating
+
+commit 68b0dc8e4cde09daa91f5cca6e05e489bac6b4ca
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 17:48:10 2023 +0300
+
+    feature: code wrapping with `LANGUAGE-wrap`
+
+commit 33e0be94aacb2da68d38db64e72288b14d5dc258
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 17:35:29 2023 +0300
+
+    fix pravila-dlya-it-chatov
+
+commit 1059396e37b0d1c459a29271598d383899424471
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 17:12:17 2023 +0300
+
+    fix purpose in manifest
+
+commit 8e92bc0cea1a60cb48bfe10d8662162393db6363
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 17:07:22 2023 +0300
+
+    ah shit, here we go again
+
+commit 2c06e7c55d9cee6144a5ba1ba3ce699dd4b23653
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 16:35:55 2023 +0300
+
+    icons
+
+commit 4e4608cb5f494c95ac8de213cbaca97e66d2d982
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 16:06:52 2023 +0300
+
+    remove unused favicons
+
+commit 9a228ebcb28456dde226cdd4992a8d7aa914214c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 15:57:45 2023 +0300
+
+    about: remove shit
+
+commit 03a68b481c499cdf50c9b221e64cb3a99e736782
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 15:52:41 2023 +0300
+
+    pwa in blog - shit
+
+commit 8e3561cf9921db0e5fc3470552150dd46682372b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 15:04:23 2023 +0300
+
+    russian date format and bold links fix
+
+commit 1aa310d041a7d45771ff68e6c810ceadcad47683
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 14:47:50 2023 +0300
+
+    update analog-openserver-dlya-linux-devilbox
+
+commit a51a60ca60e54414a321af54ec3cc25f401f3de1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 14:38:07 2023 +0300
+
+    try to fix pwa
+
+commit fddd486f551705f9b579bc9c385784dbb7f77cb0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 14:32:59 2023 +0300
+
+    try to fix FUCKING pwa
+
+commit 0d10725446b3b8e31710944309a9cc88ef6f3ff2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 14:18:39 2023 +0300
+
+    try to fix
+
+commit f68ba20762f6c770764cd526117d41e14f0ba389
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 14:06:24 2023 +0300
+
+    try to fix start_url
+
+commit 176afee80e5d38d912d8dec1baedd735a1a73b38
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 13:41:00 2023 +0300
+
+    fix tables
+
+commit 4bf4ff3a4a095c0d6a40d10eb10e7fd510f02f19
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Feb 23 13:28:57 2023 +0300
+
+    pwa
+
+commit a53dfbc348682b431c60677d58181ca8af720708
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 22 22:21:07 2023 +0300
+
+    remove shit
+
+commit a9c05015392fedccdede886f36f88ffc97fad22b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 22 22:19:29 2023 +0300
+
+    fix
+
+commit 6bba0604a5572c10bbef00f4c4196ed4b0d65d58
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 22 22:11:46 2023 +0300
+
+    https://vite-pwa-org.netlify.app/frameworks/astro.html#prompt-for-update
+
+commit c1476f7d2b05970aedb064934e5f180e9bd7cd47
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 22 22:04:15 2023 +0300
+
+    Revert "test yandex webmaster"
+    
+    This reverts commit 43d00c1b7ca846a0bda0939587ff1cc09e83b386.
+
+commit 43d00c1b7ca846a0bda0939587ff1cc09e83b386
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 22 21:52:11 2023 +0300
+
+    test yandex webmaster
+
+commit da7d9ee26e3f0867e5ec46b9806e3608f71a724d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 22 21:21:40 2023 +0300
+
+    PWA with Vite-PWA
+
+commit a2197116ddfdcdca34ed1995b17d97e1d96f8f89
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 22 19:52:05 2023 +0300
+
+    remove unused favicon.ico in root path
+
+commit c7fecedbe0ed8aa758d195cfbe653b74452b71b1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 22 19:50:12 2023 +0300
+
+    favicons
+
+commit 090fd9f85e9679b8630585a87e71c49d78cc8b31
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 22 19:28:46 2023 +0300
+
+    fix header adaptive
+
+commit 3bd26053c6a1a251d73904f6f87e5d3d0aa4b947
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 22 18:06:49 2023 +0300
+
+    fix
+
+commit d7dd5b4f8f8a2b31a850578fe7d94ea0d0ea01a8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Feb 22 18:04:10 2023 +0300
+
+    astro + blogster
+    
+    https://github.com/flexdinesh/blogster
+
+commit bbd763b455de13fd7c9c5a16ff2a500f9148def1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jan 31 11:15:54 2023 +0300
+
+    портфолио: обновил скрины
+
+commit 3bfef59fc4cc23622b6ef7b4dc36458c5c58f325
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jan 30 17:33:39 2023 +0300
+
+    портфолио: обновил скрин чата
+
+commit f59a1997b52b0c5fdb47dfd2c7ebd260c72398af
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jan 30 16:48:57 2023 +0300
+
+    портфолио: обновление скрина vue todo
+
+commit 9ef2ddfe9f5880a9751b663c36236efb20ca3d7b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jan 30 16:04:11 2023 +0300
+
+    портфолио: обновил скрин vue todo
+
+commit 09afb485a18a0667f1b7d4b1f91e769877c959ab
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jan 29 20:27:14 2023 +0300
+
+    портфолио: добавил чат
+
+commit cda8b15b395dd6ddd538e2ebe1bc2d94119d4daa
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jan 24 15:38:35 2023 +0300
+
+    fix
+
+commit c304a2e44ad4f47f8611f6aab4f61dc3bb2d08f6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jan 21 17:45:55 2023 +0300
+
+    Update portfolio
+
+commit 073a9c75ec4880f58432109d20be59c8f9ad631a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jan 20 10:32:58 2023 +0300
+
+    update
+
+commit da6eab7748a6535baa4564de07f0965a1bb523ac
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Dec 6 19:59:27 2022 +0300
+
+    f
+
+commit 00f5c7588d7418983a68e85acdbc293bedab5e0d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Nov 30 21:57:31 2022 +0300
+
+    about
+
+commit ea378fe2c5e3dde74b06da9e1e6fd07f28ca6497
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Nov 27 12:46:02 2022 +0300
+
+    arch
+
+commit 3d8e84138767dec07e173bb3a3d6afa307decebd
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Nov 23 14:26:24 2022 +0300
+
+    f
+
+commit 60c0dfdf6ea987f692fcc0367c18ff9b6e5148e4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Nov 23 14:19:57 2022 +0300
+
+    f
+
+commit 20c97e4b253755446082f45c27d4299c4aa6098f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Oct 31 17:59:00 2022 +0300
+
+    https://docs.docker.com/engine/install/
+
+commit d89ba6d159304bbf3f43ac8baca7da668bee0071
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Oct 28 18:30:50 2022 +0300
+
+    ссылка
+
+commit e3e57d5e5fa0bd840263b57de08ba1cfe4b36936
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Oct 28 18:30:02 2022 +0300
+
+    Новая публикация - 2022-10-28-ivanchai-on-youtube
+
+commit 5eeb7bca20c9468858bdc98e636ef3ab328f9671
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Oct 28 18:25:37 2022 +0300
+
+    https://youtube.com/@ivanchai !!!
+
+commit 32e2455a41e46aae62936306f30f467abd66d1ea
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Oct 25 18:33:32 2022 +0300
+
+    новое правило
+
+commit ae41b763136e15d2ef6abdb647c25b2783756ba7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Oct 20 18:59:52 2022 +0300
+
+    docker-compose to docker compose
+
+commit 29c63b109d6da6fab044f68baadece003c58ec54
+Author: Иван Музыка <seryibaranminepy@yandex.ru>
+Date:   Wed Oct 19 20:59:49 2022 +0300
+
+    Update README.md
+
+commit 2c30c12dc6911e5ccb3837d56477245e13f3defd
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Oct 19 20:36:16 2022 +0300
+
+    About
+
+commit 14b817101865db8d095d13756a45488daea21bee
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Oct 19 20:12:02 2022 +0300
+
+    О сайте
+
+commit 9d5a52bc2c285065fee887be841922e49b36d23c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Oct 17 19:30:02 2022 +0300
+
+    Изменил страницу контактов
+
+commit fac18599407a0fbe732ab89acb8975f633f84397
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Oct 17 19:00:43 2022 +0300
+
+    Fix
+
+commit 492e4614ac9d98341050cb54851223ad152a9c5f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Oct 16 12:43:38 2022 +0300
+
+    docker
+
+commit 5c572a7baf2c398d7a0564888647de2ac2c617b0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Oct 16 12:03:21 2022 +0300
+
+    fix
+
+commit 467b5128c0f1c9f64c8a34bd78ac065b2a96496c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Oct 16 11:52:41 2022 +0300
+
+    {{ site.uploads }}
+
+commit 777b0b8622257e8740ea91646393eee7dc3697cd
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Oct 15 13:16:06 2022 +0300
+
+    Удалил картинки с главной
+
+commit a4156bceaf33d17bb7aa5b2ccdf2ba9f134167f2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Oct 15 12:53:51 2022 +0300
+
+    День рождения!
+
+commit 10803ede885c92faa7f5712daffd65ab07f7b524
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Oct 6 13:38:34 2022 +0300
+
+    Давид ВЕРНУЛСЯ!
+
+commit 79953a10e7e26db24b11e96908a4fdd5596da7a7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Oct 6 13:37:07 2022 +0300
+
+    Fix
+
+commit 6432d824279447d2728fcaddb82676b28af778f7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Oct 5 13:59:59 2022 +0300
+
+    f
+
+commit 7c2ad5781c032bdc3ede045fa822c2d03e7b7670
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Sep 29 12:48:39 2022 +0300
+
+    5 стадия
+
+commit 4df53d9ac6d64c8118beb11e484f048725ea05e2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Sep 28 14:59:23 2022 +0300
+
+    Убрал "Технологии" с вкладки Портфолио
+
+commit 9ef4751203a5c35409ff80ace2589f692196ab9d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Sep 27 15:47:41 2022 +0300
+
+    Правка страницы портфолио
+
+commit 0a44510e450fa36700ea873580a379bba43adf1f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 26 17:43:37 2022 +0300
+
+    Новое фото для todo-react
+
+commit d591305057e36a61d2951206c7730fe548fa365c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Sep 20 09:31:05 2022 +0300
+
+    Терминология давидов
+
+commit 1548295334bc7699dfb2a15b8d1352836ea056ed
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 19 14:40:51 2022 +0300
+
+    Добавил todo-react
+
+commit 6039bbe21decd4631b43257b2a626e5f4c4b2242
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Sep 16 12:37:27 2022 +0300
+
+    Fix
+
+commit c7d438048111b6036c1ac326dc9493d3595b8631
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Sep 16 12:34:56 2022 +0300
+
+    Fix
+
+commit ba29e9b72d26ad57cbe3ee985ddcc72c683e691e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Sep 16 10:57:34 2022 +0300
+
+    Правка картинки для todo-vanilla
+
+commit 4526818f16e04099e9a3cf9a0f5dca24e81ecc73
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Sep 15 17:36:30 2022 +0300
+
+    Правка страницы - portfolio
+
+commit 525e29e447a0aebc636ef16dfbde05ca92ab61e4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Sep 10 16:45:42 2022 +0300
+
+    Fix
+
+commit dd5a4f005bd89963fc8e3c25e9ac5ad609cd7bdc
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Sep 10 14:27:16 2022 +0300
+
+    Fix
+
+commit cd0516d8dacbdeb2a4996dde2304a58ce1a6e5a3
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Sep 8 14:29:18 2022 +0300
+
+    Fix
+
+commit 2ae83e8794cb037923c490c3ab8247ae19e09c43
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Sep 8 14:23:28 2022 +0300
+
+    Правка публикации - 2022-06-28-pravila-dlya-it-chatov
+
+commit 0379344406c3dafc8955c7571ec7143139c7602d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Sep 7 18:38:21 2022 +0300
+
+    Правка статьи - 2022-06-19-fragmenty-coda
+
+commit be6f14e649384125678c4963520b8a611e069168
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Sep 7 11:32:11 2022 +0300
+
+    Правка публикации - 2022-06-19-fragmenty-coda
+
+commit d38932fa334a699553d7bada648b20baea246ff1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Sep 7 10:55:17 2022 +0300
+
+    Edit
+
+commit bc423bf78487b27b94c83248a8b815937d2f40fc
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 5 13:56:09 2022 +0300
+
+    Правка публикации - 2022-09-05-arch-install
+
+commit 0ad401c13c5315cb1eef21179b955ba3aef3fb61
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 5 12:33:24 2022 +0300
+
+    Правка публикации - 2022-09-05-arch-install
+
+commit cb3000b53f75eda026e1b1334c1689a1fbb998a1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Sep 5 12:28:49 2022 +0300
+
+    Новая публикация - 2022-09-05-arch-install
+
+commit 7d039f2154aef3510a7b1dc43a632366ca93a767
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Sep 4 19:36:41 2022 +0300
+
+    Правка страницы
+
+commit c51fa531e74e0aaec850b180319bf5baf7d0b2a0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Sep 3 15:00:11 2022 +0300
+
+    Правка публикации - 2022-08-14-spisok-pochotnih-antidavidov
+
+commit 99af2c8fbe429a8c7564c0530fbd6a21d5456e98
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Sep 2 18:47:25 2022 +0300
+
+    Правка публикации - _posts/2022-08-14-spisok-pochotnih-antidavidov
+
+commit 7469df048d03d404da945a3257bb2955dbf3d526
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Aug 30 19:53:11 2022 +0300
+
+    Правка публикации - 2022-06-19-fragmenty-coda
+
+commit 6229cea1ab92e8338d73437d64a0b61f3df7e585
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 29 21:09:48 2022 +0300
+
+    Правка публикации - 2022-06-19-fragmenty-coda
+
+commit a7604f1f13e312d318feb1971f21325ad4614585
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 29 11:56:20 2022 +0300
+
+    Правка публикации - 2022-08-25-tg-it-chats-backup
+
+commit 980b0e420114b3fd1ebf0ef1136be8f6658edccd
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Aug 25 13:29:13 2022 +0300
+
+    Fix links
+
+commit e1636c54a427c9f10c3d3bd3c3433d83fe1b4b74
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Aug 25 12:15:09 2022 +0300
+
+    Новая статья - 2022-08-25-tg-it-chats-backup
+
+commit 82cf6642160c72ce6d24e03d19a00fb6960e6b9d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Aug 23 10:48:34 2022 +0300
+
+    Fix && format
+    
+    - Fix license
+    - Format files
+
+commit 9d85f882c665872516e03a6fdcb2c32f57826550
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Aug 19 10:44:41 2022 +0300
+
+    Fix
+
+commit fab6fd13a5fbf1595711329a270c754a8aaaac71
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Aug 18 09:49:08 2022 +0300
+
+    Fix
+
+commit a09c31fd9225bb507601afa8e169298bda36a446
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Aug 18 09:48:28 2022 +0300
+
+    Format in VSCode
+
+commit 263989d83700fa3ef6e8f16a7b33c5713bccfa68
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Aug 16 10:08:39 2022 +0300
+
+    Обновление списка Почётных Антидавидов
+
+commit 8cd80801bf126c69ee9f5be7c9d83151da298aca
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Aug 14 20:16:40 2022 +0300
+
+    Пофиксил плеер Asciinema
+
+commit 43c454cb7943a6842cf0a418db0bc70f5f3eccfc
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Aug 14 20:08:30 2022 +0300
+
+    Фикс темы фреймов
+
+commit dc6949667b5da60b53ecd310310ade7049fb4a15
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Aug 14 20:05:32 2022 +0300
+
+    Пробую фиксить фреймы
+
+commit 8f1b0d2112ee50aaa120fa240c62639fb46d6638
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Aug 14 19:55:21 2022 +0300
+
+    Новая статья - 2022-08-14-spisok-pochotnih-antidavidov
+
+commit 1663f260815d9481e70b94070dfa09ac16dc63c1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Aug 14 19:48:19 2022 +0300
+
+    Добавление Антидавида
+
+commit 00ac495e76741cf3dc223eb8ea7b821089561966
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Aug 14 18:07:38 2022 +0300
+
+    Fix
+
+commit 257b0bbbb6e0bc1b1949782927a5318181730e22
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Aug 14 18:07:01 2022 +0300
+
+    Список Антидавидов
+    
+    Добавление списка Почётных Антидавидов
+
+commit 582b2dcd31b80f3fee661357ae8d75fcdd90a093
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Aug 14 14:12:21 2022 +0300
+
+    Пробую фиксить фреймы
+
+commit f681855214c2877704b6f0595b2b68f30bd3d4bf
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 13 16:24:49 2022 +0300
+
+    Правка статьи 2022-06-28-pravila-dlya-it-chatov
+    
+    - Добавление нового правила
+
+commit 84a70dad2e225e7fa95f63d015fdb19055b078c0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Aug 12 18:00:35 2022 +0300
+
+    Править статью - 2022-06-19-fragmenty-coda
+
+commit cd5ad5bf294f5b4f801e0910a16b07e2d06ad6bc
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Aug 11 16:35:35 2022 +0300
+
+    Fix
+
+commit ae93ca939b8a0703fa41cf22d77ec706100e55a6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Aug 11 16:01:03 2022 +0300
+
+    Публикация
+
+commit a0131f863f13137ca4d8f88b7eef5d8f2cddf1cd
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Aug 11 11:27:07 2022 +0300
+
+    Fix
+
+commit 93f918021f9079185a0684d391dc758bb3849566
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Aug 11 11:04:16 2022 +0300
+
+    Новая статья - 2022-08-11-rip-banplay
+
+commit e15137dd3a3930e6aca502d42283052f3f452461
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Aug 10 20:21:15 2022 +0300
+
+    Правка статьи - 2022-06-19-fragmenty-coda
+
+commit cd090bd8ee680c45da60599a94a9edb694a4e3cd
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Aug 10 20:03:01 2022 +0300
+
+    Правка статьи - 2022-06-19-fragmenty-coda
+
+commit edbba9aea4d81c850052792eba34b8ed4deb23de
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Aug 10 18:25:04 2022 +0300
+
+    Правка статьи - 2022-06-19-fragmenty-coda
+
+commit 8ff524a1b903ee9b3140225d35e236b44b0375cb
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Aug 10 18:21:46 2022 +0300
+
+    Правка статьи - 2022-06-19-fragmenty-coda
+
+commit e7f6adeb5be89e5a3ce43d90c50ce8b9acf8ba8f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 8 17:00:36 2022 +0300
+
+    Fix
+
+commit 65d7ae4e7e0f74e2282abf29e6449d4fc8b5ae13
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Aug 6 21:20:20 2022 +0300
+
+    Правка статьи - 2022-06-19-fragmenty-coda
+
+commit ce7e27cfaa93c43f90841c39f6bd59c00c998c02
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Aug 5 21:04:17 2022 +0300
+
+    Правка статьи - 2022-06-19-fragmenty-coda
+
+commit 2980a1bf3a1afc6f973fa96d2c21ce4aae12bc3e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Aug 5 20:32:25 2022 +0300
+
+    Удалил Video.js - бояре нынче пожирнели больше жиквери
+
+commit 65fae5627368a227983b0205749e7550262baaa6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Aug 5 19:52:30 2022 +0300
+
+    Fix
+
+commit 0208b240ad8decee7e7275b2d09ade55c49b059f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Aug 5 11:37:00 2022 +0300
+
+    Fix
+
+commit f54530abf79cb1264b07d9654a3ced01779f274c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Aug 5 11:36:25 2022 +0300
+
+    Asciinema
+
+commit a16dd668ae25286b4d94adc294cd213bbfc216ab
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Aug 4 15:13:36 2022 +0300
+
+    Fix
+
+commit b048de8c85293c3d452e6d79bb4e62698efed637
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Aug 4 13:16:52 2022 +0300
+
+    Home prepend fix
+
+commit 32be20ebcaacb3747c386ede641dd53a98c09c0f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Aug 3 13:20:46 2022 +0300
+
+    Fix
+
+commit 7b85a5078da0ccc5b3af97b9f257c2aa3b10cf9c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Aug 3 13:19:46 2022 +0300
+
+    Fix
+
+commit f5cf7dabb08e00704faf949621ed9043689b50e7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Aug 3 13:17:42 2022 +0300
+
+    Fix
+
+commit 7f0015ea020667e2d7e702992e404e3020823aa1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Aug 3 13:10:04 2022 +0300
+
+    Fix
+
+commit 84c16fed6d296930ccca4839e1dca2cdf5323089
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Aug 3 12:53:14 2022 +0300
+
+    Много чего
+
+commit bcd6ced3ffe278a964cbd6d94c0a4a4fdffc3aca
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Aug 3 11:02:23 2022 +0300
+
+    Пофиксил картинку на главной
+
+commit f485a1c4a96353b442a0c465a8904c5b19bb89fd
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Aug 2 20:08:22 2022 +0300
+
+    Доработал спойлер
+
+commit a4ec99fd369099e5ae4f451c12dc3ef5dd6b8ed8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Aug 2 19:44:16 2022 +0300
+
+    Пофиксил стили для blockquote && Добавил giphy.html
+
+commit d08cdfcd65c56f8e34e936a0f72aa7c2173dafa6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Aug 2 18:38:14 2022 +0300
+
+    Пофиксил стили для blockquote
+
+commit ec1d788786ecdcd9bf011fc316e99640695fc6af
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Aug 2 15:57:49 2022 +0300
+
+    Fix
+
+commit 68dd0c7547b280a4fc850d447dbc4da76ce956a6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Aug 2 15:43:28 2022 +0300
+
+    Много чего
+
+commit 6bff426ff51c3812afdbbe00927a5574d7586605
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Aug 2 12:44:26 2022 +0300
+
+    Fix
+
+commit 06f65a17bf09aa8734c3edeba802002cbf732c1d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Aug 2 12:03:51 2022 +0300
+
+    Fix
+
+commit 6875764d933fcb0e286e6170ba67462c9b1837db
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Aug 2 11:45:43 2022 +0300
+
+    Много чего
+
+commit ef02852099a9884441470d2c997abc5ef436a5dc
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 21:56:52 2022 +0300
+
+    Пофиксил шрифт в уведомлении
+
+commit a920780937b44e826aa0cbc790b167f86cab8e24
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 21:52:21 2022 +0300
+
+    Убрал закрепы
+
+commit e907855bc4ffa18d11374709154887c78fdec745
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 21:50:12 2022 +0300
+
+    Убрал ненужное
+
+commit a556cac67fd24540fde0fd22934bcc4ffe31f287
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 21:35:54 2022 +0300
+
+    Убрал ненужное
+
+commit 51cfaa3d1140acaf8286e24d93e3466ac15ea363
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 21:34:14 2022 +0300
+
+    Много чего
+
+commit dff92ab45ed8dc478ef2314fd01e55942214fcab
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 21:02:59 2022 +0300
+
+    Превью на главной
+
+commit c6024731f7315bb035438f6311399cec788a420a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 20:27:29 2022 +0300
+
+    Переименовал custom.css в main.css
+
+commit a0cc2a5570d39cf7eb877f0257401e5d83683658
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 20:17:34 2022 +0300
+
+    Форматирование custom.css и добавление спойлера (почти как в Telegram)
+
+commit 0b7289694169a393dbafdef913c80a3bb21853f7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 19:11:04 2022 +0300
+
+    Пофиксил giscus темы
+
+commit fdd4228596ff6fa226d859d02ef5a4b51c39bdab
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 19:02:49 2022 +0300
+
+    Правка статьи - 2022-06-19-fragmenty-coda
+
+commit 3482fd24bd48ba972f79472e3dbbc297029e44d4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 17:46:01 2022 +0300
+
+    Зашифровал еmаil
+
+commit 8575102a094a0f4400abf197ab80873e48381dc5
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 16:54:16 2022 +0300
+
+    Библиотека Video.js
+
+commit 89ee34433c19bbee615847fa33067845d6a96aec
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 16:19:53 2022 +0300
+
+    Video.html
+
+commit f66691a7d1e20765b2fc23236eb236179255b13a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 15:39:27 2022 +0300
+
+    Fix
+
+commit e26034806f000e40d0c4a146272bdf2e43c03e0d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 12:45:05 2022 +0300
+
+    Добавил картинку ко всем страницам (не постам)
+
+commit 0dc9128e2af2f2b0fd86f0947bb1697cdac67fbb
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 11:44:53 2022 +0300
+
+    Правка статьи - 2022-07-31-disayn-prevyu-dlya-statey
+
+commit bb3b2475fa8066364170eeb32ff665b22988379f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Aug 1 11:32:09 2022 +0300
+
+    Новая статья - 2022-08-01-kak-sdelat-obvodku-teksta-videleniya-v-gimp && Правка статьи - 2022-07-31-disayn-prevyu-dlya-statey
+
+commit 69e6e01262c116dc4237092992c44948ae8bd865
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 31 20:26:22 2022 +0300
+
+    Обновление превью - index
+
+commit 3d060404ef88f2a9c1b04ada1e8692d6393dca4c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 31 20:10:15 2022 +0300
+
+    Обновление превью - index
+
+commit 6174f6fcd300e7e07222342a3d487b20e36856c9
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 31 20:03:10 2022 +0300
+
+    Новая статья - 2022-07-31-disayn-prevyu-dlya-statey
+
+commit eb28a07f3c9fecaeec038d3d21ca1b615019d764
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 31 19:34:44 2022 +0300
+
+    Обновление превью - 2022-07-29-analog-openserver-dlya-linux-devilbox
+
+commit e54e3a9b21de166f3794fab59e6e5e64c7e4ef10
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 31 12:04:27 2022 +0300
+
+    Переименовал файл _data/locales/ru-RU.yml в _data/locales/ru.yml
+
+commit 6dbe247603d104111392f709cb5851316ded2023
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 31 11:53:42 2022 +0300
+
+    Новая статья - 2022-07-30-kak-ustanovit-docker-i-compose-na-linux && Правка страницы contacts
+
+commit 6dfb67fab0db744aabcaafa535c79a1bd903260e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 30 13:01:01 2022 +0300
+
+    Правка статьи - 2022-07-29-analog-openserver-dlya-linux-devilbox
+
+commit a99f75e04f549a7d8ee4250abd1d06d808e6bb3f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 30 12:50:21 2022 +0300
+
+    Правка статьи - 2022-07-29-analog-openserver-dlya-linux-devilbox
+
+commit a5e3ba50319e309117248fe132476f0c567d00f1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 30 12:48:31 2022 +0300
+
+    Правка статьи - 2022-07-29-analog-openserver-dlya-linux-devilbox
+
+commit f918a2cd0ade664c4e3597f72564456b8b10db72
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 30 12:27:48 2022 +0300
+
+    Правка статьи - 2022-07-29-analog-openserver-dlya-linux-devilbox
+
+commit 47825e1f551b4af0f0ce762bfe974b3c96029dc5
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 29 20:08:10 2022 +0300
+
+    Правка статьи - 2022-07-29-analog-openserver-dlya-linux-devilbox
+
+commit b6f07db7bed13aafbee4947241df5b5f2e1fde99
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 29 20:02:44 2022 +0300
+
+    Правка статьи - 2022-07-29-analog-openserver-dlya-linux-devilbox
+
+commit ce894a7b1c736a80a73d4a1590aec46ed470fdcb
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 29 19:10:41 2022 +0300
+
+    Правка статьи - 2022-07-29-analog-openserver-dlya-linux-devilbox
+
+commit 224736effed4e212e395842a3e7afdbc7f16a066
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 29 19:03:46 2022 +0300
+
+    Правка статьи - 2022-07-29-analog-openserver-dlya-linux-devilbox
+
+commit 870d43343af9e67240158e9ff5cf96303233e2d1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 29 18:54:53 2022 +0300
+
+    Добавил скрипт для создания нового поста
+
+commit 976d2a859928a851a956387d26c480f5d55ff4f6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 29 18:29:52 2022 +0300
+
+    Правка статьи - 2022-07-29-analog-openserver-dlya-linux-devilbox
+
+commit d27f3ac099ff9931fe176a021116c28206a5c66c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 29 18:27:02 2022 +0300
+
+    Новая статья - 2022-07-29-analog-openserver-dlya-linux-devilbox
+
+commit 8d4cfc74873e2a9bcd01c1a6def25d13c6cd970c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 29 15:19:55 2022 +0300
+
+    Новый кусочек кода
+
+commit 4e11d4f648f3f65d015cf426d774a1537cb5f63d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 28 17:05:16 2022 +0300
+
+    Пробую добавлять темы
+
+commit f232a907afcf1ee39c5bfd5e5232f05903e0b6fa
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 28 15:49:22 2022 +0300
+
+    Пофиксил реакции
+
+commit fbdb64770a1d98cadf69d224af0f57d97da593e9
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 28 15:42:01 2022 +0300
+
+    Пофиксил реакции
+
+commit 4ccf87dd724261cc11f3cd7d0efc095af73eb705
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 28 10:01:59 2022 +0300
+
+    Новый кусочек кода
+
+commit d8eafb5fa0b33e4271d82cfa775ed10f0407f5f7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 27 14:56:22 2022 +0300
+
+    Fix
+
+commit bda92fbb3177a8cec3d68ec8336deef54c181294
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 27 14:54:33 2022 +0300
+
+    Fix
+
+commit 34d20e455a8c57e1db60213c658f62297a14626e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 20 12:58:57 2022 +0300
+
+    Fix
+
+commit 905d9e87dd8eddcf4757549583e985201b664fde
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 20 11:21:04 2022 +0300
+
+    Fix
+
+commit 3b03cbada7b822f0b8b1ea0d13c30b97cb37c83e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 19 11:25:52 2022 +0300
+
+    Fix
+
+commit 8ad808453a9007a17dd0d708efcbd552720680e8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 19 11:24:41 2022 +0300
+
+    Fix
+
+commit 67d7726f4fbd9ce5723e226f962b0ec185d738f3
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 19 11:23:14 2022 +0300
+
+    Fix
+
+commit 6072a106ac782e8af5500e2a3746d06788863663
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 18 22:04:37 2022 +0300
+
+    Переделал превью в jpg
+
+commit cd5d0cae9a855a686dfbaf9e642612120f91d587
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jul 18 21:35:22 2022 +0300
+
+    Fix
+
+commit ebc14bef8e6a61102240e0554e3e008fc4fcc681
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 17 20:09:19 2022 +0300
+
+    Fix
+
+commit 811292e38b54df26d1d11b8cc0dd65d72d8f9bb8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 17 10:03:31 2022 +0300
+
+    Новое правило про аудиосообщения
+
+commit 67623257a1a7db4af4e5f28532a15818f66aedb6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 12 13:21:47 2022 +0300
+
+    Fix
+
+commit 82244fd8a5854082bf325df99e76367358a924d0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 12 12:32:48 2022 +0300
+
+    Fix
+
+commit 912de33005e51da1d270507acd096224579bae49
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 10 17:16:49 2022 +0300
+
+    Fix
+
+commit 6d70914486062f8e8d78387c235be4f66f174170
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 10 17:13:49 2022 +0300
+
+    Fix
+
+commit 08e110f282b5fd8c413cc71d203060ead2703f5a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 10 14:43:54 2022 +0300
+
+    Fix
+
+commit 5ba5afa078358b3e4818bc1b9f47bf878debeb70
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 10 14:43:30 2022 +0300
+
+    Fix
+
+commit 05b3898d5c51f689959c7b49e288bf323a07bd4a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 10 14:42:55 2022 +0300
+
+    Fix
+
+commit dac4cd937882dcae4603cdcd9adbd55304825548
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 10 14:38:41 2022 +0300
+
+    Fix
+
+commit ee68ae30eaa0f5186d964b2f78ca9ef1f926dda5
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 9 18:47:19 2022 +0300
+
+    Fix
+
+commit 21a1bb9f82a34582d5d44e1f04899c33944208c7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 8 20:46:03 2022 +0300
+
+    Fix
+
+commit c1b4b9dbdbb09f4b365850c205573ba7f4324cd9
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 8 14:17:45 2022 +0300
+
+    Fix
+
+commit 534ac8c5b7581bff6099c9366ce4fe76b6c33127
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 8 12:04:15 2022 +0300
+
+    Fix
+
+commit e458c5f68091f77a8b5cf8ff40670a32dae8e81a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 8 09:43:30 2022 +0300
+
+    Fix
+
+commit 75328eb79eca1236f5ccbbdbc9c845715b011159
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 17:56:30 2022 +0300
+
+    Fix
+
+commit e9898257629e7e2176096ba87b585740842bc0e8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 17:50:15 2022 +0300
+
+    Fix
+
+commit e6c0bc797f3179453e60252794efa9a5d62c0d60
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 17:21:51 2022 +0300
+
+    Fix
+
+commit bbba90c5d991a168c85b8b2d02e3fab5b87a34a6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 17:20:29 2022 +0300
+
+    Fix
+
+commit 6fa8a533ebdd4e88d56f91bda8eb5293f2efb2bd
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 17:05:29 2022 +0300
+
+    Fix
+
+commit 564b550d06061d9daa603edf5b3d5b85c5fb88b2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 17:00:43 2022 +0300
+
+    Fix
+
+commit dc549e39cf37814963ad412d6e5de4c70ca31f18
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 16:55:32 2022 +0300
+
+    Статья-рофл
+
+commit d7dd82496f1bd79042b274119efec670b8d5c3cb
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 13:47:48 2022 +0300
+
+    Fix
+
+commit 1653bd38f6a6c03124de2fe1dd6d1f207a596d55
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 13:15:57 2022 +0300
+
+    Fix
+
+commit 2237daf7d55f3172578b4cb3cb87c7e3acf06647
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 13:14:20 2022 +0300
+
+    Много чего
+
+commit 87de143295a14e0753418b5d86527f66f009eb7b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 12:05:29 2022 +0300
+
+    История про давида
+
+commit a83276bba441d9a53739cde29ca2a46195699414
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 11:33:15 2022 +0300
+
+    Много чего
+
+commit bc95b67dafd5fd6f089627209bb271f1fffec734
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 10:35:13 2022 +0300
+
+    2022-06-28-pravila-dlya-it-chatov - Добавил шаблон вопроса из RU.UBUNTU: FLOOD & NOOBS
+
+commit 4f02d75dd4c0d519b4f06795360ed7b913d8d5ba
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jul 7 10:11:42 2022 +0300
+
+    2022-06-28-pravila-dlya-it-chatov - Добавил ссылку на статью с сайта citforum.ru
+
+commit 45f5cb6a1a62e9f8851a4c2806ec2f14a8cc42be
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 6 13:14:14 2022 +0300
+
+    Fix
+
+commit 62aa2a37814b18516316f72fd86688538da6087a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 6 12:57:43 2022 +0300
+
+    Много чего
+
+commit 556d756a8f6421f773d5e599e286657e0c465d36
+Author: Ivan Muzyka <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 6 11:45:36 2022 +0300
+
+    Update README.md
+
+commit 72c92d1e5b4ae722046fc65057fc34a3da81f9b7
+Author: Ivan Muzyka <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 6 11:45:17 2022 +0300
+
+    Update README.md
+
+commit ca7bcda92086fafaf2b03ebab3ec28485ed60ba0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 6 11:22:55 2022 +0300
+
+    Новый код
+
+commit f9ac5956cdb1ad5edc24c3533d8e918c92a699f3
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 6 11:15:28 2022 +0300
+
+    Новый код
+
+commit 01b3ab3e626a687cadf4a558bf785f60c819608c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jul 6 11:14:35 2022 +0300
+
+    Fix
+
+commit a8df6a6dfaf673345780a42886fed1cd1158b160
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 5 21:30:04 2022 +0300
+
+    Чуть-чуть изменил контакты
+
+commit 1eae7296e0804f6b9bd7344c6216d19b71685fb0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 5 16:46:11 2022 +0300
+
+    Фыкс
+
+commit 819139214d8381116eea779201b46e706de8eab5
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 5 16:35:15 2022 +0300
+
+    Новое правило
+
+commit 55f6391d29c69298160c41d407afd26fdcfa4919
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 5 16:24:00 2022 +0300
+
+    Фыкс
+
+commit 29c1aad022310f20fc3c29666fdd0f91c9abc78d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 5 16:08:22 2022 +0300
+
+    Добавил больше кнопок "поделиться"
+
+commit 275b4dd40faa98515126c3c4b823e7c6168613d6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 5 15:43:30 2022 +0300
+
+    Изменил страницу "О сайте"
+
+commit 8d04bed71030d182a48aa86ea583968613532e27
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 5 15:38:25 2022 +0300
+
+    Добавил текст на домашнюю страницу
+
+commit b590436fa707fa85b98f4a5703be7881cf1e5100
+Author: Ivan Muzyka <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 5 14:44:43 2022 +0300
+
+    Update README.md
+
+commit 9d35c222888ba83ba64bf9805e21e1930ddb153b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 5 11:20:50 2022 +0300
+
+    Новые правила
+
+commit a35ca069a3ae1eba288fa0d0a7c29d2fa7541ee8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 5 11:00:28 2022 +0300
+
+    2022-06-19-fragmenty-coda - countOfPositive
+
+commit 41dc690d66664c90c25f12ffd0a74d095fc52d63
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 5 10:36:04 2022 +0300
+
+    Фыкс
+
+commit cb6d1781a7dcf5a528bde5f0e0498a00913a9b1e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jul 5 10:19:25 2022 +0300
+
+    Новое правило - почитайте документацию
+
+commit 171858e17be5610e585410c3065a7b240a77c433
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 3 14:44:47 2022 +0300
+
+    новое правило
+
+commit fda5073e5eb22bcc167f060489af25bf5ea2b703
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 3 11:35:51 2022 +0300
+
+    fix
+
+commit 7d5db2652873f12d6fdfce3babfc23d7a6dc1cf6
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jul 3 11:27:22 2022 +0300
+
+    fix
+
+commit be23f50491641c502de8825dd6b064fa18fc6538
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 2 13:41:05 2022 +0300
+
+    fix
+
+commit 8a2d2f4c0adb847c67420e75a51e4c723ae24a1a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 2 13:23:11 2022 +0300
+
+    fix
+
+commit 77c19bec734430d15ec15eb2766f1d53d663ca0d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jul 2 13:20:34 2022 +0300
+
+    fix
+
+commit ae836ec96626e68ced9277b446599b5f656c38a0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 1 14:22:48 2022 +0300
+
+    fix
+
+commit ccaee6184fe59b59822a871c7a860bff8b8577bd
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 1 11:19:26 2022 +0300
+
+    fix
+
+commit 155126e376f928843bf22e755047dc61b4bc8873
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 1 10:48:21 2022 +0300
+
+    fix
+
+commit b3a8536d4a5181556e5160381e38d0b14a1c5fdf
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 1 10:34:59 2022 +0300
+
+    fix
+
+commit cf536f0779283162d35923b46f39bee0e8d02e50
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 1 10:23:26 2022 +0300
+
+    fix
+
+commit 92819cb5879ed4f3883cb873d890d1cb524e05be
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 1 10:19:18 2022 +0300
+
+    fix
+
+commit 4cc9a89fbc758b4019f04f8389af92b1d7f9556a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 1 10:17:04 2022 +0300
+
+    fix
+
+commit 9a2888e94f1a35502190f504e0f066838cd9d4e2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 1 10:05:12 2022 +0300
+
+    fix
+
+commit 508f8e72ae1c7ec711d7ed0f601b8eb153d340c9
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 1 10:03:48 2022 +0300
+
+    fix
+
+commit 3a643abfa1766c615fa22a657a66ee08d67f2ad2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 1 10:02:18 2022 +0300
+
+    fix
+
+commit 5556f9f2077182339240e72b0a2ed7d2b9f37b75
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Fri Jul 1 09:26:37 2022 +0300
+
+    fix
+
+commit 5ca3c56c31253fecdb71005cffde8fd6f6b38855
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 21:18:07 2022 +0300
+
+    fix
+
+commit 138876afd67e38ea4f3d73dbcf814cc6c9445dc3
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 21:16:09 2022 +0300
+
+    Добавил плашку состояния Github Actions
+
+commit 951a99939db5d3ba834aaa083aa05b468a1c8ab9
+Author: Ivan Muzyka <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 21:11:23 2022 +0300
+
+    Update README.md
+
+commit 2146610f6ba8542cab649ac8a19576fb3ba60432
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 20:56:40 2022 +0300
+
+    Добавил плагин для поддержки Github Gist
+
+commit 7e5ba70b0a6990eee2cdb97d052acf8640e41605
+Author: Ivan Muzyka <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 11:51:33 2022 +0300
+
+    Update README.md
+
+commit 1bf4d45cdba869efdeb25857ec68e672c1550a1c
+Author: Ivan Muzyka <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 11:46:16 2022 +0300
+
+    Update README.md
+
+commit 0a829dd46b8aeedb5670e46052f0770628b8f809
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 11:33:37 2022 +0300
+
+    fix
+
+commit 5bc6574829f5b3c8834cad9b09657630839c4130
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 11:26:25 2022 +0300
+
+    fix
+
+commit 7de397b916557097539330225e7a04293eab878e
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 11:20:31 2022 +0300
+
+    fix
+
+commit 788fe0ccdce827b180ded26397efcaaa2bbc2406
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 11:16:30 2022 +0300
+
+    fix
+
+commit f12cc31dea40280e54c544f699d91f5917d09cf9
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 11:13:44 2022 +0300
+
+    fix
+
+commit 87c52de97773815fd1057e2b69654af1d83ab2d8
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 11:11:56 2022 +0300
+
+    fix
+
+commit dc1d45f12a25192f4748b6c513cd353414eef19d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 10:52:56 2022 +0300
+
+    Добавил превью к статье о вопросах в чатах
+
+commit 1c2ca5e73a2469cb9b3de8913a8e6cbadd41993b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 10:27:12 2022 +0300
+
+    fix
+
+commit 93619b6fb9c83f232da29354f08b4963252d4647
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 10:21:09 2022 +0300
+
+    fix
+
+commit 77395425fc80b36b701a3db18c9baf130d24335b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 10:02:48 2022 +0300
+
+    fix
+
+commit fa7e3fa0bb733a718666cd274f3fe1245837885b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 10:00:19 2022 +0300
+
+    fix
+
+commit 1557bfc248e81dab1487a8089de72c73e9f13e55
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 09:59:14 2022 +0300
+
+    fix
+
+commit 3eadf22603cdffa51be5a3f4ea0f7b920655a179
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Thu Jun 30 09:22:33 2022 +0300
+
+    fix
+
+commit ea270663e90ce1f21636f3518043d71e944c0731
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jun 29 20:47:14 2022 +0300
+
+    fix
+
+commit a747ec868f70c79f5bda3acf00f6f60ff9eda91b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jun 29 10:31:01 2022 +0300
+
+    fix
+
+commit fcf2d0ed924987d78d1cce136eebd3350e140f6b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 18:11:51 2022 +0300
+
+    Fix
+
+commit 675c3df3ba1238dc01cb5586bb4ba44c61e14462
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 17:13:25 2022 +0300
+
+    Fix
+
+commit 4e846598a9bd6fd479a1f31c294d406785402031
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 16:30:46 2022 +0300
+
+    Fix
+
+commit ed5007ff8202f67e79c39d51372ce737d08a315b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 16:28:42 2022 +0300
+
+    Fix
+
+commit 22ec1e9063c909237d6de0732a2c398300361672
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 16:28:17 2022 +0300
+
+    Fix
+
+commit 9cc6c71af30f3d3fc332cff0f6a41db7d6418431
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 16:26:55 2022 +0300
+
+    Fix
+
+commit 82ca126ddd87e2c9c426ff4b5f467c8ef9ecfc3c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 16:13:50 2022 +0300
+
+    Fix
+
+commit ea203298ad00b8bc6e16789d505b338ed85438f9
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 14:46:45 2022 +0300
+
+    Fix
+
+commit 48b1f3bb16064f453f1585cb66f304fff44f4179
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 13:11:54 2022 +0300
+
+    Fix
+
+commit 8278aadc3a8d56fb82e45a6e494b2040c0f84425
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 13:10:28 2022 +0300
+
+    Fix
+
+commit dd63d947b05909ef4ce71de47635d530289bbeaf
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 13:08:17 2022 +0300
+
+    Fix
+
+commit a4b35baacb290c1e6ab44c91f880997d205729d3
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 12:50:45 2022 +0300
+
+    Fix
+
+commit 6a40b21e27ef67276869d732270621563ad51874
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 12:46:54 2022 +0300
+
+    Fix
+
+commit c4e02401eeb5530c708e4695338a105ca878b811
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 28 12:45:12 2022 +0300
+
+    Памятка
+
+commit f0778ffa35bcad299ee747a905545223337c5e29
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 26 10:25:56 2022 +0300
+
+    Обновил статью с кодомЯ
+
+commit d9011ccedc0922bb8b76dcc32f561ae6012f66fe
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jun 22 16:32:35 2022 +0300
+
+    Fix
+
+commit a34eab91cb81de195df541b7e61bb272a2717b0a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Wed Jun 22 10:42:47 2022 +0300
+
+    Fix
+
+commit 56d55a0d2f5f3502e8e53dcb5677dcff924877cf
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 21 20:13:13 2022 +0300
+
+    Fix
+
+commit 1d55f00f5c490710754fe0ea1cf475c2a1203abf
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 21 18:42:32 2022 +0300
+
+    Fix
+
+commit 921f5787207c255b3a7256995b548d1a4f7a6bf2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 21 18:17:48 2022 +0300
+
+    POST в статье
+
+commit 9568161dac45fb9b6aa44ab950743a5383fd8878
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 21 13:07:43 2022 +0300
+
+    Fix
+
+commit 35c94f2ca7f336679822743216854f577f70c930
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Tue Jun 21 10:17:53 2022 +0300
+
+    Fix
+
+commit 06c96d5de811fba21476f74ed2128533baf60f02
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jun 20 19:11:35 2022 +0300
+
+    Fix
+
+commit 535232eddcaf621e12ea2e0caf52b4412b106f7a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jun 20 16:10:52 2022 +0300
+
+    Fix
+
+commit 42b5c3c13896fed16bd1746a4c08d906854eb7d1
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jun 20 16:08:43 2022 +0300
+
+    Fix
+
+commit f166de75ea8963f30ea945c35484bb45f2c788e0
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jun 20 16:04:27 2022 +0300
+
+    Fix
+
+commit 4182e1128c261c9ea1ceb4131c7ee7262a8354e4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jun 20 16:00:16 2022 +0300
+
+    Revert "Fix"
+    
+    This reverts commit 60e5669c57aedc8b4d47d353bb3c150f382955de.
+
+commit 60e5669c57aedc8b4d47d353bb3c150f382955de
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jun 20 15:56:48 2022 +0300
+
+    Fix
+
+commit 5c5fe3230e8db856ea76a6790e52a4ad2fe7047d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jun 20 15:41:50 2022 +0300
+
+    Добавил статью 2022-06-20-prostoy-server-na-express-i-node
+
+commit d227f1d08a141e767640538f3b8cfd4d4d8f158a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Mon Jun 20 10:27:26 2022 +0300
+
+    Добавило фото поля иванчая в about.md
+
+commit b3c6cf1802896647d334c05c102363b9adcd4919
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 21:34:00 2022 +0300
+
+    Revert "Google аналитика"
+    
+    This reverts commit ba08eee212adfc451842912ae250d8da1f373f9c.
+
+commit ba08eee212adfc451842912ae250d8da1f373f9c
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 21:26:04 2022 +0300
+
+    Google аналитика
+
+commit 6a0df544f2852ec9eca7c171035d2ff0946de4d9
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 21:18:36 2022 +0300
+
+    + новая категория
+
+commit f2157355b3b20bf814594eb64afe456f77cc7ae5
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 14:59:33 2022 +0300
+
+    Архив => Хронология
+
+commit d697cff3364d050501ca08701c3147b91a651bd2
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 13:54:03 2022 +0300
+
+    Форматирование кода и замена названия сайта
+
+commit d4482b51ddbbd4d90f9571a4563a43046d8ddd2d
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 13:36:21 2022 +0300
+
+    Много всего
+
+commit 4969db5111f31685324d5b6f8dc68c27ed1b7886
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 12:24:34 2022 +0300
+
+    Fix
+
+commit 15d595b8bf2395fc5de2e2d1b9b4feb6930647e7
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 12:15:19 2022 +0300
+
+    Fix
+
+commit 7ee4a016d59fbfe7703ce9dd6e3c982373e86a2b
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 12:10:31 2022 +0300
+
+    Fix bug in locales
+
+commit 096658c098fd7c7c902b295c2737d1bca7e951e4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 12:08:14 2022 +0300
+
+    Add 2022-06-19-fragmenty-coda
+
+commit fd733b4df011ea1bcb8d476ae667cdc322c2f42a
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 10:09:34 2022 +0300
+
+    Fix locale
+
+commit cb24a7c43bcac679f15f4881f6e2c10a2254b494
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 09:48:11 2022 +0300
+
+    Comments
+
+commit 90c50febc58c03c7355f3736033fc347a9e60b46
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 09:44:06 2022 +0300
+
+    Comments
+
+commit c5caec9628a8a169e7f00cb48c07ba9f015f920f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sun Jun 19 09:40:47 2022 +0300
+
+    Test comments
+
+commit f2f903312894dfb6bcc062fa973e1b9fa4f82b33
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jun 18 22:36:21 2022 +0300
+
+    Fix
+
+commit 3602b8cc8a9dd2d3bdaf2380c9220b303cbccd3f
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jun 18 22:24:53 2022 +0300
+
+    Fix
+
+commit 9c2290167e1602fa719c274831de4d3ecb1e45bf
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jun 18 22:23:38 2022 +0300
+
+    Done
+
+commit 15e7017a2b9a4c5232edec3ee3eb641170633e09
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jun 18 21:29:01 2022 +0300
+
+    ...
+
+commit 6816c9c84b775f1e279bcf1ec76777a9f830d083
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jun 18 21:23:33 2022 +0300
+
+    Configure
+
+commit ea92610d5eb2e6cca5c5b89ebfce8d748dc2e8b4
+Author: SeryiBaran <seryibaranminepy@yandex.ru>
+Date:   Sat Jun 18 21:20:47 2022 +0300
+
+    Configure
+
+commit 950dd6dcf69093f8da2586ed9baf14d1294d62bc
+Author: Ivan Muzyka <seryibaranminepy@yandex.ru>
+Date:   Sat Jun 18 20:36:31 2022 +0300
+
+    Initial commit
