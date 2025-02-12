@@ -25,7 +25,7 @@ const { headings } = await post.render();
 	<div class="gap-x-10 lg:flex lg:items-start">
 		{!!headings.length && <TOC headings={headings} />}
 		<article class="flex-grow break-words" data-pagefind-body>
-			<div id="blog-hero"><BlogHero content={post} /></div>
+			<div id="blog-hero"><BlogHero content={post} /><a href="https://hits.seeyoufarm.com"><img src={`https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=${encodeURI(Astro.url.toString())}&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=${encodeURI("Просмотров:")}&edge_flat=false`}/></a></div>
 			<div
 				class="prose prose-sm prose-cactus mt-12 prose-headings:font-semibold prose-headings:text-accent-2 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
 			>
