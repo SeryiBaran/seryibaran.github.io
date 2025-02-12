@@ -58,7 +58,7 @@ jobs:
         run: pnpm run build
 
       - name: Upload builded project
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           # Upload only build folder
           path: './dist/'
