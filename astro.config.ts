@@ -47,7 +47,10 @@ export default defineConfig({
     },
   },
   // https://docs.astro.build/en/guides/prefetch/
-  prefetch: true,
+  // prefetch: true,
+  prefetch: {
+    prefetchAll: true
+  },
   // ! Please remember to replace the following site property with your own domain
   site: "https://seryibaran.github.io/",
   vite: {
