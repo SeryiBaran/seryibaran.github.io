@@ -6,7 +6,7 @@ import PageLayout from "@/layouts/Base.astro";
 import dayjs from 'dayjs';
 import 'dayjs/locale/ru'
 
-const MAX_POSTS = 10;
+const MAX_POSTS = 9999;
 const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
@@ -75,7 +75,7 @@ const cactusTech: { desc: string; href: string; title: string }[] = [
     <p class="mb-4">
       А ещё я знаю наизусть <a class="cactus-link" href="/pi">3.1415926535897932384626433832795028841971693993751058</a>.
     </p>
-    <p class="mb-4">
+    <p class="mb-4 text-xs">
       <a class="cactus-link" href="/contacts">Задонатить</a>.
     </p>
     <!-- <a href="https://hits.seeyoufarm.com" class="inline-block"><img src={`https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=${encodeURI(Astro.url.toString() + "__SeryiBaranSite12022025TestLJJNo34")}&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=${encodeURI("Просмотров:")}&edge_flat=false`}/></a> -->
@@ -83,7 +83,7 @@ const cactusTech: { desc: string; href: string; title: string }[] = [
   </section>
   <section aria-label="Blog post list" class="mt-16">
     <h2 class="title mb-4 text-xl">Последние посты</h2>
-    <ul class="space-y-4">
+    <ul class="space-y-1.5">
       {
         allPostsByDate.map((p) => (
           <li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
@@ -92,25 +92,5 @@ const cactusTech: { desc: string; href: string; title: string }[] = [
         ))
       }
     </ul>
-  </section>
-  <section class="mt-16">
-    <h2 class="title mb-4 text-xl">Технологии</h2>
-    <dl class="space-y-4">
-      {
-        cactusTech.map(({ desc, href, title }) => (
-          <div class="flex flex-col gap-2 sm:flex-row">
-            <dt>
-              <span class="flex">
-                <a class="cactus-link" href={href} rel="noopener noreferrer" target="_blank">
-                  {title}
-                </a>
-                :
-              </span>
-            </dt>
-            <dd>{desc}</dd>
-          </div>
-        ))
-      }
-    </dl>
   </section>
 </PageLayout>
