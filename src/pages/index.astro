@@ -22,7 +22,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
     <p class="mb-4">
       Привет! Я Иван Музы́ка, на момент последнего обновления сайта ({dayjs().toISOString()} по UTC) мне { dayjs().diff(dayjs("2008-10-15T15:00:00.000+03:00"), 'year') } лет и я Frontend (+ немного Fullstack) разработчик.
     </p>
-    <p class="mb-4">
+    <p class="mb-4 text-lg">
       Вся инфа обо мне и сайте + список моих проектов и навыков находится на <a class="cactus-link" href="/about">странице Кто я</a>.
     </p>
     <p class="mb-4">
@@ -30,7 +30,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
       Telegram.
     </p>
     <p class="mb-4">
-      А ещё я знаю наизусть <a class="cactus-link" href="/pi">3.1415926535897932384626433832795028841971693993751058</a>.
+      А ещё я знаю наизусть 52 знака <a class="cactus-link" href="/pi">3.14</a>.
     </p>
     <p class="mb-4 text-xs">
       <a class="cactus-link" href="/contacts">Задонатить</a>.
@@ -40,10 +40,10 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
   </section>
   <section aria-label="Blog post list" class="mt-16">
     <h2 class="title mb-4 text-xl">Посты</h2>
-    <ul class="space-y-1.5">
+    <ul class="flex flex-col gap-6 sm:gap-0.5">
       {
         allPostsByDate.map((p) => (
-          <li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
+          <li class="grid sm:gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
             <PostPreview post={p} />
           </li>
         ))
