@@ -17,5 +17,6 @@
 	],
 	"[astro]": {
 		"editor.defaultFormatter": "astro-build.astro-vscode"
-	}
+	},
+  "eslint.useFlatConfig": false
 }
