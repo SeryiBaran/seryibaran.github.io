@@ -138,7 +138,7 @@ const hardSkillsGroups = [
         hardSkillsGroups.map((hardSkillsGroup) => (
           <>
             <li>
-              <span class="inline-flex gap-4">
+              <span class="inline-flex flex-wrap gap-4">
                 {hardSkillsGroup.map(skill => (<>
                   <span class="inline-flex items-center gap-2">
                     {skill.icon ? <Icon class="inline-block text-[1.5em]" name={skill.icon} /> : ""}
