@@ -25,6 +25,7 @@
     "astro-expressive-code": "^0.35.3",
     "astro-icon": "^1.1.0",
     "astro-purgecss": "^4.1.1",
+    "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "dotenv": "^16.4.5",
     "grammy": "^1.27.0",

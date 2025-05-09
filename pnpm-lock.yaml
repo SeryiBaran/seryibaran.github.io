@@ -47,6 +47,9 @@ importers:
       astro-purgecss:
         specifier: ^4.1.1
         version: 4.9.0(astro@4.12.1(@types/node@22.15.3)(lightningcss@1.29.3)(terser@5.31.1)(typescript@5.8.3))(purgecss@7.0.2)
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       dayjs:
         specifier: ^1.11.13
         version: 1.11.13

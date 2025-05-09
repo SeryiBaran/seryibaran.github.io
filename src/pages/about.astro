@@ -1,4 +1,5 @@
 ---
+import clsx from "clsx";
 import PageLayout from "@/layouts/Base.astro";
 import { Icon } from "astro-icon/components";
 
@@ -38,7 +39,7 @@ const projectsGroups = [
 // prettier-ignore
 const hardSkillsGroups = [
   [
-    { title: "HTML, Семантика", icon: "logos:html-5" },
+    { title: "HTML5, Семантика", icon: "logos:html-5" },
   ],
   [
     { title: "CSS3", icon: "logos:css-3" },
@@ -59,14 +60,14 @@ const hardSkillsGroups = [
   ],
   [
     { title: "React.js", icon: "logos:react" },
-    { title: "База Redux Toolkit", icon: "logos:redux" },
+    { title: "Redux Toolkit", icon: "logos:redux" },
     { title: "Effector", icon: "logos:effector" },
-    { title: "База Reatom", icon: "mdi:database" },
-    { title: "База React.js ecosystem", icon: "logos:react" },
-    { title: "База Next.js", icon: "logos:nextjs-icon" },
+    { title: "Reatom", icon: "mdi:database" },
+    { title: "React.js ecosystem", icon: "logos:react" },
+    { title: "Next.js", icon: "logos:nextjs-icon", beginner: true },
   ],
   [
-    { title: "Nest.js", icon: "logos:nestjs" },
+    { title: "Nest.js", icon: "logos:nestjs", beginner: true },
   ],
   [
     { title: "ESlint", icon: "logos:eslint" },
@@ -76,37 +77,44 @@ const hardSkillsGroups = [
     { title: "Vite", icon: "logos:vitejs" },
     { title: "Rollup", icon: "logos:rollupjs" },
     { title: "Webpack", icon: "logos:webpack" },
-    { title: "База Gulp", icon: "logos:gulp" },
+    { title: "Gulp", icon: "logos:gulp", beginner: true },
   ],
   [
     { title: "Vitest", icon: "logos:vitest" },
     { title: "Jest", icon: "logos:jest" },
-    { title: "База Cypress", icon: "logos:cypress-icon" },
+    { title: "Cypress", icon: "logos:cypress-icon", beginner: true },
   ],
   [
     { title: "Astro", icon: "logos:astro-icon" },
   ],
   [
-    { title: "WebExt Manifest V2/V3", icon: "logos:chrome-web-store" },
-  ],
-  [
-    { title: "TG Bots", icon: "logos:telegram" },
-  ],
-  [
-    { title: "VSCode ext's", icon: "logos:visual-studio-code" },
+    { title: "Брауз. расширения Manifest V2/V3", icon: "logos:chrome-web-store" },
+    { title: "TG Боты", icon: "logos:telegram" },
+    { title: "Разработка расширений VSCode", icon: "logos:visual-studio-code" },
   ],
   [
     { title: "VSCode", icon: "logos:visual-studio-code" },
     { title: "WebStorm", icon: "logos:webstorm" },
     { title: "Sublime Text", icon: "logos:sublimetext-icon" },
-    { title: "Скрипты Bash/Python/Powershell", icon: "logos:bash-icon" },
+    { title: "Скрипты Bash/Python/Powershell", icon: "logos:bash-icon", beginner: true },
+    { title: "Windows", icon: "logos:microsoft-windows-icon" },
+    { title: "Linux", icon: "logos:linux-tux" },
   ],
   [
-    { title: "База PHP", icon: "logos:php" },
-    { title: "База WordPress", icon: "logos:wordpress-icon" },
-    { title: "База Laravel", icon: "logos:laravel" },
+    { title: "PHP", icon: "logos:php", beginner: true },
+    { title: "WordPress", icon: "logos:wordpress-icon", beginner: true },
+    { title: "Laravel", icon: "logos:laravel", beginner: true },
   ],
-];
+  [
+    { title: "CMS", icon: "mdi:file-edit" },
+    { title: "Базы данных PostgreSQL/SQLite", icon: "mdi:database" },
+    { title: "REST API", icon: "mdi:access-point-network" },
+  ],
+].map(hardSkillsGroup => {
+  return hardSkillsGroup.sort((skillA, skillB) => {
+    return (Number(skillA.beginner || false)) - (Number(skillB.beginner || false))
+  })
+});
 ---
 
 <PageLayout meta={meta}>
@@ -134,14 +142,26 @@ const hardSkillsGroups = [
       {
         hardSkillsGroups.map((hardSkillsGroup) => (
           <>
-            <li class="border-l-4 border-solid border-accent/80 pl-2 mt-2 py-1">
+            <li class="mt-2 border-l-4 border-solid border-accent/80 py-1 pl-2">
               <span class="inline-flex flex-wrap gap-x-4 gap-y-2">
-                {hardSkillsGroup.map(skill => (<>
-                  <span class="inline-flex items-center gap-2">
-                    {skill.icon ? <Icon class="inline-block text-[1.5em]" name={skill.icon} /> : ""}
-                    {skill.title}
-                  </span>
-                </>))}
+                {hardSkillsGroup.map((skill) => (
+                  <>
+                    <span
+                      class={clsx(
+                        "inline-flex items-center gap-2",
+                        skill.beginner && "opacity-30 hover:opacity-100 blur-[1px] hover:blur-none",
+                      )}
+                    >
+                      {skill.icon ? (
+                        <Icon class="inline-block text-[1.5em]" name={skill.icon} />
+                      ) : (
+                        ""
+                      )}
+                      {skill.beginner ? "Базово: " : ""}
+                      {skill.title}
+                    </span>
+                  </>
+                ))}
               </span>
             </li>
           </>
