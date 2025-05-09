@@ -17,6 +17,8 @@
     "@astrojs/rss": "4.0.7",
     "@astrojs/sitemap": "3.1.6",
     "@astrojs/tailwind": "5.1.0",
+    "@iconify-json/logos": "^1.2.4",
+    "@iconify/json": "^2.2.336",
     "@playform/compress": "^0.0.13",
     "@playform/inline": "^0.0.7",
     "astro": "4.12.1",

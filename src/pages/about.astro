@@ -1,10 +1,111 @@
 ---
 import PageLayout from "@/layouts/Base.astro";
+import { Icon } from "astro-icon/components";
 
 const meta = {
   description: "Разная инфа обо мне, моих проектах и навыках",
   title: "Кто я",
 };
+
+// prettier-ignore
+const projectsGroups = [
+  {
+    title: "Frontend-разработка",
+    projects: [
+      { title: "Большой Макет с анимациями и эффектами на Vue", link: "https://seryibaran.github.io/maket__agencyvue" },
+      { title: "Макет с анимациями", link: "https://seryibaran.github.io/maket-web-dev-project" },
+      { title: "Макет простой", link: "https://seryibaran.github.io/maket-agency" },
+      { title: "Сайт для проекта Privacy Search Companion", link: "https://seryibaran.github.io/PSC-site" },
+      { title: "Простая стартовая страница для браузера", link: "https://seryibaran.github.io/SBStartpage" },
+      { title: "Пародия на Twitter - Telehumpter", link: "https://github.com/SeryiBaran/telehumpter" },
+      { title: "Список каналов для Смотрёшки", link: "https://seryibaran.github.io/smotreshka_list" },
+      { title: "Этот сайт", link: "https://seryibaran.github.io" },
+      { title: "Доработанный генератор простых картинок для проверки дисплея (feat. fknipp)", link: "https://seryibaran.github.io/test-picture-generator" },
+    ],
+  },
+  {
+    title: "Разное",
+    projects: [
+      { title: "Firefox расширение Privacy Search Companion", link: "https://github.com/SeryiBaran/Privacy-Search-Companion" },
+      { title: "GUI для Yt-dlp", link: "https://github.com/SeryiBaran/yt-dlp-python-gui" },
+      { title: "Термостат на Arduino", link: "https://github.com/SeryiBaran/ardustat" },
+      { title: "Большие удобные кнопки для PlatformIO", link: "https://github.com/SeryiBaran/platformio-big-buttons" },
+      { title: "Шина данных для Mindustry", link: "https://github.com/SeryiBaran/mindustry_sbbus" },
+    ],
+  },
+];
+
+// prettier-ignore
+const hardSkillsGroups = [
+  [
+    { title: "HTML, Семантика", icon: "logos:html-5" },
+  ],
+  [
+    { title: "CSS3", icon: "logos:css-3" },
+    { title: "SaSS", icon: "logos:sass" },
+    { title: "PostCSS", icon: "logos:postcss" },
+    { title: "Tailwind", icon: "logos:tailwindcss-icon" },
+    { title: "UnoCSS", icon: "logos:unocss" },
+  ],
+  [
+    { title: "JavaScript", icon: "logos:javascript" },
+    { title: "TypeScript", icon: "logos:typescript-icon" },
+  ],
+  [
+    { title: "Vue.js", icon: "logos:vue" },
+    { title: "Pinia", icon: "logos:pinia" },
+    { title: "Vue.js ecosystem", icon: "logos:vueuse" },
+    { title: "Nuxt.js", icon: "logos:nuxt-icon" },
+  ],
+  [
+    { title: "React.js", icon: "logos:react" },
+    { title: "Redux Toolkit", icon: "logos:redux" },
+    { title: "Effector", icon: "logos:effector" },
+    { title: "Reatom", icon: "mdi:database" },
+    { title: "React.js ecosystem", icon: "logos:react" },
+  ],
+  [
+    { title: "Nest.js", icon: "logos:nestjs" },
+  ],
+  [
+    { title: "ESlint", icon: "logos:eslint" },
+    { title: "Prettier", icon: "logos:prettier" },
+  ],
+  [
+    { title: "Vite", icon: "logos:vitejs" },
+    { title: "Rollup", icon: "logos:rollupjs" },
+    { title: "Webpack", icon: "logos:webpack" },
+    { title: "Gulp", icon: "logos:gulp" },
+  ],
+  [
+    { title: "Vitest", icon: "logos:vitest" },
+    { title: "Jest", icon: "logos:jest" },
+    { title: "Cypress", icon: "logos:cypress-icon" },
+  ],
+  [
+    { title: "Astro", icon: "logos:astro-icon" },
+  ],
+  [
+    { title: "WebExt Manifest V2/V3", icon: "logos:chrome-web-store" },
+  ],
+  [
+    { title: "TG Bots", icon: "logos:telegram" },
+  ],
+  [
+    { title: "VSCode ext's", icon: "logos:visual-studio-code" },
+  ],
+  [
+    { title: "VSCode", icon: "logos:visual-studio-code" },
+    { title: "WebStorm", icon: "logos:webstorm" },
+    { title: "Sublime Text", icon: "logos:sublimetext-icon" },
+    { title: "Скрипты Bash/Python/Powershell", icon: "logos:bash-icon" },
+  ],
+  [
+    { title: "База PHP", icon: "logos:php" },
+    { title: "База WordPress", icon: "logos:wordpress-icon" },
+    { title: "База Laravel", icon: "logos:laravel" },
+  ],
+];
 ---
 
 <PageLayout meta={meta}>
@@ -12,191 +113,87 @@ const meta = {
     <h1 class="title mb-6">Кто я</h1>
 
     <p class="mb-4">
-      Муз<span class="text-2xl">ы́</span>ка (ударение именно на Ы) Иван Викторович, родился 2008-10-15T15:00:00.000+03:00,
-      делает всякую <span class="text-[1px]">хуйню</span>всякость и радуется. А вообще Frontend
-      разработчик.
+      Муз<span class="text-2xl">ы́</span>ка (ударение именно на Ы) Иван Викторович, родился
+      2008-10-15T15:00:00.000+03:00, делает всякую <span class="text-[1px]">хуйню</span>всякость и
+      радуется. А вообще Frontend разработчик.
     </p>
     <p class="mb-4 text-xs">
-      Этот сайт основан на <a class="cactus-link" href="https://github.com/chrismwilliams/astro-theme-cactus" target="_blank">Astro Cactus</a>. А вообще, на чем он только не был основан, и на Jekyll, и на Astro, и на html+css <span class="text-[1px]">в уёбищном виде</span>... Можете посмотреть все это <a class="cactus-link" href="/posts/site_history">здесь</a>.
+      Этот сайт основан на <a
+        class="cactus-link"
+        href="https://github.com/chrismwilliams/astro-theme-cactus"
+        target="_blank">Astro Cactus</a
+      >. А вообще, на чем он только не был основан, и на Jekyll, и на Astro, и на html+css <span
+        class="text-[1px]">в уёбищном виде</span
+      >... Можете посмотреть все это <a class="cactus-link" href="/posts/site_history">здесь</a>.
     </p>
 
     <h2 class="title mb-4 text-xl" id="cv">CV (навыки, проекты)</h2>
 
     <p class="mb-4 text-lg"><a class="cactus-link" href="/Иван%20Музыка.pdf">Открыть (PDF)</a></p>
 
-    <h2 class="title mb-4 text-xl">Характеристики</h2>
+    <h2 class="title mb-4 text-xl">Хард скиллы</h2>
 
     <ul class="mb-4 list-inside list-disc">
-      <li>Есть логика</li>
-      <li>Люблю кошек, сов, математику, изучать новое, Mindustry, Cataclysm: DDA и слово АКЫН</li>
-
-      <li>Умею в HTML</li>
-      <li>CSS3, SaSS, PostCSS, Tailwind, UnoCSS</li>
-      <li>JavaScript, TypeScript</li>
-      <li>Vue.js, Pinia, Vue.js ecosystem, Nuxt.js</li>
-      <li>React.js, Redux Toolkit, Effector, Reatom, React.js ecosystem</li>
-      <li>Nest.js</li>
-      <li>ESlint, Prettier</li>
-      <li>Astro</li>
-      <li>WebExt Manifest V2/V3</li>
-      <li>TG Bots</li>
-      <li>VSCode ext's</li>
-      <li>Vite/Rollup/Webpack, Vitest/Jest</li>
-      <li>Скрипты Bash/Python/Powershell</li>
+      {
+        hardSkillsGroups.map((hardSkillsGroup) => (
+          <>
+            <li>
+              {hardSkillsGroup.map(skill => (<>
+                <span class="inline-flex items-center gap-2">
+                  {skill.icon ? <Icon class="inline-block text-[1.5em]" name={skill.icon} /> : ""}
+                  {skill.title}
+                </span>
+              </>))}
+            </li>
+          </>
+        ))
+      }
     </ul>
 
     <h2 class="title mb-4 text-xl">Опыт работы</h2>
     <ul class="mb-4 list-inside list-disc">
-      <li>topux.dev: HTML+CSS верстальщик | 2021-2022 | Верстка форм, базовый JS, доработка мелочей | HTML/CSS/JS/SaSS</li>
+      <li>
+        topux.dev: HTML+CSS верстальщик | 2021-2022 | Верстка форм, базовый JS, доработка мелочей |
+        HTML/CSS/JS/SaSS
+      </li>
     </ul>
 
-    <h2 class="title mb-4 text-xl">Петы</h2>
+    <h2 class="title mb-4 text-xl">Портфолио</h2>
 
-    <p>Разное:</p>
     <ul class="mb-4 list-inside list-disc">
-      <li>
-        <a class="cactus-link" href="https://seryibaran.github.io/smotreshka_list"
-          >Список каналов для Смотрёшки</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/govnosite"
-          >Говносайт (~~не~~ перепутай с "Мой сайт")</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/seryibaran.github.io"
-          >Мой сайт (~~не~~ перепутай с "Говносайт")</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/maket__agencyvue"
-          >Большой Макет &quot;на Vue&quot;</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/maket-web-dev-project"
-          >Макет &quot;Web Development Project&quot;</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/maket-agency"
-          >Макет &quot;Agency&quot;</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/telehumpter"
-          >Пародия на Twitter - Telehumpter</a
-        >
-      </li>
-      <li><a class="cactus-link" href="https://github.com/SeryiBaran/todo-vue">Todo на Vue</a></li>
-      <li>
-        <a class="cactus-link" href="https://github.com/f5ociety/Bridge-of-Liberty"
-          >Сайт для проекта Мост Свободы</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/Privacy-Search-Companion"
-          >Firefox расширение Privacy Search Companion</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/SBStartpage"
-          >Простая стартовая страница для браузера</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/PSC-site"
-          >Сайт для проекта Privacy Search Companion</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/generated-calc"
-          >Генератор немного неоптимизированного калькулятора</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/tailvue-starter"
-          >Стартовый шаблон Vue + TypeScript</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/yt-dlp-python-gui"
-          >GUI для Yt-dlp</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/ffmpeg_installer"
-          >Установщик FFmpeg для Windows</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/snowbowles-script"
-          >ТЯПСССС: Транспилируемый язык программирования &quot;snowbowles-script (SNOWBOWLEScript)&quot;</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/encoding-visualization"
-          >Визуализация текста в разных кодировках в терминале</a
-        >
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/test-picture-generator"
-          >Доработанный генератор простых картинок для проверки дисплея (feat. fknipp)</a
-        >
-      </li>
+      {
+        projectsGroups.map((group) => (
+          <>
+            <li>
+              <span>{group.title}</span>
+              <ul class="mb-4 list-inside list-disc">
+                {group.projects.map((project) => (
+                  <>
+                    <li>
+                      <a class="cactus-link" href={project.link}>
+                        {project.title}
+                      </a>
+                    </li>
+                  </>
+                ))}
+              </ul>
+            </li>
+          </>
+        ))
+      }
     </ul>
-    <p>TG боты:</p>
-    <ul class="mb-4 list-inside list-disc">
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/telegram-clicker"
-          >Игра-кликер в виде TG бота (DEPRECATED)</a
-        > (и её <a class="cactus-link" href="https://github.com/seryibaran/teleclicker-web"
-          >порт в Web</a
-        >)
-      </li>
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/code-colorizer-bot"
-          >TG бот создающий красивый скриншот кода из сообщения</a
-        >
-      </li>
-    </ul>
-    <p>Docker:</p>
-    <ul class="mb-4 list-inside list-disc">
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/drone-gitea-on-docker"
-          >Форк примера Gitea + Drone</a
-        >
-      </li>
-    </ul>
-    <p>Электроника:</p>
-    <ul class="mb-4 list-inside list-disc">
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/ardustat">Термостат на Arduino</a
-        >
-      </li>
-    </ul>
-    <p>VSCode:</p>
-    <ul class="mb-4 list-inside list-disc">
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/platformio-big-buttons"
-          >Большие удобные кнопки для PlatformIO</a
-        >
-      </li>
-    </ul>
-    <p>Mindustry:</p>
-    <ul class="mb-4 list-inside list-disc">
-      <li>
-        <a class="cactus-link" href="https://github.com/SeryiBaran/mindustry_sbbus"
-          >Шина данных для Mindustry</a
-        >
-      </li>
-    </ul>
+
+    <p>
+      И ещё много интересного/неинтересного <a
+        class="cactus-link"
+        href="https://github.com/SeryiBaran?tab=repositories">тут</a
+      >.
+    </p>
   </div>
-  <p>
-    И ещё много интересного/неинтересного <a
-      class="cactus-link"
-      href="https://github.com/SeryiBaran?tab=repositories">тут</a
-    >.
-  </p>
 </PageLayout>
+
+<style>
+  ul li {
+    margin-left: 16px;
+  }
+</style>

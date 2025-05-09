@@ -14,16 +14,11 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 <PageLayout meta={{ title: "Главная" }}>
   <section>
     <h1 class="title mb-6">SeryiBaran</h1>
-    <p class="mb-4 text-sm text-red-500">
-      ! Мой VK аккаунт <a class="cactus-link" href="https://vk.com/ivanchai6">@ivanchai6</a> скоро удалится,
-      т.к. у меня нет доступа к номеру телефона. Теперь у меня другой VK аккаунт на другом телефоне,
-      он указан на странице <a class="cactus-link" href="/contacts">Контакты</a>.
-    </p>
     <p class="mb-4">
       Привет! Я Иван Музы́ка, на момент последнего обновления сайта ({dayjs().toISOString()} по UTC) мне { dayjs().diff(dayjs("2008-10-15T15:00:00.000+03:00"), 'year') } лет и я Frontend (+ немного Fullstack) разработчик.
     </p>
     <p class="mb-4 text-lg">
-      Вся инфа обо мне и сайте + список моих проектов и навыков находится на <a class="cactus-link" href="/about">странице Кто я</a>.
+      Портфолио+навыки находится на <a class="cactus-link" href="/about">странице Кто я</a>.
     </p>
     <p class="mb-4">
       Все мои контакты находятся на странице <a class="cactus-link" href="/contacts">Контакты</a>. Наиболее я активен в
@@ -34,6 +29,11 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
     </p>
     <p class="mb-4 text-xs">
       <a class="cactus-link" href="/contacts">Задонатить</a>.
+    </p>
+    <p class="mb-4 text-sm text-red-500">
+      ! Мой VK аккаунт <a class="cactus-link" href="https://vk.com/ivanchai6">@ivanchai6</a> скоро удалится,
+      т.к. у меня нет доступа к номеру телефона. Теперь у меня другой VK аккаунт на другом телефоне,
+      он указан на странице <a class="cactus-link" href="/contacts">Контакты</a>.
     </p>
     <!-- <a href="https://hits.seeyoufarm.com" class="inline-block"><img src={`https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=${encodeURI(Astro.url.toString() + "__SeryiBaranSite12022025TestLJJNo34")}&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=${encodeURI("Просмотров:")}&edge_flat=false`}/></a> -->
     <SocialList />
