@@ -1,5 +1,6 @@
 ---
 import PageLayout from "@/layouts/Base.astro";
+import { Icon } from "astro-icon/components";
 
 const meta = {
 	description: "Все мои контакты",
@@ -10,58 +11,72 @@ const links = [
   {
     href: 'https://github.com/SeryiBaran',
     title: 'Github',
+    icon: 'simple-icons:github',
   },
   {
     href: 'https://gitlab.com/SeryiBaran',
     title: 'GitLab',
+    icon: 'logos:gitlab',
   },
   {
     href: 'https://codeberg.org/SeryiBaran',
-    title: 'Codeberg'
+    title: 'Codeberg',
+    icon: 'logos:git-icon',
   },
   {
     href: 'https://habr.com/ru/users/SeryiBaran6',
     title: 'Habr',
+    icon: 'simple-icons:habr',
   },
   {
     href: 'https://www.codewars.com/users/SeryiBaran',
     title: 'Codewars',
+    icon: 'simple-icons:codewars',
   },
   {
     href: 'https://qna.habr.com/user/SeryiBaran6',
     title: 'Habr Q&A',
+    icon: 'simple-icons:habr',
   },
   {
     href: 'https://career.habr.com/seryibaran6',
     title: 'Habr Карьера',
+    icon: 'simple-icons:habr',
   },
   {
     href: 'https://t.me/ABKTPM',
     title: 'Telegram',
+    icon: 'logos:telegram',
   },
   {
     href: 'https://t.me/seryibaran_channel',
     title: 'Telegram канал',
+    icon: 'logos:telegram',
   },
   {
     href: 'https://www.youtube.com/@seryibaran_official',
     title: 'YouTube',
+    icon: 'logos:youtube-icon',
   },
   {
     href: 'https://vk.com/seryibaran',
     title: 'ВКонтакте',
+    icon: 'simple-icons:vk',
   },
   {
     href: 'https://discord.gg/3zvBzgaw2P',
     title: 'Discord',
+    icon: 'logos:discord-icon',
   },
   {
     href: 'https://dzen.ru/seryibaran',
     title: 'Дзен',
+    icon: 'mdi:web',
   },
   {
     href: 'https://ru.stackoverflow.com/users/418945/seryibanana',
     title: 'Ru Stack Overflow',
+    icon: 'logos:stackoverflow-icon',
   },
 ]
 ---
@@ -73,14 +88,21 @@ const links = [
       {
         links.map((link) => (
           <li>
+            {link.icon ? <span class="inline-block w-[1.5em]"><Icon class="inline-block text-[1.5em] max-w-full" name={link.icon} /></span> : ''}
             <a class="cactus-link" href={link.href}>{link.title}</a>
           </li>
         ))
       }
-      <li>E-Mail: anderchiser COMMERCIAL_AT yandex.ru</li>
-      <li>TON coin: <code>UQDeWbPJHeq0FKMcQFuLZGcT8fZRo_12-rvURMooW6-fVxfN</code></li>
-      <li>USDT TRC20 coin: <code>TLYwhKbDjzyxFcf2GE6gumjH1ih8tvWbEb</code></li>
-      <li>Bitcoin: <code>3EgRK6VX1kET5oGjZkwqbbqmNXCKyFGehE</code></li>
+      <li><Icon class="inline-block text-[1.5em]" name='mdi:email' /> E-Mail: anderchiser COMMERCIAL_AT yandex.ru</li>
+      <li><Icon class="inline-block text-[1.6em]" name='token-branded:usdt' /> USDT TRC20: <code>TL2gLBkDaTDwgPL98dyUFJgGfhUTBSboKK</code></li>
+      <li><Icon class="inline-block text-[1.6em]" name='token-branded:ton' /> TON: <code>UQDA2orjI-UOVDEP2R7RQUzv8P3ahfq34ZmYnALV0IX9Lp5L</code></li>
+      <li><Icon class="inline-block text-[1.6em]" name='token-branded:btc' /> Bitcoin: <code>1N8n1UNavu3uEG1bNfSwL1pQpb8qqwhFeD</code></li>
     </ul>
 	</div>
 </PageLayout>
+
+<style>
+  li {
+    margin-top: 4px;
+  }
+</style>
