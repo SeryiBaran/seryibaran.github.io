@@ -147,8 +147,6 @@ function filt(conditionFn: (arg: Skill) => boolean) {
   return hardSkillsGroups.map(group => group.filter(conditionFn)).filter(group => group.length > 0)
 }
 
-console.log(filt(skill => !(skill.beginner || false)))
-
 // TODO: rewrite shitcode
 const hardSkillsData: SkillsData = {
   skillsGroups: filt(skill => !(skill.beginner || false)),
