@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.8.2",
+    "@iconify-json/devicon": "^1.2.23",
     "@iconify-json/mdi": "^1.1.67",
     "@iconify-json/simple-icons": "^1.2.33",
     "@iconify-json/skill-icons": "^1.2.0",

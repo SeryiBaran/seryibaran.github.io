@@ -39,7 +39,7 @@ const projectsGroups = [
 
 const skillsGroupsNamesMap = {
   'skillsGroups': 'Хард скилы',
-  'beginnerSkillsGroups': 'Базово',
+  'learningSkillsGroups': 'Базово',
 } as const
 
 interface Skill {
@@ -50,87 +50,89 @@ interface Skill {
 
 interface SkillsData {
   skillsGroups: Skill[][]
-  beginnerSkillsGroups: Skill[][]
+  learningSkillsGroups: Skill[][]
 }
 
+// TODO: remove hardcoded two groups and split real-time based on `beginner` field
 // prettier-ignore
 const hardSkillsData: SkillsData = {
   skillsGroups: [
     [
-      { title: "HTML5, Семантика", icon: "logos:html-5" },
+      { title: "HTML5, Семантика", icon: "skill-icons:html" },
     ],
     [
-      { title: "CSS3", icon: "logos:css-3" },
-      { title: "SaSS", icon: "logos:sass" },
+      { title: "CSS3", icon: "skill-icons:css" },
+      { title: "SaSS", icon: "skill-icons:sass" },
       { title: "PostCSS", icon: "logos:postcss" },
-      { title: "Tailwind", icon: "logos:tailwindcss-icon" },
+      { title: "Tailwind", icon: "skill-icons:tailwindcss-dark" },
       { title: "UnoCSS", icon: "logos:unocss" },
+      { title: "Bootstrap", icon: "skill-icons:bootstrap" },
     ],
     [
-      { title: "JavaScript", icon: "logos:javascript" },
-      { title: "TypeScript", icon: "logos:typescript-icon" },
+      { title: "JavaScript", icon: "skill-icons:javascript" },
+      { title: "TypeScript", icon: "skill-icons:typescript" },
+      { title: "Jquery", icon: "skill-icons:jquery" },
     ],
     [
-      { title: "Vue.js", icon: "logos:vue" },
-      { title: "Pinia", icon: "logos:pinia" },
+      { title: "Vue.js", icon: "skill-icons:vuejs-dark" },
+      { title: "Pinia", icon: "skill-icons:pinia-dark" },
       { title: "Vue.js ecosystem", icon: "logos:vueuse" },
-      { title: "Nuxt.js", icon: "logos:nuxt-icon" },
+      { title: "Nuxt.js", icon: "skill-icons:nuxtjs-dark" },
     ],
     [
-      { title: "React.js", icon: "logos:react" },
-      { title: "Redux Toolkit", icon: "logos:redux" },
+      { title: "React.js", icon: "skill-icons:react-dark" },
+      { title: "Redux Toolkit", icon: "skill-icons:redux" },
       { title: "Effector", icon: "logos:effector" },
       { title: "Reatom", icon: "mdi:database" },
-      { title: "React.js ecosystem", icon: "logos:react" },
+      { title: "React.js ecosystem", icon: "skill-icons:react-dark" },
     ],
     [
       { title: "ESlint", icon: "logos:eslint" },
       { title: "Prettier", icon: "logos:prettier" },
     ],
     [
-      { title: "Vite", icon: "logos:vitejs" },
-      { title: "Rollup", icon: "logos:rollupjs" },
-      { title: "Webpack", icon: "logos:webpack" },
-      { title: "Gulp", icon: "logos:gulp" },
+      { title: "Vite", icon: "skill-icons:vite-dark" },
+      { title: "Rollup", icon: "skill-icons:rollupjs-dark" },
+      { title: "Webpack", icon: "skill-icons:webpack-dark" },
+      { title: "Gulp", icon: "skill-icons:gulp" },
     ],
     [
-      { title: "Vitest", icon: "logos:vitest" },
-      { title: "Jest", icon: "logos:jest" },
-      { title: "Cypress", icon: "logos:cypress-icon" },
+      { title: "Vitest", icon: "skill-icons:vitest-dark" },
+      { title: "Jest", icon: "skill-icons:jest" },
+      { title: "Cypress", icon: "skill-icons:cypress-light" },
     ],
     [
-      { title: "Astro", icon: "logos:astro-icon" },
+      { title: "Astro", icon: "skill-icons:astro" },
     ],
     [
-      { title: "Node.js", icon: "logos:nodejs-icon" },
-      { title: "PNPM", icon: "logos:pnpm" },
+      { title: "Node.js", icon: "skill-icons:nodejs-dark" },
+      { title: "PNPM", icon: "skill-icons:pnpm-dark" },
     ],
     [
       { title: "Брауз. расширения Manifest V2/V3", icon: "logos:chrome-web-store" },
       { title: "GrammY.js", icon: "logos:telegram" },
-      { title: "Разработка расширений VSCode", icon: "logos:visual-studio-code" },
+      { title: "Разработка расширений VSCode", icon: "skill-icons:vscode-dark" },
     ],
     [
-      { title: "VSCode", icon: "logos:visual-studio-code" },
-      { title: "WebStorm", icon: "logos:webstorm" },
-      { title: "Sublime Text", icon: "logos:sublimetext-icon" },
-      { title: "Скрипты Bash/Python/Powershell", icon: "logos:bash-icon" },
-      { title: "Windows", icon: "logos:microsoft-windows-icon" },
+      { title: "VSCode", icon: "skill-icons:vscode-dark" },
+      { title: "WebStorm", icon: "skill-icons:webstorm-dark" },
+      { title: "Sublime Text", icon: "skill-icons:sublime-dark" },
+      { title: "Скрипты Bash/Python/Powershell", icon: "skill-icons:bash-dark" },
+      { title: "Windows", icon: "skill-icons:windows-dark" },
       { title: "Linux", icon: "logos:linux-tux" },
     ],
     [
+      { title: "Supabase", icon: "skill-icons:supabase-dark" },
+      { title: "AppWrite", icon: "skill-icons:appwrite" },
+      { title: "Firebase", icon: "logos:firebase" },
       { title: "CMS", icon: "mdi:file-edit" },
       { title: "REST API", icon: "mdi:access-point-network" },
     ],
   ],
-  beginnerSkillsGroups: [
+  learningSkillsGroups: [
     [
       { title: "Next.js", icon: "logos:nextjs-icon" },
-    ],
-    [
-      { title: "Backend фреймы, Nest.js", icon: "logos:nestjs" },
-      { title: "ORM, Prisma", icon: "logos:prisma" },
-      { title: "Базы данных PostgreSQL/SQLite", icon: "mdi:database" },
+      { title: "T3 Stack", icon: "logos:nextjs-icon" },
     ],
     [
       { title: "Deno", icon: "logos:deno" },
@@ -140,6 +142,12 @@ const hardSkillsData: SkillsData = {
       { title: "PHP", icon: "logos:php" },
       { title: "WordPress", icon: "logos:wordpress-icon" },
       { title: "Laravel", icon: "logos:laravel" },
+    ],
+    [
+      { title: "Backend фреймы, Nest.js", icon: "logos:nestjs" },
+      { title: "ORM, Prisma", icon: "skill-icons:prisma" },
+      { title: "Базы данных PostgreSQL/SQLite", icon: "mdi:database" },
+      { title: "GraphQL", icon: "mdi:access-point-network" },
     ],
   ]
 }
@@ -168,7 +176,7 @@ const hardSkillsDataEntries = Object.entries(hardSkillsData) as Entries<typeof h
 
     {hardSkillsDataEntries.map(([skillsGroupId, skillsGroup]) => (<>
         <h2 class="title mb-4 text-xl">{skillsGroupsNamesMap[skillsGroupId]}</h2>
-        <ul class={ clsx("mb-4 list-inside list-none", skillsGroupId === 'beginnerSkillsGroups' && "opacity-30 hover:opacity-100 blur-[1px] hover:blur-none") }>
+        <ul class={ clsx("mb-4 list-inside list-none", skillsGroupId === 'learningSkillsGroups' && "opacity-30 hover:opacity-100 blur-[1px] hover:blur-none") }>
           {
             skillsGroup.map((skillsGroup) => (
               <>
@@ -183,7 +191,7 @@ const hardSkillsDataEntries = Object.entries(hardSkillsData) as Entries<typeof h
                           )}
                         >
                           {skill.icon ? (
-                            <Icon class="inline-block text-[1.5em]" name={skill.icon} />
+                            <Icon class="inline-block text-[1.8em]" name={skill.icon} />
                           ) : (
                             ""
                           )}

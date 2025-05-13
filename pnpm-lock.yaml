@@ -87,6 +87,9 @@ importers:
         specifier: ^5.5.3
         version: 5.8.3
     devDependencies:
+      '@iconify-json/devicon':
+        specifier: ^1.2.23
+        version: 1.2.23
       '@iconify-json/mdi':
         specifier: ^1.1.67
         version: 1.2.3
@@ -739,6 +742,9 @@ packages:
   '@humanwhocodes/retry@0.4.2':
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
+
+  '@iconify-json/devicon@1.2.23':
+    resolution: {integrity: sha512-JpDWec56q5FKZINnK6iewDIfZulmNw6K2StlxhTLcBAPGRqX/8/o/W3yx0W9Yy0VYt2rtku6sLMqHoIBiNXB7g==}
 
   '@iconify-json/logos@1.2.4':
     resolution: {integrity: sha512-XC4If5D/hbaZvUkTV8iaZuGlQCyG6CNOlaAaJaGa13V5QMYwYjgtKk3vPP8wz3wtTVNVEVk3LRx1fOJz+YnSMw==}
@@ -5604,6 +5610,10 @@ snapshots:
   '@humanwhocodes/retry@0.3.1': {}
 
   '@humanwhocodes/retry@0.4.2': {}
+
+  '@iconify-json/devicon@1.2.23':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify-json/logos@1.2.4':
     dependencies:
