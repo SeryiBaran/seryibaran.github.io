@@ -102,8 +102,6 @@ const hardSkillsData: SkillsData = {
     [
       { title: "Node.js", icon: "logos:nodejs-icon" },
       { title: "PNPM", icon: "logos:pnpm" },
-      { title: "Deno", icon: "logos:deno" },
-      { title: "Bun", icon: "logos:bun" },
     ],
     [
       { title: "Брауз. расширения Manifest V2/V3", icon: "logos:chrome-web-store" },
@@ -141,6 +139,10 @@ const hardSkillsData: SkillsData = {
       { title: "Cypress", icon: "logos:cypress-icon" },
     ],
     [
+      { title: "Deno", icon: "logos:deno" },
+      { title: "Bun", icon: "logos:bun" },
+    ],
+    [
       { title: "PHP", icon: "logos:php" },
       { title: "WordPress", icon: "logos:wordpress-icon" },
       { title: "Laravel", icon: "logos:laravel" },
@@ -172,7 +174,7 @@ const hardSkillsDataEntries = Object.entries(hardSkillsData) as Entries<typeof h
 
     {hardSkillsDataEntries.map(([skillsGroupId, skillsGroup]) => (<>
         <h2 class="title mb-4 text-xl">{skillsGroupsNamesMap[skillsGroupId]}</h2>
-        <ul class="mb-4 list-inside list-none">
+        <ul class={ clsx("mb-4 list-inside list-none", skillsGroupId === 'beginnerSkillsGroups' && "opacity-30 hover:opacity-100 blur-[1px] hover:blur-none") }>
           {
             skillsGroup.map((skillsGroup) => (
               <>
