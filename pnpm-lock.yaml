@@ -93,6 +93,9 @@ importers:
       '@iconify-json/simple-icons':
         specifier: ^1.2.33
         version: 1.2.33
+      '@iconify-json/skill-icons':
+        specifier: ^1.2.0
+        version: 1.2.0
       '@iconify-json/token-branded':
         specifier: ^1.2.17
         version: 1.2.17
@@ -745,6 +748,9 @@ packages:
 
   '@iconify-json/simple-icons@1.2.33':
     resolution: {integrity: sha512-nL5/UmI9x5PQ/AHv6bOaL2pH6twEdEz4pI89efB/K7HFn5etQnxMtGx9DFlOg/sRA2/yFpX8KXvc95CSDv5bJA==}
+
+  '@iconify-json/skill-icons@1.2.0':
+    resolution: {integrity: sha512-5zlPrzF5pelV1wut7C88zmAiYONvGxvFw11dXW1Pr1oIhUOtYhC7x3zkErSTFkyZ3m5fEgcEUrcO1W3UhNJVpw==}
 
   '@iconify-json/token-branded@1.2.17':
     resolution: {integrity: sha512-U68ZnhXo7yOdGy4i2gwZiRiH4A3orXHzpnLV6ftT1QS0k65zPSnCe1VSDoHJnX3rW8GrR/awS6lmqnYzlRuuvA==}
@@ -5608,6 +5614,10 @@ snapshots:
       '@iconify/types': 2.0.0
 
   '@iconify-json/simple-icons@1.2.33':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/skill-icons@1.2.0':
     dependencies:
       '@iconify/types': 2.0.0
 
