@@ -45,6 +45,7 @@
     "@iconify-json/mdi": "^1.1.67",
     "@iconify-json/simple-icons": "^1.2.33",
     "@iconify-json/skill-icons": "^1.2.0",
+    "@iconify-json/tabler": "^1.2.17",
     "@iconify-json/token-branded": "^1.2.17",
     "@pagefind/default-ui": "^1.1.0",
     "@resvg/resvg-js": "^2.6.2",

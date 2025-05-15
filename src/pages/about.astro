@@ -69,7 +69,9 @@ const hardSkillsGroups: Skill[][] = [
     { title: "Jquery", icon: "skill-icons:jquery" },
     { title: "AlpineJS", icon: "skill-icons:alpinejs-dark" },
     { title: "ThreeJS", icon: "skill-icons:threejs-dark" },
-    { title: "RxJS", icon: "skill-icons:reactivex-light" },
+    { title: "RxJS", icon: "skill-icons:reactivex-dark", beginner: true },
+    { title: "Anime.js", icon: "skill-icons:javascript" },
+    { title: "GSAP", icon: "skill-icons:javascript" },
   ],
   [
     { title: "Vue.js", icon: "skill-icons:vuejs-dark" },
@@ -87,17 +89,15 @@ const hardSkillsGroups: Skill[][] = [
     { title: "T3 Stack", icon: "skill-icons:nextjs-dark", beginner: true },
   ],
   [
-    { title: "ESlint", icon: "logos:eslint" },
-    { title: "Prettier", icon: "logos:prettier" },
-  ],
-  [
     { title: "Vite", icon: "skill-icons:vite-dark" },
     { title: "Rollup", icon: "skill-icons:rollupjs-dark" },
     { title: "Webpack", icon: "skill-icons:webpack-dark" },
-    { title: "Gulp", icon: "skill-icons:gulp", beginner: true },
-    { title: "Babel", icon: "skill-icons:babel", beginner: true },
+    { title: "Gulp", icon: "skill-icons:gulp" },
+    { title: "Babel", icon: "skill-icons:babel" },
   ],
   [
+    { title: "ESlint", icon: "logos:eslint" },
+    { title: "Prettier", icon: "logos:prettier" },
     { title: "Vitest", icon: "skill-icons:vitest-dark" },
     { title: "Jest", icon: "skill-icons:jest", beginner: true },
     { title: "Cypress", icon: "skill-icons:cypress-light", beginner: true },
@@ -115,16 +115,24 @@ const hardSkillsGroups: Skill[][] = [
   [
     { title: "Supabase", icon: "skill-icons:supabase-dark" },
     { title: "AppWrite", icon: "skill-icons:appwrite" },
-    { title: "Firebase", icon: "logos:firebase" },
+    { title: "Firebase", icon: "logos:firebase", beginner: true },
     { title: "CMS", icon: "mdi:file-edit" },
     { title: "REST API", icon: "mdi:access-point-network" },
-    { title: "Express.js", icon: "skill-icons:expressjs-dark" },
-    { title: "Backend фреймы, Nest.js", icon: "skill-icons:nestjs-dark" },
-    { title: "ORM, Prisma и аналоги", icon: "skill-icons:prisma" },
-    { title: "tRPC и аналоги", icon: "devicon:trpc", beginner: true },
-    { title: "Базы данных PostgreSQL/SQLite", icon: "skill-icons:postgresql-dark" },
-    { title: "Redis", icon: "skill-icons:redis-dark", beginner: true },
     { title: "GraphQL", icon: "skill-icons:graphql-dark", beginner: true },
+  ],
+  [
+    { title: "Express.js", icon: "skill-icons:expressjs-dark" },
+    { title: "Fastify.js", icon: "simple-icons:fastify", beginner: true },
+    { title: "Nest.js", icon: "skill-icons:nestjs-dark" },
+    { title: "tRPC и аналоги", icon: "devicon:trpc", beginner: true },
+  ],
+  [
+    { title: "ORM, Prisma и аналоги", icon: "skill-icons:prisma" },
+    { title: "PostgreSQL", icon: "skill-icons:postgresql-dark" },
+    { title: "SQLite", icon: "skill-icons:sqlite" },
+    { title: "MySQL", icon: "skill-icons:mysql-dark", beginner: true },
+    { title: "MongoDB", icon: "skill-icons:mongodb", beginner: true },
+    { title: "Redis", icon: "skill-icons:redis-dark", beginner: true },
   ],
   [
     { title: "Python", icon: "skill-icons:python-dark", beginner: true },
@@ -149,6 +157,14 @@ const hardSkillsGroups: Skill[][] = [
     { title: "GitHub", icon: "skill-icons:github-dark" },
     { title: "GitLab", icon: "skill-icons:gitlab-dark" },
     { title: "Codeberg", icon: "skill-icons:git" },
+  ],
+  [
+    { title: "Figma", icon: "skill-icons:figma-dark" },
+    { title: "Photoshop", icon: "devicon:photoshop", beginner: true },
+    { title: "GIMP", icon: "devicon:gimp" },
+  ],
+  [
+    { title: "AI", icon: "tabler:sparkles" },
   ],
 ]
 
@@ -175,18 +191,11 @@ const hardSkillsDataEntries = Object.entries(hardSkillsData) as Entries<typeof h
     <h1 class="title mb-6">Кто я</h1>
 
     <p class="mb-4">
-      Муз<span class="text-2xl">ы́</span>ка (ударение именно на Ы) Иван Викторович, родился
-      2008-10-15T15:00:00.000+03:00, делает всякую <span class="text-[1px]">хуйню</span>всякость и
-      радуется. А вообще Frontend разработчик.
+      Муз<span class="text-2xl">ы́</span>ка (ударение именно на Ы) Иван, Frontend разработчик самоучка. Обожаю узнавать что-то новое и всесторонне развиваться, а если и чего-то не знаю - то быстро узнаю и научусь.
     </p>
-    <p class="mb-4 text-xs">
-      Этот сайт основан на <a
-        class="cactus-link"
-        href="https://github.com/chrismwilliams/astro-theme-cactus"
-        target="_blank">Astro Cactus</a
-      >. А вообще, на чем он только не был основан, и на Jekyll, и на Astro, и на html+css <span
-        class="text-[1px]">в уёбищном виде</span
-      >... Можете посмотреть все это <a class="cactus-link" href="/posts/site_history">здесь</a>.
+
+    <p class="mb-4">
+      Умею копаться в жутком легаси. Один раз заказчик подсунул собранный, минифицированный, обфусцированный легаси код на старой Jquery. Я разобрался :)
     </p>
 
     {hardSkillsDataEntries.map(([skillsGroupId, skillsGroups]) => (skillsGroups.length > 0 && <>
@@ -250,11 +259,21 @@ const hardSkillsDataEntries = Object.entries(hardSkillsData) as Entries<typeof h
       }
     </ul>
 
-    <p>
+    <p class="mb-4">
       И ещё много интересного/неинтересного <a
         class="cactus-link"
         href="https://github.com/SeryiBaran?tab=repositories">тут</a
       >.
+    </p>
+
+    <p class="mb-4 text-xs">
+      Этот сайт основан на <a
+        class="cactus-link"
+        href="https://github.com/chrismwilliams/astro-theme-cactus"
+        target="_blank">Astro Cactus</a
+      >. А вообще, на чем он только не был основан, и на Jekyll, и на Astro, и на html+css <span
+        class="text-[1px]">в уёбищном виде</span
+      >... Можете посмотреть все это <a class="cactus-link" href="/posts/site_history">здесь</a>.
     </p>
   </div>
 </PageLayout>
