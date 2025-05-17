@@ -74,12 +74,12 @@ const hardSkillsGroups: Skill[][] = [
     { title: "TanStack Query", icon: "logos:react-query-icon" },
   ],
   [
-    { title: "Vue", icon: "skill-icons:vuejs-dark" },
+    { title: "Vue 2/3", icon: "skill-icons:vuejs-dark" },
     { title: "Vue Router", icon: "skill-icons:vuejs-dark" },
-    { title: "Pinia", icon: "skill-icons:pinia-dark" },
-    { title: "Pinia Colada", icon: "skill-icons:pinia-dark" },
+    { title: "Pinia (+Pinia Colada)", icon: "skill-icons:pinia-dark" },
+    { title: "Vuex", icon: "skill-icons:vuejs-dark" },
     { title: "Vue ecosystem", icon: "logos:vueuse" },
-    { title: "Nuxt", icon: "skill-icons:nuxtjs-dark" },
+    { title: "Nuxt 2/3", icon: "skill-icons:nuxtjs-dark" },
   ],
   [
     { title: "React", icon: "skill-icons:react-dark" },
@@ -102,7 +102,7 @@ const hardSkillsGroups: Skill[][] = [
     { title: "ESlint", icon: "logos:eslint" },
     { title: "Prettier", icon: "logos:prettier" },
     { title: "Vitest", icon: "skill-icons:vitest-dark" },
-    { title: "Jest", icon: "skill-icons:jest", beginner: true },
+    { title: "Jest", icon: "skill-icons:jest" },
     { title: "Cypress", icon: "skill-icons:cypress-light", beginner: true },
   ],
   [
@@ -112,19 +112,19 @@ const hardSkillsGroups: Skill[][] = [
   [
     { title: "Node.js", icon: "skill-icons:nodejs-dark" },
     { title: "PNPM", icon: "skill-icons:pnpm-dark" },
-    { title: "Deno", icon: "skill-icons:deno-dark", beginner: true },
-    { title: "Bun", icon: "skill-icons:bun-dark", beginner: true },
+    { title: "Deno", icon: "skill-icons:deno-dark" },
+    { title: "Bun", icon: "skill-icons:bun-dark" },
   ],
   [
     { title: "REST API", icon: "mdi:access-point-network" },
-    { title: "GraphQL", icon: "skill-icons:graphql-dark", beginner: true },
+    { title: "GraphQL", icon: "skill-icons:graphql-dark" },
     { title: "Jamstack (SSG & CMS)", icon: "logos:jamstack-icon" },
     { title: "CMS", icon: "mdi:file-edit" },
     { title: "Supabase", icon: "skill-icons:supabase-dark" },
     { title: "Firebase", icon: "logos:firebase" },
     { title: "AppWrite", icon: "skill-icons:appwrite" },
     { title: "NocoDB", icon: "logos:nocodb" },
-    { title: "PocketBase, Nhost, Rowy, Teable, Baserow, Undb", icon: "mdi:database", beginner: true },
+    { title: "PocketBase, Nhost, Rowy, Teable, Baserow, Undb", icon: "mdi:database" },
   ],
   [
     { title: "Express.js", icon: "skill-icons:expressjs-dark" },
@@ -207,18 +207,14 @@ const hardSkillsDataEntries = Object.entries(hardSkillsData) as Entries<typeof h
     <h1 class="title mb-6">Кто я</h1>
 
     <p class="mb-4">
-      Муз<span class="text-2xl">ы́</span>ка (ударение именно на Ы) Иван, Junior Frontend разработчик самоучка. Обожаю узнавать что-то новое и всесторонне развиваться, а если и чего-то не знаю - то быстро узнаю и научусь. Умею работать в команде и кооперироваться.
-    </p>
-
-    <p class="mb-4">
-      Умею копаться в жутком легаси. Один раз заказчик подсунул собранный, минифицированный, обфусцированный легаси код на старой Jquery. Я разобрался :)
+      Иван Муз<span class="text-2xl">ы́</span>ка, 16 лет, Frontend разработчик. Люблю изучать что-то новое и профессионально развиваться, если чего-то не знаю - смогу быстро научиться. Умею разгребать легаси-код, даже бывало копался в минифицированном обфусцированном коде на Jquery. Умею и люблю работать в команде (если потребуется).
     </p>
 
     <ul class="mb-4">
       <li>Формат работы - удалёнщик</li>
       <li>Занятость - полная/проектная</li>
-      <li>Ожидания по зарплате - $90/мес, от $20 за проект</li>
-      <li>Опыт - 1 год</li>
+      <li>Ожидания по зарплате - $80/мес, от $20 за проект</li>
+      <li>Опыт - 1 год коммерции и 1 год фриланса</li>
     </ul>
 
     {hardSkillsDataEntries.map(([skillsGroupId, skillsGroups]) => (skillsGroups.length > 0 && <>
@@ -252,7 +248,7 @@ const hardSkillsDataEntries = Object.entries(hardSkillsData) as Entries<typeof h
     <h2 class="title mb-4 text-xl">Опыт работы</h2>
     <ul class="mb-4 list-inside list-disc">
       <li>
-        Фриланс: Frontend разработчик | 2022 | Разработка и поддержка сайта |
+        Фриланс: Frontend разработчик | 2022 - 2023 | Разработка и поддержка сайта |
         HTML/CSS/JS/SaSS
       </li>
       <li>
