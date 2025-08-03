@@ -14,25 +14,25 @@ const projectsGroups = [
   {
     title: "Frontend-разработка",
     projects: [
-      { title: "Большой Макет с анимациями и эффектами на Vue", link: "https://seryibaran.github.io/maket__agencyvue" },
-      { title: "Макет с анимациями", link: "https://seryibaran.github.io/maket-web-dev-project" },
-      { title: "Макет простой", link: "https://seryibaran.github.io/maket-agency" },
-      { title: "Сайт для проекта Privacy Search Companion", link: "https://seryibaran.github.io/PSC-site" },
-      { title: "Простая стартовая страница для браузера", link: "https://seryibaran.github.io/SBStartpage" },
+      { title: "Большой Макет с анимациями и эффектами на Vue", link: "https://seryibaran.github.io/maket__agencyvue", imgs: ['/portfolio/agency_anims0.webp', '/portfolio/agency_anims1.webp'] },
+      { title: "Список каналов для Смотрёшки", link: "https://seryibaran.github.io/smotreshka_list", imgs: ['/portfolio/sm0.webp', '/portfolio/sm1.webp', '/portfolio/sm2.webp', '/portfolio/sm3.webp'] },
+      { title: "Макет с анимациями", link: "https://seryibaran.github.io/maket-web-dev-project", imgs: ['/portfolio/webdev0.webp'] },
+      { title: "Макет простой", link: "https://seryibaran.github.io/maket-agency", imgs: ['/portfolio/agency0.webp'] },
+      { title: "Сайт-README для проекта Privacy Search Companion", link: "https://seryibaran.github.io/PSC-site", imgs: ['/portfolio/psc0.webp'] },
+      { title: "Доработанный генератор простых картинок для проверки дисплея (feat. fknipp)", link: "https://seryibaran.github.io/test-picture-generator", imgs: ['/portfolio/dtpg.webp'] },
+      { title: "Простая стартовая страница для браузера", link: "https://seryibaran.github.io/SBStartpage", imgs: ['/portfolio/sbs0.webp'] },
       { title: "Пародия на Twitter - Telehumpter", link: "https://github.com/SeryiBaran/telehumpter" },
-      { title: "Список каналов для Смотрёшки", link: "https://seryibaran.github.io/smotreshka_list" },
       { title: "Этот сайт", link: "https://seryibaran.github.io" },
-      { title: "Доработанный генератор простых картинок для проверки дисплея (feat. fknipp)", link: "https://seryibaran.github.io/test-picture-generator" },
     ],
   },
   {
     title: "Разное",
     projects: [
       { title: "Firefox расширение Privacy Search Companion", link: "https://github.com/SeryiBaran/Privacy-Search-Companion" },
-      { title: "GUI для Yt-dlp", link: "https://github.com/SeryiBaran/yt-dlp-python-gui" },
+      { title: "GUI для Yt-dlp на Python/Delphi", link: "https://github.com/SeryiBaran/yt-dlp-python-gui", imgs: ['/portfolio/ytd0.webp', '/portfolio/ytd1.webp'] },
       { title: "Термостат на Arduino", link: "https://github.com/SeryiBaran/ardustat" },
-      { title: "Большие удобные кнопки для PlatformIO", link: "https://github.com/SeryiBaran/platformio-big-buttons" },
-      { title: "Шина данных для Mindustry", link: "https://github.com/SeryiBaran/mindustry_sbbus" },
+      { title: "Большие удобные кнопки для PlatformIO", link: "https://github.com/SeryiBaran/platformio-big-buttons", imgs: ['/portfolio/pbb.webp'] },
+      { title: "Шина данных для Mindustry", link: "https://github.com/SeryiBaran/mindustry_sbbus", imgs: ['/portfolio/sbbus.webp'] },
     ],
   },
 ];
@@ -46,142 +46,144 @@ interface Skill {
   title: string
   icon?: string
   beginner?: boolean
+  showTitle?: boolean
 }
 
 // prettier-ignore
 const hardSkillsGroups: Skill[][] = [
   [
-    { title: "HTML5, Семантика", icon: "skill-icons:html" },
+    { showTitle: true, title: "HTML5, Семантика", icon: "skill-icons:html" },
   ],
   [
-    { title: "CSS3", icon: "skill-icons:css" },
-    { title: "SaSS", icon: "skill-icons:sass" },
-    { title: "PostCSS", icon: "logos:postcss" },
-    { title: "Tailwind/UnoCSS", icon: "skill-icons:tailwindcss-dark" },
-    { title: "Bootstrap", icon: "skill-icons:bootstrap" },
+    { showTitle: false, title: "CSS3", icon: "skill-icons:css" },
+    { showTitle: false, title: "SaSS", icon: "skill-icons:sass" },
+    { showTitle: false, title: "PostCSS", icon: "logos:postcss" },
+    { showTitle: false, title: "Tailwind/UnoCSS", icon: "skill-icons:tailwindcss-dark" },
+    { showTitle: false, title: "Bootstrap", icon: "skill-icons:bootstrap" },
   ],
   [
-    { title: "JavaScript ES5/6/2022+", icon: "skill-icons:javascript" },
-    { title: "TypeScript", icon: "skill-icons:typescript" },
+    { showTitle: true, title: "JavaScript ES5/6/2022+", icon: "skill-icons:javascript" },
+    { showTitle: false, title: "TypeScript", icon: "skill-icons:typescript" },
   ],
   [
-    { title: "Jquery", icon: "skill-icons:jquery" },
-    { title: "AlpineJS", icon: "skill-icons:alpinejs-dark" },
-    { title: "ThreeJS", icon: "skill-icons:threejs-dark" },
-    { title: "RxJS", icon: "skill-icons:reactivex-dark", beginner: true },
-    { title: "Anime.js, GSAP, Motion, Framer Motion", icon: "skill-icons:javascript" },
-    { title: "Storybook, histoire", icon: "logos:storybook-icon" },
-    { title: "TanStack Query", icon: "logos:react-query-icon" },
+    { showTitle: false, title: "Jquery", icon: "skill-icons:jquery" },
+    { showTitle: false, title: "AlpineJS", icon: "skill-icons:alpinejs-dark" },
+    { showTitle: false, title: "ThreeJS", icon: "skill-icons:threejs-dark" },
+    { showTitle: false, title: "RxJS", icon: "skill-icons:reactivex-dark", beginner: true },
+    { showTitle: true, title: "Anime.js, GSAP, Motion, Framer Motion", icon: "skill-icons:javascript" },
+    { showTitle: false, title: "Storybook, histoire", icon: "logos:storybook-icon" },
+    { showTitle: false, title: "TanStack Query", icon: "logos:react-query-icon" },
   ],
   [
-    { title: "Vue 2/3", icon: "skill-icons:vuejs-dark" },
-    { title: "Vue Router", icon: "skill-icons:vuejs-dark" },
-    { title: "Pinia (+Pinia Colada)", icon: "skill-icons:pinia-dark" },
-    { title: "Vuex", icon: "skill-icons:vuejs-dark" },
-    { title: "Vue ecosystem", icon: "logos:vueuse" },
-    { title: "Nuxt 2/3", icon: "skill-icons:nuxtjs-dark" },
+    { showTitle: true, title: "Vue 2/3", icon: "skill-icons:vuejs-dark" },
+    { showTitle: true, title: "Vue Router", icon: "skill-icons:vuejs-dark" },
+    { showTitle: true, title: "Pinia (+Pinia Colada)", icon: "skill-icons:pinia-dark" },
+    { showTitle: true, title: "Vuex", icon: "skill-icons:vuejs-dark" },
+    { showTitle: true, title: "Vue ecosystem", icon: "logos:vueuse" },
+    { showTitle: true, title: "Nuxt 2/3", icon: "skill-icons:nuxtjs-dark" },
   ],
   [
-    { title: "React", icon: "skill-icons:react-dark" },
-    { title: "React router", icon: "skill-icons:react-dark" },
-    { title: "Redux Toolkit", icon: "skill-icons:redux" },
-    { title: "Effector", icon: "logos:effector" },
-    { title: "Reatom", icon: "mdi:database", beginner: true },
-    { title: "React ecosystem", icon: "skill-icons:react-dark" },
-    { title: "Next", icon: "skill-icons:nextjs-dark", beginner: true },
-    { title: "T3 Stack", icon: "skill-icons:nextjs-dark", beginner: true },
+    { showTitle: true, title: "React", icon: "skill-icons:react-dark" },
+    { showTitle: true, title: "React router", icon: "skill-icons:react-dark" },
+    { showTitle: true, title: "Redux Toolkit", icon: "skill-icons:redux" },
+    { showTitle: true, title: "Effector", icon: "logos:effector" },
+    { showTitle: true, title: "Reatom", icon: "mdi:database", beginner: true },
+    { showTitle: true, title: "React ecosystem", icon: "skill-icons:react-dark" },
+    { showTitle: true, title: "Next", icon: "skill-icons:nextjs-dark", beginner: true },
+    { showTitle: true, title: "T3 Stack", icon: "skill-icons:nextjs-dark", beginner: true },
   ],
   [
-    { title: "Vite", icon: "skill-icons:vite-dark" },
-    { title: "Rollup", icon: "skill-icons:rollupjs-dark" },
-    { title: "Webpack", icon: "skill-icons:webpack-dark" },
-    { title: "Gulp", icon: "skill-icons:gulp" },
-    { title: "Babel", icon: "skill-icons:babel" },
+    { showTitle: false, title: "Vite", icon: "skill-icons:vite-dark" },
+    { showTitle: false, title: "Parcel", icon: "logos:parcel-icon" },
+    { showTitle: false, title: "Rollup", icon: "skill-icons:rollupjs-dark" },
+    { showTitle: false, title: "Webpack", icon: "skill-icons:webpack-dark" },
+    { showTitle: false, title: "Gulp", icon: "skill-icons:gulp" },
+    { showTitle: false, title: "Babel", icon: "skill-icons:babel" },
   ],
   [
-    { title: "ESlint", icon: "logos:eslint" },
-    { title: "Prettier", icon: "logos:prettier" },
-    { title: "Vitest", icon: "skill-icons:vitest-dark" },
-    { title: "Jest", icon: "skill-icons:jest" },
-    { title: "Cypress", icon: "skill-icons:cypress-light", beginner: true },
+    { showTitle: false, title: "ESlint", icon: "logos:eslint" },
+    { showTitle: false, title: "Prettier", icon: "logos:prettier" },
+    { showTitle: false, title: "Vitest", icon: "skill-icons:vitest-dark" },
+    { showTitle: false, title: "Jest", icon: "skill-icons:jest" },
+    { showTitle: false, title: "Cypress", icon: "skill-icons:cypress-light", beginner: true },
   ],
   [
-    { title: "Astro", icon: "skill-icons:astro" },
-    { title: "Jekyll", icon: "devicon:jekyll" },
+    { showTitle: true, title: "Astro", icon: "skill-icons:astro" },
+    { showTitle: true, title: "Jekyll", icon: "devicon:jekyll" },
   ],
   [
-    { title: "Node.js", icon: "skill-icons:nodejs-dark" },
-    { title: "PNPM", icon: "skill-icons:pnpm-dark" },
-    { title: "Deno", icon: "skill-icons:deno-dark" },
-    { title: "Bun", icon: "skill-icons:bun-dark" },
+    { showTitle: false, title: "Node.js", icon: "skill-icons:nodejs-dark" },
+    { showTitle: false, title: "PNPM", icon: "skill-icons:npm-dark" },
+    { showTitle: false, title: "PNPM", icon: "skill-icons:pnpm-dark" },
+    { showTitle: false, title: "Yarn", icon: "skill-icons:yarn-dark" },
+    { showTitle: false, title: "Deno", icon: "skill-icons:deno-dark" },
+    { showTitle: false, title: "Bun", icon: "skill-icons:bun-dark" },
   ],
   [
-    { title: "REST API", icon: "mdi:access-point-network" },
-    { title: "GraphQL", icon: "skill-icons:graphql-dark" },
-    { title: "Jamstack (SSG & CMS)", icon: "logos:jamstack-icon" },
-    { title: "CMS", icon: "mdi:file-edit" },
-    { title: "Supabase", icon: "skill-icons:supabase-dark" },
-    { title: "Firebase", icon: "logos:firebase" },
-    { title: "AppWrite", icon: "skill-icons:appwrite" },
-    { title: "NocoDB", icon: "logos:nocodb" },
-    { title: "PocketBase, Nhost, Rowy, Teable, Baserow, Undb", icon: "mdi:database" },
+    { showTitle: true, title: "REST API", icon: "mdi:access-point-network" },
+    { showTitle: true, title: "GraphQL", icon: "skill-icons:graphql-dark" },
+    { showTitle: true, title: "Jamstack (SSG & CMS)", icon: "logos:jamstack-icon" },
+    { showTitle: true, title: "CMS", icon: "mdi:file-edit" },
+    { showTitle: false, title: "Supabase", icon: "skill-icons:supabase-dark" },
+    { showTitle: false, title: "Firebase", icon: "logos:firebase" },
+    { showTitle: false, title: "AppWrite", icon: "skill-icons:appwrite" },
+    { showTitle: true, title: "NocoDB", icon: "logos:nocodb" },
+    { showTitle: true, title: "PocketBase, Nhost, Rowy, Teable, Baserow, Undb", icon: "mdi:database" },
   ],
   [
-    { title: "Express.js", icon: "skill-icons:expressjs-dark" },
-    { title: "Fastify.js", icon: "simple-icons:fastify", beginner: true },
-    { title: "Nest.js", icon: "skill-icons:nestjs-dark" },
-    { title: "tRPC и аналоги", icon: "devicon:trpc", beginner: true },
+    { showTitle: false, title: "Express.js", icon: "skill-icons:expressjs-dark" },
+    { showTitle: false, title: "Fastify.js", icon: "simple-icons:fastify", beginner: true },
+    { showTitle: false, title: "Nest.js", icon: "skill-icons:nestjs-dark" },
+    { showTitle: true, title: "tRPC и аналоги", icon: "devicon:trpc", beginner: true },
   ],
   [
-    { title: "Postman", icon: "skill-icons:postman" },
-    { title: "Hoppscotch", icon: "devicon:hoppscotch" },
-    { title: "ORM, Prisma и аналоги", icon: "skill-icons:prisma" },
-    { title: "PostgreSQL", icon: "skill-icons:postgresql-dark" },
-    { title: "SQLite", icon: "skill-icons:sqlite" },
-    { title: "MySQL", icon: "skill-icons:mysql-dark", beginner: true },
-    { title: "MongoDB", icon: "skill-icons:mongodb", beginner: true },
-    { title: "Redis", icon: "skill-icons:redis-dark", beginner: true },
+    { showTitle: false, title: "Postman", icon: "skill-icons:postman" },
+    { showTitle: false, title: "Hoppscotch", icon: "devicon:hoppscotch" },
+    { showTitle: true, title: "ORM, Prisma и аналоги", icon: "skill-icons:prisma" },
+    { showTitle: false, title: "PostgreSQL", icon: "skill-icons:postgresql-dark" },
+    { showTitle: false, title: "SQLite", icon: "skill-icons:sqlite" },
+    { showTitle: false, title: "MySQL", icon: "skill-icons:mysql-dark", beginner: true },
+    { showTitle: false, title: "MongoDB", icon: "skill-icons:mongodb", beginner: true },
+    { showTitle: false, title: "Redis", icon: "skill-icons:redis-dark", beginner: true },
   ],
   [
-    { title: "Rust", icon: "skill-icons:rust", beginner: true },
-    { title: "Python", icon: "skill-icons:python-dark", beginner: true },
-    { title: "PHP", icon: "skill-icons:php-dark", beginner: true },
-    { title: "Shopify", icon: "logos:shopify", beginner: true },
-    { title: "WordPress", icon: "skill-icons:wordpress" },
-    { title: "Laravel", icon: "skill-icons:laravel-dark", beginner: true },
+    { showTitle: false, title: "Rust", icon: "skill-icons:rust", beginner: true },
+    { showTitle: false, title: "Python", icon: "skill-icons:python-dark", beginner: true },
+    { showTitle: false, title: "PHP", icon: "skill-icons:php-dark", beginner: true },
+    { showTitle: false, title: "Shopify", icon: "logos:shopify", beginner: true },
+    { showTitle: false, title: "WordPress", icon: "skill-icons:wordpress" },
+    { showTitle: false, title: "Laravel", icon: "skill-icons:laravel-dark", beginner: true },
   ],
   [
-    { title: "Брауз. расширения Manifest V2/V3", icon: "logos:chrome-web-store" },
-    { title: "GrammY.js", icon: "logos:telegram" },
-    { title: "Разработка расширений VSCode", icon: "skill-icons:vscode-dark" },
+    { showTitle: true, title: "Брауз. расширения Manifest V2/V3", icon: "logos:chrome-web-store" },
+    { showTitle: true, title: "GrammY.js", icon: "logos:telegram" },
+    { showTitle: true, title: "Разработка расширений VSCode", icon: "skill-icons:vscode-dark" },
   ],
   [
-    { title: "Docker", icon: "skill-icons:docker", beginner: true },
-    { title: "CI/CD", icon: "mdi:cog", beginner: true },
-    { title: "Nginx, caddy", icon: "skill-icons:nginx", beginner: true },
+    { showTitle: false, title: "Docker", icon: "skill-icons:docker", beginner: true },
+    { showTitle: true, title: "CI/CD", icon: "mdi:cog", beginner: true },
+    { showTitle: true, title: "Nginx, caddy, Apache", icon: "skill-icons:nginx", beginner: true },
   ],
   [
-    { title: "VSCode", icon: "skill-icons:vscode-dark" },
-    { title: "WebStorm", icon: "skill-icons:webstorm-dark" },
-    { title: "Sublime Text", icon: "skill-icons:sublime-dark" },
-    { title: "Скрипты Bash/Python/Powershell", icon: "skill-icons:bash-dark" },
-    { title: "Windows", icon: "skill-icons:windows-dark" },
-    { title: "Linux", icon: "logos:linux-tux" },
-    { title: "Git", icon: "skill-icons:git" },
-    { title: "GitHub", icon: "skill-icons:github-dark" },
-    { title: "GitLab", icon: "skill-icons:gitlab-dark" },
-    { title: "Jira, Trello", icon: "logos:jira" },
-    { title: "Notion", icon: "skill-icons:notion-dark", beginner: true },
-    { title: "Obsidian", icon: "skill-icons:obsidian-dark" },
+    { showTitle: false, title: "VSCode", icon: "skill-icons:vscode-dark" },
+    { showTitle: false, title: "WebStorm", icon: "skill-icons:webstorm-dark" },
+    { showTitle: false, title: "Sublime Text", icon: "skill-icons:sublime-dark" },
+    { showTitle: false, title: "Скрипты Bash/Python/Powershell", icon: "skill-icons:bash-dark" },
+    { showTitle: false, title: "Windows", icon: "skill-icons:windows-dark" },
+    { showTitle: false, title: "Linux", icon: "logos:linux-tux" },
+    { showTitle: false, title: "Git", icon: "skill-icons:git" },
+    { showTitle: false, title: "GitHub", icon: "skill-icons:github-dark" },
+    { showTitle: false, title: "GitLab", icon: "skill-icons:gitlab-dark" },
+    { showTitle: false, title: "Jira, Trello", icon: "logos:jira" },
   ],
   [
-    { title: "Figma", icon: "skill-icons:figma-dark" },
-    { title: "Photoshop", icon: "devicon:photoshop", beginner: true },
-    { title: "GIMP", icon: "devicon:gimp" },
+    { showTitle: false, title: "Figma", icon: "skill-icons:figma-dark" },
+    { showTitle: false, title: "Photoshop", icon: "devicon:photoshop", beginner: true },
+    { showTitle: false, title: "GIMP", icon: "devicon:gimp" },
   ],
   [
-    { title: "roadmap.sh/backend", beginner: true },
-    { title: "roadmap.sh/frontend" },
+    { showTitle: true, title: "roadmap.sh/backend", beginner: true },
+    { showTitle: true, title: "roadmap.sh/frontend" },
   ],
 ]
 
@@ -228,13 +230,13 @@ const hardSkillsDataEntries = Object.entries(hardSkillsData) as Entries<typeof h
                   <span class="inline-flex flex-wrap gap-x-4 gap-y-2">
                     {skillsGroup.map((skill) => (
                       <>
-                        <span class="inline-flex items-center gap-2">
+                        <span class="inline-flex items-center gap-2" title={skill.title}>
                           {skill.icon ? (
                             <Icon class="inline-block text-[1.6em]" name={skill.icon} />
                           ) : (
                             ""
                           )}
-                          {skill.title}
+                          {skill.showTitle && skill.title}
                         </span>
                       </>
                     ))}
@@ -264,14 +266,17 @@ const hardSkillsDataEntries = Object.entries(hardSkillsData) as Entries<typeof h
       {
         projectsGroups.map((group) => (
           <>
-            <li>
-              <span>{group.title}</span>
+            <li class="pb-16">
+              <p class="inline-block text-2xl mb-8">{group.title}</p>
               <ul class="mb-4 list-inside list-disc">
                 {group.projects.map((project) => (
                   <>
-                    <li>
-                      <a class="cactus-link" href={project.link}>
-                        {project.title}
+                    <li class="mb-12">
+                      <a class="cactus-link text-xl inline-block" href={project.link} target="_blank">
+                        <span class="block mb-4">{project.title}</span>
+                        {project.imgs && <><div class="flex flex-wrap items-center gap-2">
+                          {project.imgs.map(img => <img src={img} class="max-h-60" />)}
+                        </div></>}
                       </a>
                     </li>
                   </>
