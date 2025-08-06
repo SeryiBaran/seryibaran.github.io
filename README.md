@@ -4,18 +4,4 @@
 
 [![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
 
-Хочу выразить гигантскую благодарность разработчикам Astro.
-
-С Astro мне не пришлось учить доп. язык шаблонов - используется JSX-like синтаксис и JavaScript.
-
-## Технологии
-
-- [Astro](https://astro.build/)
-- [Typescript](https://www.typescriptlang.org/)
-
-## Github секреты для телеграм бота
-
-| Секрет          | Содержание                |
-| --------------- | ------------------------- |
-| `TG_BOT_APIKEY` | API ключ от Telegram бота |
-| `TG_CHANNEL_ID` | ID Telegram канала        |
+Основано на теме `erudite`

@@ -1,0 +1,53 @@
+---
+authors: ['seryibaran']
+title: 'Тест офисных пакетов'
+description: 'Я протестировал несколько офисов и пришел к выводу что MS Office не самый лучший'
+date: 2023-10-29
+tags: ["docs"]
+---
+
+Привет.
+
+Я протестировал 7 (10 если считать версии) офисных пакетов на тестовом DOCX файле от Calibri.
+
+## Участники
+
+- Онлайн конвертер ilovepdf
+- Яндекс Документы
+- FreeOffice
+- Google Docs
+- Kingsoft Office Writer 2012
+- LibreOffice
+- Microsoft Word 2007
+- Microsoft Word 2016
+- Microsoft Word 2021
+- WPS Office 2023
+
+## Задача
+
+Открыть [этот файл](/uploads/test-of-offices/testing_file.docx) и экспортировать в PDF.
+
+### PDF файлы
+
+- [Онлайн конвертер ilovepdf](/uploads/test-of-offices/online_converter_ilovepdf.pdf)
+- [Яндекс Документы](/uploads/test-of-offices/yandex_docs.pdf)
+- [FreeOffice](/uploads/test-of-offices/freeoffice.pdf)
+- [Google Docs](/uploads/test-of-offices/google_docs.pdf)
+- [Kingsoft Office Writer 2012](/uploads/test-of-offices/kingsoft_office_writer_2012.pdf)
+- [LibreOffice](/uploads/test-of-offices/libreoffice.pdf)
+- [Microsoft Word 2007](/uploads/test-of-offices/microsoft_word_2007.pdf)
+- [Microsoft Word 2016](/uploads/test-of-offices/microsoft_word_2016.pdf)
+- [Microsoft Word 2021](/uploads/test-of-offices/microsoft_word_2021.pdf)
+- [WPS Office 2023](/uploads/test-of-offices/wps_office_2023.pdf)
+
+## Итог
+
+Вот список редакторов по порядку от самых хороших к самым плохим:
+
+1. WPS Office 2023
+2. Microsoft Word 2007, Microsoft Word 2016, Microsoft Word 2021, Онлайн конвертер ilovepdf (одинаково немного поплыли надписи в календаре)
+3. LibreOffice (лишняя страница в конце + проблемы верхнего пункта)
+4. Яндекс Документы (пропал маркер в виде градиента в конце страницы + проблемы верхнего пункта)
+5. FreeOffice (поплыли таблицы)
+6. Google Docs (чудовищно поплыли буквицы, таблицы и рамки таблиц + проблемы верхнего пункта)
+7. Kingsoft Office Writer 2012 (слетели почти все настройки шрифтов кроме цвета)

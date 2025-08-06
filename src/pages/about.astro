@@ -1,45 +1,99 @@
 ---
-import clsx from "clsx";
-import PageLayout from "@/layouts/Base.astro";
-import { Icon } from "astro-icon/components";
-import type { Entries } from "@/utils";
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import PageHead from '@/components/PageHead.astro'
+import ProjectCard, { type FakeProject } from '@/components/ProjectCard.astro'
+import Layout from '@/layouts/Layout.astro'
+// import { getAllProjects } from '@/lib/data-utils'
+import { Icon } from 'astro-icon/components'
+import type { CollectionEntry } from 'astro:content'
+import clsx from 'clsx'
 
-const meta = {
-  description: "Разная инфа обо мне, моих проектах и навыках",
-  title: "Кто я",
-};
+// const projects = await getAllProjects()
 
-// prettier-ignore
-const projectsGroups = [
+function shit(src: string): CollectionEntry<'projects'>['data']['image'] {
+  // @ts-ignore
+  return src as unknown as CollectionEntry<'projects'>['data']['image']
+}
+
+const projects: FakeProject[] = [
   {
-    title: "Frontend-разработка",
-    projects: [
-      { title: "Большой Макет с анимациями и эффектами на Vue", link: "https://seryibaran.github.io/maket__agencyvue", imgs: ['/portfolio/agency_anims0.webp', '/portfolio/agency_anims1.webp'] },
-      { title: "Список каналов для Смотрёшки", link: "https://seryibaran.github.io/smotreshka_list", imgs: ['/portfolio/sm0.webp', '/portfolio/sm1.webp', '/portfolio/sm2.webp', '/portfolio/sm3.webp'] },
-      { title: "Макет с анимациями", link: "https://seryibaran.github.io/maket-web-dev-project", imgs: ['/portfolio/webdev0.webp'] },
-      { title: "Макет простой", link: "https://seryibaran.github.io/maket-agency", imgs: ['/portfolio/agency0.webp'] },
-      { title: "Сайт-README для проекта Privacy Search Companion", link: "https://seryibaran.github.io/PSC-site", imgs: ['/portfolio/psc0.webp'] },
-      { title: "Доработанный генератор простых картинок для проверки дисплея (feat. fknipp)", link: "https://seryibaran.github.io/test-picture-generator", imgs: ['/portfolio/dtpg.webp'] },
-      { title: "Простая стартовая страница для браузера", link: "https://seryibaran.github.io/SBStartpage", imgs: ['/portfolio/sbs0.webp'] },
-      { title: "Пародия на Twitter - Telehumpter", link: "https://github.com/SeryiBaran/telehumpter" },
-      { title: "Этот сайт", link: "https://seryibaran.github.io" },
-    ],
+    data: {
+      name: 'Макет агенства',
+      description: 'Довольно большой макет сайта с анимациями.',
+      tags: ['Vue', 'UnoCSS'],
+      image: shit('/projects/maket-squareup-agency.webp'),
+      link: 'https://seryibaran.github.io/maket__agencyvue',
+    },
   },
   {
-    title: "Разное",
-    projects: [
-      { title: "Firefox расширение Privacy Search Companion", link: "https://github.com/SeryiBaran/Privacy-Search-Companion" },
-      { title: "GUI для Yt-dlp на Python/Delphi", link: "https://github.com/SeryiBaran/yt-dlp-python-gui", imgs: ['/portfolio/ytd0.webp', '/portfolio/ytd1.webp'] },
-      { title: "Термостат на Arduino", link: "https://github.com/SeryiBaran/ardustat" },
-      { title: "Большие удобные кнопки для PlatformIO", link: "https://github.com/SeryiBaran/platformio-big-buttons", imgs: ['/portfolio/pbb.webp'] },
-      { title: "Шина данных для Mindustry", link: "https://github.com/SeryiBaran/mindustry_sbbus", imgs: ['/portfolio/sbbus.webp'] },
-    ],
+    data: {
+      name: 'Лендинг',
+      description: 'Лендинг с анимациями при скролле',
+      tags: ['Vanilla'],
+      image: shit('/projects/maket-landing.webp'),
+      link: 'https://seryibaran.github.io/maket-web-dev-project/',
+    },
   },
-];
+  {
+    data: {
+      name: 'Простой лендинг',
+      description: '',
+      tags: ['Vanilla'],
+      image: shit('/projects/maket-first.webp'),
+      link: 'https://seryibaran.github.io/maket-agency/',
+    },
+  },
+  {
+    data: {
+      name: 'Список каналов для Смотрёшки',
+      description:
+        'То что сделали оригинальные разрабы на своем сайте не понравилось, написал свое',
+      tags: ['Vue', 'UnoCSS'],
+      image: shit('/projects/smotreshka-list.webp'),
+      link: 'https://seryibaran.github.io/smotreshka_list',
+    },
+  },
+  {
+    data: {
+      name: 'Сайт-README для проекта "Privacy Search Companion"',
+      description: '',
+      tags: ['Vue', 'Tailwind'],
+      image: shit('/projects/psc.webp'),
+      link: 'https://seryibaran.github.io/PSC-Site/',
+    },
+  },
+  {
+    data: {
+      name: 'Генератор картинок для теста монитора',
+      description: '',
+      tags: ['Vanilla', 'Canvas'],
+      image: shit('/projects/dtpg.webp'),
+      link: 'https://seryibaran.github.io/test-picture-generator/',
+    },
+  },
+  {
+    data: {
+      name: 'DYDown',
+      description: 'GUI для yt-dlp на Delphi',
+      tags: ['Delphi'],
+      image: shit('/projects/dydown.webp'),
+      link: 'https://seryibaran.github.io/404',
+    },
+  },
+  {
+    data: {
+      name: 'Стартовая страница для браузера',
+      description: '',
+      tags: ['Vanilla'],
+      image: shit('/projects/sbstartpage.webp'),
+      link: 'https://seryibaran.github.io/SBStartpage/',
+    },
+  },
+]
 
 const skillsGroupsNamesMap = {
-  'skillsGroups': 'Хард скилы',
-  'learningSkillsGroups': 'Изучаю',
+  skillsGroups: 'Хард скилы',
+  learningSkillsGroups: 'Изучаю',
 } as const
 
 interface Skill {
@@ -80,13 +134,13 @@ const hardSkillsGroups: Skill[][] = [
     { showTitle: true, title: "Pinia (+Pinia Colada)", icon: "skill-icons:pinia-dark" },
     { showTitle: true, title: "Vuex", icon: "skill-icons:vuejs-dark" },
     { showTitle: true, title: "Vue ecosystem", icon: "logos:vueuse" },
-    { showTitle: true, title: "Nuxt 2/3", icon: "skill-icons:nuxtjs-dark" },
+    { showTitle: true, title: "Nuxt 2/3", icon: "skill-icons:nuxtjs-dark", beginner: true },
   ],
   [
     { showTitle: true, title: "React", icon: "skill-icons:react-dark" },
     { showTitle: true, title: "React router", icon: "skill-icons:react-dark" },
     { showTitle: true, title: "Redux Toolkit", icon: "skill-icons:redux" },
-    { showTitle: true, title: "Effector", icon: "logos:effector" },
+    { showTitle: true, title: "Effector", icon: "logos:effector", beginner: true },
     { showTitle: true, title: "Reatom", icon: "mdi:database", beginner: true },
     { showTitle: true, title: "React ecosystem", icon: "skill-icons:react-dark" },
     { showTitle: true, title: "Next", icon: "skill-icons:nextjs-dark", beginner: true },
@@ -121,27 +175,27 @@ const hardSkillsGroups: Skill[][] = [
   ],
   [
     { showTitle: true, title: "REST API", icon: "mdi:access-point-network" },
-    { showTitle: true, title: "GraphQL", icon: "skill-icons:graphql-dark" },
+    { showTitle: true, title: "GraphQL", icon: "skill-icons:graphql-dark", beginner: true },
     { showTitle: true, title: "Jamstack (SSG & CMS)", icon: "logos:jamstack-icon" },
     { showTitle: true, title: "CMS", icon: "mdi:file-edit" },
     { showTitle: false, title: "Supabase", icon: "skill-icons:supabase-dark" },
-    { showTitle: false, title: "Firebase", icon: "logos:firebase" },
+    { showTitle: false, title: "Firebase", icon: "logos:firebase", beginner: true },
     { showTitle: false, title: "AppWrite", icon: "skill-icons:appwrite" },
-    { showTitle: true, title: "NocoDB", icon: "logos:nocodb" },
-    { showTitle: true, title: "PocketBase, Nhost, Rowy, Teable, Baserow, Undb", icon: "mdi:database" },
+    { showTitle: true, title: "NocoDB", icon: "logos:nocodb", beginner: true },
+    { showTitle: true, title: "PocketBase, Nhost, Rowy, Teable, Baserow, Undb", icon: "mdi:database", beginner: true },
   ],
   [
-    { showTitle: false, title: "Express.js", icon: "skill-icons:expressjs-dark" },
+    { showTitle: false, title: "Express.js", icon: "skill-icons:expressjs-dark", beginner: true },
     { showTitle: false, title: "Fastify.js", icon: "simple-icons:fastify", beginner: true },
-    { showTitle: false, title: "Nest.js", icon: "skill-icons:nestjs-dark" },
+    { showTitle: false, title: "Nest.js", icon: "skill-icons:nestjs-dark", beginner: true },
     { showTitle: true, title: "tRPC и аналоги", icon: "devicon:trpc", beginner: true },
   ],
   [
-    { showTitle: false, title: "Postman", icon: "skill-icons:postman" },
+    { showTitle: false, title: "Postman", icon: "skill-icons:postman", beginner: true },
     { showTitle: false, title: "Hoppscotch", icon: "devicon:hoppscotch" },
-    { showTitle: true, title: "ORM, Prisma и аналоги", icon: "skill-icons:prisma" },
-    { showTitle: false, title: "PostgreSQL", icon: "skill-icons:postgresql-dark" },
-    { showTitle: false, title: "SQLite", icon: "skill-icons:sqlite" },
+    { showTitle: true, title: "ORM, Prisma и аналоги", icon: "skill-icons:prisma", beginner: true },
+    { showTitle: false, title: "PostgreSQL", icon: "skill-icons:postgresql-dark", beginner: true },
+    { showTitle: false, title: "SQLite", icon: "skill-icons:sqlite", beginner: true },
     { showTitle: false, title: "MySQL", icon: "skill-icons:mysql-dark", beginner: true },
     { showTitle: false, title: "MongoDB", icon: "skill-icons:mongodb", beginner: true },
     { showTitle: false, title: "Redis", icon: "skill-icons:redis-dark", beginner: true },
@@ -193,122 +247,106 @@ interface SkillsData {
 }
 
 function filt(conditionFn: (arg: Skill) => boolean) {
-  return hardSkillsGroups.map(group => group.filter(conditionFn)).filter(group => group.length > 0)
+  return hardSkillsGroups
+    .map((group) => group.filter(conditionFn))
+    .filter((group) => group.length > 0)
 }
 
 // TODO: rewrite shitcode
 const hardSkillsData: SkillsData = {
-  skillsGroups: filt(skill => !(skill.beginner || false)),
-  learningSkillsGroups: filt(skill => skill.beginner || false)
+  skillsGroups: filt((skill) => !(skill.beginner || false)),
+  learningSkillsGroups: filt((skill) => skill.beginner || false),
 }
 
-const hardSkillsDataEntries = Object.entries(hardSkillsData) as Entries<typeof hardSkillsData>
+type Entries<T> = [keyof T, T[keyof T]][]
+
+const hardSkillsDataEntries = Object.entries(hardSkillsData) as Entries<
+  typeof hardSkillsData
+>
 ---
 
-<PageLayout meta={meta}>
-  <div>
-    <h1 class="title mb-6">Кто я</h1>
+<Layout class="max-w-3xl">
+  <PageHead slot="head" title="About" />
+  <Breadcrumbs items={[{ label: 'About', icon: 'lucide:info' }]} />
 
-    <p class="mb-4">
-      Иван Муз<span class="text-2xl">ы́</span>ка, 16 лет, Frontend разработчик. Люблю изучать что-то новое и профессионально развиваться, если чего-то не знаю - смогу быстро научиться. Умею разгребать легаси-код, даже бывало копался в минифицированном обфусцированном коде на Jquery. Умею и люблю работать в команде (если потребуется).
-    </p>
+  <section>
+    <div class="min-w-full">
+      <div class="prose mb-8">
+        <p class="text-center text-3xl min-[400px]:text-4xl">
+          Привет! Я<br />
+          <span class="text-gradient-my leading-relaxed">Иван Музыка.</span>
+        </p>
 
-    <ul class="mb-4">
-      <li>Формат работы - удалёнщик</li>
-      <li>Занятость - полная/проектная</li>
-      <li>Ожидания по зарплате - $140/мес, от $70 за проект</li>
-      <li>Опыт - 1 год коммерции и 1 год фриланса</li>
-    </ul>
+        <p class="mt-0">
+          Я Frontend (изучающий Fullstack и DevOps) разработчик, ищущий работу.
+          За спиной более полутора лет опыта коммерческой разработки. Умею и
+          люблю работать в команде. Люблю изучать что-то новое и профессионально
+          развиваться, если чего-то не знаю - смогу быстро научиться. Могу
+          разгребать легаси-код, даже бывало копался в минифицированном
+          обфусцированном коде на Jquery.
+        </p>
 
-    {hardSkillsDataEntries.map(([skillsGroupId, skillsGroups]) => (skillsGroups.length > 0 && <>
-        <h2 class="title mb-4 text-xl">{skillsGroupsNamesMap[skillsGroupId]}</h2>
-        <ul class={ clsx("mb-4 list-inside list-none", skillsGroupId === 'learningSkillsGroups' && "opacity-60 hover:opacity-100") }>
-          {
-            skillsGroups.map((skillsGroup) => (
-              <>
-                <li class="mt-2 border-l-4 border-solid border-accent/80 py-1 pl-2">
-                  <span class="inline-flex flex-wrap gap-x-4 gap-y-2">
-                    {skillsGroup.map((skill) => (
+        <ul>
+          <li>Формат работы - удалёнщик</li>
+          <li>Занятость - полная/проектная</li>
+          <li>Ожидания по зарплате - $80/мес, от $40 за проект</li>
+          <li>Опыт - 1.5 года коммерции + несколько заказов на фрилансе</li>
+        </ul>
+      </div>
+
+      <h2 class="mb-4 text-2xl font-medium">Проекты</h2>
+      <div class="flex flex-col gap-4">
+        {projects.map((project) => <ProjectCard project={project} />)}
+      </div>
+
+      <div class="prose mb-8">
+        {
+          hardSkillsDataEntries.map(
+            ([skillsGroupId, skillsGroups]) =>
+              skillsGroups.length > 0 && (
+                <>
+                  <h2 class="mb-4 text-2xl font-medium">
+                    {skillsGroupsNamesMap[skillsGroupId]}
+                  </h2>
+                  <ul
+                    class={clsx(
+                      'mb-4 list-inside list-none',
+                      skillsGroupId === 'learningSkillsGroups' &&
+                        'opacity-60 hover:opacity-100',
+                    )}
+                  >
+                    {skillsGroups.map((skillsGroup) => (
                       <>
-                        <span class="inline-flex items-center gap-2" title={skill.title}>
-                          {skill.icon ? (
-                            <Icon class="inline-block text-[1.6em]" name={skill.icon} />
-                          ) : (
-                            ""
-                          )}
-                          {skill.showTitle && skill.title}
-                        </span>
+                        <li class="border-accent/80 border-l-4 border-solid">
+                          <span class="inline-flex flex-wrap gap-x-4 gap-y-2">
+                            {skillsGroup.map((skill) => (
+                              <>
+                                <span
+                                  class="inline-flex items-center gap-2"
+                                  title={skill.title}
+                                >
+                                  {skill.icon ? (
+                                    <Icon
+                                      class="inline-block text-[1.4em]"
+                                      name={skill.icon}
+                                    />
+                                  ) : (
+                                    ''
+                                  )}
+                                  {skill.showTitle && skill.title}
+                                </span>
+                              </>
+                            ))}
+                          </span>
+                        </li>
                       </>
                     ))}
-                  </span>
-                </li>
-              </>
-            ))
-          }
-        </ul>
-      </>))}
-
-    <h2 class="title mb-4 text-xl">Опыт работы</h2>
-    <ul class="mb-4 list-inside list-disc">
-      <li>
-        Фриланс: Frontend разработчик | 2022 - 2023 | Разработка и поддержка сайта |
-        HTML/CSS/JS/SaSS
-      </li>
-      <li>
-        topux.dev: HTML+CSS верстальщик | 2021-2022 | Верстка, базовый JS, доработка мелочей |
-        HTML/CSS/JS/SaSS
-      </li>
-    </ul>
-
-    <h2 class="title mb-4 text-xl">Портфолио</h2>
-
-    <ul class="mb-4 list-inside list-disc">
-      {
-        projectsGroups.map((group) => (
-          <>
-            <li class="pb-16">
-              <p class="inline-block text-2xl mb-8">{group.title}</p>
-              <ul class="mb-4 list-inside list-disc">
-                {group.projects.map((project) => (
-                  <>
-                    <li class="mb-12">
-                      <a class="cactus-link text-xl inline-block" href={project.link} target="_blank">
-                        <span class="block mb-4">{project.title}</span>
-                        {project.imgs && <><div class="flex flex-wrap items-center gap-2">
-                          {project.imgs.map(img => <img src={img} class="max-h-60" />)}
-                        </div></>}
-                      </a>
-                    </li>
-                  </>
-                ))}
-              </ul>
-            </li>
-          </>
-        ))
-      }
-    </ul>
-
-    <p class="mb-4">
-      И ещё много интересного/неинтересного <a
-        class="cactus-link"
-        href="https://github.com/SeryiBaran?tab=repositories">тут</a
-      >.
-    </p>
-
-    <p class="mb-4 text-xs">
-      Этот сайт основан на <a
-        class="cactus-link"
-        href="https://github.com/chrismwilliams/astro-theme-cactus"
-        target="_blank">Astro Cactus</a
-      >. А вообще, на чем он только не был основан, и на Jekyll, и на Astro, и на html+css <span
-        class="text-[1px]">в уёбищном виде</span
-      >... Можете посмотреть все это <a class="cactus-link" href="/posts/site_history">здесь</a>.
-    </p>
-  </div>
-</PageLayout>
-
-<style>
-  ul li {
-    margin-left: 16px;
-  }
-</style>
+                  </ul>
+                </>
+              ),
+          )
+        }
+      </div>
+    </div>
+  </section>
+</Layout>

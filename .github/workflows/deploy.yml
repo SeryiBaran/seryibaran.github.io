@@ -46,7 +46,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 22
           registry-url: https://registry.npmjs.org/
           cache: "pnpm"
 
@@ -66,34 +66,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  telegram-send-post:
-    name: "Send changed/created post to Telegram Channel"
-    runs-on: ubuntu-latest
-    environment: telegram-send-post
-    env:
-      TG_BOT_APIKEY: ${{ secrets.TG_BOT_APIKEY }}
-      TG_CHANNEL_ID: ${{ secrets.TG_CHANNEL_ID }}
-    needs: deploy
-    steps:
-      - uses: actions/checkout@v3
-
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "18"
-          cache: "pnpm"
-
-      - uses: jitterbit/get-changed-files@v1
-        id: changedFiles
-        with:
-          format: space-delimited
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: "Run bot"
-        run: |
-          pnpm install
-          CREATED_FILE="${{steps.changedFiles.outputs.added}}" pnpm run tg-bot

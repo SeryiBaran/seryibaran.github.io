@@ -1,53 +1,64 @@
 ---
-import SocialList from "@/components/SocialList.astro";
-import PostPreview from "@/components/blog/PostPreview.astro";
-import { getAllPosts, sortMDByDate } from "@/data/post";
-import PageLayout from "@/layouts/Base.astro";
-import dayjs from 'dayjs';
-import 'dayjs/locale/ru'
+import BlogCard from '@/components/BlogCard.astro'
+import Link from '@/components/Link.astro'
+import PageHead from '@/components/PageHead.astro'
+import { buttonVariants } from '@/components/ui/button'
+import { SITE } from '@/consts'
+import Layout from '@/layouts/Layout.astro'
+import { getRecentPosts } from '@/lib/data-utils'
+import { formatDate } from '@/lib/utils'
 
-const MAX_POSTS = 9999;
-const allPosts = await getAllPosts();
-const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
+const blog = await getRecentPosts(SITE.featuredPostCount)
 ---
 
-<PageLayout meta={{ title: "Главная" }}>
+<Layout class="max-w-3xl">
+  <PageHead slot="head" title="Home" />
   <section>
-    <h1 class="title mb-6">SeryiBaran</h1>
-    <p class="mb-4">
-      Привет! Я Иван Музы́ка, на момент последнего обновления сайта ({dayjs().toISOString()} по UTC) мне { dayjs().diff(dayjs("2008-10-15T15:00:00.000+03:00"), 'year') } лет и я Frontend (+ немного Fullstack) разработчик.
-    </p>
-    <p class="mb-4 text-lg">
-      Портфолио+навыки находится на <a class="cactus-link" href="/about">странице Кто я</a>.
-    </p>
-    <p class="mb-4">
-      Все мои контакты находятся на странице <a class="cactus-link" href="/contacts">Контакты</a>. Наиболее я активен в
-      Telegram.
-    </p>
-    <p class="mb-4">
-      А ещё я знаю наизусть 52 знака <a class="cactus-link" href="/pi">3.14</a>.
-    </p>
-    <p class="mb-4 text-xs">
-      <a class="cactus-link" href="/contacts">Задонатить</a>.
-    </p>
-    <p class="mb-4 text-sm text-red-500">
-      ! Мой VK аккаунт <a class="cactus-link" href="https://vk.com/ivanchai6">@ivanchai6</a> скоро удалится,
-      т.к. у меня нет доступа к номеру телефона. Теперь у меня другой VK аккаунт на другом телефоне,
-      он указан на странице <a class="cactus-link" href="/contacts">Контакты</a>.
-    </p>
-    <!-- <a href="https://hits.seeyoufarm.com" class="inline-block"><img src={`https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=${encodeURI(Astro.url.toString() + "__SeryiBaranSite12022025TestLJJNo34")}&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=${encodeURI("Просмотров:")}&edge_flat=false`}/></a> -->
-    <SocialList />
+    <div class="rounded-lg border">
+      <div class="flex flex-col space-y-1.5 p-6">
+        <h3 class="text-gradient-my mb-6">
+          <Link href="/about" class="border-b-4 border-violet-500 pb-2"
+            >SeryiBaran</Link>
+        </h3>
+        <p class="text-muted-foreground text-sm">
+          Личный сайт Ивана Музыка (aka SeryiBaran)
+        </p>
+      </div>
+      <div class="p-6 pt-0">
+        <p class="text-muted-foreground mb-2 text-sm">
+          Привет! Я Иван Музы́ка, на момент последнего обновления сайта ({
+            formatDate(new Date())
+          }) мне 16 лет и я Frontend (изучающий Fullstack и DevOps) разработчик.
+          Портфолио, контакты и прочая инфа обо мне находится на странице <Link
+            href="/about"
+            class="text-foreground"
+            underline>Обо мне</Link
+          >.
+        </p>
+      </div>
+    </div>
   </section>
-  <section aria-label="Blog post list" class="mt-16">
-    <h2 class="title mb-4 text-xl">Посты</h2>
-    <ul class="flex flex-col gap-6 sm:gap-0.5">
+  <section class="flex flex-col gap-y-4">
+    <h2 class="text-2xl font-medium">Посты</h2>
+    <ul class="flex flex-col gap-y-4">
       {
-        allPostsByDate.map((p) => (
-          <li class="grid sm:gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
-            <PostPreview post={p} />
+        blog.map((post) => (
+          <li>
+            <BlogCard entry={post} />
           </li>
         ))
       }
     </ul>
+    <div class="flex justify-center">
+      <Link
+        href="/blog"
+        class={buttonVariants({ variant: 'ghost' }) + ' group'}
+      >
+        Посмотреть все посты <span
+          class="ml-1.5 transition-transform group-hover:translate-x-1"
+          >&rarr;</span
+        >
+      </Link>
+    </div>
   </section>
-</PageLayout>
+</Layout>

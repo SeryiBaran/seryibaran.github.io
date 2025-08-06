@@ -1,19 +1,25 @@
-import rss from "@astrojs/rss";
-import { siteConfig } from "@/site-config";
-import { getAllPosts } from "@/data/post";
+import { SITE } from '@/consts'
+import rss from '@astrojs/rss'
+import type { APIContext } from 'astro'
+import { getAllPosts } from '@/lib/data-utils'
 
-export const GET = async () => {
-	const posts = await getAllPosts();
+export async function GET(context: APIContext) {
+  try {
+    const posts = await getAllPosts()
 
-	return rss({
-		title: siteConfig.title,
-		description: siteConfig.description,
-		site: import.meta.env.SITE,
-		items: posts.map((post) => ({
-			title: post.data.title,
-			description: post.data.description,
-			pubDate: post.data.publishDate,
-			link: `posts/${post.slug}`,
-		})),
-	});
-};
+    return rss({
+      title: SITE.title,
+      description: SITE.description,
+      site: context.site ?? SITE.href,
+      items: posts.map((post) => ({
+        title: post.data.title,
+        description: post.data.description,
+        pubDate: post.data.date,
+        link: `/blog/${post.id}/`,
+      })),
+    })
+  } catch (error) {
+    console.error('Error generating RSS feed:', error)
+    return new Response('Error generating RSS feed', { status: 500 })
+  }
+}

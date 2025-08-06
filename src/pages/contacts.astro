@@ -1,11 +1,9 @@
 ---
-import PageLayout from "@/layouts/Base.astro";
-import { Icon } from "astro-icon/components";
-
-const meta = {
-	description: "Все мои контакты",
-	title: "Контакты",
-};
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import Link from '@/components/Link.astro'
+import PageHead from '@/components/PageHead.astro'
+import Layout from '@/layouts/Layout.astro'
+import { Icon } from 'astro-icon/components'
 
 const links = [
   {
@@ -81,28 +79,54 @@ const links = [
 ]
 ---
 
-<PageLayout meta={meta}>
-	<div>
-		<h1 class="title mb-6">Контакты</h1>
-		<ul class="mb-4 list-inside list-disc">
-      {
-        links.map((link) => (
-          <li>
-            {link.icon ? <span class="inline-block w-[1.5em]"><Icon class="inline-block text-[1.5em] max-w-full" name={link.icon} /></span> : ''}
-            <a class="cactus-link" href={link.href}>{link.title}</a>
-          </li>
-        ))
-      }
-      <li><Icon class="inline-block text-[1.5em]" name='mdi:email' /> E-Mail: anderchiser COMMERCIAL_AT yandex.ru</li>
-      <li><Icon class="inline-block text-[1.6em]" name='token-branded:usdt' /> USDT TRC20: <code>TL2gLBkDaTDwgPL98dyUFJgGfhUTBSboKK</code></li>
-      <li><Icon class="inline-block text-[1.6em]" name='token-branded:ton' /> TON: <code>UQDA2orjI-UOVDEP2R7RQUzv8P3ahfq34ZmYnALV0IX9Lp5L</code></li>
-      <li><Icon class="inline-block text-[1.6em]" name='token-branded:btc' /> Bitcoin: <code>1N8n1UNavu3uEG1bNfSwL1pQpb8qqwhFeD</code></li>
-    </ul>
-	</div>
-</PageLayout>
+<Layout class="max-w-3xl">
+  <PageHead slot="head" title="About" />
+  <Breadcrumbs items={[{ label: 'About', icon: 'lucide:info' }]} />
 
-<style>
-  li {
-    margin-top: 4px;
-  }
-</style>
+  <section>
+    <div class="min-w-full">
+      <div class="prose mb-8"></div>
+
+      <h2 class="mb-4 text-2xl font-medium">Контакты</h2>
+      <div class="flex flex-col gap-4">
+        <ul class="list-disc">
+          {
+            links.map((link) => (
+              <li>
+                {link.icon ? (
+                  <span class="mr-2 inline-block w-[1.5em]">
+                    <Icon
+                      class="inline-block max-w-full text-[1.5em]"
+                      name={link.icon}
+                    />
+                  </span>
+                ) : (
+                  ''
+                )}
+                <Link href={link.href} external underline>
+                  {link.title}
+                </Link>
+              </li>
+            ))
+          }
+          <li>
+            <Icon class="inline-block text-[1.5em]" name="mdi:email" /> E-Mail: anderchiser
+            COMMERCIAL_AT yandex.ru
+          </li>
+          <li>
+            <Icon class="inline-block text-[1.6em]" name="token-branded:usdt" />
+            USDT TRC20: <code>TL2gLBkDaTDwgPL98dyUFJgGfhUTBSboKK</code>
+          </li>
+          <li>
+            <Icon class="inline-block text-[1.6em]" name="token-branded:ton" /> TON:
+            <code>UQDA2orjI-UOVDEP2R7RQUzv8P3ahfq34ZmYnALV0IX9Lp5L</code>
+          </li>
+          <li>
+            <Icon class="inline-block text-[1.6em]" name="token-branded:btc" /> Bitcoin:
+            <code>1N8n1UNavu3uEG1bNfSwL1pQpb8qqwhFeD</code>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</Layout>

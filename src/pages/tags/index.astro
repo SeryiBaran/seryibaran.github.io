@@ -1,35 +1,33 @@
 ---
-import PageLayout from "@/layouts/Base.astro";
-import { getAllPosts, getUniqueTagsWithCount } from "@/data/post";
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import Link from '@/components/Link.astro'
+import PageHead from '@/components/PageHead.astro'
+import { badgeVariants } from '@/components/ui/badge'
+import Layout from '@/layouts/Layout.astro'
+import { getSortedTags } from '@/lib/data-utils'
+import { Icon } from 'astro-icon/components'
 
-const allPosts = await getAllPosts();
-const allTags = getUniqueTagsWithCount(allPosts);
-
-const meta = {
-	description: "A list of all the topics I've written about in my posts",
-	title: "All Tags",
-};
+const sortedTags = await getSortedTags()
 ---
 
-<PageLayout meta={meta}>
-	<h1 class="title mb-6">Теги</h1>
-	<ul class="space-y-4">
-		{
-			allTags.map(([tag, val]) => (
-				<li class="flex items-center gap-x-2">
-					<a
-						class="cactus-link inline-block"
-						data-astro-prefetch
-						href={`/tags/${tag}/`}
-						title={`View posts with the tag: ${tag}`}
-					>
-						&#35;{tag}
-					</a>
-					<span class="inline-block">
-						- {val} Постов
-					</span>
-				</li>
-			))
-		}
-	</ul>
-</PageLayout>
+<Layout class="max-w-3xl">
+  <PageHead slot="head" title="Теги" />
+  <Breadcrumbs items={[{ label: 'Теги', icon: 'lucide:tags' }]} />
+
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-wrap gap-2">
+      {
+        sortedTags.map(({ tag, count }) => (
+          <Link
+            href={`/tags/${tag}`}
+            class={badgeVariants({ variant: 'secondary' })}
+          >
+            <Icon name="lucide:hash" class="size-3" />
+            {tag}
+            <span class="text-muted-foreground ml-1.5">({count})</span>
+          </Link>
+        ))
+      }
+    </div>
+  </div>
+</Layout>

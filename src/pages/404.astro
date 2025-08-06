@@ -1,28 +1,29 @@
 ---
-import aboutImg from "@/assets/about-astro.png";
-import PageLayout from "@/layouts/Base.astro";
-import { Image } from "astro:assets";
-
-const meta = {
-  description: "Страница не найдена",
-  title: "404",
-};
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import Link from '@/components/Link.astro'
+import PageHead from '@/components/PageHead.astro'
+import { buttonVariants } from '@/components/ui/button'
+import Layout from '@/layouts/Layout.astro'
+import { cn } from '@/lib/utils'
 ---
 
-<PageLayout meta={meta}>
-  <h1 class="title mb-6">404 | Случился АКЫН</h1>
-  <p class="mb-8 text-lg">
-    Страница не найдена. Возможно её скрали неопознанные летающие тарелы или просто инопришчленцы.
-  </p>
-  <p class="mb-8"><a class="cactus-link" href="/">Вертайте меня взад</a></p>
-  <div class="my-4 grid justify-center">
-    <a class="cactus-link" href="/">
-      <Image
-        alt="A cartoon cactus looking at the 'Astro.build' logo"
-        class="rotate-180"
-        loading="eager"
-        src={aboutImg}
-      />
-    </a>
-  </div>
-</PageLayout>
+<Layout class="max-w-3xl">
+  <PageHead slot="head" title="404" />
+  <Breadcrumbs items={[{ label: '???', icon: 'lucide:circle-help' }]} />
+
+  <section
+    class="flex flex-col items-center justify-center gap-y-4 text-center"
+  >
+    <div class="max-w-md">
+      <h1 class="mb-4 text-3xl font-medium">404: Страница не найдена</h1>
+      <p class="prose">Упс! Страницы которую вы запросили не существует.</p>
+    </div>
+    <Link
+      href="/"
+      class={cn(buttonVariants({ variant: 'outline' }), 'flex gap-x-1.5 group')}
+    >
+      <span class="transition-transform group-hover:-translate-x-1">&larr;</span
+      > На главную
+    </Link>
+  </section>
+</Layout>
