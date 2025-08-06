@@ -71,6 +71,7 @@ export default defineConfig({
     icon(),
   ],
   vite: {
+    // @ts-ignore because https://github.com/tailwindlabs/tailwindcss/discussions/18509
     plugins: [tailwindcss()],
   },
   server: {
