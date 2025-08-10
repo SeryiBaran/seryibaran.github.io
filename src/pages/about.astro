@@ -18,6 +18,15 @@ function shit(src: string): CollectionEntry<'projects'>['data']['image'] {
 const projects: FakeProject[] = [
   {
     data: {
+      name: 'Лендинг для организатора киберспортивных турниров "SPLASH"',
+      description: 'Небольшой проект с анимациями',
+      tags: ['Vue', 'CSS'],
+      image: shit('/projects/splash.webp'),
+      link: 'https://splash-tournaments.pro/',
+    },
+  },
+  {
+    data: {
       name: 'Макет лендинга агенства',
       description: 'Довольно большой макет сайта с анимациями.',
       tags: ['Vue', 'UnoCSS'],
@@ -305,7 +314,7 @@ const hardSkillsDataEntries = Object.entries(hardSkillsData) as Entries<
 
       <h2 class="mb-4 text-2xl font-medium">Проекты</h2>
       <div class="flex flex-col gap-4">
-        {projects.map((project) => <ProjectCard project={project} />)}
+        {projects.map((project, projectIndex) => <ProjectCard project={project} projectIndex={projectIndex} />)}
       </div>
 
       <div class="prose mb-8">
