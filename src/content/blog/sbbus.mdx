@@ -2339,42 +2339,218 @@ read result cell1 ADDRESS
 control enabled press1 result 0 0 0
 ```
 
-## dev
+## Клиент SBBus Uni
 
-mlogjs набросок
+![uni](/uploads/sbbus/uni.jpg)
 
-```js
-const config1 = getBuilding('sorter1').config
-const config2 = getBuilding('sorter2').config
+Подходит к любой версии шины. Невероятно быстрый и оптимизированный.
 
-let address = -999
+После выставления нового адреса нажмите `sensor addr`.
 
-switch (config1) {
-  case Items.copper:
-    address = 0
-  case Items.lead:
-    address = 1
-  case Items.metaglass:
-    address = 2
-  case Items.graphite:
-    address = 3
-}
-```
+Адреса суммируются, т.е. если подключить 8x8 сетку `switches`, макс возможный адрес будет 1024, но это бесполезно т.к. макс банка памяти на 512 адресов.
+
+Для подключения, сначала подключите к s1 **СТРОГО ПО ПОРЯДКУ**:
+
+1. `internal DB`
+2. `sensor addr`
+3. `addr out`
+4. сколько нужно `switches` (произвольное кол-во)
+5. 512 банка памяти шины
+
+Затем подключите к `s2` регулируемые устройства.
+
+Затем выставите адрес и нажмите кнопку `sensor addr`
+
+Схема (к `s1` ничего не подключено):
 
 ```plaintext
-sensor config1:1:6 sorter1 @config
-sensor config2:2:6 sorter2 @config
-set address:4:4 -999
-jump 8 strictEqual config1:1:6 @copper
-jump 9 strictEqual config1:1:6 @lead
-jump 10 strictEqual config1:1:6 @metaglass
-jump 11 strictEqual config1:1:6 @graphite
-jump 12 always
-set address:4:4 0
-set address:4:4 1
-set address:4:4 2
-set address:4:4 3
+bXNjaAF4nGNgYeBkZmDJS8xNZeAMdnIqLVYIzctk4E5JLU4uyiwoyczPY2BgYMtJTErNKWZgic6tjOVkYCvOLypJLWLgzcksLM1M0S3OLy1KTmVgz00tLk5MTwXKl2eWJGcw8GdUFqQW6RYU5ScDZfKLGPhzM5OL8pEEuHNTc/OLKnWTU3NygMblp2cm66ZkFhfkJFYy8EO4CMUMDLwMIMDKwMDPwAhkMLKyMDAzMAFZTCyMDOIXZl3YfWHHha0X9l5sUoD7RQ+sgBmogNEAqJqBgYULrBdqDgtQmokPyH9YMWfq1NObbivwtF0Ota7jCrubeuzI9DkVU33LY7+xprTfmJPgzOivlh8vWfBo3gbF7h7d2kl1Aiful+1+b8+z+cmprRv3/ywx5s31CkrpDjyQZb2gNy1I0Hj7k+VnT0bqfNNP1E5Yss1n9rIDK1j/6fef5pnenedV8vzdVPPS4i4VZx7hC+tfmf3cfL4yZMk5z/WSCz6eZwj2aG+MPP9GSWQ+/72up2o87s4Pe577+YXf+23SrmwY9vncv1/WzQU8v6YmWf3wf1938MGjvay13/vOOPWfNmfUvDcxrllqR2rjinuczJejlLQEXD64PYnMS3z0+UWnkdJFvqD9DR0OlxceetC38nHTYzU2BaUA3oQb/7h0bzGLCq6a5rxpYpTrklmR33P4nU64NyQVTb2Ssz7lxiYtpZ2xWW+tLbUs10dHH51ib3IjPXsVP9MjPn7nIpttD0vs+D99blS72K6yy2PRaZVdXoteq/ya4VKvcnH5lndPMiuizDOjrDOj7DOjnDOj3DP3/vrz48v/xL9fzVov1VT1FvyvEt0seeJET+O8QPMr74Puz0p+t46Fj2P1UoWcprAN3Iblebsb82bcWfrtqF/LTu8dH9Ms7v3dvqD1pVv81fdS+iuKS3w4Xtlp5B3a33Q96XmAbYjm9uwkC/ayH7/ZJ3YYRgMjnJGBBRjXDEUVc5JTEhJe6Hn5+gRqeOnqndUM9PA7e9IwxODBKa2zugEGYSdO6xfq6vieafSULlgqojpNW+X5EjUxTYmZs7QkDii4tGu28TmnyLKdqDoglGm59Kgkl+bMo6yWnVPbYhyeGxhuaJJlTDEyKjiQ0pCTxrB4s8FtBjag5cAUxw5Mb+ygVMwETYAcQBbYUfkVc3R7L/I2G/C4zO3/V9ElzWiWwCHm0cm6Ra3zkYG97wKrk9PWPC/v6zizRCn5Seiqdx+7q1P0HjF33Vgp2r2iT6LCc+O0JRNe3Nd66Pj/zIXDmofbL9Tc/WHZv21Bklm+3bbbV+x7otcuvp67V6/I3sVMSw6UK6BuAABzn5nb
+```
+
+`s1`
+
+![uni__s1](/uploads/sbbus/uni__s1.jpg)
+
+```plaintext
+set firstLinks:1:4 3
+set lastLinks:2:4 1
+op sub &t0 @links firstLinks:1:4
+op sub sorters:3:4 &t0 lastLinks:2:4
+set addr:4:4 0
+set i:6:9 firstLinks:1:4
+op add &t1 firstLinks:1:4 sorters:3:4
+jump 60 greaterThan i:6:9 &t1
+getlink &t2 i:6:9
+sensor &t3 &t2 @config
+jump 27 strictEqual &t3 @copper
+jump 29 strictEqual &t3 @lead
+jump 31 strictEqual &t3 @metaglass
+jump 33 strictEqual &t3 @graphite
+jump 35 strictEqual &t3 @sand
+jump 37 strictEqual &t3 @coal
+jump 39 strictEqual &t3 @titanium
+jump 41 strictEqual &t3 @thorium
+jump 43 strictEqual &t3 @scrap
+jump 45 strictEqual &t3 @silicon
+jump 47 strictEqual &t3 @phase-fabric
+jump 49 strictEqual &t3 @plastanium
+jump 51 strictEqual &t3 @surge-alloy
+jump 53 strictEqual &t3 @spore-pod
+jump 55 strictEqual &t3 @blast-compound
+jump 57 strictEqual &t3 @pyratite
+jump 58 always
+op add addr:4:4 addr:4:4 1
+jump 58 always
+op add addr:4:4 addr:4:4 2
+jump 58 always
+op add addr:4:4 addr:4:4 3
+jump 58 always
+op add addr:4:4 addr:4:4 4
+jump 58 always
+op add addr:4:4 addr:4:4 5
+jump 58 always
+op add addr:4:4 addr:4:4 6
+jump 58 always
+op add addr:4:4 addr:4:4 7
+jump 58 always
+op add addr:4:4 addr:4:4 8
+jump 58 always
+op add addr:4:4 addr:4:4 9
+jump 58 always
+op add addr:4:4 addr:4:4 10
+jump 58 always
+op add addr:4:4 addr:4:4 11
+jump 58 always
+op add addr:4:4 addr:4:4 12
+jump 58 always
+op add addr:4:4 addr:4:4 13
+jump 58 always
+op add addr:4:4 addr:4:4 14
+jump 58 always
+op add addr:4:4 addr:4:4 15
+jump 58 always
+op add addr:4:4 addr:4:4 16
+op add i:6:9 i:6:9 1
+jump 6 always
+print addr:4:4
+printflush message1
+set work:70:4 1
+control enabled switch1 work:70:4
+jump 69 equal work:70:4 0
+read &t1 bank1 addr:4:4
+write &t1 cell1 0
+sensor work:70:4 switch1 @enabled
+jump 64 always
 end
+```
+
+`s2`
+
+![uni__s2](/uploads/sbbus/uni__s2.jpg)
+
+```plaintext
+read result cell1 0
+jump 3 notEqual result 0
+draw clear 255 0 0 0 0 0
+jump 5 notEqual result 1
+draw clear 0 255 0 0 0 0
+drawflush display1
+```
+
+`s3`
+
+![uni__s3](/uploads/sbbus/uni__s3.jpg)
+
+```plaintext
+set p 1
+getlink link p
+read result cell1 0
+control enabled link result 0 0 0
+op add p p 1
+jump 1 lessThan p @links
+```
+
+### MlogJS код s1
+
+Код для `s1` транспилирован из недо-JS при помощи MLogJS. Вот исходники:
+
+```js
+let firstLinks = 3
+let lastLinks = 1
+let sorters = Vars.links - firstLinks - lastLinks
+let addr = 0
+
+for (let i = firstLinks; i <= firstLinks + sorters; i++) {
+  switch (getLink(i).config) {
+    case Items.copper:
+      addr += 1
+      break
+    case Items.lead:
+      addr += 2
+      break
+    case Items.metaglass:
+      addr += 3
+      break
+    case Items.graphite:
+      addr += 4
+      break
+    case Items.sand:
+      addr += 5
+      break
+    case Items.coal:
+      addr += 6
+      break
+    case Items.titanium:
+      addr += 7
+      break
+    case Items.thorium:
+      addr += 8
+      break
+    case Items.scrap:
+      addr += 9
+      break
+    case Items.silicon:
+      addr += 10
+      break
+    case Items.phaseFabric:
+      addr += 11
+      break
+    case Items.plastanium:
+      addr += 12
+      break
+    case Items.surgeAlloy:
+      addr += 13
+      break
+    case Items.sporePod:
+      addr += 14
+      break
+    case Items.blastCompound:
+      addr += 15
+      break
+    case Items.pyratite:
+      addr += 16
+      break
+  }
+}
+
+print(addr)
+printFlush()
+
+const bus = getBuilding('bank1')
+const busMemory = new Memory(bus, 512)
+
+const cell = getBuilding('cell1')
+const cellMemory = new Memory(cell, 64)
+
+const switch1 = getBuilding('switch1')
+
+let work = true
+control.enabled(switch1, work)
+
+while (work) {
+  cellMemory[0] = busMemory[addr]
+  work = switch1.enabled
+}
 ```
 
 ### ToDo
