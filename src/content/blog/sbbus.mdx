@@ -2489,7 +2489,85 @@ while (work) {
 }
 ```
 
-### ToDo
+## Набросок SBBus Bitty One
+
+Схема:
+
+```plaintext
+bXNjaAF4nDWUf1DTZRzHn218v9/9YnQ4bkdaMDFs4YjQTm2Lg8Vksc3hSuVkIji+ypBtuK34ET+TSLATN34IOM9Aiwvkl1egI8mAioRyIJwBV4JaF0IwDsvViTbw4x/Pve+e1+f1ueee+zwP4iAmDXkZkvUkCnSedbY7O4YLnT3DRc4epyPwHYnkPXOgRGexZAeqDCRipZBmrUmXYdEZDQghPD35IJluRl4J+uz9Xgg3Z+os2lTko9dpTUZhhsmoJc1mowmx9KTeaMoWasn0dEToPZvJh0mPH+1ZCGNSVgLhkAQkfTUpwCnAKcApwKnAqcCpwKnAacBpwGnAacC9EIKkQFIhaZAYJA5JQD71MfAx8DHwMfAx8DHwMfAx8HHwcfBx8HHwcfBx8HHwcfAJ8AnwCfAJ8AnwCfAJ8IlV33ObiMHx3Na6LLu+Qm6YDONKa1XDvc3Ol7W7Co5WNvx5sc8Q2ZGa0LK+0cY+3z0TevPC26PyvCxdV6H3rNi2IE78lifRPL5vWfAjx9+PbRpg7SnZunvy7wNNf3zQ6Mtd7ojnyYVSZes/PomZl5cMObe7W5TLc79cqhftWc5pFFVN14znjaR+5a56sJsz1tW3fIwX/VvnmLRtsq274d9HfePJh19QdTpEo1dtanKppsrGj+isEM9+efHjIn/X4zht8MyDc/eTRo8d/ev2EWXz9GXt/A8my4vn1l7bUjl0o6SuTtrcMq+szDqp9OalOfJmWx7+9PnEK/4htZ8c6XII5tP2n/RfSMttVrYNqpZ6+udE2+8pSvMNafNLBRObHu47mJD/u2XN1+X/xT+aEwcUBUw23drofcvRejbj9KFGozmnbm2w4a1fK0P4/TGL+dfjOKq+9sgw8ZreaR/+84n0RVesrGSr5A12sYIu4dw44w6T5x2X+QarkZ+g+AQ3akcZP+glp1XtThSSLqvJvQmLyN3ACBAUlnN7Y8qmgr5zXY2PnQr6zGUNd8u251ZLAiJsxeXcazHhV8QJ4VdOKUI3VLAEfjwOeWekXqOxrj+gEaWYsi+lmPi1GlkwT80OEBSVV/bGXJ8KqtXkv8o9s7Jr+/GjZ+2tvm6ZILe8+ml732ftmdNBUtebZZl3n+zVMBZ5OZsTJlYeI4wZHcaMDmNGhzFjAGcAZwBnAGcCZwJnAmeucqonGStvngVlLChjQRlrtYyC2Aj3TCvKy7JrU5KSatT2fQ2n7HUVd2ts6gtJA9idYLK6MPv7Eo30i1JB0kx7v33k3bDB51rtId9E1m87Tz+++Was2joWpUQC2ZCckvzpFkUtf2/UrkOJjGhu785BgfDnuAGlMHSnQvX6ParjRGmRX/r4kwL2EHtdmD++A8fRhz2ibZ6/wxvhXp7zvIb+B3OEcHU=
+```
+
+panel s1:
+
+```plaintext
+set addrs:1:4 2
+set firstLinks:6:4 0
+set lastLinks:7:4 1
+op sub &t0 @links firstLinks:6:4
+op sub switches:8:4 &t0 lastLinks:7:4
+set addr:10:9 0
+jump 24 greaterThanEq addr:10:9 addrs:1:4
+set result:11:8 0
+set i:13:13 0
+jump 21 greaterThanEq i:13:13 32
+op mul &t1 addr:10:9 32
+op add &t2 &t1 firstLinks:6:4
+op add &t3 &t2 i:13:13
+op add &t4 firstLinks:6:4 switches:8:4
+jump 19 greaterThanEq &t3 &t4
+getlink &t5 &t3
+sensor config:15:16 &t5 @enabled
+op shl shiftedConfig:16:16 config:15:16 i:13:13
+op or result:11:8 result:11:8 shiftedConfig:16:16
+op add i:13:13 i:13:13 1
+jump 9 always
+write result:11:8 cell1 addr:10:9
+op add addr:10:9 addr:10:9 1
+jump 6 always
+end
+
+```
+
+panel s1 mlogjs code:
+
+```js
+let addrs = 2
+
+const cell = getBuilding('cell1')
+const cellMemory = new Memory(cell, 64)
+
+let firstLinks = 0
+let lastLinks = 1
+let switches = Vars.links - firstLinks - lastLinks
+
+for (let addr = 0; addr < addrs; addr++) {
+    let result = 0
+
+    for (let i = 0; i < 32; i++) {
+        if ((addr * (32) + firstLinks + i) < firstLinks + switches) {
+            let config = getLink(addr * (32) + firstLinks + i).enabled
+            let shiftedConfig = config << i
+            result |= shiftedConfig
+        }
+    }
+
+    cellMemory[addr] = result
+}
+```
+
+client s1:
+
+```plaintext
+set cellAddr 1
+set bitAddr 31
+read cellValue cell1 cellAddr
+op shr shifted cellValue bitAddr
+op and anded shifted 1
+print anded
+printflush message1
+```
+
+## ToDo
 
 - сделать поддержку нескольких панелей при помощи сохранения номера обновления состояния шины
 - сделать экспериментальную версию на энерго-узлах
