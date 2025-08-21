@@ -16,6 +16,8 @@ import Callout from '@/components/Callout.astro'
 
 Шина переключателей для Mindustry 7+. Проверено и работает в кампании и на сервере. Полезно на Соляных Равнинах.
 
+В 2023 увидел на ютубе как челы управляют Солевым Хабом с помощью логики, понравилось, решил повторить. Получилось что получилось. А потом оказалось что те челы управляли хабом с помощью обычных энергоузлов.
+
 Существуют версии:
 
 - [1 канал (SBBus Instant)](#sbbus-instant) - 5237,5 блоков/сек
@@ -24,12 +26,19 @@ import Callout from '@/components/Callout.astro'
 - [256 каналов (SBBus 256)](#sbbus-256)
 - [512 каналов (SBBus 512)](#sbbus-512)
 - [Универсальные части (SBBus Uni)](#sbbus-uni)
+- [Набросок битовой упаковки (SBBus Bitty One)](#набросок-sbbus-bitty-one)
 
 Версия на 1 канал самая молниеносная из всех.
 
-Все версии можно ускорить доработав и поставив больше передатчиков между каждой ячейкой. В 32-канальной SBBus 1 передатчик синхронизирует 32 адреса между 2 ячейками памяти, а можно сделать чтобы между этими 2 ячейками памяти стояло 8 передатчиков, и каждый будет синхронизировать только свой кусочек памяти, из 32/8=4 каналов.
+## Хотелки
 
-А ещё при желании и доработке можно совместить SBBus на 32 канала, SBBus 512 и SBBus Instant и сделать чтобы через 1 большую банку памяти на 512 адресов шло 16 линий по 32 канала. В этом случае будут ставиться ячейки а между ними по 16 передатчиков, каждый на свой кусочек памяти.
+- Все версии можно ускорить доработав и поставив больше передатчиков между каждой ячейкой. В 32-канальной SBBus 1 передатчик синхронизирует 32 адреса между 2 ячейками памяти, а можно сделать чтобы между этими 2 ячейками памяти стояло 8 передатчиков, и каждый будет синхронизировать только свой кусочек памяти, из 32/8=4 каналов.
+- При желании и доработке можно совместить SBBus на 32 канала, SBBus 512 и SBBus Instant и сделать чтобы через 1 большую банку памяти на 512 адресов шло 16 линий по 32 канала. В этом случае будут ставиться ячейки а между ними по 16 передатчиков, каждый на свой кусочек памяти.
+- Хочется сделать поддержку нескольких панелей при помощи сохранения номера обновления состояния шины
+- Сделать экспериментальную версию SBBus EnergyWormHole на энерго-узлах
+- В планах совместить SBBus Uni и SBBus Bitty One в SBBus UniBitty, дабы получить невероятно быстрый клиент вкупе с упаковкой 32 значений в 1 ячейку, и сделать настройку (автоматическую?) количества блоков по 32 канала.
+
+## Общий гайд по использованию
 
 - Установите панель
 - Подключите шину состоящую из ячейка_панели-ячейка-передатчик-ячейка-передатчик-ячейка...
@@ -2344,7 +2353,7 @@ control enabled press1 result 0 0 0
 
 ![uni](/uploads/sbbus/uni.jpg)
 
-Подходит к любой версии шины. Невероятно быстрый и оптимизированный.
+Подходит к любой версии шины. Переписан на MLogJS - невероятно быстрый и оптимизированный.
 
 Адреса суммируются, т.е. если подключить 8x8 сетку `switches`, макс возможный адрес будет 1024 + 1 (Присутствует лишний адрес - пустые сортеры, т.е. 8x8 сетка даст не 1024 а 1025 адресов), но это бесполезно т.к. макс банка памяти на 512 адресов.
 
@@ -2453,7 +2462,24 @@ jump 1 lessThan p @links
 Код для `s1` транспилирован из недо-JS при помощи MLogJS. Вот исходники:
 
 ```js
-const items = new MutableArray(["copper", "lead", "metaglass", "graphite", "sand", "coal", "titanium", "thorium", "scrap", "silicon", "plastanium", "phase-fabric", "surge-alloy", "spore-pod", "blast-compound", "pyratite"])
+const items = new MutableArray([
+  'copper',
+  'lead',
+  'metaglass',
+  'graphite',
+  'sand',
+  'coal',
+  'titanium',
+  'thorium',
+  'scrap',
+  'silicon',
+  'plastanium',
+  'phase-fabric',
+  'surge-alloy',
+  'spore-pod',
+  'blast-compound',
+  'pyratite',
+])
 
 let firstLinks = 3
 let lastLinks = 1
@@ -2461,12 +2487,12 @@ let sorters = Vars.links - firstLinks - lastLinks
 let addr = 0
 
 for (let i = firstLinks; i <= firstLinks + sorters; i++) {
-    let config = getLink(i).config
-    for (let i = 0; i < items.size; i++) {
-        if (config === lookup.item(i)) {
-            addr += i + 1
-        }
+  let config = getLink(i).config
+  for (let i = 0; i < items.size; i++) {
+    if (config === lookup.item(i)) {
+      addr += i + 1
     }
+  }
 }
 
 print(addr)
@@ -2484,12 +2510,14 @@ let work = true
 control.enabled(switch1, work)
 
 while (work) {
-    cellMemory[0] = busMemory[addr]
-    work = switch1.enabled
+  cellMemory[0] = busMemory[addr]
+  work = switch1.enabled
 }
 ```
 
 ## Набросок SBBus Bitty One
+
+На обычных версиях SBBus в передатчиках тратится около 1-6 тактов на передачу 1 ячейки, с концепцией из SBBus Bitty One за то же кол-во тактов можно будет передать уже 32 значения в виде 32-х битного числа.
 
 Схема:
 
@@ -2541,17 +2569,17 @@ let lastLinks = 1
 let switches = Vars.links - firstLinks - lastLinks
 
 for (let addr = 0; addr < addrs; addr++) {
-    let result = 0
+  let result = 0
 
-    for (let i = 0; i < 32; i++) {
-        if ((addr * (32) + firstLinks + i) < firstLinks + switches) {
-            let config = getLink(addr * (32) + firstLinks + i).enabled
-            let shiftedConfig = config << i
-            result |= shiftedConfig
-        }
+  for (let i = 0; i < 32; i++) {
+    if (addr * 32 + firstLinks + i < firstLinks + switches) {
+      let config = getLink(addr * 32 + firstLinks + i).enabled
+      let shiftedConfig = config << i
+      result |= shiftedConfig
     }
+  }
 
-    cellMemory[addr] = result
+  cellMemory[addr] = result
 }
 ```
 
@@ -2566,9 +2594,3 @@ op and anded shifted 1
 print anded
 printflush message1
 ```
-
-## ToDo
-
-- сделать поддержку нескольких панелей при помощи сохранения номера обновления состояния шины
-- сделать экспериментальную версию на энерго-узлах
-- сделать панель и передатчик Uni, передатчик будет настраиваться на количество каналов по кнопкам
