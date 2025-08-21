@@ -23,6 +23,7 @@ import Callout from '@/components/Callout.astro'
 - [32 канала (SBBus)](#sbbus-standard)
 - [256 каналов (SBBus 256)](#sbbus-256)
 - [512 каналов (SBBus 512)](#sbbus-512)
+- [Универсальные части (SBBus Uni)](#sbbus-uni)
 
 Версия на 1 канал самая молниеносная из всех.
 
@@ -2339,7 +2340,7 @@ read result cell1 ADDRESS
 control enabled press1 result 0 0 0
 ```
 
-## Клиент SBBus Uni
+## SBBus Uni
 
 ![uni](/uploads/sbbus/uni.jpg)
 
@@ -2372,75 +2373,52 @@ bXNjaAF4nGNgYeBkZmDJS8xNZeAMdnIqLVYIzctk4E5JLU4uyiwoyczPY2BgYMtJTErNKWZgic6tjOVk
 ![uni__s1](/uploads/sbbus/uni__s1.jpg)
 
 ```plaintext
-set firstLinks:1:4 3
-set lastLinks:2:4 1
-op sub &t0 @links firstLinks:1:4
-op sub sorters:3:4 &t0 lastLinks:2:4
-set addr:4:4 0
-set i:6:9 firstLinks:1:4
-op add &t1 firstLinks:1:4 sorters:3:4
-jump 60 greaterThan i:6:9 &t1
-getlink &t2 i:6:9
-sensor &t3 &t2 @config
-jump 27 strictEqual &t3 @copper
-jump 29 strictEqual &t3 @lead
-jump 31 strictEqual &t3 @metaglass
-jump 33 strictEqual &t3 @graphite
-jump 35 strictEqual &t3 @sand
-jump 37 strictEqual &t3 @coal
-jump 39 strictEqual &t3 @titanium
-jump 41 strictEqual &t3 @thorium
-jump 43 strictEqual &t3 @scrap
-jump 45 strictEqual &t3 @silicon
-jump 47 strictEqual &t3 @phase-fabric
-jump 49 strictEqual &t3 @plastanium
-jump 51 strictEqual &t3 @surge-alloy
-jump 53 strictEqual &t3 @spore-pod
-jump 55 strictEqual &t3 @blast-compound
-jump 57 strictEqual &t3 @pyratite
-jump 58 always
-op add addr:4:4 addr:4:4 1
-jump 58 always
-op add addr:4:4 addr:4:4 2
-jump 58 always
-op add addr:4:4 addr:4:4 3
-jump 58 always
-op add addr:4:4 addr:4:4 4
-jump 58 always
-op add addr:4:4 addr:4:4 5
-jump 58 always
-op add addr:4:4 addr:4:4 6
-jump 58 always
-op add addr:4:4 addr:4:4 7
-jump 58 always
-op add addr:4:4 addr:4:4 8
-jump 58 always
-op add addr:4:4 addr:4:4 9
-jump 58 always
-op add addr:4:4 addr:4:4 10
-jump 58 always
-op add addr:4:4 addr:4:4 11
-jump 58 always
-op add addr:4:4 addr:4:4 12
-jump 58 always
-op add addr:4:4 addr:4:4 13
-jump 58 always
-op add addr:4:4 addr:4:4 14
-jump 58 always
-op add addr:4:4 addr:4:4 15
-jump 58 always
-op add addr:4:4 addr:4:4 16
-op add i:6:9 i:6:9 1
-jump 6 always
-print addr:4:4
+set items:1:6->0 "copper"
+set items:1:6->1 "lead"
+set items:1:6->2 "metaglass"
+set items:1:6->3 "graphite"
+set items:1:6->4 "sand"
+set items:1:6->5 "coal"
+set items:1:6->6 "titanium"
+set items:1:6->7 "thorium"
+set items:1:6->8 "scrap"
+set items:1:6->9 "silicon"
+set items:1:6->10 "plastanium"
+set items:1:6->11 "phase-fabric"
+set items:1:6->12 "surge-alloy"
+set items:1:6->13 "spore-pod"
+set items:1:6->14 "blast-compound"
+set items:1:6->15 "pyratite"
+set firstLinks:3:4 3
+set lastLinks:4:4 1
+op sub &t0 @links firstLinks:3:4
+op sub sorters:5:4 &t0 lastLinks:4:4
+set addr:6:4 0
+set i:8:9 firstLinks:3:4
+op add &t1 firstLinks:3:4 sorters:5:4
+jump 37 greaterThan i:8:9 &t1
+getlink &t2 i:8:9
+sensor config:9:8 &t2 @config
+set i:10:13 0
+jump 35 greaterThanEq i:10:13 16
+lookup item &t3 i:10:13
+op strictEqual &t4 config:9:8 &t3
+jump 33 equal &t4 0
+op add &t5 i:10:13 1
+op add addr:6:4 addr:6:4 &t5
+op add i:10:13 i:10:13 1
+jump 27 always
+op add i:8:9 i:8:9 1
+jump 22 always
+print addr:6:4
 printflush message1
-set work:70:4 1
-control enabled switch1 work:70:4
-jump 69 equal work:70:4 0
-read &t1 bank1 addr:4:4
+set work:28:4 1
+control enabled switch1 work:28:4
+jump 46 equal work:28:4 0
+read &t1 bank1 addr:6:4
 write &t1 cell1 0
-sensor work:70:4 switch1 @enabled
-jump 64 always
+sensor work:28:4 switch1 @enabled
+jump 41 always
 end
 ```
 
@@ -2475,62 +2453,20 @@ jump 1 lessThan p @links
 Код для `s1` транспилирован из недо-JS при помощи MLogJS. Вот исходники:
 
 ```js
+const items = new MutableArray(["copper", "lead", "metaglass", "graphite", "sand", "coal", "titanium", "thorium", "scrap", "silicon", "plastanium", "phase-fabric", "surge-alloy", "spore-pod", "blast-compound", "pyratite"])
+
 let firstLinks = 3
 let lastLinks = 1
 let sorters = Vars.links - firstLinks - lastLinks
 let addr = 0
 
 for (let i = firstLinks; i <= firstLinks + sorters; i++) {
-  switch (getLink(i).config) {
-    case Items.copper:
-      addr += 1
-      break
-    case Items.lead:
-      addr += 2
-      break
-    case Items.metaglass:
-      addr += 3
-      break
-    case Items.graphite:
-      addr += 4
-      break
-    case Items.sand:
-      addr += 5
-      break
-    case Items.coal:
-      addr += 6
-      break
-    case Items.titanium:
-      addr += 7
-      break
-    case Items.thorium:
-      addr += 8
-      break
-    case Items.scrap:
-      addr += 9
-      break
-    case Items.silicon:
-      addr += 10
-      break
-    case Items.phaseFabric:
-      addr += 11
-      break
-    case Items.plastanium:
-      addr += 12
-      break
-    case Items.surgeAlloy:
-      addr += 13
-      break
-    case Items.sporePod:
-      addr += 14
-      break
-    case Items.blastCompound:
-      addr += 15
-      break
-    case Items.pyratite:
-      addr += 16
-      break
-  }
+    let config = getLink(i).config
+    for (let i = 0; i < items.size; i++) {
+        if (config === lookup.item(i)) {
+            addr += i + 1
+        }
+    }
 }
 
 print(addr)
@@ -2548,8 +2484,8 @@ let work = true
 control.enabled(switch1, work)
 
 while (work) {
-  cellMemory[0] = busMemory[addr]
-  work = switch1.enabled
+    cellMemory[0] = busMemory[addr]
+    work = switch1.enabled
 }
 ```
 
