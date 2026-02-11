@@ -1,0 +1,131 @@
+
+__Deric__
+•
+2 г. назад
+Logic Dabbler
+Nice work, maybe replace the microprocessor - switch chains with a central memory cell?
+
+The processors could use units to get references to the central cell and communicate almost instantaneously.
+
+Some logic code I use for this purpose:
+
+# Software which connects to a remote memory cell using a temporary unit.
+#
+# Number unitFlag = 0;
+# UnitType type = @zenith;
+# Number x = 0;
+# Number y = 0;
+# Building cell = null;
+#
+# while (true) {
+#   Unit unit = bind(type);
+#   while (true) {
+#       if (unit === null || unit.flag != unitFlag || unit.dead || unit.controlled == @ctrlPlayer || unit.controlled == @ctrlCommand) {
+#           break;
+#       }
+#       unit.getBlock(x, y out _, out Building cell, out _);
+#       if (cell === null) {
+#           unit.approach(x, y, 7);
+#       } else {
+#           break;
+#       }
+#   }
+#   unbind();
+#
+#   while (cell !== null && !cell.dead) {
+#       // event loop
+#   }
+# }
+
+set unitFlag 0
+set type @zenith
+set x 0
+set y 0
+
+bindLoop:
+    ubind type
+
+    connectLoop:
+        jump controlExit strictEqual @unit null
+        sensor tmp @unit @flag
+        jump controlExit notEqual tmp unitFlag
+        sensor tmp @unit @dead
+        jump controlExit equal tmp true
+        sensor tmp @unit @controlled
+        jump controlExit equal tmp @ctrlPlayer
+        jump controlExit equal tmp @ctrlCommand
+
+        ucontrol getBlock x y _ cell _
+        jump approachCell strictEqual cell null
+        jump controlExit always 0 0
+        approachCell:
+        ucontrol approach x y 7 0 0
+        jump connectLoop always 0 0
+
+    controlExit:
+    ucontrol unbind 0 0 0 0 0
+
+    eventLoop:
+        jump bindLoop strictEqual cell null
+        sensor tmp cell @dead
+        jump bindLoop equal tmp true
+
+        # Event loop
+
+        jump eventLoop always 0 0
+
+
+Нравится
+5
+
+Не нравится
+
+Ответить
+
+Награда
+
+Поделиться
+
+
+=====
+
+mlogjs
+
+let unitType = Units.flare;
+let unitFlag = 0;
+let x = 0;
+let y = 0;
+
+let cell = undefined;
+
+while (true) {
+  unitBind(unitType)
+  while (true) {
+    if (Vars.unit === undefined || Vars.unit.flag != unitFlag || Vars.unit.dead || Vars.unit.controlled == ControlKind.ctrlPlayer || Vars.unit.controlled == ControlKind.ctrlProcessor) {
+      break;
+
+    }
+    let [_type, cell, _floor] = unitControl.getBlock(x, y)
+    if (cell === undefined) {
+      unitControl.approach({
+        x,
+        y,
+        radius: 7,
+      });
+    } else {
+      break;
+    }
+
+  }
+  unitControl.unbind()
+
+  while (cell !== undefined && !cell.dead) {
+    // event loop
+
+  }
+}
+
+
+
+
+====

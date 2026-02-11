@@ -2594,3 +2594,232 @@ op and anded shifted 1
 print anded
 printflush message1
 ```
+
+## SBBus QuantumC
+
+Клиент для любой версии SBBus (кроме SBBus Bitty One) для мгновенной телепортации информации из панели в любую точку карты через любого юнита.
+
+Использование из кода:
+1. Введите в коде клиента координаты ячейки памяти панели в переменные `x:3:4` и `y:4:4`
+2. Если хотите, смените юнита по умолчанию (вспышку) при помощи переменной `unitType:1:4`
+3. Установите процессор, подключите сортировщик для выбора канала `sorter1` и кнопку перезагрузки процессора `switch1`, затем подключите управляемые постройки
+4. Выберите канал в сортировщике
+5. Наконец, вставьте код в процессор
+6. Перезапустите процессор нажав на переключатель
+
+Использование из схемы:
+1. Поставьте схему
+2. Повторите 1-2 шаги из "Использование из кода"
+3. Подключите управляемые постройки
+4. Выберите канал в сортировщике
+5. Перезапустите процессор нажав на переключатель
+
+Схема:
+```
+bXNjaAF4nAH/AwD8AAMAAgMABG5hbWUADlNCQnVzIFF1YW50dW1DAAtkZXNjcmlwdGlvbgAAAAZsYWJlbHMABFtteV0DAA9sb2dpYy1wcm9jZXNzb3IABnN3aXRjaAAGc29ydGVyAAAAAwAAAAAADgAAA4R4nI1XTW+cMBDd9FJp1R/BKbeVsPnmFFVqz1XVe+RlvSyNg6kxSvff9Kd2MDYY40Qol/Uw897YM8+ePBwOX/71VAZD28hf946WqIyDpysjgh6N/TsjdYnBHirT3zKC3wnK1OpexrDCSa5WFWWszMHQDowpC7lcBO37sgDjqSgKZXwU1Y1WLz8pLL4OUvK2RKgMg/z4e3jtAoSKgLA3cu+DEEiHc9NeVhl+CIKQF4V3QS9FU8lvfwbCgkcZBk8jpkm17bkAK9LW8QzqMajlcwRW3+0jGR1UWKQAwWVBig3ShZLL7Jho53hxTI1jxVspOGNUuVPNmk0ulRTsByN3KmasXONlC1bxMRYKJx8FJngFleELHkIaFIXTEUbY3j58hmJo4KCGU2e8etH9MPXBsxwrhNOyCM5Dwy5NW48rlAbPV8a5GBc4XbfK2nFbJ4SdtppSC5dNYTsv0nWCk+q2yitTLTAFIrsrzDZd07oBDfbQqlYMzZ+vqda52mevPodLrax9zT1inCP1XREwApRjO00QkenubHY2ynxPEbFfEToR2Ny1qUFVcZkHYJBUINU/YN1uMFn7g1/XQUsq/DidU0p0Srb89dGiMPlQl6nDwMajUZHJUvPUg4/24WcO/iuVpGak7zVJbClvS4L3keQOSS1Id2sk1Rz5zJF7OKJ9HIXD0UOjTJEpnvELD368Dx8uC7fWRKsvTe0rZcuQ7GRADoNsJGmb4XUKzyyNIw9LupMFuyw3LhaSeH2RuCTZTpLIrUYFJdcUS7nBbUuR76SIXYqGNWCZovOl5ij2kBQ7SVyBdyANuyi5VXqfytFOmSNX592N9PR0JWfw0pewVX+v4HcqHrmS7wdR0xNhjN81k9UEPtWjnbJHru77jgt66rgWZmF1gk/5aKf0kav981ilU8VfOz6YWwCFVkv47gG08yLA7kXQ3QWR8202htPF1cNjrgOooo3snQ31W/vclGlSQodhlc9wHsHhXWJN+9LPVz0A1oISeLJ+3Ui7iR1DjjCojEHjArseRwgeH1ccLW+xlZX9IuN48gtXxmT6Eh7NiEBbcoaha2JTDvOkAMCbDN313NHZdkqJNqbUtlCo+zxbhKV/FOjfGlnd4Bx1npoO9mW29F7kdosGywxDCipcTxgwlFz9ePN/CPCsDC1U8L3x5Xg4HD4dPuvJBH4+wGKihsXhP1s68ugAAQACAAAKAAACAAIAAQUAAAAANSfSDg==
+```
+
+client s1 mlogjs:
+
+```
+let unitType = Units.flare;
+let unitFlag = 0;
+let x = 0;
+let y = 0;
+
+const sorter1 = getBuilding("sorter1");
+const switch1 = getBuilding("switch1");
+let cell = undefined;
+let address = -999;
+
+function checkResetButton() {
+  if (sensor(LAccess.enabled, switch1)) {
+    control.enabled(switch1, false)
+    asm`jump 0 always`
+  }
+}
+
+while (true) {
+  checkResetButton()
+  unitBind(unitType)
+  while (true) {
+    checkResetButton()
+    if (Vars.unit === undefined || Vars.unit.flag != unitFlag || Vars.unit.dead || Vars.unit.controlled == ControlKind.ctrlPlayer || Vars.unit.controlled == ControlKind.ctrlProcessor) {
+      break;
+    }
+    let [_type, building, _floor] = unitControl.getBlock(x, y)
+    cell = building
+    if (cell === undefined) {
+      unitControl.approach({
+        x,
+        y,
+        radius: 7,
+      });
+    } else {
+      break;
+    }
+  }
+  unitControl.unbind()
+
+  while (cell !== undefined && !cell.dead) {
+    checkResetButton()
+
+    // event loop
+    let config1 = sensor(LAccess.config, sorter1)
+    if (config1 === Items.copper) { address = 0 }
+    else if (config1 === Items.lead) { address = 1 }
+    else if (config1 === Items.metaglass) { address = 2 }
+    else if (config1 === Items.graphite) { address = 3 }
+    else if (config1 === Items.sand) { address = 4 }
+    else if (config1 === Items.coal) { address = 5 }
+    else if (config1 === Items.titanium) { address = 6 }
+    else if (config1 === Items.thorium) { address = 7 }
+    else if (config1 === Items.scrap) { address = 8 }
+    else if (config1 === Items.silicon) { address = 9 }
+    else if (config1 === Items.plastanium) { address = 10 }
+    else if (config1 === Items.phaseFabric) { address = 11 }
+    else if (config1 === Items.surgeAlloy) { address = 12 }
+    else if (config1 === Items.sporePod) { address = 13 }
+    else if (config1 === Items.blastCompound) { address = 14 }
+    else if (config1 === Items.pyratite) { address = 15 }
+
+    if (address !== -999) {
+      const memory = new Memory(cell, 64);
+
+      for (let control_i = 0 + 2; control_i <= Vars.links - 1; control_i++) {
+        control.enabled(getLink(control_i), !!memory[address])
+      }
+    }
+  }
+}
+```
+
+client s1:
+
+```
+set unitType:1:4 @flare
+set unitFlag:2:4 0
+set x:3:4 0
+set y:4:4 0
+set cell:8:4 null
+set address:9:4 -999
+set &rcheckResetButton:11:0 8
+jump 119 always
+ubind unitType:1:4
+set &rcheckResetButton:11:0 11
+jump 119 always
+op strictEqual &t0 @unit null
+sensor &t1 @unit @flag
+op notEqual &t2 &t1 unitFlag:2:4
+op or &t3 &t0 &t2
+sensor &t4 @unit @dead
+op or &t5 &t3 &t4
+sensor &t6 @unit @controlled
+op equal &t7 &t6 @ctrlPlayer
+op or &t8 &t5 &t7
+sensor &t9 @unit @controlled
+op equal &t10 &t9 @ctrlProcessor
+op or &t11 &t8 &t10
+jump 32 notEqual &t11 0
+ucontrol getBlock x:3:4 y:4:4 _type:26:9 building:26:16 _floor:26:26
+set cell:8:4 building:26:16
+op strictEqual &t12 cell:8:4 null
+jump 30 equal &t12 0
+ucontrol approach x:3:4 y:4:4 7
+jump 31 always
+jump 32 always
+jump 9 always
+ucontrol unbind
+op strictEqual &t0 cell:8:4 null
+op equal &t1 &t0 0
+sensor &t2 cell:8:4 @dead
+op equal &t3 &t2 0
+op land &t4 &t1 &t3
+jump 117 equal &t4 0
+set &rcheckResetButton:11:0 41
+jump 119 always
+sensor config1:44:8 sorter1 @config
+op strictEqual &t5 config1:44:8 @copper
+jump 46 equal &t5 0
+set address:9:4 0
+jump 105 always
+op strictEqual &t6 config1:44:8 @lead
+jump 50 equal &t6 0
+set address:9:4 1
+jump 105 always
+op strictEqual &t7 config1:44:8 @metaglass
+jump 54 equal &t7 0
+set address:9:4 2
+jump 105 always
+op strictEqual &t8 config1:44:8 @graphite
+jump 58 equal &t8 0
+set address:9:4 3
+jump 105 always
+op strictEqual &t9 config1:44:8 @sand
+jump 62 equal &t9 0
+set address:9:4 4
+jump 105 always
+op strictEqual &t10 config1:44:8 @coal
+jump 66 equal &t10 0
+set address:9:4 5
+jump 105 always
+op strictEqual &t11 config1:44:8 @titanium
+jump 70 equal &t11 0
+set address:9:4 6
+jump 105 always
+op strictEqual &t12 config1:44:8 @thorium
+jump 74 equal &t12 0
+set address:9:4 7
+jump 105 always
+op strictEqual &t13 config1:44:8 @scrap
+jump 78 equal &t13 0
+set address:9:4 8
+jump 105 always
+op strictEqual &t14 config1:44:8 @silicon
+jump 82 equal &t14 0
+set address:9:4 9
+jump 105 always
+op strictEqual &t15 config1:44:8 @plastanium
+jump 86 equal &t15 0
+set address:9:4 10
+jump 105 always
+op strictEqual &t16 config1:44:8 @phase-fabric
+jump 90 equal &t16 0
+set address:9:4 11
+jump 105 always
+op strictEqual &t17 config1:44:8 @surge-alloy
+jump 94 equal &t17 0
+set address:9:4 12
+jump 105 always
+op strictEqual &t18 config1:44:8 @spore-pod
+jump 98 equal &t18 0
+set address:9:4 13
+jump 105 always
+op strictEqual &t19 config1:44:8 @blast-compound
+jump 102 equal &t19 0
+set address:9:4 14
+jump 105 always
+op strictEqual &t20 config1:44:8 @pyratite
+jump 105 equal &t20 0
+set address:9:4 15
+jump 116 strictEqual address:9:4 -999
+set control_i:65:15 2
+op sub &t21 @links 1
+jump 116 greaterThan control_i:65:15 &t21
+getlink &t22 control_i:65:15
+read &t23 cell:8:4 address:9:4
+op equal &t24 &t23 0
+op equal &t25 &t24 0
+control enabled &t22 &t25
+op add control_i:65:15 control_i:65:15 1
+jump 107 always
+jump 33 always
+jump 6 always
+end
+sensor &t0:checkResetButton:11:0 switch1 @enabled
+jump 123 equal &t0:checkResetButton:11:0 0
+control enabled switch1 0
+jump 0 always
+set &fcheckResetButton:11:0 null
+set @counter &rcheckResetButton:11:0
+```
